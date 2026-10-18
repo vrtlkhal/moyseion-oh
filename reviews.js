@@ -17,7 +17,7 @@
   + '.rev-card{position:relative;flex:0 0 auto;width:clamp(16rem,24vw,22rem);height:calc(30vh - 5rem);min-height:8.5rem;overflow:hidden;padding:1.1rem 1.6rem 1rem 2.6rem;border-left:1px solid rgba(131,109,48,.55);display:flex;flex-direction:column;justify-content:space-between;color:var(--gold-body,#c2a567);outline:none;transition:width .6s cubic-bezier(.2,.7,.2,1),background .5s}'
   + '.rev-card::before{content:"\\201C";position:absolute;left:.7rem;top:.1rem;font-size:3.2rem;line-height:1;color:var(--gold-deep,#836d30)}'
   + '.rev-card p{margin:0;font-size:.95rem;line-height:1.55;color:var(--gold-bright,#f1dca4);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}'
-  + '.rev-card footer{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.7rem;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase}'
+  + '.rev-card .rev-meta{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.7rem;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase}'
   + '.rev-card:hover,.rev-card:focus-visible{width:clamp(22rem,46vw,42rem);background:linear-gradient(90deg,rgba(241,220,164,.06),transparent 80%)}'
   + '.rev-card:hover p,.rev-card:focus-visible p{display:block;overflow-y:auto;max-height:100%;-webkit-line-clamp:unset}'
   + '.rev-stars{letter-spacing:.2em;color:var(--gold-bright,#f1dca4)}'
@@ -38,13 +38,13 @@
   function esc(t){ return String(t).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
   var cards = list.map(function(r){
     var n = Math.max(0, Math.min(5, r.rating | 0));
-    return '<article class="rev-card" tabindex="0"><p>' + esc(r.text) + '</p><footer><span>' + esc(r.author) + '</span>' + (n ? '<span class="rev-stars" aria-label="' + n + ' out of 5">' + new Array(n + 1).join('&#9733;') + '</span>' : '') + '</footer></article>';
+    return '<article class="rev-card" tabindex="0"><p>' + esc(r.text) + '</p><div class="rev-meta"><span>' + esc(r.author) + '</span>' + (n ? '<span class="rev-stars" aria-label="' + n + ' out of 5">' + new Array(n + 1).join('&#9733;') + '</span>' : '') + '</div></article>';
   }).join('');
   var band = document.createElement('section'); band.className = 'rev-band'; band.id = 'reviewsBand'; band.setAttribute('aria-label', 'Reviews');
   band.innerHTML = '<span class="rev-label">Reviews</span><div class="rev-track">' + cards + cards + cards + cards + '</div>';
   var cta = document.createElement('div'); cta.className = 'rev-cta';
   cta.innerHTML = '<p>Plan a stay</p><h3>Choose the age you will sleep in.</h3><em>Every stay includes the Water Sanctuary of Demeter and, for those who want them, the rituals.</em><a href="' + (window.__REV_PLAN || ((window.__NAV_BASE || '') + 'draft.html')) + '">Plan your stay</a>';
-  var foot = document.querySelector('footer');
+  var foot = Array.prototype.slice.call(document.querySelectorAll('footer')).filter(function(x){ return !x.closest('.rev-card'); })[0];
   if (foot && foot.parentNode){ foot.parentNode.insertBefore(band, foot); foot.parentNode.insertBefore(cta, foot); } else { document.body.appendChild(band); document.body.appendChild(cta); }
   // one ask on screen: the bar's plan button steps aside while this one is in view
   if ('IntersectionObserver' in window){
