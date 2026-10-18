@@ -14,6 +14,50 @@ window.addEventListener("message",function(e){var d=e.data;if(d&&d.type==="moy-t
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.25/dist/lenis.min.js" defer></script>
 <script src="assets/moy.js" defer></script>
+<style id="day-flow">
+/* THE DAY AS ONE CONTINUOUS LINE, NOT A STACK OF CARDS. A single hairline runs down the page; each moment hangs from it, the photograph on one side and the words on
+   the other, switching sides as the day goes on. No frames, no panels: only the line, the photographs, a large outlined number and the text. */
+.day{position:relative;display:block;gap:0;padding:clamp(2rem,6vh,4rem) 0}
+.day::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--line) 5%,var(--line) 95%,transparent)}
+.step{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(2.4rem,8vw,9rem);align-items:center;min-height:0;border:0!important;border-radius:0;overflow:visible;background:none!important;margin:0 0 clamp(6rem,17vh,12rem)}
+.step:last-child{margin-bottom:0}
+.step::before{content:"";position:absolute;left:50%;top:50%;width:.8rem;height:.8rem;margin:-.4rem 0 0 -.4rem;border:1px solid var(--gold-bright);background:var(--navy);transform:rotate(45deg);z-index:3}
+.step .pic{grid-column:1;grid-row:1;position:relative;overflow:hidden;aspect-ratio:4/5;max-height:80vh;width:100%;outline:1px solid var(--line);outline-offset:.9rem}
+.step .pic::before{display:none}
+.step .tx{grid-column:2;grid-row:1;position:relative;z-index:2;display:block;padding:0;align-self:center}
+.step .po{grid-column:2;grid-row:1;align-self:end;position:relative;z-index:2;padding:0;margin-top:2.2rem;background:none!important;display:block;font-size:clamp(1rem,1.5vw,1.5rem);line-height:1.6;font-style:italic;border-left:1px solid var(--gold-deep);padding-left:1.4rem;max-width:26em}
+.step .po::after{display:none}
+.step .po b{font-weight:400;font-style:normal}
+.step .tx{padding-bottom:clamp(8rem,22vh,13rem)}
+.step .n{display:block;font-size:clamp(5rem,12vw,12rem);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(241,220,164,.5);margin:0 0 .6rem -.4rem;letter-spacing:-.02em}
+.step .tx small{font-size:.7rem;letter-spacing:.4em}
+.step .tx h3{font-size:clamp(2rem,4.2vw,4.4rem);line-height:1.02;letter-spacing:-.01em;margin-bottom:.8rem}
+.step .tx .sub{font-size:clamp(1.05rem,1.6vw,1.6rem);margin:0 0 1.2rem}
+.step .tx p{font-size:clamp(.95rem,1.15vw,1.12rem);line-height:1.7;max-width:30em}
+.step .tx .sub{max-width:none}
+/* the second, fourth ... moments swap sides, and change the photograph's proportion */
+.step:nth-child(even) .pic{grid-column:2;aspect-ratio:1/1}
+.step:nth-child(even) .tx,.step:nth-child(even) .po{grid-column:1;text-align:right}
+.step:nth-child(even) .n{margin:0 -.4rem .6rem 0}
+.step:nth-child(even) .tx p,.step:nth-child(even) .tx .sub{margin-left:auto}
+.step:nth-child(even) .po{margin-left:auto;border-left:0;padding-left:0;border-right:1px solid var(--gold-deep);padding-right:1.4rem}
+.step:nth-child(5n) .pic{aspect-ratio:16/11}
+html[data-theme="light"] .step .n{-webkit-text-stroke-color:rgba(139,90,43,.6)}
+html[data-theme="light"] .step .pic{outline-color:rgba(139,90,43,.4)}
+html[data-theme="light"] .day::before{background:linear-gradient(to bottom,transparent,rgba(139,90,43,.4) 5%,rgba(139,90,43,.4) 95%,transparent)}
+html[data-theme="light"] .step .po{color:#2a231b}
+@media (max-width:820px){
+  .day::before{left:.7rem}
+  .step{grid-template-columns:1fr;padding-left:2.2rem;margin-bottom:clamp(4rem,10vh,6rem)}
+  .step::before{left:.7rem;top:1rem;margin:0 0 0 -.4rem}
+  .step .pic,.step:nth-child(even) .pic{grid-column:1;grid-row:1;aspect-ratio:4/3;max-height:46vh;outline-offset:.5rem}
+  .step .tx,.step:nth-child(even) .tx{grid-column:1;grid-row:2;padding:1.6rem 0 0;text-align:left}
+  .step .po,.step:nth-child(even) .po{grid-column:1;grid-row:3;margin:1.4rem 0 0;text-align:left;border-right:0;padding-right:0;border-left:1px solid var(--gold-deep);padding-left:1.2rem}
+  .step:nth-child(even) .tx p,.step:nth-child(even) .tx .sub,.step:nth-child(even) .po{margin-left:0}
+  .step:nth-child(even) .n{margin:0 0 .6rem -.2rem}
+  .step .n{font-size:clamp(4rem,22vw,7rem)}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
