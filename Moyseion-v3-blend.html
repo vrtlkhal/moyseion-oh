@@ -1347,7 +1347,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 /* ---- PAIRS: two orb+text sections share one 100vh pin. The first takes the height its text needs, the second
    is only its orbs, centred in what is left; scrolling swaps them. Heights are written by JS (buildPairPins). ---- */
 .pair{position:relative;z-index:25;height:calc(var(--vh,1vh)*100);overflow:visible;display:flex;flex-direction:column;padding-top:calc(var(--nav-h,4.75rem) + 1vh);box-sizing:border-box}
-.pair > .manifesto{flex:1 1 0;min-height:0;box-sizing:border-box;margin-top:0!important;padding:1vh 5%;width:100%;
+.pair > .manifesto{flex:1 1 0;min-height:0;box-sizing:border-box;margin-top:0!important;padding:1vh 5%;width:100%;align-items:flex-start;
   contain:layout style;overflow:visible}   /* no paint containment here: it clips at the section's edge, and the circles (and their float) reach past it */
 .pair ~ .pair,.pair + .manifesto{margin-top:10vh}
 .pair .manifesto-inner{will-change:opacity}
@@ -1358,7 +1358,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 .orb-v{contain:none}
 /* the pair's type is a fifth smaller than the single sections' (orbs and line height follow: they are in LH) */
 .pair .manifesto p,.pair #manifesto-sanctuary p,.pair #manifesto-spirit p,.pair #manifesto-essence p{
-  font-size:clamp(1.05rem,1.8vw,2rem);line-height:1.55}   /* ONE size for every paired section: smaller, airier */
+  font-size:clamp(1rem,min(1.8vw,2.7vh),2rem);line-height:1.55}   /* ONE size for every paired section, shrinking with the window's height as well as its width */
 </style>
 <style id="v3-marks">
 /* ───────────────────────────────────────────────────────────
@@ -3582,7 +3582,20 @@ function buildSections(){
       const pr = para.getBoundingClientRect(), sr = stage.getBoundingClientRect(), W = sr.width;
       const LHp = prepareParagraph(para).LH;
       // the text keeps 1/phi LH of air, plus room for the float it is deliberately NOT told about
-      const pad = LHp * (1 / PHI + 0.46), out = [], P = poses(t, now, sx, sy);
+      const pad = LHp * (1 / PHI + 0.46), out = [];
+      // THE LIVE SET. While the one orb system exists the words flow around ITS circles, wherever it is on the page, so the
+      // paragraph breathes as the set passes through it (pretext re-solves the line breaks every frame; reflow() low-passes
+      // the circles, so the lines glide instead of snapping). The worst-case sizing passes (sx given) still use this stage's own poses.
+      if (sx === undefined && window.__orbVSlides && window.__orbVSlides.length){
+        window.__orbVSlides.forEach(sl => {
+          if (sl.style.display === 'none') return;
+          const r = sl.getBoundingClientRect(); if (!r.width) return;
+          const cx = r.left + r.width / 2 - pr.left, cy = r.top + r.height / 2 - pr.top, rad = r.width / 2 + pad;
+          out.push({ cx, rx: rad, cy, ry: rad, y0: cy - rad, y1: cy + rad });
+        });
+        return out;
+      }
+      const P = poses(t, now, sx, sy);
       for (let i = 0; i < M; i++){
         const o = P[i], cx = sr.left + o.x * W - pr.left, cy = sr.top + o.y * W - pr.top, rad = o.r * W + pad;
         out.push({ cx, rx: rad, cy, ry: rad, y0: cy - rad, y1: cy + rad });
@@ -3709,7 +3722,7 @@ function buildPairPins(){
       // each stage is fitted to its half of the frame, the same for both
       const band = Math.max(0, (VH - NAVH - 0.05 * VH) / 2);
       [oa, ob].forEach(o => { o.stage.style.scale = ''; o.h0 = o.stage.offsetHeight || 1; });
-      G.sc = Math.min(1, 0.9 * band / Math.max(oa.h0, ob.h0));
+      G.sc = Math.min(1, 0.9 * band / Math.max(oa.h0, ob.h0), 0.34 * VW / Math.max(oa.stage.offsetWidth, ob.stage.offsetWidth, 1));
       oa.stage.style.scale = ob.stage.style.scale = G.sc.toFixed(4);
     };
     const update = u => {
@@ -3742,7 +3755,7 @@ function buildPairPins(){
 let orbV = null, orbVTick = null;
 function buildOrbJourney(){
   if (orbVTick){ gsap.ticker.remove(orbVTick); orbVTick = null; }
-  if (orbV){ orbV.remove(); orbV = null; }
+  if (orbV){ orbV.remove(); orbV = null; window.__orbVSlides = null; }
   const pairs = [...document.querySelectorAll('.pair')].filter(p => p.__st && p.children[0].__orb && p.children[1].__orb);
   if (!pairs.length || REDUCED || !PAIRED) return;
   const secs = pairs.flatMap(p => [p.children[0], p.children[1]]);
@@ -3761,7 +3774,7 @@ function buildOrbJourney(){
     });
   });
   V.style.cssText += ';position:fixed;left:0;top:0;margin:0;translate:none;opacity:1;z-index:26;pointer-events:none;will-change:transform';
-  document.body.appendChild(V); orbV = V;
+  document.body.appendChild(V); orbV = V; window.__orbVSlides = vSlides;
   secs.forEach(sc => { sc.__orb.stage.style.opacity = '0'; });   // the anchors keep their place and their simulation, unseen
   const aSlides = [...a0.stage.querySelectorAll('.slide')];
   let W = [];                                                       // each text's place in the PINNED frame (frame top at 0)
