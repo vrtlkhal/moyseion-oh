@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>MOΥΣEION · Draft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400&display=swap">
+<script>(function(){try{var q=/[?&]theme=(light|dark)/.exec(location.search);if(q)localStorage.setItem("moy-theme",q[1]);if(localStorage.getItem("moy-theme")==="light")document.documentElement.setAttribute("data-theme","light");}catch(e){}})();</script>
+<style>
+:root{
+  --navy:#010416;
+  --gold-deep:#836d30;
+  --gold-body:#c2a567;
+  --gold-bright:#f1dca4;
+  --line:rgba(131,109,48,.45);
+  --font:'GFS Neohellenic','Gill Sans','Optima',serif;
+}
+html[data-theme="light"]{
+  --navy:#f4efe8;
+  --gold-deep:#8b5a2b;
+  --gold-body:#3a3128;
+  --gold-bright:#1b1713;
+  --line:rgba(139,90,43,.4);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{min-height:100%;background:var(--navy);color:var(--gold-body);font-family:var(--font)}
+body{min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+a{color:var(--gold-body);text-decoration:none;transition:color .3s}
+a:hover,a:focus-visible{color:var(--gold-bright)}
+:focus-visible{outline:.15rem solid var(--gold-bright);outline-offset:.2rem}
+::selection{background:rgba(241,220,164,.25)}
+
+main{flex:1;display:grid;place-items:center;padding:6vw}
+.draft{display:flex;flex-direction:column;align-items:center;gap:2.2rem;text-align:center;max-width:42rem}
+.draft .mark{width:clamp(3.2rem,6vw,5rem);aspect-ratio:1;border:.07rem solid var(--gold-deep);border-radius:50%;display:grid;place-items:center;color:var(--gold-bright);font-size:clamp(1rem,1.8vw,1.5rem);letter-spacing:.1em}
+.draft h1{font-weight:400;font-size:clamp(1.5rem,3.4vw,3rem);line-height:1.25;letter-spacing:.02em;color:var(--gold-bright);text-wrap:balance}
+.draft h1 span{display:block;font-size:.5em;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:1.4rem}
+.draft a.back{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-bright);padding:.9rem 1.8rem;border:.07rem solid var(--gold-body);transition:background .3s,color .3s,border-color .3s}
+.draft a.back:hover,.draft a.back:focus-visible{background:var(--gold-body);border-color:var(--gold-body);color:var(--navy)}
+
+footer.site-foot{border-top:.07rem solid var(--line);padding:1rem 4.6vw .9rem}
+.foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.6rem;max-width:96rem;margin:0 auto}
+.foot .brand{font-weight:700;font-size:.95rem;letter-spacing:.14em;color:var(--gold-bright)}
+.foot nav{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem;justify-content:center;flex:1 1 auto}
+.foot nav a{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase}
+.foot .social{display:flex;gap:.9rem}
+.foot .social a{width:1.1rem;height:1.1rem;display:block}
+.foot .social svg{width:100%;height:100%}
+.foot .foot-note{flex:1 0 100%;text-align:center;font-size:.7rem;letter-spacing:.06em;padding-top:.6rem;border-top:.07rem solid var(--line);margin-top:.2rem}
+@media (max-width:35rem){.foot{justify-content:center}.foot nav{flex:1 0 100%;order:3}}
+</style>
+</head>
+<body>
+<main>
+  <section class="draft" aria-labelledby="draft-title">
+    <div class="mark" aria-hidden="true">MΣ</div>
+    <h1 id="draft-title">Not displayed on this live draft.</h1>
+    <a class="back" href="Moyseion-v3-blend.html">Back to homepage</a>
+  </section>
+</main>
+
+<footer class="site-foot"><div class="foot">
+  <a class="brand" href="Moyseion-v3-blend.html" aria-label="MOΥΣEION">MOΥΣEION</a>
+  <nav aria-label="Footer"><a href="draft.html">Contact</a><a href="#">FAQ</a><a href="proposal/moyseion-press.html">Press</a><a href="draft.html">Privacy</a><a href="#">Terms</a><a href="#">Careers</a></nav>
+  <div class="social"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".8" fill="currentColor"/></svg></a><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.3C16.7 2.3 15.8 2 14.7 2 12.4 2 10.8 3.4 10.8 6v2.5H8.2V12h2.6v10H14V12h2.6l.4-3.5z"/></svg></a></div>
+  <p class="foot-note">For more on the research and archaeology: <a href="https://fondazione-moyseion-isama.com" target="_blank" rel="noopener">fondazione-moyseion-isama.com</a></p>
+</div></footer>
+</body>
+</html>

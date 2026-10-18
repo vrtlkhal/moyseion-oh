@@ -1,0 +1,2564 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-dc-tpl="3" viewBox="0 0 1000 1000" width="460" height="460" style="display: block;">
+    <defs data-dc-tpl="4">
+      
+        <clipPath data-dc-tpl="6" id="leaf-45"><path data-dc-tpl="7" d="M507.5885403770232,494.7865453568588 Q547.9701240356954,480.3141472117665 566.101277572866,434.58100123371827 Q519.6858527882335,452.0298759643046 507.5885403770232,494.7865453568588 Z"/></clipPath>
+      
+        <clipPath data-dc-tpl="6" id="leaf-135"><path data-dc-tpl="7" d="M506.99978866234557,508.9489827638545 Q519.6858527882335,547.9701240356953 567.3909895070224,566.2993485605203 Q547.9701240356954,519.6858527882334 506.99978866234557,508.9489827638545 Z"/></clipPath>
+      
+        <clipPath data-dc-tpl="6" id="leaf-225"><path data-dc-tpl="7" d="M492.99318115932795,505.4960335183127 Q452.0298759643046,519.6858527882335 434.2520660485331,566.4038753094916 Q480.3141472117665,547.9701240356954 492.99318115932795,505.4960335183127 Z"/></clipPath>
+      
+        <clipPath data-dc-tpl="6" id="leaf-315"><path data-dc-tpl="7" d="M494.0505199796297,493.6622655214679 Q480.3141472117665,452.0298759643046 436.0849878592327,432.30198888803926 Q452.0298759643046,480.3141472117665 494.0505199796297,493.6622655214679 Z"/></clipPath>
+      
+    </defs>
+    
+      <g data-dc-tpl="9">
+        
+          
+          
+            <path data-dc-tpl="14" d="M498.0,5.7 L542.9,6.0 L586.8,12.8 L629.7,21.2 L667.1,34.5 L710.3,54.2 L745.5,72.2 L783.7,94.1 L817.3,120.7 L850.6,148.9 L878.4,182.2 L905.7,217.0 L927.5,251.0 L945.8,290.0 L963.0,329.9 L976.0,373.1 L986.8,415.6 L990.4,456.9 L994.2,500.3 L991.8,544.0 L987.3,586.9 L978.3,629.2 L966.0,667.5 L947.5,708.3 L926.7,748.5 L904.5,783.1 L878.9,818.0 L848.1,847.4 L816.7,880.2 L783.6,906.2 L745.3,928.2 L709.9,949.7 L669.3,964.0 L626.4,979.0 L584.8,988.2 L541.3,992.8 L501.1,993.6 L455.2,990.4 L413.5,988.0 L371.2,976.3 L331.2,965.3 L291.9,947.4 L255.0,929.5 L218.6,904.0 L182.3,878.9 L149.7,850.0 L122.6,816.1 L93.4,784.6 L71.8,748.5 L51.1,708.6 L36.4,668.3 L23.8,629.1 L14.0,586.5 L8.9,543.1 L6.6,501.5 L7.4,455.3 L13.9,414.9 L22.6,371.6 L36.9,329.3 L52.6,289.8 L71.9,253.5 L94.1,218.3 L123.4,181.6 L152.6,152.7 L184.1,123.5 L215.2,95.1 L252.5,73.3 L290.4,52.7 L330.6,37.3 L370.2,22.3 L414.8,11.8 L455.3,5.9 L500.0,6.0 Z" fill="none" stroke="#836d30" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M498.8,12.1 L541.8,17.0 L584.6,19.8 L624.8,29.1 L667.0,41.4 L703.9,59.7 L743.1,77.1 L776.9,100.5 L811.0,128.2 L843.0,158.2 L873.1,187.6 L899.8,222.1 L919.1,256.5 L938.6,294.2 L957.9,332.2 L971.3,374.5 L978.0,414.2 L982.6,456.3 L985.6,501.4 L986.1,540.9 L977.4,583.3 L970.4,626.0 L955.8,666.9 L939.9,705.8 L920.1,741.2 L898.4,777.0 L874.2,812.9 L843.2,844.1 L811.1,873.1 L778.2,898.7 L742.5,921.5 L705.2,941.9 L667.7,954.7 L626.0,969.2 L585.2,980.2 L543.5,982.2 L499.2,985.3 L456.8,982.8 L415.5,976.6 L375.8,970.0 L333.9,958.5 L293.7,939.8 L257.9,921.9 L222.3,898.7 L187.6,871.5 L154.8,845.4 L127.0,812.6 L101.9,777.8 L78.6,743.3 L59.7,707.3 L43.7,666.5 L31.9,627.7 L22.4,583.6 L14.4,542.4 L15.4,499.9 L14.9,459.0 L21.1,415.4 L31.5,373.9 L43.1,335.5 L60.9,295.5 L80.5,255.5 L102.4,222.8 L128.4,188.1 L156.3,158.0 L186.1,125.9 L220.4,102.1 L255.1,77.8 L293.8,60.7 L335.7,44.4 L375.3,29.3 L415.4,20.9 L456.2,16.6 L500.0,14.0 Z" fill="none" stroke="#836d30" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+      </g>
+    
+      <g data-dc-tpl="9">
+        
+          
+            <circle data-dc-tpl="12" cx="584.2259329731013" cy="56.951493503045604" r="30.641752400548697" fill="none" stroke="#836d30" stroke-width="3.8921810699588475"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="582.4234809840752" cy="57.19082820812105" r="13.673032407407408" fill="none" stroke="#836d30" stroke-width="4.672256515775034"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="581.9271718276966" cy="57.23068588987688" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="579.930135086883" cy="16.688275246399158" r="2.707240226337449" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="603.5930576654382" cy="24.893484887361566" r="2.895216049382716" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="622.1454915607908" cy="44.792294135144665" r="2.6364326131687243" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="621.7425557170019" cy="69.86568495672495" r="2.34755658436214" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="605.3566799416901" cy="89.85536762231851" r="2.4452546296296296" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="584.9659814320133" cy="97.13195173586126" r="2.34619341563786" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="564.3501574898414" cy="91.67352683976546" r="2.467039609053498" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="547.189753175677" cy="73.70966291334722" r="2.22445987654321" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="547.97858645569" cy="42.028538361332" r="3.0351208847736624" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="564.1117349469484" cy="25.023807240966704" r="2.3156893004115227" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="748.7066391523738" cy="124.54820807153641" r="28.531327160493827" fill="none" stroke="#836d30" stroke-width="5.35960219478738"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="747.8719512237044" cy="125.96106815384094" r="15.892682613168724" fill="none" stroke="#836d30" stroke-width="3.9832990397805212"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="746.4241674445549" cy="126.33545944327852" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="747.3552344063789" cy="86.07008050229973" r="2.1261359739369" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="769.4761988473412" cy="92.84307074851677" r="2.986951303155007" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="784.6651925189576" cy="115.2054840825323" r="2.95656292866941" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="786.1414521739644" cy="132.80871574766036" r="2.4516375171467764" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="769.077660059826" cy="157.25799966463484" r="2.8888417352537723" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="751.3491688394703" cy="164.29365072347423" r="2.6848422496570645" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="723.117874208032" cy="154.3955480778303" r="2.2563057270233196" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="713.2602074700768" cy="140.96248181570465" r="3.0198988340192043" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="708.711995580987" cy="114.8242452193761" r="2.3922882373113854" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="728.7223216688474" cy="92.5926464272745" r="2.7901406035665297" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="871.8339249874485" cy="252.53146098480042" r="29.120490397805213" fill="none" stroke="#836d30" stroke-width="5.26323731138546"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="870.4196760162552" cy="251.4470645513299" r="13.655542695473251" fill="none" stroke="#836d30" stroke-width="4.224382716049383"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="870.3496357213305" cy="253.21360261717354" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="873.1478651505167" cy="211.55495661812876" r="2.6520276063100137" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="896.2072481384607" cy="220.97469893741714" r="2.4819787379972564" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="912.44169014171" cy="244.5924152833611" r="2.642948388203018" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="908.3948332308173" cy="261.26841986810314" r="2.5516032235939643" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="895.108067039837" cy="285.79589473211956" r="2.624609910836763" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="870.843948233117" cy="290.0016116361649" r="2.2786351165980796" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="846.5902151429298" cy="283.982707263807" r="2.9303455075445815" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="833.4653164687973" cy="267.5923586310765" r="2.996407750342936" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="837.0243816677224" cy="239.31043335433682" r="2.893488511659808" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="847.6358624029963" cy="220.10088501222188" r="3.0382544581618656" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="944.6816683625237" cy="410.3455004974062" r="29.9894890260631" fill="none" stroke="#836d30" stroke-width="4.541358024691358"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="942.8689283076541" cy="410.895534790959" r="15.035686728395062" fill="none" stroke="#836d30" stroke-width="4.037482853223594"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="942.3083187397528" cy="411.8772649006984" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="940.9404724016063" cy="372.2412038624241" r="2.4207175925925926" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="966.5744343983421" cy="375.14468360381414" r="2.7383230452674896" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="980.384100796269" cy="396.3218818506288" r="2.275835905349794" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="983.2250673658693" cy="424.56879022123496" r="2.449922839506173" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="963.6950608742358" cy="441.75409819455746" r="2.6772505144032923" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="947.2489806351429" cy="447.59203261513784" r="2.374485596707819" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="923.5741359901108" cy="444.35401531900527" r="2.95829475308642" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="910.5054736360852" cy="424.1872606236951" r="2.8453446502057615" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="907.197672528519" cy="396.50445251062786" r="2.4523019547325102" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="924.3789769871577" cy="374.3063367908199" r="2.1958333333333333" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="941.8106121210972" cy="586.2326888030053" r="28.57042181069959" fill="none" stroke="#836d30" stroke-width="5.169272976680384"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="940.4718089660903" cy="586.8698287207008" r="13.662744341563785" fill="none" stroke="#836d30" stroke-width="4.879389574759945"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="940.8733050223317" cy="584.3959689813317" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="937.3188017786708" cy="545.9874158313629" r="3.0865269204389576" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="967.6094554356317" cy="557.1491145449809" r="2.2991941015089163" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="981.342183195778" cy="577.6995477468764" r="2.2873242455418383" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="977.2194948416011" cy="597.8730341023535" r="2.4675840192043896" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="969.2548655413434" cy="617.3007877108358" r="2.2566400891632377" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="945.5178675832994" cy="626.1280570618326" r="3.071159122085048" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="914.668222783787" cy="615.8820501820104" r="2.327807784636488" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="906.3272022933138" cy="602.2381365845316" r="2.443252743484225" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="906.3323718603017" cy="571.702804507138" r="2.8341606652949247" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="919.127870645351" cy="552.6605839797596" r="2.9171982167352537" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="877.9368056458848" cy="747.4376748176687" r="27.036128257887516" fill="none" stroke="#836d30" stroke-width="3.937105624142661"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="879.8209105841563" cy="748.3429903183546" r="15.388567386831276" fill="none" stroke="#836d30" stroke-width="4.132818930041152"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="877.3655822233882" cy="745.5452279726755" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="876.8191648960584" cy="708.7839390095535" r="2.711183984910837" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="902.465702893325" cy="718.8898861327899" r="2.7818758573388203" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="913.1802547544214" cy="734.4296583499533" r="2.850252914951989" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="917.0232553063909" cy="758.1976852979657" r="2.3329818244170095" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="903.055709151901" cy="776.8001365213023" r="2.646729252400549" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="879.4583253223043" cy="786.3597945776914" r="2.208161865569273" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="857.4205883222189" cy="780.0829733953908" r="2.4339463305898494" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="841.1625466150887" cy="761.9635015145311" r="2.740749314128944" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="841.9193260135264" cy="732.5263415854907" r="2.545237482853224" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="854.0051647514281" cy="716.6827440581096" r="2.2640775034293554" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="748.3760493032654" cy="878.0546725868998" r="27.85574417009602" fill="none" stroke="#836d30" stroke-width="3.560905349794239"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="748.1826508121817" cy="876.1005916541151" r="15.953896604938272" fill="none" stroke="#836d30" stroke-width="3.5508573388203017"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="750.7429260179431" cy="878.4316015992455" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="751.9626393654743" cy="838.9875147662328" r="2.319380144032922" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="771.2796712389044" cy="849.0792135686477" r="2.433281893004115" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="781.8924978674586" cy="863.0809294044926" r="2.433757716049383" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="787.0510483447811" cy="890.5357234467948" r="2.737474279835391" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="773.4802504754304" cy="910.2263462405044" r="2.7610982510288067" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="752.3430940963432" cy="917.1512795270253" r="2.9212962962962963" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="729.1446419239986" cy="911.0519237713677" r="2.634735082304527" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="709.9835435529106" cy="887.6608111247958" r="2.3180812757201648" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="710.0977477126648" cy="864.7294521874649" r="2.3880015432098767" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="729.1850666092217" cy="845.0925862995051" r="2.2611625514403295" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="585.2643417522509" cy="941.8983007356376" r="28.01692386831276" fill="none" stroke="#836d30" stroke-width="5.127091906721536"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="583.2732752227585" cy="943.8337945627981" r="13.65502829218107" fill="none" stroke="#836d30" stroke-width="3.034739368998628"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="586.5981251884648" cy="943.4746467575854" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="581.0551096366389" cy="905.392431178879" r="2.120991941015089" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="606.956923746919" cy="911.377373917034" r="2.352177640603567" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="623.5738147456261" cy="931.6460560443514" r="3.0254929698216735" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="624.5151975857924" cy="951.7574842170064" r="2.557604595336077" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="607.77612553619" cy="971.2185014549609" r="2.365179183813443" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="583.825002146789" cy="983.1003924997075" r="2.864883401920439" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="562.4246636003305" cy="975.1478967193012" r="2.4733839163237312" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="547.5269410768864" cy="958.8805098436461" r="2.6073473936899862" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="544.6815386439043" cy="933.4999020812629" r="2.683440500685871" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="565.3825244685781" cy="909.9818473964978" r="2.118329903978052" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="413.79141956462166" cy="937.8255984036759" r="27.914729080932783" fill="none" stroke="#836d30" stroke-width="3.870233196159122"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="415.714619153099" cy="938.3502554681478" r="15.01048096707819" fill="none" stroke="#836d30" stroke-width="3.7449588477366254"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="414.50363235611684" cy="938.1733778961313" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="415.26601841049103" cy="897.8068379008602" r="2.3999699931412897" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="433.77074682572504" cy="906.1617300158608" r="2.3780692729766804" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="451.10303784453833" cy="926.0403867113706" r="3.020520404663923" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="447.6091166365753" cy="953.3103118453491" r="2.7439900548696845" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="432.8703910864168" cy="971.519433652494" r="2.965144890260631" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="409.5734732246099" cy="978.3977748587604" r="2.1006515775034296" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="391.8567147296362" cy="971.8576722753535" r="2.5671767832647463" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="376.0874184543641" cy="950.8698768704185" r="2.7813871742112486" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="375.71426865483306" cy="922.3578780145514" r="2.159949417009602" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="392.0994594256413" cy="902.8238417532888" r="2.1195301783264746" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="252.88547333047939" cy="871.0711334922496" r="30.90718449931413" fill="none" stroke="#836d30" stroke-width="4.284156378600823"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="254.60771269947801" cy="870.4647891849794" r="15.427662037037038" fill="none" stroke="#836d30" stroke-width="4.5457133058984915"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="253.14072453075374" cy="871.2191530395747" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="248.9278049524412" cy="834.6285464334853" r="3.069894547325103" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="272.5080671015641" cy="839.4318619615269" r="2.6467592592592593" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="289.5525039425485" cy="860.3271834054359" r="2.7768647119341567" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="287.0743263697631" cy="884.3459130475547" r="2.876877572016461" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="272.56544104425416" cy="905.5663174785179" r="2.3634645061728397" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="251.01144590595865" cy="910.4345008236548" r="2.653292181069959" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="231.5361864269498" cy="902.3134484368858" r="2.163027263374486" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="217.81436036208768" cy="883.1535434995391" r="2.3093364197530866" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="214.88119013433254" cy="861.2488852786649" r="2.5088863168724282" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="226.65277247049147" cy="839.0422992372436" r="2.178343621399177" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="128.92142480679013" cy="752.3581137751447" r="29.5375" fill="none" stroke="#836d30" stroke-width="4.56639231824417"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="128.7966134213306" cy="752.332702252511" r="14.869534465020577" fill="none" stroke="#836d30" stroke-width="3.7826817558299037"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="126.78555803724281" cy="752.7178960110843" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="133.6541286721191" cy="712.0420481838388" r="2.896197702331962" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="151.68606644786854" cy="723.2689826698471" r="2.8125685871056243" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="165.97904958703376" cy="743.3686210871092" r="2.837735768175583" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="166.76375052303132" cy="768.7997148487287" r="2.388365912208505" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="152.96557078156283" cy="782.3029938992509" r="2.8811256858710563" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="129.3149770421269" cy="794.0027177090238" r="2.732681755829904" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="104.4587744647594" cy="781.5315686487829" r="2.3597007887517147" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="90.57769907572555" cy="762.893098279015" r="2.1788494513031553" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="92.28719424508925" cy="739.5570133825004" r="2.6067944101508917" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="110.10417475424386" cy="720.1745377523073" r="3.0602023319615914" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="55.07230968960253" cy="584.7855008743359" r="30.42295953360768" fill="none" stroke="#836d30" stroke-width="4.395953360768176"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="56.44201133569306" cy="585.2257957988901" r="14.521283436213992" fill="none" stroke="#836d30" stroke-width="4.394135802469136"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="55.7716623987932" cy="585.521654852388" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="51.36567838280859" cy="546.5055530592269" r="2.3850522976680386" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="77.05192475275594" cy="554.2633106733315" r="2.9372256515775037" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="91.71452240499008" cy="570.3218144818189" r="2.820417524005487" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="92.87084738718498" cy="600.3695393622002" r="2.4512945816186558" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="77.29759391176727" cy="617.0403841051082" r="2.246523491083676" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="59.84573869276848" cy="625.8424792735344" r="2.6227709190672153" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="31.8516564115275" cy="616.6862927378003" r="2.99670353223594" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="16.589528162192025" cy="597.8020394632726" r="2.7849879972565157" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="19.408525807470937" cy="575.2390443116072" r="2.4042909807956105" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="30.690125139650235" cy="552.5414800616928" r="2.2712791495198905" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="56.87615056751743" cy="410.7282165467891" r="29.810476680384088" fill="none" stroke="#836d30" stroke-width="4.044444444444444"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="55.476990759561325" cy="409.9881273835518" r="15.456983024691358" fill="none" stroke="#836d30" stroke-width="4.355384087791495"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="56.50125773486997" cy="409.9065858883529" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="55.10866818599769" cy="371.87130942253106" r="2.3389274691358026" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="80.58810915430831" cy="377.68082712877117" r="3.0454218106995885" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="96.28992594838628" cy="398.7640310102247" r="2.971823559670782" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="93.63770009989989" cy="418.26859242678546" r="2.5347993827160495" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="80.05301984317587" cy="439.2731093450458" r="2.1510159465020577" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="54.766853322809034" cy="451.6739529023217" r="2.2371399176954734" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="33.15094304407084" cy="439.5135559992579" r="2.209837962962963" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="20.174873149590326" cy="419.60786433510697" r="2.4857767489711935" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="18.853458838260075" cy="400.189245952991" r="2.4816229423868315" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="35.151228307836135" cy="377.77023443798964" r="2.6140432098765434" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="124.4564042306585" cy="251.18852545667966" r="27.798816872427984" fill="none" stroke="#836d30" stroke-width="4.820507544581618"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="123.38303317441708" cy="252.60961599165907" r="13.306262860082304" fill="none" stroke="#836d30" stroke-width="4.456550068587106"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="126.44347984794246" cy="249.03544761031478" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="125.00782864439937" cy="210.82830044878338" r="3.0788108710562416" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="145.31438107255156" cy="216.25062178442033" r="2.347033607681756" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="162.68092439052884" cy="242.4989966746856" r="2.390719307270233" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="161.35403466167514" cy="260.1711730785323" r="2.62653463648834" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="147.3618495805031" cy="282.8773047309142" r="2.4711462620027436" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="126.94804978850398" cy="290.76847044320976" r="2.3412208504801097" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="100.702974948719" cy="279.20720209958074" r="2.6534250685871057" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="88.56292944467287" cy="261.71826542622983" r="2.824425582990398" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="86.58516231379845" cy="242.92339353498323" r="2.270889060356653" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="103.32962876854774" cy="219.74074047646982" r="2.4094821673525377" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="251.63307278178223" cy="122.1709789906038" r="29.227486282578877" fill="none" stroke="#836d30" stroke-width="4.8475994513031555"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="250.52335055956001" cy="121.48987473820326" r="15.920974794238683" fill="none" stroke="#836d30" stroke-width="3.4136831275720168"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="249.35660244570542" cy="119.77698893573411" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="250.8234249206064" cy="84.93735975234054" r="2.3330975651577504" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="273.94006746398054" cy="87.18949543387144" r="2.1260116598079564" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="285.4216350132675" cy="107.8569492066763" r="2.916610939643347" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="289.5950032124339" cy="134.60480937974165" r="2.12156207133059" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="272.14459475918306" cy="154.5444611656864" r="2.157531721536351" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="253.4023084119032" cy="161.04400535421794" r="2.4411865569272977" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="228.16363237318185" cy="153.06302783116897" r="2.3891932441700963" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="212.31720344637654" cy="129.83629027135177" r="2.418218449931413" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="215.4249141869322" cy="105.70374113495009" r="2.944928840877915" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="231.32401877222117" cy="87.66195217328399" r="2.3859910836762688" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="409.92447854953224" cy="56.700464696461296" r="27.232287379972565" fill="none" stroke="#836d30" stroke-width="4.175102880658436"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="411.033549194251" cy="57.01181586244209" r="15.041859567901234" fill="none" stroke="#836d30" stroke-width="4.313203017832647"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="408.73425649877777" cy="57.50177642485636" r="4.5" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="408.1146848740665" cy="17.456713886695788" r="2.7931455761316872" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="430.96617901698073" cy="21.979121323976926" r="2.2959362139917694" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="447.32310924432716" cy="45.691083615914806" r="2.685300925925926" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="450.492514358637" cy="65.57040273256403" r="2.377906378600823" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="437.2790705380371" cy="86.30252669732812" r="2.7904192386831275" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="407.178845253389" cy="94.00648816388599" r="2.3395061728395063" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="383.731053699763" cy="86.81632177990183" r="2.4418338477366257" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="371.65786597810313" cy="68.02745530325252" r="2.5140689300411525" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="372.2834734750572" cy="44.81051944508725" r="2.9728780864197533" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="388.90719297875046" cy="21.851955020781524" r="2.2349279835390945" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+      </g>
+    
+      <g data-dc-tpl="9">
+        
+          
+          
+            <path data-dc-tpl="14" d="M498.7,88.2 L536.5,90.0 L573.5,94.2 L606.2,101.9 L642.9,113.8 L674.3,125.9 L705.4,142.6 L735.2,161.8 L765.7,185.3 L791.0,209.1 L816.2,235.9 L839.0,261.7 L858.5,294.1 L873.9,324.5 L886.6,359.1 L900.6,393.1 L905.5,426.7 L910.3,464.4 L912.0,500.8 L910.3,536.9 L906.0,571.6 L900.9,607.0 L889.2,641.1 L875.3,674.8 L857.8,705.9 L837.3,737.4 L817.6,764.3 L790.6,792.1 L767.1,816.6 L738.4,839.2 L705.3,857.0 L673.0,874.6 L640.3,887.9 L605.1,897.4 L570.5,904.9 L535.2,912.3 L501.9,912.0 L464.0,910.5 L427.7,908.3 L392.5,897.0 L358.1,888.5 L326.3,873.3 L293.4,858.9 L261.4,837.8 L235.4,815.1 L208.8,793.6 L185.6,767.1 L162.6,738.7 L141.9,707.1 L125.6,674.8 L110.2,643.1 L102.4,606.5 L94.7,572.2 L86.8,536.1 L86.5,499.9 L88.3,463.9 L91.5,430.1 L100.5,391.9 L112.1,358.4 L125.1,325.9 L140.7,295.2 L161.9,264.3 L182.9,235.7 L209.8,209.8 L235.6,185.4 L262.2,163.2 L292.4,143.0 L325.6,124.5 L358.9,110.5 L392.3,100.5 L427.0,94.8 L463.9,90.5 L500.0,87.0 Z" fill="none" stroke-width="4.5" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M499.8,93.4 L533.5,94.9 L570.1,101.0 L603.2,106.0 L638.6,120.1 L672.2,132.5 L702.6,149.2 L733.7,169.0 L761.2,187.4 L788.5,213.6 L809.8,239.7 L832.4,266.9 L852.6,296.3 L866.9,328.5 L882.3,359.2 L891.8,396.8 L898.5,430.8 L904.7,463.1 L904.7,501.7 L903.6,536.9 L899.6,568.9 L891.7,605.2 L883.4,637.1 L868.5,670.8 L851.0,701.6 L832.7,733.5 L810.9,759.2 L786.7,785.4 L760.2,809.1 L732.2,833.3 L704.7,852.2 L672.1,868.0 L638.8,881.6 L603.9,891.1 L571.8,899.5 L534.6,906.1 L500.3,904.6 L463.6,902.8 L428.0,898.6 L394.5,893.0 L359.9,883.0 L327.5,868.6 L298.9,850.6 L265.2,830.9 L237.3,811.8 L213.5,785.6 L187.3,759.2 L168.8,733.3 L149.4,703.6 L132.7,670.2 L120.3,639.7 L108.4,603.8 L98.8,571.2 L96.5,534.9 L94.6,498.1 L96.9,466.5 L100.1,431.2 L106.1,395.1 L116.8,360.5 L132.3,329.2 L147.4,295.1 L166.2,265.8 L188.3,241.0 L213.1,214.3 L239.1,190.1 L265.3,166.1 L296.1,147.7 L328.0,131.9 L359.6,118.8 L396.0,109.0 L428.1,100.6 L465.9,95.6 L500.0,94.0 Z" fill="none" stroke-width="4" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+      </g>
+    
+      <g data-dc-tpl="9">
+        
+          
+          
+            <path data-dc-tpl="14" d="M499.0,100.7 L564.4,160.6 L653.2,129.1 L691.5,208.6 L783.8,217.2 L788.1,306.8 L867.2,346.7 L835.4,436.0 L897.9,503.6 L836.2,565.4 L870.5,650.2 L791.0,691.6 L782.5,784.1 L694.4,787.3 L656.4,866.3 L568.0,835.9 L502.4,897.5 L433.0,837.8 L349.1,872.0 L304.1,789.3 L214.9,782.1 L211.6,689.9 L133.1,651.6 L158.2,569.3 L102.6,500.7 L160.7,431.4 L133.0,347.6 L211.1,306.2 L216.2,214.6 L307.3,210.9 L345.3,131.8 L435.0,157.5 L499.1,98.2 " fill="none" stroke="#836d30" stroke-width="4.028557956104253" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M496.2,113.0 L564.0,180.2 L649.2,147.9 L684.9,226.8 L772.1,229.1 L771.6,313.4 L851.1,354.8 L826.1,435.6 L886.0,496.9 L822.6,565.7 L854.4,643.5 L777.4,681.3 L767.7,774.1 L686.4,775.5 L650.1,857.2 L563.0,823.9 L499.3,884.2 L432.7,820.7 L354.1,851.7 L315.7,771.0 L231.7,772.1 L223.7,686.7 L142.1,647.8 L176.8,563.9 L116.3,498.1 L179.9,435.4 L144.7,349.6 L228.1,316.6 L226.2,232.4 L319.4,228.1 L352.3,148.6 L433.7,176.3 L497.1,119.9 " fill="none" stroke="#836d30" stroke-width="5.331189986282579" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+            <circle data-dc-tpl="12" cx="524.7244391200195" cy="124.33802960591191" r="2.63119427297668" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="538.6860500213146" cy="136.43707405311278" r="3.211145404663923" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="554.9685603189374" cy="151.44991653934738" r="3.1221150548696843" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="590.1122471691875" cy="156.63876815267383" r="2.780769890260631" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="610.6432210954118" cy="151.8010928450937" r="2.603776577503429" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="629.6018545791352" cy="144.03593971940938" r="3.007801783264746" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="663.383085948753" cy="159.2002177442626" r="2.409512174211248" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="675.5580950730566" cy="180.34497583591292" r="3.225574417009602" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="685.0843150480972" cy="201.1223297517845" r="2.8726551783264744" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="710.7518633963572" cy="218.95464375193387" r="2.767421124828532" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="734.2637407630116" cy="219.75219966960844" r="2.3265389231824414" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="752.6432318487409" cy="215.68872707628464" r="2.9666752400548697" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="782.3672187756194" cy="253.1245593989679" r="3.1044967421124827" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="783.8465359259928" cy="273.0290838381039" r="3.156670096021948" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="779.257472646864" cy="289.180739967194" r="2.539861968449931" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="800.7698869557332" cy="318.57284346052256" r="2.6707390260631" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="822.2325763006149" cy="328.9003125838799" r="2.9659679355281208" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="841.0899708333848" cy="338.1744972064109" r="2.8422153635116594" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="854.167352260218" cy="374.12780084321" r="2.716147976680384" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="851.3275284008107" cy="397.9663444299502" r="3.00443244170096" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="840.7199852083291" cy="411.92310484491287" r="3.1237354252400547" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="851.694154503424" cy="452.5226313182648" r="2.4907235939643346" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="862.1206159605726" cy="462.2411910117869" r="2.5220636145404662" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="878.0215358744454" cy="483.4125937964456" r="2.6344221536351164" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="875.6698113541809" cy="522.3692891008043" r="3.244465877914952" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="861.8376741390562" cy="538.8780284457612" r="2.768861454046639" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="846.2577573250112" cy="548.2786006351841" r="2.6242755486968448" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="843.5160277335074" cy="586.2680493307791" r="3.227374828532236" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="850.1291878710583" cy="609.9715374954353" r="2.9948259602194787" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="855.5289258695802" cy="631.0301955988546" r="2.34329561042524" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="837.6264537852751" cy="666.5406312556852" r="2.6894504458161865" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="821.8526067649057" cy="673.5525716195033" r="2.4499571330589847" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="798.4603092903715" cy="684.6490728126096" r="3.041482338820302" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="781.0772124838397" cy="713.796722020136" r="2.8806927297668037" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="783.2897503040622" cy="731.0586648081326" r="2.3842549725651576" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="777.9261613319374" cy="757.8154107582247" r="2.96883573388203" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="754.3042603972788" cy="777.3175782056197" r="3.051101680384088" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="731.3723439565154" cy="779.8011666637495" r="3.047719478737997" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="707.2609533147125" cy="784.4893899630265" r="2.375355795610425" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="682.2662276627179" cy="800.8786650674891" r="2.4506772976680384" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="670.7399645556447" cy="825.7820708423675" r="2.690350651577503" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="658.0845918172071" cy="844.3985110791355" r="2.5110425240054868" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="628.0343262513619" cy="853.243092353784" r="2.3294195816186556" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="601.2019926557289" cy="849.8037626481553" r="2.562148491083676" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="585.4279911353999" cy="842.1662068851581" r="2.625895919067215" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="551.0895475797051" cy="850.3729308830856" r="2.9373285322359397" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="539.1423819374061" cy="863.6214550587042" r="2.9131129972565155" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="515.1030408604676" cy="878.1665317025391" r="2.9699159807956104" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="483.1453583130891" cy="878.4872769526968" r="2.5244041495198903" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="463.8130565600237" cy="863.0931371344916" r="2.9932441700960215" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="451.95008166643566" cy="845.7000106261916" r="2.793102709190672" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="411.9182891980738" cy="840.8461161432697" r="2.3406464334705075" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="394.172383793947" cy="851.722357245445" r="3.0525420096021945" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="371.10169633611383" cy="854.9771653931457" r="2.3454561042524005" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="332.0915788271734" cy="838.2816349478791" r="2.636055384087791" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="323.4915385963327" cy="819.8279974501313" r="2.341006515775034" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="319.08476039231607" cy="798.4985819397616" r="2.8769761659807953" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="286.4144847757927" cy="781.8994050175329" r="2.660631001371742" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="268.07218849487634" cy="781.2469323471727" r="3.1086376886145404" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="245.01618734369544" cy="782.4369440239326" r="2.637662894375857" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="217.7732505886807" cy="748.6338567216201" r="2.6643732853223594" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="218.18374750184688" cy="732.5521183379349" r="2.6054355281207133" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="218.66433844677738" cy="712.7666828028256" r="2.8775162894375854" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="193.56279940146112" cy="679.1715337437486" r="2.897282235939643" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="176.87770414622344" cy="670.7228925446732" r="3.0814000342935524" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="159.12858764106812" cy="665.7421181614865" r="2.8465363511659807" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="142.95879393324685" cy="624.9019522512601" r="2.6093578532235937" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="150.05467974604" cy="604.1698157790919" r="2.786531207133059" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="158.43690810408907" cy="585.4328222233686" r="2.7947230795610425" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="151.40480373676093" cy="548.3962234453584" r="3.050600137174211" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="135.55863410725533" cy="534.0340684458157" r="2.9708290466392318" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="123.15954419511564" cy="516.8589800806117" r="2.972076474622771" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="124.35877390557192" cy="482.33831766066334" r="2.471009087791495" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="137.63662895763008" cy="460.31302809497026" r="2.8842935528120712" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="153.11039677642123" cy="445.7499686194018" r="2.6285965363511656" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="158.47801624600368" cy="412.42921842950864" r="3.1205847050754456" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="149.83628007946493" cy="392.57992690910334" r="2.776924725651577" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="141.9754185974702" cy="375.446709455043" r="3.0142832647462274" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="160.8015564105071" cy="334.26899584514456" r="3.2493269890260628" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="181.83651756006458" cy="323.98397971574616" r="2.89872256515775" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="202.3753660112908" cy="316.2202370494493" r="2.3791366598079557" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="216.49819626883624" cy="289.8972213257756" r="3.107235939643347" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="216.7132481450426" cy="267.97396239705307" r="2.4996870713305896" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="218.50744130179135" cy="243.85108478149823" r="2.973156721536351" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="245.46972928409468" cy="219.6564216518076" r="2.9443115569272975" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="274.5791023763328" cy="216.3056895864844" r="2.829818244170096" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="287.46529111712846" cy="219.2210853814234" r="3.046343449931413" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="323.99712974582644" cy="194.198058360878" r="3.0105538408779147" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="325.2458522882239" cy="178.69284965485184" r="3.1391160836762686" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="342.10860707811923" cy="156.79802076855253" r="2.848696844993141" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="376.9041522990817" cy="145.301121825317" r="2.555962791495199" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="399.3478592186751" cy="149.40307176406742" r="2.677580589849108" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="411.92605960760267" cy="161.0889872340657" r="2.630216906721536" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="450.874090460067" cy="150.97452169701813" r="2.8305384087791494" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="468.0206802017051" cy="136.40494118189565" r="2.6952117626886145" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="477.9660982465726" cy="122.00822284631886" r="2.6409036351165978" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+      </g>
+    
+      <g data-dc-tpl="9">
+        
+          
+          
+            <path data-dc-tpl="14" d="M501.8,175.0 L529.4,178.5 L555.2,179.5 L582.0,187.9 L612.1,193.9 L635.6,205.4 L661.4,221.2 L687.3,233.5 L708.4,250.0 L727.9,270.1 L747.1,292.2 L766.1,315.5 L782.2,336.2 L792.6,363.2 L806.1,390.9 L814.4,416.5 L818.1,443.0 L823.1,472.5 L823.3,499.0 L823.1,527.5 L817.1,555.9 L813.8,583.1 L804.8,612.3 L793.9,636.9 L779.7,660.6 L765.7,685.1 L748.4,707.1 L728.7,727.5 L709.7,750.0 L685.0,767.1 L661.6,780.5 L638.3,792.3 L609.4,806.4 L584.3,813.5 L557.4,818.0 L527.9,823.5 L499.5,825.6 L470.0,822.8 L443.6,818.5 L414.2,813.3 L391.2,803.8 L363.6,793.2 L339.5,778.7 L315.9,763.6 L290.6,746.4 L270.0,729.5 L250.5,710.2 L234.9,686.7 L219.7,662.3 L204.7,636.7 L193.7,611.6 L185.3,583.2 L182.8,557.5 L179.0,527.6 L174.4,498.8 L176.0,471.2 L181.3,445.7 L185.1,416.2 L193.9,389.1 L205.8,364.8 L218.0,338.3 L236.4,314.0 L252.0,291.9 L272.2,271.9 L290.3,252.5 L314.3,233.2 L337.6,218.8 L361.1,206.0 L389.6,193.9 L414.8,187.9 L445.1,179.1 L470.2,177.9 L500.0,176.0 Z" fill="none" stroke="#836d30" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M499.9,181.8 L525.7,185.7 L554.6,186.8 L582.8,192.2 L609.8,201.2 L635.0,211.3 L656.8,226.6 L682.4,240.5 L704.0,258.0 L722.3,276.1 L744.0,294.3 L758.3,317.3 L776.1,342.6 L787.6,364.2 L799.2,390.2 L807.9,419.0 L811.7,446.8 L817.6,473.1 L817.1,501.4 L815.7,525.9 L813.5,553.9 L804.2,581.5 L796.9,609.4 L788.6,632.2 L775.3,659.1 L757.7,680.9 L741.8,704.0 L725.9,722.3 L702.1,741.0 L681.6,757.9 L656.7,776.0 L635.3,786.7 L609.3,799.4 L581.5,806.0 L555.3,812.3 L527.5,815.2 L499.0,815.6 L472.9,817.5 L446.8,813.4 L419.9,805.3 L390.9,799.3 L366.3,787.7 L343.3,773.3 L316.3,760.4 L296.6,741.1 L275.7,722.9 L255.4,704.7 L239.9,681.8 L226.9,659.0 L213.7,633.2 L201.3,607.5 L193.7,583.4 L187.5,556.1 L184.8,528.4 L183.5,498.5 L183.9,472.1 L188.8,443.3 L194.4,419.5 L200.5,392.2 L214.5,367.4 L227.1,341.1 L241.3,319.2 L257.6,295.1 L276.6,273.9 L297.1,255.5 L316.2,240.8 L340.9,223.7 L365.4,214.5 L391.7,201.4 L416.9,195.3 L446.8,188.5 L472.3,184.9 L500.0,183.0 Z" fill="none" stroke="#836d30" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+      </g>
+    
+      <g data-dc-tpl="9">
+        
+          
+          
+            <path data-dc-tpl="14" d="M501.010262345679,283.71800411522634 L502.4242026748971,188.7770061728395 L654.2023405349794,227.03731681760905 L611.8631944444444,309.04591670750267 Z" fill="none" stroke-width="5" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M512.760195203416,277.3622576675479 L504.4186243089017,193.07997370531118" fill="none" stroke-width="2.598838305898491" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M527.496366873683,278.1878818625711 L505.1662741348203,192.1073091676134" fill="none" stroke-width="2.597633744855967" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M543.0028639052251,278.7352938017895 L508.5690561259923,193.05077630872313" fill="none" stroke-width="2.929505315500686" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M556.5284061298607,281.7941279560718 L528.7391357823648,197.41330410159827" fill="none" stroke-width="2.8506258573388203" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M569.743013487957,287.67007018762797 L545.8488852792558,198.170116332443" fill="none" stroke-width="3.4690200617283953" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M583.1897691705427,293.4254362759332 L567.8931248320321,202.90565736275704" fill="none" stroke-width="3.300120027434842" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M598.2514884334008,298.69898221881067 L588.2548773239218,208.0129657704739" fill="none" stroke-width="3.4889874828532235" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M643.4741113542636,339.1483620422114 L680.5328827232321,298.49825059497607 L707.5372654789372,320.7792556800022 L668.66130530655,357.9085604304019" fill="none" stroke-width="5" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M685.8635465710022,244.55113570782794 L649.6943372872763,291.59814079990446 L707.2749834290802,346.7968599550517" fill="none" stroke-width="5" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M690.8973703295344,388.01219135802467 L767.8596739231317,346.5835390946502 L812.7650462962963,500.96352880658435 L717.0493569958848,497.33734567901234 Z" fill="none" stroke-width="5" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M701.1158023309588,397.7332837887655 L769.4432796422717,354.54456401844527" fill="none" stroke-width="3.131923010973937" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M707.0916599050024,415.6162098245773 L766.2546767360059,353.2973973896765" fill="none" stroke-width="3.445018861454047" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M710.8940949618064,430.5465738303894 L767.7850835882467,353.85439806286166" fill="none" stroke-width="3.0479809670781894" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M716.4582249587844,441.8962428413025 L779.0728702762764,374.0834389001184" fill="none" stroke-width="3.2340192043895746" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M719.8195512529026,457.12935052211856 L787.1756323971192,391.21730949591563" fill="none" stroke-width="3.259306412894376" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M721.6547113752399,470.0718148017006 L793.5336751817008,407.33324055143174" fill="none" stroke-width="3.231867283950617" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M722.3070798073657,486.33891636004745 L799.5494241586515,428.29110347105365" fill="none" stroke-width="2.6671339163237313" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M716.5287225617227,543.1968257814123 L766.5330675382663,552.4141286388249 L755.3455097995015,588.7061535732906 L708.5939617701322,573.3460753386619" fill="none" stroke-width="5" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M813.2234386881356,532.1138691043416 L752.7801767214088,526.2842072293516 L735.3730347617,594.8309467532383" fill="none" stroke-width="5" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M689.9106933748018,608.9298353909466 L772.866824128893,658.0876028806584 L658.0623199588478,771.1057901782757 L611.7108281893004,691.4744536628676 Z" fill="none" stroke-width="5" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M684.9380357823844,623.2605717049593 L762.5882047239261,656.3763347567461" fill="none" stroke-width="3.2565715020576134" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M680.0699903685181,633.5528146033074 L759.281153062928,661.641720662739" fill="none" stroke-width="2.6864368998628256" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M669.7992591768594,647.3900087070263 L759.9757582819409,656.9391620049848" fill="none" stroke-width="3.103699417009602" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M659.9182979615155,659.2359062599846 L746.9404826980698,677.2093747792092" fill="none" stroke-width="3.0608281893004117" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M648.180842710464,668.1123040848407 L736.7774796862653,694.0917785114642" fill="none" stroke-width="2.8510330932784638" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M637.8604828081739,678.562285316586 L722.9705525346744,709.0057276388518" fill="none" stroke-width="2.7304869684499313" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M623.1091983271933,686.047595054961 L709.4744549100802,723.0981131141469" fill="none" stroke-width="2.8072145061728397" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M571.8687697774095,707.8568686092246 L589.9598774778867,759.5700875744205 L553.6379192991571,765.6788100917416 L538.9176953708006,711.854838191711" fill="none" stroke-width="5" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M630.5887194709065,786.5926142531245 L606.8927968966278,733.4777808898498 L529.6976245266547,754.8295570639283" fill="none" stroke-width="5" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M502.56875,719.2116769547325 L497.0752829218107,814.4743827160494 L343.50156893004123,767.5604712482345 L388.69945987654324,688.7377767081351 Z" fill="none" stroke-width="5" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M485.5991224222197,721.8365330386024 L492.5552165289844,805.3972672665257" fill="none" stroke-width="3.3554998285322357" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M470.1081019724784,722.0890330602019 L496.9219182371514,804.3607449924691" fill="none" stroke="#836d30" stroke-width="2.519418724279835" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M454.2269390115013,720.6503126049779 L491.1416143434612,806.7038576127471" fill="none" stroke="#836d30" stroke-width="2.553450788751715" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M444.55472032054945,718.0465707439903 L470.7168461880018,802.7590758913539" fill="none" stroke="#836d30" stroke-width="2.824879972565158" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M424.83268585870775,709.7513467524095 L449.25812550733866,802.462901360969" fill="none" stroke="#836d30" stroke-width="2.886175411522634" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M415.4469233102078,708.3814258463254 L432.98658488583607,798.1073834103265" fill="none" stroke="#836d30" stroke-width="3.0305469821673525" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M401.72115149612824,700.3515451839639 L409.4347342653761,792.4185558920927" fill="none" stroke="#836d30" stroke-width="2.514167524005487" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M353.28502256149994,663.4553461524494 L316.46634727332935,700.7023239401846 L289.41964682313824,678.6366431875398 L331.71096624246564,641.6643177273811" fill="none" stroke="#836d30" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M326.18565314139084,758.2861948278367 L353.3033076383123,712.1973091927417 L295.2029406939649,649.6307849287033" fill="none" stroke="#836d30" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M313.294707859766,611.0429012345679 L230.09238369003702,658.0401748971193 L186.9346450617284,498.40164609053505 L284.97821502057616,499.6458333333333 Z" fill="none" stroke="#836d30" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M299.2172501443456,597.7777751089619 L231.12611512352555,645.3392277091928" fill="none" stroke="#836d30" stroke-width="3.1077203360768175" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M294.45247987335495,585.688418912174 L231.58280719586247,646.5852072569162" fill="none" stroke="#836d30" stroke-width="3.3266803840877914" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M289.18805476128375,574.653470587743 L229.733497407238,647.4329538139453" fill="none" stroke="#836d30" stroke-width="2.594765946502058" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M282.72580191509803,556.6604844042646 L222.72313721940597,630.6268601893863" fill="none" stroke="#836d30" stroke-width="2.9829646776406036" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M280.94302219921406,545.5179245053895 L216.1130042260989,608.3075199159867" fill="none" stroke="#836d30" stroke-width="2.858560528120713" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M278.3541885665961,530.4407519192395 L209.04672657116228,591.7364069772569" fill="none" stroke="#836d30" stroke-width="2.774022633744856" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M278.14838266380093,515.0582727059037 L203.79492089326283,572.8362429797594" fill="none" stroke="#836d30" stroke-width="3.0225608710562413" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M286.762784740694,460.1517410758784 L234.68714809459163,446.54640462741526 L242.3801915071634,410.28213680847136 L295.7297629772905,431.6979735192264" fill="none" stroke="#836d30" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M187.14372482391204,472.2563705184941 L243.94196833404172,480.1147075541902 L264.75667479411834,399.07466349353456" fill="none" stroke="#836d30" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M310.289512386515,389.719804526749 L227.96990426616873,344.8590534979424 L343.3245113168723,230.34775920444042 L392.2878343621398,308.6217911930994 Z" fill="none" stroke="#836d30" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M313.75431118534937,378.89000419641 L240.99321655311485,340.6747968558544" fill="none" stroke="#836d30" stroke-width="3.2663194444444446" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M324.38424918802673,361.22187046495435 L240.7610122511562,341.0829624592754" fill="none" stroke="#836d30" stroke-width="2.7872342249657063" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M333.3493885152149,352.2735605731221 L238.74869174609626,340.36976023087175" fill="none" stroke="#836d30" stroke-width="2.610360939643347" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M341.8633336824988,341.33119900525776 L247.67001597751536,322.4403523202381" fill="none" stroke="#836d30" stroke-width="2.7326131687242796" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M351.5571145395243,332.3461172083254 L261.0635839187405,307.4306340412445" fill="none" stroke="#836d30" stroke-width="3.2249785665294923" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M363.9995582102304,322.4714462639775 L274.20564449066967,292.5486121501305" fill="none" stroke="#836d30" stroke-width="3.454741083676269" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M374.1744626566568,314.3029948876057 L287.9724564373816,280.66440986532825" fill="none" stroke="#836d30" stroke-width="2.9743698559670784" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M426.9641981782102,294.66178576935397 L410.62850618594564,243.43764452662012 L444.230685854304,232.89494422259745 L457.2288306455614,288.52615411368697" fill="none" stroke="#836d30" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M370.9999430893115,217.8815474031171 L393.710999307919,267.6777829361105 L474.30436754169375,245.8941543656394" fill="none" stroke="#836d30" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+      </g>
+    
+      <g data-dc-tpl="9">
+        
+          
+          
+            <path data-dc-tpl="14" d="M500.9,288.9 L518.3,288.4 L536.4,289.5 L553.4,294.3 L573.3,300.1 L590.6,308.8 L605.7,315.5 L622.0,327.6 L635.2,338.5 L651.5,348.2 L662.4,362.3 L672.1,377.9 L685.4,395.6 L693.0,411.3 L700.3,429.5 L706.3,443.9 L709.2,464.5 L711.4,483.3 L710.0,499.0 L711.1,519.7 L709.8,537.1 L705.5,554.6 L699.9,570.6 L693.0,588.3 L682.6,604.1 L673.7,622.7 L663.5,634.7 L648.0,649.5 L635.7,662.0 L620.8,674.5 L605.3,685.1 L589.7,691.1 L572.8,698.3 L555.0,705.9 L536.2,709.3 L520.3,709.9 L501.8,711.8 L480.2,712.8 L464.2,709.7 L446.7,703.7 L426.7,698.7 L409.8,691.3 L394.9,683.4 L376.8,673.3 L361.8,661.1 L351.2,649.7 L339.2,635.5 L324.9,622.4 L315.9,606.1 L305.9,589.3 L298.9,571.4 L296.6,553.0 L292.3,535.2 L286.8,516.8 L288.2,499.3 L288.9,482.1 L291.0,463.5 L296.3,446.0 L301.2,427.1 L308.4,408.7 L318.0,394.2 L325.8,379.2 L339.3,365.3 L349.0,348.7 L362.1,339.1 L379.0,325.8 L392.4,317.8 L409.0,307.0 L426.1,302.1 L446.5,297.1 L464.6,290.1 L482.5,289.3 L500.0,288.0 Z" fill="none" stroke="#836d30" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M501.3,296.5 L518.1,293.9 L536.7,296.4 L552.4,303.5 L570.5,305.7 L587.0,314.3 L603.4,321.7 L616.7,332.7 L631.7,342.1 L644.2,355.1 L658.8,366.7 L669.2,383.2 L677.4,398.8 L687.6,414.5 L694.4,428.3 L698.0,447.2 L702.3,462.5 L702.8,483.5 L706.0,498.3 L703.2,516.3 L703.0,534.6 L698.2,553.8 L691.6,569.8 L684.6,587.1 L676.4,603.5 L669.4,616.7 L657.9,631.1 L643.3,645.2 L631.7,655.2 L618.3,668.7 L602.6,677.4 L586.3,687.7 L569.7,690.9 L554.4,699.3 L533.7,701.8 L516.7,705.2 L499.4,706.8 L482.6,705.7 L464.3,700.2 L446.6,696.7 L430.0,692.4 L413.3,685.4 L397.0,678.9 L380.9,668.3 L368.7,655.3 L355.2,644.0 L343.7,632.2 L330.8,617.1 L321.4,603.7 L314.5,588.0 L307.4,570.8 L303.3,554.1 L296.6,536.0 L297.5,517.1 L295.5,499.9 L296.4,481.2 L299.3,464.7 L303.9,446.2 L307.4,428.4 L314.0,414.8 L321.2,397.9 L330.2,382.6 L341.7,368.0 L355.6,355.6 L368.4,344.3 L381.8,332.9 L398.0,323.5 L412.8,313.6 L429.1,309.2 L446.9,301.4 L465.8,297.8 L481.5,295.9 L500.0,295.0 Z" fill="none" stroke="#836d30" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+      </g>
+    
+      <g data-dc-tpl="9">
+        
+          
+          
+            <path data-dc-tpl="14" d="M500.5,301.5 L536.0,359.6 L602.5,328.8 L599.3,395.3 L670.4,399.9 L635.6,466.4 L701.5,496.1 L640.0,534.7 L672.5,600.1 L601.0,603.2 L596.5,675.2 L534.9,640.7 L501.3,699.4 L465.5,639.4 L402.0,676.4 L400.6,602.7 L325.0,603.0 L360.1,536.5 L297.3,500.5 L362.5,459.4 L326.8,400.6 L394.7,399.1 L399.6,326.9 L461.6,362.9 L502.7,296.9 " fill="none" stroke="#836d30" stroke-width="5.725248628257887" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+          
+            <path data-dc-tpl="14" d="M499.8,314.5 L531.0,379.1 L591.0,338.7 L589.2,411.2 L658.3,407.0 L625.5,470.7 L683.2,503.0 L623.7,535.5 L659.6,590.9 L586.5,587.6 L595.7,658.8 L529.9,625.5 L499.9,686.7 L463.5,624.5 L410.2,658.8 L407.1,589.0 L338.2,593.3 L379.3,535.4 L315.6,503.0 L377.3,470.4 L342.6,405.0 L410.1,412.6 L409.7,342.7 L468.6,378.7 L503.3,317.3 " fill="none" stroke="#836d30" stroke-width="5.573216735253772" stroke-linecap="round" stroke-linejoin="round"/>
+          
+        
+          
+            <circle data-dc-tpl="12" cx="512.6022911475493" cy="325.62392442735586" r="2.414244684499314" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="523.3981780812364" cy="338.65923602003966" r="2.489566186556927" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="528.874230888254" cy="354.16958208804124" r="2.7292395404663923" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="550.6000194650343" cy="355.52867318984454" r="2.5499314128943755" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="565.407198578181" cy="348.0173193790593" r="2.3683084705075443" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="580.362471771598" cy="338.62465805870545" r="2.601037379972565" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="597.3597876476235" cy="353.9598816929637" r="2.664784807956104" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="597.4534506094243" cy="371.43392073734776" r="2.9762174211248285" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="600.1925427506211" cy="387.602975313025" r="2.9520018861454043" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="615.4651243152708" cy="400.2321906888272" r="3.008804869684499" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="631.8933333697796" cy="401.5396925646485" r="2.563293038408779" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="646.4101461513164" cy="400.49904683150265" r="3.0321330589849107" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="658.8996962275168" cy="424.6214387196267" r="2.831991598079561" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="650.8052464409906" cy="437.37327882891964" r="2.3795353223593962" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="640.979316972441" cy="454.4758760267517" r="3.0914308984910837" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="648.9524842397702" cy="470.81761643776315" r="2.3843449931412892" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="662.2084501539135" cy="480.3882967114663" r="2.6749442729766804" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="677.0998232402173" cy="489.1743349964703" r="2.379895404663923" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="675.4797806858286" cy="512.0483064355119" r="2.915865054869684" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="659.5072343919334" cy="521.3063125664695" r="2.699519890260631" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="646.7103755675234" cy="528.1689373602229" r="3.147526577503429" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="642.8254011793987" cy="547.8830493784327" r="2.6765517832647463" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="652.8627085042921" cy="564.3492116998372" r="2.703262174211248" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="658.0480053659332" cy="580.8048815598042" r="2.644324417009602" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="644.5106804435256" cy="599.7250658184354" r="2.9164051783264746" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="628.4513809996297" cy="599.0775003303289" r="2.9361711248285323" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="613.4181443997155" cy="598.622189061662" r="3.1202889231824416" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="599.4120560883266" cy="616.5113724284854" r="2.8854252400548694" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="599.9939185612141" cy="629.9724272599695" r="2.648246742112483" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="599.0361180216175" cy="647.0008191958103" r="2.8254200960219475" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="577.6028836681634" cy="656.7794307574121" r="2.8336119684499312" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="562.306095635801" cy="650.8247975530544" r="3.0894890260631" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="549.0628217499055" cy="642.6758530142542" r="3.0097179355281205" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="529.1458821658772" cy="648.513338421492" r="3.0109653635116596" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="519.0541449446607" cy="664.6864759149652" r="2.509897976680384" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="511.219898787475" cy="676.3024344193113" r="2.92318244170096" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="487.2865366130238" cy="677.5002263239166" r="2.667485425240055" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="479.07123349998153" cy="662.4769384806796" r="3.159473593964335" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="471.3908865275803" cy="648.3860945621653" r="2.815813614540466" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="448.5064058448946" cy="644.2869951648115" r="3.053172153635116" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="436.87386441092656" cy="650.5513962940034" r="3.288215877914952" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="419.63183993650136" cy="660.7661226266174" r="2.937611454046639" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="400.19483779976156" cy="645.7443944052437" r="2.418025548696845" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="397.83333200008144" cy="628.4391521572536" r="3.1461248285322356" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="401.5595109299925" cy="614.5384683354122" r="2.5385759602194784" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="386.6655199519067" cy="599.3584647398574" r="3.0120456104252398" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="367.9093673004446" cy="597.8443027416007" r="2.9832004458161863" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="350.9327025730156" cy="598.1499789057675" r="2.868707133058985" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="341.9399115451708" cy="575.1046906362753" r="3.0852323388203016" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="347.82644209727806" cy="561.3710487720617" r="3.0494427297668034" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="356.91562948810264" cy="546.9960832670573" r="3.178004972565158" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="350.75596145429824" cy="528.3258080452042" r="2.88758573388203" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="336.2067065384786" cy="521.3621447603405" r="2.5948516803840875" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="323.4253548337507" cy="510.52077362575113" r="2.7164694787379973" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="323.56339366587446" cy="485.6774331583471" r="2.669105795610425" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="337.66602730488336" cy="478.782546038633" r="2.869427297668038" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="353.07365092668346" cy="470.55607290566235" r="2.7341006515775033" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="356.10900235968586" cy="448.69982727942585" r="2.679792524005487" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="347.57035267676474" cy="435.1643479161127" r="3.1231695816186553" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="339.7239866087165" cy="420.3776200834618" r="2.480898491083676" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="356.14653521600235" cy="400.8648254256377" r="3.1696459190672153" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="371.9513567588597" cy="399.1197228631222" r="2.6060785322359394" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="387.25871808379276" cy="402.95314498167653" r="3.2068629972565157" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="401.1974172991504" cy="382.8090107947436" r="2.38866598079561" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="401.13713830799406" cy="366.92756854029665" r="2.56815414951989" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="401.49274943906664" cy="353.29737236882727" r="3.1619941700960217" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="423.8685299541188" cy="341.2532254821203" r="2.586852709190672" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="437.73307592443456" cy="350.4680986299952" r="3.2593964334705072" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="451.9469577508028" cy="356.4984409851294" r="2.5962920096021946" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="469.3634417397533" cy="349.61865637212907" r="3.0142061042524" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="477.2809916684243" cy="335.9902377636597" r="2.9298053840877913" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="486.6351251295741" cy="322.3856221943504" r="2.759756515775034" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+      </g>
+    
+      <g data-dc-tpl="9">
+        
+          
+          
+            <path data-dc-tpl="14" d="M499.6,378.8 L511.1,378.8 L522.9,380.0 L533.5,382.3 L542.1,383.4 L553.2,388.5 L559.4,394.3 L571.6,400.7 L579.1,408.4 L584.7,415.2 L594.9,423.0 L600.0,428.1 L605.0,437.0 L611.9,450.2 L615.8,459.1 L616.2,467.5 L618.6,477.7 L622.9,489.0 L622.9,501.8 L619.7,508.8 L622.1,520.9 L618.2,531.2 L616.5,542.8 L610.9,549.9 L607.6,562.9 L598.8,570.7 L595.2,579.4 L585.3,588.1 L576.9,592.1 L569.6,600.9 L562.1,606.5 L549.6,610.6 L540.9,614.2 L532.8,618.2 L520.2,618.4 L512.5,619.6 L500.9,623.5 L487.9,620.3 L479.7,622.1 L469.9,619.6 L460.2,613.3 L450.2,610.9 L439.1,604.1 L428.8,599.4 L423.2,592.3 L412.1,587.1 L404.7,576.9 L402.0,568.5 L395.8,559.4 L391.0,552.6 L385.3,542.6 L380.9,531.8 L378.1,521.5 L379.5,509.8 L377.5,499.9 L380.0,491.3 L378.4,477.6 L383.3,467.0 L386.1,457.3 L391.2,449.5 L395.3,440.7 L401.4,430.9 L406.6,420.8 L414.1,412.3 L422.1,407.5 L428.8,398.8 L439.5,392.8 L448.1,390.1 L457.6,386.2 L467.4,381.0 L478.9,381.0 L488.2,377.4 L500.0,378.0 Z" fill="none" stroke-width="4" stroke-linejoin="round" stroke="#836d30" stroke-linecap="round"/>
+          
+        
+      </g>
+    
+      <g data-dc-tpl="9">
+        
+          
+            <circle data-dc-tpl="12" cx="502.59142135813534" cy="387.75682099308955" r="2.9415637860082304" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="515.0686793436349" cy="389.7679399542871" r="2.5198731138545956" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="538.4216075346175" cy="395.54547235684066" r="3.094067215363512" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="555.6184117121327" cy="402.0606240804572" r="3.2443930041152265" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="570.2607207085368" cy="417.61002684130773" r="2.7362825788751715" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="583.7090498493568" cy="427.96071119785495" r="3.409242112482853" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="596.845252395595" cy="443.0043992155935" r="2.7324074074074076" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="604.2688512775038" cy="466.5330780748758" r="3.0267661179698218" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="610.2493218470622" cy="480.6368748977505" r="3.3540466392318242" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="611.9426816766857" cy="500.4139755161828" r="3.0722736625514404" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="609.72890997145" cy="522.7154195316177" r="3.0579903978052125" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="604.4853566658804" cy="538.4382196748942" r="2.595147462277092" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="597.4094914013912" cy="551.5186104476427" r="2.930658436213992" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="584.2419770843994" cy="572.9444130180315" r="3.4966220850480108" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="567.110847032651" cy="587.1363372063839" r="2.799211248285322" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="555.3392951084406" cy="594.9875701824128" r="2.9742283950617283" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="541.9537163920287" cy="602.2561725044889" r="3.0093278463648834" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="517.3415535208834" cy="606.9898321400887" r="2.6329046639231826" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="499.3383627354559" cy="608.7601605214563" r="2.869650205761317" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="483.9261228553124" cy="610.0925687320985" r="3.2627743484224965" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="460.3557771667967" cy="606.5860944310313" r="2.7628943758573388" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="444.2985817869579" cy="597.9290109474697" r="3.2835905349794237" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="430.0394285287133" cy="582.8230770878345" r="2.923628257887517" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="416.2875522320601" cy="574.3072465804516" r="2.855847050754458" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="401.04595412140105" cy="556.2364363046695" r="2.882716049382716" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="396.3403285091021" cy="535.2719376234849" r="2.658556241426612" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="389.27910172754105" cy="517.1705313690317" r="2.578429355281207" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="389.07786993745617" cy="499.20758346236835" r="3.33369341563786" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="392.1358195096701" cy="479.56055095721354" r="3.134224965706447" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="393.26455905109003" cy="464.92180478165534" r="2.5973079561042525" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="405.36627346944033" cy="442.9758154345064" r="3.3031893004115225" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="415.18356689033527" cy="426.1964166458688" r="3.0173010973936902" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="431.8700536088786" cy="416.30008838326705" r="2.5791495198902608" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="446.57184934410714" cy="402.38177538356393" r="3.4578703703703706" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="460.62908221720926" cy="393.4956952405914" r="2.974451303155007" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+          
+            <circle data-dc-tpl="12" cx="476.47038952278507" cy="392.2977121065509" r="3.1906207133058984" fill="#836d30" stroke="none" stroke-width="0"/>
+          
+          
+        
+      </g>
+    
+    
+      <g data-dc-tpl="16">
+        <path data-dc-tpl="17" d="M507.5885403770232,494.7865453568588 Q547.9701240356954,480.3141472117665 566.101277572866,434.58100123371827 Q519.6858527882335,452.0298759643046 507.5885403770232,494.7865453568588 Z" fill="none" stroke="#836d30" stroke-width="4.5"/>
+        <g data-dc-tpl="18" clip-path="url(#leaf-45)">
+          
+            <line data-dc-tpl="20" x1="528.4643729306065" y1="500.97475291073744" x2="498.39506447609386" y2="469.431679024126" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="536.12286167073" y1="494.350934952507" x2="507.4918248211556" y2="463.1720585967597" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="545.620856583693" y1="484.9740305745234" x2="512.1317950427606" y2="455.30749989778855" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="552.5879872991251" y1="480.0292249619719" x2="519.7223825483161" y2="447.13429922350866" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="559.8761056688782" y1="472.59059218892656" x2="528.2265503007853" y2="440.17097509243865" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="567.225952433693" y1="463.28776188501706" x2="534.8294834853532" y2="431.8249349119859" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="574.933823889866" y1="456.97258590209526" x2="543.6052561760941" y2="425.05914164511347" stroke="#836d30" stroke-width="3"/>
+          
+        </g>
+      </g>
+    
+      <g data-dc-tpl="16">
+        <path data-dc-tpl="17" d="M506.99978866234557,508.9489827638545 Q519.6858527882335,547.9701240356953 567.3909895070224,566.2993485605203 Q547.9701240356954,519.6858527882334 506.99978866234557,508.9489827638545 Z" fill="none" stroke="#836d30" stroke-width="4.5"/>
+        <g data-dc-tpl="18" clip-path="url(#leaf-135)">
+          
+            <line data-dc-tpl="20" x1="497.9718391674519" y1="528.183778794804" x2="529.2266928894543" y2="499.2579888588099" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="506.08711803103216" y1="537.2404156830756" x2="536.8543174320469" y2="505.6417862409087" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="514.6344956600445" y1="545.2476698552979" x2="543.1732999993308" y2="514.3465712773285" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="519.6880461285631" y1="553.1685042744338" x2="552.7021591098247" y2="522.11308470881" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="527.8773990662174" y1="561.1881041256684" x2="559.8483021709358" y2="529.2376228316494" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="535.0544063248594" y1="567.3805434830757" x2="567.5746921456272" y2="536.2387041643656" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="542.9598086452299" y1="574.3754519762857" x2="575.0665142190841" y2="542.5237361143658" stroke="#836d30" stroke-width="3"/>
+          
+        </g>
+      </g>
+    
+      <g data-dc-tpl="16">
+        <path data-dc-tpl="17" d="M492.99318115932795,505.4960335183127 Q452.0298759643046,519.6858527882335 434.2520660485331,566.4038753094916 Q480.3141472117665,547.9701240356954 492.99318115932795,505.4960335183127 Z" fill="none" stroke="#836d30" stroke-width="4.5"/>
+        <g data-dc-tpl="18" clip-path="url(#leaf-225)">
+          
+            <line data-dc-tpl="20" x1="470.0031425014923" y1="499.65420799461236" x2="502.83824313707487" y2="530.830358012911" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="463.35154676548404" y1="505.389857228563" x2="494.88417826526415" y2="536.3005751480962" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="455.6135312763893" y1="513.3353830057235" x2="484.99184178851516" y2="543.9065947524173" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="446.97428121939345" y1="520.8981927335013" x2="479.4575300031242" y2="552.5002686777259" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="441.5078706685703" y1="528.0412493748594" x2="472.7997614276097" y2="560.8223376647629" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="432.84392925354973" y1="536.9497381149829" x2="464.4259434693792" y2="568.1690980098247" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="424.8343088261834" y1="544.6977330279459" x2="456.2990390913957" y2="574.0590682314298" stroke="#836d30" stroke-width="3"/>
+          
+        </g>
+      </g>
+    
+      <g data-dc-tpl="16">
+        <path data-dc-tpl="17" d="M494.0505199796297,493.6622655214679 Q480.3141472117665,452.0298759643046 436.0849878592327,432.30198888803926 Q452.0298759643046,480.3141472117665 494.0505199796297,493.6622655214679 Z" fill="none" stroke="#836d30" stroke-width="4.5"/>
+        <g data-dc-tpl="18" clip-path="url(#leaf-315)">
+          
+            <line data-dc-tpl="20" x1="502.7113141247292" y1="470.0929187360602" x2="469.6049686331795" y2="501.2937601123835" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="493.9979899936592" y1="463.61724892597783" x2="461.55213832927" y2="494.07117672205425" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="486.9019498132065" y1="454.49960380725355" x2="456.4869623463482" y2="486.02143283789786" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="478.386156546334" y1="449.25850189840577" x2="447.1501814251547" y2="479.77415808954396" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="470.635795378227" y1="441.30135060684194" x2="438.83809186198596" y2="470.1812043288443" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="463.72494038295946" y1="432.59111289552504" x2="434.0692121753604" y2="463.98331229653974" stroke="#836d30" stroke-width="3"/>
+          
+            <line data-dc-tpl="20" x1="456.2832211901611" y1="424.31297394964025" x2="425.2509497726855" y2="456.47677828892654" stroke="#836d30" stroke-width="3"/>
+          
+        </g>
+      </g>
+    
+  </svg>

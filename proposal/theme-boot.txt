@@ -1,0 +1,3 @@
+<script>(function(){try{var q=/[?&]theme=(light|dark)/.exec(location.search);if(q)localStorage.setItem("moy-theme",q[1]);if(localStorage.getItem("moy-theme")==="light")document.documentElement.setAttribute("data-theme","light");}catch(e){}
+window.__moySetTheme=function(t){try{localStorage.setItem("moy-theme",t)}catch(e){}location.reload();};
+window.addEventListener("message",function(e){var d=e.data;if(d&&d.type==="moy-theme"&&d.theme!==(document.documentElement.getAttribute("data-theme")==="light"?"light":"dark"))window.__moySetTheme(d.theme);});})();</script>

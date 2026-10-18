@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOYSEION · Iterations for a new homepage</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --navy:#010416; --navy-2:#060b24; --gold-deep:#836d30; --gold-body:#c2a567; --gold-bright:#f1dca4; --k:0.9; --head:8.6rem; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { height:100%; overflow:hidden; background:var(--navy); }
+  body { font-family:system-ui, -apple-system, "Helvetica Neue", sans-serif; color:var(--gold-body); display:flex; flex-direction:column; }
+
+  /* ---------- header: where am I, what am I looking at, what can I do ---------- */
+  header { flex:0 0 auto; display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:1rem 2rem; padding:1rem 2.4vw .6rem; }
+  .title b { display:block; color:var(--gold-bright); font-size:.95rem; letter-spacing:.3em; font-weight:700; }
+  .title span { display:block; margin-top:.3rem; font-size:.6rem; letter-spacing:.24em; text-transform:uppercase; color:var(--gold-deep); }
+  .versions { display:flex; border:1px solid var(--gold-deep); border-radius:3rem; padding:.25rem; background:rgba(1,4,22,.9); }
+  .versions button { display:flex; flex-direction:column; align-items:center; gap:.15rem; font:inherit; color:var(--gold-body); background:none; border:0; border-radius:3rem; padding:.55rem 1.7rem; cursor:pointer; transition:background .3s, color .3s; }
+  .versions button b { font-size:.74rem; letter-spacing:.24em; text-transform:uppercase; font-weight:700; }
+  .versions button small { font-size:.58rem; letter-spacing:.2em; text-transform:uppercase; opacity:.75; }
+  .versions button:hover { color:var(--gold-bright); }
+  .versions button[aria-pressed="true"] { background:var(--gold-body); color:var(--navy); }
+  .tools { display:flex; gap:.6rem; justify-content:flex-end; flex-wrap:wrap; }
+.seg{display:inline-flex;border:1px solid var(--gold-body);border-radius:2rem;overflow:hidden}
+  .seg button{font:inherit;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-body);background:rgba(1,4,22,.9);border:0;padding:.5rem 1rem;cursor:pointer}
+  .seg button[aria-pressed="true"]{background:var(--gold-body);color:var(--navy)}
+  .pill { display:inline-flex; align-items:center; gap:.6rem; font:inherit; font-size:.62rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-bright); background:rgba(1,4,22,.9); border:1px solid var(--gold-body); padding:.5rem 1rem; border-radius:2rem; cursor:pointer; }
+  .pill:hover { border-color:var(--gold-bright); }
+  .pill::before { content:''; width:.5rem; height:.5rem; border-radius:50%; background:var(--gold-bright); box-shadow:0 0 .6rem rgba(241,220,164,.7); }
+  .pill[aria-pressed="false"] { color:var(--gold-body); border-color:var(--gold-deep); }
+  .pill[aria-pressed="false"]::before { background:transparent; box-shadow:none; border:1px solid var(--gold-deep); }
+  .pill.plain::before { display:none; }
+
+  .pages { flex:0 0 auto; display:flex; justify-content:center; align-items:center; gap:.5rem; flex-wrap:wrap; min-height:2rem; padding:0 2.4vw .5rem; }
+  .pages .cap { font-size:.58rem; letter-spacing:.26em; text-transform:uppercase; color:var(--gold-deep); margin-right:.6rem; }
+  .pages button { font:inherit; font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-body); background:none; border:1px solid var(--gold-deep); border-radius:2rem; padding:.38rem .95rem; cursor:pointer; transition:color .3s, background .3s, border-color .3s; }
+  .pages button:hover { color:var(--gold-bright); border-color:var(--gold-body); }
+  .pages button[aria-selected="true"] { color:var(--navy); background:var(--gold-body); border-color:var(--gold-body); }
+
+  /* ---------- stage: laptop and phone, each scrolling on its own ---------- */
+  .stage { flex:1 1 auto; min-height:0; display:none; justify-content:center; align-items:stretch; gap:5vw; padding:.2rem 0 1.2vh; }
+  .stage.on { display:flex; }
+  .pane { display:flex; flex-direction:column; min-width:0; min-height:0; }
+  .pane.laptop { flex:0 0 calc(85vw * 70 / 95 * var(--k)); width:calc(85vw * 70 / 95 * var(--k)); }
+  .pane.mobile { flex:0 0 calc(85vw * 25 / 95 * var(--k)); width:calc(85vw * 25 / 95 * var(--k)); }
+  .topline { flex:0 0 2.4rem; display:flex; align-items:center; justify-content:center; }
+  .fullbtn { padding:.4rem .9rem; }
+  .label { flex:0 0 1.6rem; display:flex; align-items:center; justify-content:center; font-size:.58rem; letter-spacing:.28em; text-transform:uppercase; color:var(--gold-body); opacity:.85; }
+  .label span { color:var(--gold-deep); margin-left:.8em; letter-spacing:.1em; }
+  iframe { flex:1 1 auto; width:100%; min-height:0; border:1px solid var(--gold-deep); background:var(--navy); display:block; }
+  .laptop iframe { border-radius:.6rem; }
+  .mobile iframe { border-radius:1.4rem; }
+
+  @media (max-width:1100px) { header { grid-template-columns:1fr; justify-items:center; text-align:center; } .tools { justify-content:center; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="title"><b>MOYSEION</b><span>Iterations for a new homepage &middot; notes for a renewed visual direction</span></div>
+  <div class="versions" role="group" aria-label="Version">
+    <button type="button" id="v1" aria-pressed="true"><b>Version 1</b></button>
+    <button type="button" id="v2" aria-pressed="false"><b>Version 2</b></button>
+    <button type="button" id="v3" aria-pressed="false"><b>Version 3</b><small>Draft &ndash; synthesis</small></button>
+  </div>
+  <div class="tools">
+    <div class="seg" role="group" aria-label="Theme"><button type="button" id="thD" aria-pressed="true">Dark</button><button type="button" id="thL" aria-pressed="false">Light</button></div>
+    <button class="pill" id="link" type="button" aria-pressed="true" title="Link or unlink the laptop and phone scrolls">Parallel scroll: on</button>
+  </div>
+</header>
+<div class="pages" id="pages"></div>
+<div id="stages"></div>
+
+<script>
+  var VERSIONS = {
+    1: { name:'Version 1', pages:[['Homepage','Moyseion%20Hero%20Landing%20Page%20-%20MOTION%20v3.html']] },
+    3: { name:'Version 3', pages:[['Homepage','Moyseion-v3-blend.html']] },
+    2: { name:'Version 2', pages:[['Inhabit Moyseion','proposal/moyseion-inhabit.html'],['Explore Moyseion','proposal/moyseion-explore.html'],['A day at Moyseion','proposal/moyseion-day.html'],['Plan your stay','proposal/moyseion-plan.html'],['Press','proposal/moyseion-press.html']] }
+  };
+  var stagesEl = document.getElementById('stages'), pagesEl = document.getElementById('pages');
+  var st = new Map();              // contentWindow -> { anchors, other }
+  var stage = {};                  // version -> { el, lap, mob, page }
+  var current = 1, on = true;
+
+  // one stage per version, kept alive, so flipping between versions keeps each one exactly where it was
+  [1, 2, 3].forEach(function(v){
+    var first = VERSIONS[v].pages[0];
+    var el = document.createElement('section'); el.className = 'stage'; el.id = 'stage' + v;
+    el.innerHTML =
+      '<div class="pane laptop"><div class="topline"><button class="pill plain fullbtn" type="button" title="Laptop version in full window. Esc to come back.">Laptop full window</button></div><div class="label">Laptop <span></span></div><iframe title="' + VERSIONS[v].name + ', laptop" src="' + first[1] + '"></iframe></div>' +
+      '<div class="pane mobile"><div class="topline"></div><div class="label">Mobile <span></span></div><iframe title="' + VERSIONS[v].name + ', mobile" src="' + first[1] + '"></iframe></div>';
+    stagesEl.appendChild(el);
+    var fr = el.querySelectorAll('iframe');
+    stage[v] = { el:el, lap:fr[0], mob:fr[1], page:0 };
+    st.set(fr[0].contentWindow, { anchors:null, other:fr[1] });
+    st.set(fr[1].contentWindow, { anchors:null, other:fr[0] });
+  });
+  // the stages share the space under the header
+  stagesEl.style.cssText = 'flex:1 1 auto;min-height:0;display:flex;flex-direction:column';
+  Array.prototype.forEach.call(stagesEl.children, function(e){ e.style.flex = '1 1 auto'; });
+
+  function showPages(){
+    var v = VERSIONS[current], s = stage[current];
+    pagesEl.innerHTML = '<span class="cap">' + (current === 1 ? 'Page' : 'Pages') + '</span>';
+    v.pages.forEach(function(p, k){
+      var b = document.createElement('button'); b.type = 'button'; b.textContent = p[0]; b.setAttribute('role', 'tab');
+      b.setAttribute('aria-selected', k === s.page ? 'true' : 'false');
+      b.addEventListener('click', function(){ openPage(current, k); });
+      pagesEl.appendChild(b);
+    });
+  }
+  function openPage(v, k){
+    var s = stage[v], p = VERSIONS[v].pages[k];
+    if (s.page !== k || !s.lap.src){
+      s.page = k;
+      st.get(s.lap.contentWindow).anchors = null; st.get(s.mob.contentWindow).anchors = null;
+      s.lap.src = p[1]; s.mob.src = p[1];
+    }
+    showPages(); setHash();
+  }
+  function openVersion(v){
+    current = v;
+    [1, 2, 3].forEach(function(n){
+      stage[n].el.classList.toggle('on', n === v);
+      document.getElementById('v' + n).setAttribute('aria-pressed', n === v ? 'true' : 'false');
+    });
+    showPages(); setHash(); sizes();
+  }
+  function setHash(){ try { history.replaceState(null, '', '#v' + current + '-' + (stage[current].page + 1)); } catch(e){} }
+  document.getElementById('v1').addEventListener('click', function(){ openVersion(1); });
+  document.getElementById('v2').addEventListener('click', function(){ openVersion(2); });
+  document.getElementById('v3').addEventListener('click', function(){ openVersion(3); });
+  document.addEventListener('keydown', function(e){
+    if (e.target && /input|textarea/i.test(e.target.tagName)) return;
+    if (e.key === '1') openVersion(1); else if (e.key === '2') openVersion(2); else if (e.key === '3') openVersion(3);
+    else if (e.key === 'ArrowRight' || e.key === ']') openPage(current, (stage[current].page + 1) % VERSIONS[current].pages.length);
+    else if (e.key === 'ArrowLeft' || e.key === '[') { var n = VERSIONS[current].pages.length; openPage(current, (stage[current].page + n - 1) % n); }
+  });
+
+  // ---- PARALLEL SCROLL. Each frame reports where its sections start and how far it is scrolled. A position in one
+  // frame is mapped to the other piece by piece: between which two section anchors it sits, and how far along; the
+  // same fraction of the way between the matching anchors on the other side.
+  function map(y, A, B){
+    var n = Math.min(A.length, B.length);
+    if (y <= A[0]) return B[0];
+    for (var i = 1; i < n; i++){
+      if (y <= A[i] || i === n - 1){
+        var span = A[i] - A[i-1], t = span > 0 ? (y - A[i-1]) / span : 0;
+        t = t < 0 ? 0 : t > 1 ? 1 : t;
+        return B[i-1] + (B[i] - B[i-1]) * t;
+      }
+    }
+    return B[n-1];
+  }
+  window.addEventListener('message', function(e){
+    var d = e.data; if (!d) return;
+    if (d.type === 'moy-open'){
+      var h = String(d.href || ''), k = -1;
+      VERSIONS[2].pages.forEach(function(p, i){ if (h.indexOf(p[1].replace('proposal/', '')) === 0 || h.indexOf(p[1]) === 0) k = i; });
+      if (k >= 0){ openVersion(2); openPage(2, k); }
+      return;
+    }
+    if (d.type === 'moy-exit-full'){ if (document.fullscreenElement) document.exitFullscreen(); return; }
+    if (d.type !== 'moy-scroll' && d.type !== 'moy-anchors') return;
+    var src = st.get(e.source); if (!src) return;
+    if (d.anchors) src.anchors = d.anchors;
+    if (d.type !== 'moy-scroll' || !on) return;
+    var dstWin = src.other.contentWindow, dst = st.get(dstWin);
+    if (!src.anchors || !dst.anchors) return;
+    dstWin.postMessage({ type:'moy-goto', y: Math.round(map(d.y, src.anchors, dst.anchors)) }, '*');
+  });
+  var link = document.getElementById('link');
+  link.addEventListener('click', function(){
+    on = !on; link.setAttribute('aria-pressed', on ? 'true' : 'false');
+    link.textContent = on ? 'Parallel scroll: on' : 'Parallel scroll: off';
+  });
+
+  // ---- fullscreen for the laptop of whichever version is showing; the frame carries its own red "back" button
+  [1, 2, 3].forEach(function(n){
+    stage[n].el.querySelector('.fullbtn').addEventListener('click', function(){
+      var f = stage[n].lap;
+      if (f.requestFullscreen) f.requestFullscreen().catch(function(){ window.open(f.src, '_blank'); }); else window.open(f.src, '_blank');
+    });
+  });
+  document.addEventListener('fullscreenchange', function(){
+    [1, 2, 3].forEach(function(n){ stage[n].lap.contentWindow.postMessage({ type:'moy-full', on: document.fullscreenElement === stage[n].lap }, '*'); });
+  });
+
+  // ---- light / dark: every window follows
+  var theme = 'dark';
+  function setTheme(t){
+    theme = t;
+    document.getElementById('thD').setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
+    document.getElementById('thL').setAttribute('aria-pressed', t === 'light' ? 'true' : 'false');
+    [1, 2, 3].forEach(function(n){ [stage[n].lap, stage[n].mob].forEach(function(f){ try { f.contentWindow.postMessage({ type:'moy-theme', theme:t }, '*'); } catch(e){} }); });
+    try { sessionStorage.setItem('moy-mirror-theme', t); } catch(e){}
+  }
+  document.getElementById('thD').addEventListener('click', function(){ setTheme('dark'); });
+  document.getElementById('thL').addEventListener('click', function(){ setTheme('light'); });
+  // a page that loads (or is switched to) after the choice learns it from the first scroll report
+  window.addEventListener('message', function(e){ if (e.data && e.data.type === 'moy-anchors' && theme === 'light' && e.source) { try { e.source.postMessage({ type:'moy-theme', theme:theme }, '*'); } catch(x){} } });
+
+  // ---- real CSS width of each window
+  function sizes(){
+    document.querySelectorAll('.stage.on .pane').forEach(function(p){ p.querySelector('.label span').textContent = p.querySelector('iframe').clientWidth + 'px'; });
+  }
+  addEventListener('resize', sizes);
+
+  // ---- start from the link, e.g. #v2-3 opens Version 2, page 3
+  (function(){
+    var m = /^#v([123])-(\d+)/.exec(location.hash), v = m ? +m[1] : 1, k = m ? Math.min(+m[2], VERSIONS[v].pages.length) - 1 : 0;
+    if (v === 2 && k > 0){ stage[2].page = k; var p = VERSIONS[2].pages[k]; stage[2].lap.src = p[1]; stage[2].mob.src = p[1]; }
+    openVersion(v);
+  })();
+</script>
+</body>
+</html>
