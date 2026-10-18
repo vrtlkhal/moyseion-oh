@@ -2979,10 +2979,8 @@ function statueTargetAt(sy, liveRect, liveIdx){
   return null;
 }
 
-// THE STATUE LIVES IN THE SIGILS AND NOWHERE ELSE. It stands in the hero mark and rides off with it as the mark is
-// pushed away; it does not travel the page. It comes back only where another sigil is on screen (the seal between
-// Research and Hospitality, the closing mark), takes that mark's centre exactly, and fades with its visibility.
-const OTHER_SIGILS = ['.d-seal', '.coda-mark'];
+// THE 3D STATUE STANDS IN THE FIRST SIGIL ONLY. It stands in the hero mark and rides off with it as the mark is
+// pushed away. It does not travel the page and it does not appear in any other sigil.
 const HIDDEN_STATUE = { x: -9999, y: -9999, size: 44, turn: 0, opacity: 0, ride: false };
 function sigilStatueAt(sy){
   if (HAS_LOGO_PHASE){
@@ -2992,14 +2990,7 @@ function sigilStatueAt(sy){
                opacity: 1 - smootherstep(clamp01((sy - xs) / (VH * 0.9))), ride: false };
     }
   }
-  let best = null;
-  for (const sel of OTHER_SIGILS){
-    const el = document.querySelector(sel + ' use[href="#mk-logo"]'); if (!el) continue;
-    const r = el.getBoundingClientRect(); if (!r.height || r.bottom < 0 || r.top > VH) continue;
-    const cy = r.top + r.height / 2, vis = smootherstep(1 - clamp01((Math.abs(cy - VH / 2) - VH * 0.2) / (VH * 0.3)));
-    if (!best || vis > best.opacity) best = { x: r.left + r.width / 2, y: cy, size: r.height * LOGO_FIT, turn: (0.5 - cy / VH) * 0.5, opacity: vis, ride: true };
-  }
-  return best || HIDDEN_STATUE;
+  return HIDDEN_STATUE;   // the 3D statue belongs to the first sigil only; every other sigil keeps its own drawn centre
 }
 
 function statueOpacity(sy){
