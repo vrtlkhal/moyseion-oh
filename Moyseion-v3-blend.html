@@ -97,7 +97,7 @@ window.addEventListener("message",function(e){var d=e.data;if(d&&d.type==="moy-t
      address bar, so every track height on the page silently changes as
      the bar hides — while ScrollTrigger, configured with
      ignoreMobileResize, deliberately does NOT recalculate. CSS and JS
-     would then disagree by ~60px for the rest of the session. This is
+     would then disagree by ~3.75rem for the rest of the session. This is
      set once from innerHeight and only re-published on a resize the JS
      also acts on, so the two can never drift apart. */
   --vh: 1vh;
@@ -117,7 +117,7 @@ html.no-motion .manifesto { opacity:1 !important; }
 html.no-motion .ln { opacity:1 !important; transform:none !important; }
 
 .skip-link {
-  position:fixed; top:-100px; left:1rem; z-index:200;
+  position:fixed; top:-6.25rem; left:1rem; z-index:200;
   background:var(--navy); color:var(--gold-bright);
   border:1px solid var(--gold-deep); padding:0.7rem 1.1rem;
   font-size:1rem; text-decoration:none;
@@ -125,8 +125,8 @@ html.no-motion .ln { opacity:1 !important; transform:none !important; }
 .skip-link:focus { top:1rem; }
 
 :focus-visible {
-  outline:2px solid var(--gold-bright);
-  outline-offset:3px;
+  outline:0.125rem solid var(--gold-bright);
+  outline-offset:0.1875rem;
 }
 
 .hero-track     { height:calc(var(--vh) * 200); }
@@ -180,7 +180,7 @@ html.no-motion .ln { opacity:1 !important; transform:none !important; }
 .rings-push { position:fixed; inset:0; pointer-events:none; z-index:10; will-change:transform; }
 .rings-wrap {
   position:absolute; top:var(--m-sigil-top, 8vh); left:50%;
-  width:20vw; min-width:150px; aspect-ratio:1/1;
+  width:20vw; min-width:9.375rem; aspect-ratio:1/1;
   pointer-events:none;
 }
 .rings-layer { position:absolute; inset:0; }
@@ -271,7 +271,7 @@ html.no-3d .logo-center { visibility:visible; }
 .menu-panel {
   display:flex; flex-direction:column; align-items:flex-end; gap:0.9rem; padding:1rem 1.3rem;
   background:rgba(1,4,22,0.82); border:1px solid rgba(131,109,48,0.45);
-  -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(0.625rem); backdrop-filter:blur(0.625rem);
   opacity:0; transform:translateY(-0.4rem); visibility:hidden; pointer-events:none;
   transition:opacity .3s ease, transform .3s ease, visibility 0s linear .3s;
 }
@@ -289,7 +289,7 @@ html.no-3d .logo-center { visibility:visible; }
    same direction as the read. */
 .progress-bar {
   position:fixed; right:2.2vw; top:50%; z-index:40;
-  width:1rem; height:min(26vh, 240px);
+  width:1rem; height:min(26vh, 15rem);
   transform:translateY(-50%);
   opacity:0; transition:opacity 0.5s ease; pointer-events:none;
 }
@@ -391,7 +391,7 @@ html.no-3d .logo-center { visibility:visible; }
   display:flex; flex-direction:column; align-items:center; gap:3vh;
   opacity:0;
 }
-.coda-mark { width:clamp(180px, min(26vw, 34vh), 340px); aspect-ratio:1/1; color:var(--gold-bright); opacity:0.95; }
+.coda-mark { width:clamp(11.25rem, min(26vw, 34vh), 21.25rem); aspect-ratio:1/1; color:var(--gold-bright); opacity:0.95; }
 .coda-mark svg { width:100%; height:100%; display:block; }
 .coda-word {
   font-family:var(--font); font-weight:700; margin:0; text-align:center;
@@ -456,7 +456,7 @@ html.no-3d .logo-center { visibility:visible; }
 /* ================= STATUE ================= */
 .statue-wrap {
   position:fixed; top:0; left:0;
-  width:4.6vw; min-width:44px; aspect-ratio:1/1;
+  width:4.6vw; min-width:2.75rem; aspect-ratio:1/1;
   z-index:19;                 /* UNDERNEATH the text (sections=20), above the rings (10) */
   pointer-events:none;
   opacity:0;
@@ -529,7 +529,7 @@ html.no-3d .logo-center { visibility:visible; }
 .reel-title {
   position:absolute; left:0; right:0; top:100%; padding-top:1rem; text-align:center;
   font-size:0.72rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold-bright);
-  opacity:0; transform:translateY(-4px); transition:opacity .35s ease, transform .35s ease; pointer-events:none;
+  opacity:0; transform:translateY(-0.25rem); transition:opacity .35s ease, transform .35s ease; pointer-events:none;
 }
 .reel:hover .reel-title { opacity:1; transform:none; }
 @media (hover:none) { .reel-title { opacity:0.8; transform:none; } }   /* no hover on touch: always show */
@@ -563,7 +563,7 @@ html.no-3d .logo-center { visibility:visible; }
   border-bottom:0; padding-bottom:0; position:relative; z-index:23; transition:color .3s, border-color .3s, gap .35s; }
 .more-link::after { content:'\2192'; transition:transform .35s; }
 .more-link:hover, .more-link:focus-visible { color:#fff; border-color:var(--gold-bright); gap:1rem; }
-.more-link:hover::after { transform:translateX(3px); }
+.more-link:hover::after { transform:translateX(0.1875rem); }
 .manifesto .more-link { color:var(--gold-bright); text-decoration:none; }
 .manifesto.side-right .more-link { flex-direction:row-reverse; }
 .manifesto.side-right .more-link::after { content:'\2190'; }
@@ -599,7 +599,7 @@ html.no-3d .logo-center { visibility:visible; }
 .rail-card span { display:block; margin-top:0.4rem; font-size:0.95rem; line-height:1.55; color:var(--gold-body); }
 .rail-card i { font-style:normal; display:block; margin-top:0.9rem; font-size:0.78rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold-bright); }
 .rail-track.mosaic { --row:clamp(9rem, 32vh, 17rem); display:grid; grid-auto-flow:column dense; grid-template-rows:repeat(2, var(--row)); grid-auto-columns:var(--row); gap:clamp(0.6rem, 1.1vw, 1.1rem); align-items:stretch; }
-.rail-track .rail-card.tile { position:relative; display:block; flex:none; overflow:hidden; border-radius:14px; border:1px solid rgba(131,109,48,0.35); background:#0a1024; padding:0; transform:none; box-shadow:none; scroll-snap-align:start; }
+.rail-track .rail-card.tile { position:relative; display:block; flex:none; overflow:hidden; border-radius:0.875rem; border:1px solid rgba(131,109,48,0.35); background:#0a1024; padding:0; transform:none; box-shadow:none; scroll-snap-align:start; }
 .rail-track .rail-card.tile.big  { grid-column:span 2; grid-row:span 2; }
 .rail-track .rail-card.tile.wide { grid-column:span 2; }
 .rail-track .rail-card.tile.tall { grid-row:span 2; }
@@ -609,7 +609,7 @@ html.no-3d .logo-center { visibility:visible; }
 .rail-card.tile .tl b { font-size:clamp(1rem,1.35vw,1.4rem); }
 .rail-card.tile .tl span { font-size:clamp(0.78rem,0.9vw,0.92rem); line-height:1.45; margin-top:0.3rem; opacity:.9; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
 .rail-card.tile.big .tl b { font-size:clamp(1.3rem,2vw,2.1rem); }
-.rail-card.tile .tl i { margin-top:0.6rem; font-size:0.7rem; opacity:0; transform:translateY(6px); transition:opacity .4s, transform .4s; }
+.rail-card.tile .tl i { margin-top:0.6rem; font-size:0.7rem; opacity:0; transform:translateY(0.375rem); transition:opacity .4s, transform .4s; }
 .rail-track .rail-card.tile:hover { border-color:var(--gold-body); transform:none; box-shadow:0 0 2rem rgba(241,220,164,.1); }
 .rail-card.tile:hover img, .rail-card.tile:focus-visible img { transform:scale(1.07); filter:saturate(1.05) brightness(1); }
 .rail-card.tile:hover .tl i, .rail-card.tile:focus-visible .tl i { opacity:1; transform:none; }
@@ -627,7 +627,7 @@ html.no-3d .logo-center { visibility:visible; }
 .rail-card.tile .tl { padding:clamp(1rem,1.6vw,1.6rem) clamp(0.9rem,1.4vw,1.4rem) clamp(1.1rem,1.8vw,1.8rem); text-align:center; }
 .rail-card.tile .tl span { -webkit-line-clamp:2; }
 .rail-bar { height:1px; background:rgba(131,109,48,0.35); margin:0 5%; position:relative; }
-.rail-bar::after { content:''; position:absolute; left:0; top:-1px; height:3px; width:var(--rail-w, 25%); transform:translateX(var(--rail-x, 0)); background:var(--gold-body); transition:transform .15s linear; }
+.rail-bar::after { content:''; position:absolute; left:0; top:-1px; height:0.1875rem; width:var(--rail-w, 25%); transform:translateX(var(--rail-x, 0)); background:var(--gold-body); transition:transform .15s linear; }
 @media (max-width: 520px) {
   .rail-head { flex-direction:column; align-items:flex-start; gap:1.4rem; }
   .rail-card { flex-basis:72vw; }
@@ -687,27 +687,6 @@ html[data-theme="light"] .water-band{border-color:rgba(139,90,43,.3)}
 .menu-panel .thm:hover{color:var(--gold-bright)}
 
 /* ============ PRACTICAL INFORMATION: an unfoldable mini section at the very bottom of the last section ============ */
-.logi { width:100%; max-width:62rem; margin:3vh auto 0; border-top:1px solid rgba(131,109,48,0.4); text-align:left; }
-.logi summary { list-style:none; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:0.9rem; padding:1rem 0; font-size:0.72rem; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold-bright); }
-.logi summary::-webkit-details-marker { display:none; }
-.logi summary i { position:relative; width:0.9rem; height:0.9rem; }
-.logi summary i::before, .logi summary i::after { content:''; position:absolute; left:50%; top:50%; width:100%; height:1px; background:currentColor; transform:translate(-50%,-50%); transition:transform .4s; }
-.logi summary i::after { transform:translate(-50%,-50%) rotate(90deg); }
-.logi[open] summary i::after { transform:translate(-50%,-50%) rotate(0deg); }
-.logi summary:hover { color:#fff; }
-.logi-grid { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:clamp(1rem,2.4vw,2.4rem); padding:0.4rem 0 1.6rem; animation:logiIn .5s ease; }
-.logi-grid h4 { font-weight:400; font-size:0.64rem; letter-spacing:0.34em; text-transform:uppercase; color:var(--gold-body); margin-bottom:0.8rem; padding-bottom:0.6rem; border-bottom:1px solid rgba(131,109,48,0.3); }
-.logi-grid p { font-size:0.84rem; line-height:1.6; color:var(--gold-body); margin-bottom:0.7rem; }
-.logi-grid b { font-weight:400; color:var(--gold-bright); }
-.logi-grid a { color:var(--gold-bright); text-decoration:underline; text-underline-offset:0.2em; }
-@keyframes logiIn { from { opacity:0; transform:translateY(-6px); } to { opacity:1; transform:none; } }
-html[data-theme="light"] .logi { border-top-color:rgba(139,90,43,.4); }
-html[data-theme="light"] .logi summary { color:#1b1713; }
-html[data-theme="light"] .logi-grid h4 { color:#8b5a2b; border-bottom-color:rgba(139,90,43,.3); }
-html[data-theme="light"] .logi-grid p { color:#2a231b; }
-html[data-theme="light"] .logi-grid b, html[data-theme="light"] .logi-grid a { color:#7a1a1a; }
-@media (max-width: 820px) { .logi-grid { grid-template-columns:1fr 1fr; } }
-@media (max-width: 520px) { .logi-grid { grid-template-columns:1fr; } }
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
@@ -734,9 +713,9 @@ html[data-theme="light"] .logi-grid b, html[data-theme="light"] .logi-grid a { c
     /* the title sits over a bright photograph at first: a navy outline plus a soft dark halo lifts the gold off it */
     -webkit-text-stroke:0.035em rgba(1,4,22,0.72); paint-order:stroke fill;
     text-shadow:0 0 0.22em rgba(1,4,22,0.85), 0 0.04em 0.45em rgba(1,4,22,0.8), 0 0 0.9em rgba(1,4,22,0.5); }
-  .rings-wrap { width:56vw; min-width:130px; top:var(--m-sigil-top, 28vh); }
-  .statue-wrap { width:6vw; min-width:34px; }
-  .coda-mark { width:clamp(150px, min(48vw, 32vh), 260px); }
+  .rings-wrap { width:56vw; min-width:8.125rem; top:var(--m-sigil-top, 28vh); }
+  .statue-wrap { width:6vw; min-width:2.125rem; }
+  .coda-mark { width:clamp(9.375rem, min(48vw, 32vh), 16.25rem); }
   .coda-word { font-size:clamp(1.8rem, 9vw, 3.2rem); }
   .chrome { gap:0.6rem; padding:1.2vh 4vw; }
   /* Phone menu: opens as a sheet, full width and half the screen tall, with the button staying on top. */
@@ -781,21 +760,26 @@ html[data-theme="light"] .logi-grid b, html[data-theme="light"] .logi-grid a { c
    VERSION 3. Version 1's content, images, videos and motion; Version 2's aesthetic: the header bar,
    cards, ruled labels, filled gold buttons, footer. Nothing below changes what moves, only how it is dressed.
    ============================================================================================ */
-:root{--line:rgba(131,109,48,.45);--line-soft:rgba(131,109,48,.28);--navy-2:#060b24;--navy-3:#0b1230;--nav-h:76px;--pad3:clamp(1.1rem,4.6vw,4.2rem)}
+:root{--line:rgba(131,109,48,.45);--line-soft:rgba(131,109,48,.28);--navy-2:#060b24;--navy-3:#0b1230;--nav-h:4.75rem;--pad3:clamp(1.1rem,4.6vw,4.2rem)}
 html{scroll-behavior:auto}
 .sigil{display:block;color:var(--gold-body)}
-.sigil.mini{width:44px;height:44px;flex:0 0 auto}
-.sg,.coda-ring{transform-box:view-box;transform-origin:500px 500px;animation:sigSpin 48s linear infinite}
-.sg1,.sg3,.ring-x1,.ring-x3{animation-direction:reverse}
-.sg2,.ring-x2{animation-duration:72s}.sg3,.ring-x3{animation-duration:96s}
+.sigil.mini{width:2.75rem;height:2.75rem;flex:0 0 auto}
+/* THE SIGIL, ONE RULE SET FOR EVERY INSTANCE. The four ring bands turn as a mechanism; the statue/logo at the centre never does.
+   The animation sits on the <use> inside each band, never on the band or on #rings: GSAP owns those transforms (the hero's
+   scroll-scrubbed turn), and a child's own rotation simply adds to the parent's. */
+use[href^="#mk-ring"]{transform-box:view-box;transform-origin:50% 50%;animation:sigSpin linear infinite}
+use[href="#mk-ring0"]{animation-duration:240s}
+use[href="#mk-ring1"]{animation-duration:160s;animation-direction:reverse}
+use[href="#mk-ring2"]{animation-duration:110s}
+use[href="#mk-ring3"]{animation-duration:70s;animation-direction:reverse}
 @keyframes sigSpin{to{transform:rotate(360deg)}}
-@media (prefers-reduced-motion:reduce){.sg,.coda-ring{animation:none}}   /* static at rest: the bands only turn under the hero's scroll-scrubbed tween */
+@media (prefers-reduced-motion:reduce){use[href^="#mk-ring"]{animation:none}}
 
 /* header */
 nav.chrome{position:fixed;top:0;left:0;right:0;bottom:auto;width:auto;z-index:60;height:var(--nav-h);display:flex;flex-direction:row;align-items:center;gap:2rem;padding:0 var(--pad3);
   opacity:1!important;transform:none!important;pointer-events:auto!important;border-bottom:1px solid transparent;transition:background .5s ease,border-color .5s ease,height .4s ease}
 nav.chrome::before{content:'';position:absolute;left:0;right:0;top:0;height:140%;z-index:-1;background:linear-gradient(180deg,rgba(1,4,22,.82),rgba(1,4,22,0));pointer-events:none;transition:opacity .4s}
-nav.chrome.solid{background:rgba(1,4,22,.84);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:var(--line-soft);height:64px}
+nav.chrome.solid{background:rgba(1,4,22,.84);-webkit-backdrop-filter:blur(0.875rem);backdrop-filter:blur(0.875rem);border-color:var(--line-soft);height:4rem}
 nav.chrome.solid::before{opacity:0}
 nav.chrome > *{pointer-events:auto!important}
 .v3-brand{display:flex;align-items:center;gap:.8rem;flex:0 0 auto;color:var(--gold-bright);text-decoration:none}
@@ -805,8 +789,8 @@ nav.chrome > *{pointer-events:auto!important}
 .v3-menu>li{position:relative}
 .v3-menu a,.v3-menu .dd-btn{white-space:nowrap;font-family:var(--font);font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold-body);padding:.5rem 0;display:inline-flex;align-items:center;gap:.4rem;text-decoration:none;background:none;border:0;cursor:pointer;transition:color .3s}
 .v3-menu a:hover,.v3-menu .dd-btn:hover{color:var(--gold-bright)}
-.dd-btn::after{content:'';width:.38rem;height:.38rem;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg) translateY(-2px);margin-left:.2rem}
-.v3-menu .dd{position:absolute;top:100%;left:-1.2rem;min-width:15rem;padding:.7rem 0;background:rgba(1,4,22,.96);border:1px solid var(--line);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .3s,transform .3s,visibility 0s .3s;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.dd-btn::after{content:'';width:.38rem;height:.38rem;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg) translateY(-0.125rem);margin-left:.2rem}
+.v3-menu .dd{position:absolute;top:100%;left:-1.2rem;min-width:15rem;padding:.7rem 0;background:rgba(1,4,22,.96);border:1px solid var(--line);opacity:0;visibility:hidden;transform:translateY(0.5rem);transition:opacity .3s,transform .3s,visibility 0s .3s;-webkit-backdrop-filter:blur(0.75rem);backdrop-filter:blur(0.75rem)}
 .v3-menu .has-dd:hover .dd,.v3-menu .has-dd:focus-within .dd{opacity:1;visibility:visible;transform:none;transition-delay:0s}
 .v3-menu .dd a{display:block;padding:.6rem 1.3rem;letter-spacing:.1em;font-size:.76rem}
 .v3-menu .dd a:hover{background:rgba(241,220,164,.06)}
@@ -824,12 +808,12 @@ nav.chrome .v3-cta .btn.fill:hover,nav.chrome .sheet-row .btn.fill:hover{backgro
 .v3-tools .lang-opt,.v3-tools #soundToggle{font-family:var(--font);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-body);background:none;border:0;cursor:pointer;padding:.4rem .2rem}
 .v3-tools #soundToggle[aria-pressed="true"]{color:var(--gold-bright)}
 .v3-tools .rule{width:1px;height:.9rem;background:rgba(131,109,48,.55)}
-.menu-btn{display:none;margin-left:auto;width:44px;height:44px;position:relative;z-index:62;background:none;border:0}
-.menu-btn i{position:absolute;left:11px;right:11px;height:1px;background:var(--gold-bright);transition:transform .35s,opacity .3s,top .35s}
-.menu-btn i:nth-child(1){top:16px}.menu-btn i:nth-child(2){top:22px}.menu-btn i:nth-child(3){top:28px}
-nav.chrome.open .menu-btn i:nth-child(1){top:22px;transform:rotate(45deg)}
+.menu-btn{display:none;margin-left:auto;width:2.75rem;height:2.75rem;position:relative;z-index:62;background:none;border:0}
+.menu-btn i{position:absolute;left:0.6875rem;right:0.6875rem;height:1px;background:var(--gold-bright);transition:transform .35s,opacity .3s,top .35s}
+.menu-btn i:nth-child(1){top:1rem}.menu-btn i:nth-child(2){top:1.375rem}.menu-btn i:nth-child(3){top:1.75rem}
+nav.chrome.open .menu-btn i:nth-child(1){top:1.375rem;transform:rotate(45deg)}
 nav.chrome.open .menu-btn i:nth-child(2){opacity:0}
-nav.chrome.open .menu-btn i:nth-child(3){top:22px;transform:rotate(-45deg)}
+nav.chrome.open .menu-btn i:nth-child(3){top:1.375rem;transform:rotate(-45deg)}
 nav.chrome .menu-panel{display:none}
 @media (max-width:1180px) and (min-width:821px){
   nav.chrome .v3-cta .btn:not(.fill){display:none}
@@ -858,13 +842,13 @@ nav.chrome .menu-panel{display:none}
 
 /* the "+" after the title: language and sound unfold from it */
 .tools-wrap{position:relative;flex:0 0 auto;margin-left:-.6rem}
-.plus{width:30px;height:30px;border:1px solid var(--line);border-radius:50%;position:relative;color:var(--gold-bright);background:none;cursor:pointer;transition:border-color .3s,background .3s,transform .4s}
-.plus i{position:absolute;left:50%;top:50%;width:11px;height:1px;background:currentColor;transform:translate(-50%,-50%)}
+.plus{width:1.875rem;height:1.875rem;border:1px solid var(--line);border-radius:50%;position:relative;color:var(--gold-bright);background:none;cursor:pointer;transition:border-color .3s,background .3s,transform .4s}
+.plus i{position:absolute;left:50%;top:50%;width:0.6875rem;height:1px;background:currentColor;transform:translate(-50%,-50%)}
 .plus i:nth-child(2){transform:translate(-50%,-50%) rotate(90deg)}
 .plus:hover{border-color:var(--gold-bright);background:rgba(241,220,164,.07)}
 .plus[aria-expanded="true"]{transform:rotate(45deg);border-color:var(--gold-bright)}
-.tools-pop{position:absolute;top:calc(100% + .8rem);right:0;left:auto;min-width:11rem;padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.8rem;background:rgba(1,4,22,.95);border:1px solid var(--line);border-radius:12px;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
-  opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .3s,transform .3s,visibility 0s .3s;z-index:70}
+.tools-pop{position:absolute;top:calc(100% + .8rem);right:0;left:auto;min-width:11rem;padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.8rem;background:rgba(1,4,22,.95);border:1px solid var(--line);border-radius:0.75rem;-webkit-backdrop-filter:blur(0.75rem);backdrop-filter:blur(0.75rem);
+  opacity:0;visibility:hidden;transform:translateY(-0.375rem);transition:opacity .3s,transform .3s,visibility 0s .3s;z-index:70}
 .tools-wrap.open .tools-pop{opacity:1;visibility:visible;transform:none;transition-delay:0s}
 .tools-pop .menu-langs{display:flex;align-items:center;gap:.7rem}
 .tools-pop .rule{width:1px;height:.9rem;background:var(--line)}
@@ -887,24 +871,24 @@ nav.chrome .menu-panel{display:none}
 .v3-label::before,.v3-label::after{content:'';flex:1;height:1px;background:var(--line-soft);max-width:22rem}
 
 /* text and capsule sit in a card */
-.manifesto:not(.m-close) .manifesto-inner{padding:clamp(1.4rem,3vw,3rem);border:1px solid var(--line-soft);border-radius:14px;
+.manifesto:not(.m-close) .manifesto-inner{padding:clamp(1.4rem,3vw,3rem);border:1px solid var(--line-soft);border-radius:0.875rem;
   background:radial-gradient(ellipse 90% 60% at 50% 0%,rgba(131,109,48,.13),transparent 70%),linear-gradient(170deg,var(--navy-3),var(--navy-2) 60%,#050a1f)}
 .section-imgs{border-radius:50% / 20%}
 
 /* water band: inset and framed */
-.water-band{width:auto;margin:10vh var(--pad3);border-radius:14px;border:1px solid var(--line-soft)}
+.water-band{width:auto;margin:10vh var(--pad3);border-radius:0.875rem;border:1px solid var(--line-soft)}
 
 /* reels: V2 captions already match; frame them the same way */
 .reel-frame{border-color:var(--line)}
 
 /* explore rail as cards */
 .rail-head h2{font-size:clamp(1.7rem,3.2vw,3rem)}
-.rail-card{padding:clamp(1rem,1.6vw,1.5rem);border:1px solid var(--line-soft);border-radius:14px;gap:1.2rem;
+.rail-card{padding:clamp(1rem,1.6vw,1.5rem);border:1px solid var(--line-soft);border-radius:0.875rem;gap:1.2rem;
   background:radial-gradient(ellipse 90% 60% at 50% 0%,rgba(131,109,48,.13),transparent 70%),linear-gradient(170deg,var(--navy-3),var(--navy-2) 60%,#050a1f);
   transition:border-color .45s,transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
-.rail-card:hover{border-color:var(--gold-body);transform:translateY(-6px);box-shadow:0 1.6rem 3.2rem rgba(0,0,0,.45),0 0 2.4rem rgba(241,220,164,.07)}
+.rail-card:hover{border-color:var(--gold-body);transform:translateY(-0.375rem);box-shadow:0 1.6rem 3.2rem rgba(0,0,0,.45),0 0 2.4rem rgba(241,220,164,.07)}
 .rail-card .cap{box-shadow:none}
-.rail-track .rail-card.tile:nth-child(n){padding:0;gap:0;transform:none;border-radius:14px;background:#0a1024}
+.rail-track .rail-card.tile:nth-child(n){padding:0;gap:0;transform:none;border-radius:0.875rem;background:#0a1024}
 .rail-track.mosaic{padding-top:.5rem;padding-bottom:2rem}
 .rail-card.tile .tl{text-align:left;padding:clamp(.8rem,1.3vw,1.3rem)}
 .rail-track .rail-card.tile:nth-child(n):hover{transform:none}
@@ -928,17 +912,17 @@ nav.chrome .menu-panel{display:none}
 /* a slim band, at every width: one compact row (it wraps, never stacks into a block) */
 .site-foot.v3foot{padding:.9rem var(--pad3) .8rem!important}
 .v3foot .v3-brand{gap:.55rem}
-.v3foot .v3-brand .sigil.mini{width:28px;height:28px}
+.v3foot .v3-brand .sigil.mini{width:1.75rem;height:1.75rem}
 .v3foot .v3-brand b{font-size:.95rem}
 .v3foot .v3-brand small{display:none}
 .v3foot nav{display:flex;gap:.4rem 1.3rem;justify-content:center;flex-wrap:wrap;flex:1 1 auto}
 .v3foot nav a{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-body);text-decoration:none}
 .v3foot nav a:hover{color:var(--gold-bright)}
 .v3foot .social{display:flex;gap:.9rem}
-.v3foot .social a{width:18px;height:18px;color:var(--gold-body);transition:color .3s,transform .3s}
-.v3foot .social a:hover{color:var(--gold-bright);transform:translateY(-2px)}
+.v3foot .social a{width:1.125rem;height:1.125rem;color:var(--gold-body);transition:color .3s,transform .3s}
+.v3foot .social a:hover{color:var(--gold-bright);transform:translateY(-0.125rem)}
 .v3foot .news{display:inline-flex;align-items:center;gap:.5rem;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-body);padding-left:0;border:0;text-decoration:none}
-.v3foot .news svg{width:18px;height:18px}
+.v3foot .news svg{width:1.125rem;height:1.125rem}
 .v3foot .news:hover{color:var(--gold-bright)}
 .v3foot .foot-note{flex:1 0 100%;margin:.2rem 0 0;text-align:center;font-size:.7rem;letter-spacing:.06em;color:var(--gold-body);padding-top:.6rem;border-top:1px solid var(--line-soft)}
 @media (max-width:560px){.v3foot .foot{justify-content:center}.v3foot nav{flex:1 0 100%;order:3}}
@@ -960,7 +944,7 @@ nav.chrome .menu-panel{display:none}
 .d-half>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .d-half::after{content:'';position:absolute;inset:0;z-index:-1}
 .d-dig{border-right:1px solid rgba(131,109,48,.55);background:#02030d;cursor:none}
-.d-dig>img{filter:sepia(.7) contrast(1.15) brightness(.9);-webkit-mask-image:radial-gradient(circle var(--r,0px) at var(--mx,50%) var(--my,50%),#000 0%,rgba(0,0,0,.85) 55%,transparent 100%);mask-image:radial-gradient(circle var(--r,0px) at var(--mx,50%) var(--my,50%),#000 0%,rgba(0,0,0,.85) 55%,transparent 100%)}
+.d-dig>img{filter:sepia(.7) contrast(1.15) brightness(.9);-webkit-mask-image:radial-gradient(circle var(--r,0) at var(--mx,50%) var(--my,50%),#000 0%,rgba(0,0,0,.85) 55%,transparent 100%);mask-image:radial-gradient(circle var(--r,0) at var(--mx,50%) var(--my,50%),#000 0%,rgba(0,0,0,.85) 55%,transparent 100%)}
 .d-dig::after{background:linear-gradient(0deg,rgba(2,3,13,.95),rgba(2,3,13,.2) 55%)}
 .d-res>img{filter:saturate(1.05) brightness(.82)}
 .d-res::after{background:linear-gradient(0deg,rgba(1,4,22,.94),rgba(1,4,22,.1) 62%)}
@@ -1015,16 +999,16 @@ html[data-theme="light"] .hcard small,html[data-theme="light"] .hcard .more,html
 .v3foot .foot{display:flex!important;flex-wrap:nowrap!important;align-items:center;justify-content:center;gap:clamp(.8rem,2vw,2rem);max-width:none;white-space:nowrap}
 .v3foot nav{display:flex;flex-wrap:nowrap;gap:clamp(.7rem,1.6vw,1.6rem);flex:0 0 auto}
 .v3foot nav a,.v3foot .news,.v3foot .foot-note{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase}
-.v3foot .social{gap:.8rem;flex:0 0 auto}.v3foot .social a{width:15px;height:15px}
-.v3foot .news{padding:0;border:0;gap:.45rem}.v3foot .news svg{width:15px;height:15px}
+.v3foot .social{gap:.8rem;flex:0 0 auto}.v3foot .social a{width:0.9375rem;height:0.9375rem}
+.v3foot .news{padding:0;border:0;gap:.45rem}.v3foot .news svg{width:0.9375rem;height:0.9375rem}
 .v3foot .foot-note{flex:0 0 auto!important;margin:0!important;padding:0 0 0 clamp(.8rem,2vw,2rem)!important;border:0!important;border-left:1px solid rgba(131,109,48,.45)!important;text-transform:none;letter-spacing:.06em;width:auto!important}
 .v3foot .foot > *:not(:first-child){position:relative}
 @media (max-width:1100px){.v3foot .foot-note{display:none}}
 @media (max-width:620px){.v3foot .foot{gap:.8rem}.v3foot nav{gap:.6rem}.v3foot nav a,.v3foot .news{font-size:.54rem;letter-spacing:.08em}.v3foot .news{display:none}}
 
 /* ---- frame: viewfinder corners + HUD ---- */
-.v3-frame{position:fixed;inset:14px;z-index:58;pointer-events:none}
-.v3-frame i{position:absolute;width:22px;height:22px;border:0 solid rgba(241,220,164,.55)}
+.v3-frame{position:fixed;inset:0.875rem;z-index:58;pointer-events:none}
+.v3-frame i{position:absolute;width:1.375rem;height:1.375rem;border:0 solid rgba(241,220,164,.55)}
 .v3-frame i:nth-child(1){left:0;top:0;border-left-width:1px;border-top-width:1px}
 .v3-frame i:nth-child(2){right:0;top:0;border-right-width:1px;border-top-width:1px}
 .v3-frame i:nth-child(3){left:0;bottom:0;border-left-width:1px;border-bottom-width:1px}
@@ -1032,17 +1016,17 @@ html[data-theme="light"] .hcard small,html[data-theme="light"] .hcard .more,html
 .v3-hud,.v3-coord{transition:opacity .5s}
 html.hud-off .v3-hud{opacity:0}
 html.end-on .v3-coord{opacity:0}
-.v3-hud{position:fixed;left:34px;bottom:26px;z-index:58;pointer-events:none;display:flex;align-items:baseline;gap:.9rem;font-family:var(--font);color:var(--gold-bright);mix-blend-mode:difference}
+.v3-hud{position:fixed;left:2.125rem;bottom:1.625rem;z-index:58;pointer-events:none;display:flex;align-items:baseline;gap:.9rem;font-family:var(--font);color:var(--gold-bright);mix-blend-mode:difference}
 .v3-hud b{font-size:1.1rem;font-weight:400;line-height:.8;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .v3-hud span{font-size:.6rem;letter-spacing:.34em;text-transform:uppercase;opacity:.85}
 .v3-hud em{font-style:normal;font-size:.6rem;letter-spacing:.2em;opacity:.55}
-.v3-coord{display:none;position:fixed;right:34px;bottom:26px;z-index:58;pointer-events:none;text-align:right;font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-bright);opacity:.8;mix-blend-mode:difference;line-height:1.9}
+.v3-coord{display:none;position:fixed;right:2.125rem;bottom:1.625rem;z-index:58;pointer-events:none;text-align:right;font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-bright);opacity:.8;mix-blend-mode:difference;line-height:1.9}
 .v3-coord u{display:block;text-decoration:none;opacity:.6}
-.v3-ring{position:fixed;left:0;top:0;width:34px;height:34px;margin:-17px 0 0 -17px;border:1px solid rgba(241,220,164,.75);border-radius:50%;z-index:90;pointer-events:none;mix-blend-mode:difference;transition:width .35s cubic-bezier(.2,.7,.2,1),height .35s cubic-bezier(.2,.7,.2,1),margin .35s cubic-bezier(.2,.7,.2,1),background .3s;opacity:0}
+.v3-ring{position:fixed;left:0;top:0;width:2.125rem;height:2.125rem;margin:-1.0625rem 0 0 -1.0625rem;border:1px solid rgba(241,220,164,.75);border-radius:50%;z-index:90;pointer-events:none;mix-blend-mode:difference;transition:width .35s cubic-bezier(.2,.7,.2,1),height .35s cubic-bezier(.2,.7,.2,1),margin .35s cubic-bezier(.2,.7,.2,1),background .3s;opacity:0}
 .v3-ring.on{opacity:1}
-.v3-ring.big{width:74px;height:74px;margin:-37px 0 0 -37px;background:rgba(241,220,164,.18)}
+.v3-ring.big{width:4.625rem;height:4.625rem;margin:-2.3125rem 0 0 -2.3125rem;background:rgba(241,220,164,.18)}
 @media (hover:none){.v3-ring{display:none}}
-@media (max-width:820px){.v3-frame{inset:8px}.v3-coord{display:none}.v3-hud{bottom:22px}}
+@media (max-width:820px){.v3-frame{inset:0.5rem}.v3-coord{display:none}.v3-hud{bottom:1.375rem}}
 
 /* the bar appears only once the first section has been scrolled */
 nav.chrome{transition:opacity .5s ease,transform .5s ease,background .5s ease,height .4s ease!important}
@@ -1225,7 +1209,7 @@ html[data-theme="light"] .book-kicker{color:#6b3f17}
   nav.chrome{gap:.6rem}
   .v3-brand{min-width:0;gap:.5rem}.v3-brand b{font-size:.92rem;letter-spacing:.06em}
   nav.chrome .v3-cta .btn{padding:.6rem .8rem;font-size:.6rem;letter-spacing:.12em}
-  nav.chrome .menu-btn{flex:0 0 44px}
+  nav.chrome .menu-btn{flex:0 0 2.75rem}
 }
 </style>
 <style id="v3-orbit">
@@ -1233,7 +1217,7 @@ html[data-theme="light"] .book-kicker{color:#6b3f17}
 html:root body .section-imgs{width:min(calc(39.9vw*var(--gs,1)*var(--sz,1)),calc(var(--vh)*65.1*var(--gs,1)*var(--sz,1)*var(--ar,1.28)));translate:-12vw 0;height:auto;border-radius:0!important;overflow:visible;outline:0!important;box-shadow:none!important;background:none}
 html:root body .section-imgs:hover{box-shadow:none!important}
 html:root body .section-imgs .slide{position:absolute;left:0;top:0;inset:auto;width:calc(var(--d0)*100%);height:auto;aspect-ratio:1;border-radius:50%;overflow:hidden;transform-origin:50% 50%;
-  outline:calc(1.5px / var(--k,1)) solid rgba(241,220,164,.85);outline-offset:calc(-1.5px / var(--k,1));box-shadow:0 0 .8rem rgba(241,220,164,.2)}
+  outline:calc(0.0938rem / var(--k,1)) solid rgba(241,220,164,.85);outline-offset:calc(-0.0938rem / var(--k,1));box-shadow:0 0 .8rem rgba(241,220,164,.2)}
 html[data-theme="light"] body .section-imgs .slide{outline-color:rgba(139,90,43,.9);box-shadow:0 0 .8rem rgba(139,90,43,.22)}
 html:root body .manifesto.side-right .section-imgs{translate:12vw 0}
 /* 06 SPIRIT has the longest text and keeps the same type size as every other section: the text gets the wide
@@ -1257,15 +1241,31 @@ html[data-theme="light"] .tools-pop .tree a{color:#2a231b}
 html[data-theme="light"] .tools-pop .tree a:hover{color:#8b5a2b}
 .tools-wrap{margin-left:0}
 @media (max-width:820px){.menu-panel .tools-pop .tree{display:none}}
+
+/* the theme switch is a top-level control of the bar, beside the + , and never hides with the rest of the nav */
+nav.chrome .theme-btn{font-family:var(--font);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-body);background:none;border:0;cursor:pointer;padding:.5rem .2rem;white-space:nowrap;flex:0 0 auto}
+nav.chrome .theme-btn:hover,nav.chrome .theme-btn:focus-visible{color:var(--gold-bright)}
+html[data-theme="light"] nav.chrome .theme-btn{color:#2a231b}
+html[data-theme="light"] nav.chrome .theme-btn:hover{color:#8b5a2b}
+html:not(.nav-on) nav.chrome > #themeBtn{opacity:1;visibility:visible;pointer-events:auto!important}
+@media (max-width:820px){nav.chrome .theme-btn{font-size:.66rem;letter-spacing:.12em;padding:.5rem .1rem}}
+
+/* cursor halo: one fixed layer under the nav, a slight warming of the area around a mouse pointer. Dark theme, real pointers only. */
+.halo{display:none}
+@media (hover:hover) and (pointer:fine){
+  html:not([data-theme="light"]) .halo{display:block;position:fixed;inset:0;z-index:50;pointer-events:none;
+    background:radial-gradient(circle 26rem at var(--hx,50%) var(--hy,50%),rgba(241,220,164,.05) 0%,transparent 70%)}
+}
+@media (prefers-reduced-motion:reduce){.halo{display:none!important}}
 </style>
 <style id="v3-cue">
 /* ---- scroll cue: first screen only, bottom centre, never taller than 10vh ---- */
-.scroll-cue{position:fixed;left:50%;bottom:1.5vh;height:calc(var(--vh,1vh)*8.5);transform:translateX(-50%);z-index:40;display:flex;flex-direction:column;align-items:center;gap:calc(var(--vh,1vh)*.9);
+.scroll-cue{position:fixed;left:50%;bottom:calc(var(--logi-bar,0rem) + 1.5vh);height:calc(var(--vh,1vh)*8.5);transform:translateX(-50%);z-index:40;display:flex;flex-direction:column;align-items:center;gap:calc(var(--vh,1vh)*.9);
   pointer-events:none;color:var(--gold-bright);opacity:0;animation:cueIn 1.2s ease 1.6s forwards;transition:opacity .7s ease}
 .scroll-cue.gone{opacity:0!important;animation:none}
 .scroll-cue span{font-size:.62rem;font-weight:700;letter-spacing:.42em;text-indent:.42em;text-transform:uppercase;line-height:1;color:#fff4d6;text-shadow:0 0 .5rem rgba(1,4,22,.95),0 0 1.2rem rgba(1,4,22,.7)}
 .scroll-cue i{position:relative;flex:1;width:1px;background:linear-gradient(180deg,transparent,rgba(255,244,214,.85) 30%,rgba(255,244,214,.5));overflow:hidden;filter:drop-shadow(0 0 .35rem rgba(1,4,22,.9))}
-.scroll-cue i::after{content:'';position:absolute;left:-1px;top:0;width:3px;height:30%;border-radius:3px;background:linear-gradient(180deg,transparent,#f1dca4 60%,#fff);box-shadow:0 0 .6rem rgba(241,220,164,.8);animation:cueDrop 2.6s cubic-bezier(.65,0,.35,1) infinite}
+.scroll-cue i::after{content:'';position:absolute;left:-1px;top:0;width:0.1875rem;height:30%;border-radius:0.1875rem;background:linear-gradient(180deg,transparent,#f1dca4 60%,#fff);box-shadow:0 0 .6rem rgba(241,220,164,.8);animation:cueDrop 2.6s cubic-bezier(.65,0,.35,1) infinite}
 @keyframes cueIn{to{opacity:1}}
 @keyframes cueDrop{0%{transform:translateY(-110%);opacity:0}15%{opacity:1}70%{opacity:1}100%{transform:translateY(340%);opacity:0}}
 html[data-theme="light"] .scroll-cue span{color:#fff4d6}
@@ -1308,7 +1308,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
    is only its orbs, centred in what is left; scrolling swaps them. Heights are written by JS (buildPairPins). ---- */
 .pair{position:relative;z-index:25;height:calc(var(--vh,1vh)*100);overflow:visible;display:flex;flex-direction:column}
 .pair > .manifesto{flex:none;min-height:0;box-sizing:border-box;margin-top:0!important;padding:2vh 5% 3vh;width:100%}
-.pair > .manifesto[data-pair="a"]{padding-top:calc(var(--nav-h,76px) + 1vh)}
+.pair > .manifesto[data-pair="a"]{padding-top:calc(var(--nav-h,4.75rem) + 1vh)}
 .pair ~ .pair,.pair + .manifesto{margin-top:10vh}
 .pair .manifesto-inner{will-change:opacity}
 @media (min-width:521px){.pair .manifesto-inner{flex:0 0 66%;padding:1.1rem clamp(1.4rem,2.6vw,2.6rem)}}
@@ -1323,12 +1323,12 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
    SIGNALÉTIQUE · hairline marks
    One rule set. .menu-btn and .close-btn share it.
    Close IS the menu's open state — same geometry, same timings.
-   (.menu-btn keeps its own display rule: hidden on desktop, shown by the ≤820px query.)
+   (.menu-btn keeps its own display rule: hidden on desktop, shown by the ≤51.25rem query.)
    ─────────────────────────────────────────────────────────── */
 .menu-btn,
 .close-btn{
   position:relative;
-  width:2.75rem;        /* 44px · tap target */
+  width:2.75rem;        /* 2.75rem · tap target */
   height:2.75rem;
   padding:0;
   background:none;
@@ -1340,7 +1340,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 .menu-btn i,
 .close-btn i{
   position:absolute;
-  left:0.6875rem;       /* 11px → 22px span */
+  left:0.6875rem;       /* 0.6875rem → 1.375rem span */
   right:0.6875rem;
   height:1px;           /* device hairline */
   background:currentColor;
@@ -1415,9 +1415,9 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 
 <div class="rings-push" id="ringsPush" aria-hidden="true">
   <div class="rings-wrap" id="rings">
-    <div class="rings-layer rings-navy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" class="rings-svg" preserveAspectRatio="xMidYMid meet"><g class="ring-band ring-0" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring0"/></g><g class="ring-band ring-1" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring1"/></g><g class="ring-band ring-2" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring2"/></g><g class="ring-band ring-3" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring3"/></g><g class="logo-center"><use href="#mk-logo"/></g></svg></div>
-    <div class="rings-layer rings-gold" id="ringsGold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" class="rings-svg" preserveAspectRatio="xMidYMid meet"><g class="ring-band ring-0" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring0"/></g><g class="ring-band ring-1" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring1"/></g><g class="ring-band ring-2" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring2"/></g><g class="ring-band ring-3" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring3"/></g><g class="logo-center"><use href="#mk-logo"/></g></svg></div>
-    <div class="rings-layer rings-shimmer" id="ringsShimmer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" class="rings-svg" preserveAspectRatio="xMidYMid meet"><g class="ring-band ring-0" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring0"/></g><g class="ring-band ring-1" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring1"/></g><g class="ring-band ring-2" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring2"/></g><g class="ring-band ring-3" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring3"/></g><g class="logo-center"><use href="#mk-logo"/></g></svg></div>
+    <div class="rings-layer rings-navy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" class="rings-svg" preserveAspectRatio="xMidYMid meet"><g class="ring-band ring-0" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring0"/></g><g class="ring-band ring-1" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring1"/></g><g class="ring-band ring-2" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring2"/></g><g class="ring-band ring-3" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring3"/></g><g class="logo-center"><use href="#mk-logo"/></g></svg></div>
+    <div class="rings-layer rings-gold" id="ringsGold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" class="rings-svg" preserveAspectRatio="xMidYMid meet"><g class="ring-band ring-0" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring0"/></g><g class="ring-band ring-1" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring1"/></g><g class="ring-band ring-2" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring2"/></g><g class="ring-band ring-3" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring3"/></g><g class="logo-center"><use href="#mk-logo"/></g></svg></div>
+    <div class="rings-layer rings-shimmer" id="ringsShimmer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" class="rings-svg" preserveAspectRatio="xMidYMid meet"><g class="ring-band ring-0" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring0"/></g><g class="ring-band ring-1" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring1"/></g><g class="ring-band ring-2" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring2"/></g><g class="ring-band ring-3" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring3"/></g><g class="logo-center"><use href="#mk-logo"/></g></svg></div>
   </div>
 </div>
 
@@ -1436,6 +1436,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
     <li><a href="draft.html">About</a></li>
   </ul>
   <div class="v3-cta"><a class="btn fill book-cta" href="draft.html">Plan your stay</a></div>
+  <button type="button" class="theme-btn" id="themeBtn" aria-label="Switch to light mode">Light</button>
   <div class="tools-wrap"><button class="plus" type="button" aria-label="More: all pages, language, sound" aria-expanded="false" aria-controls="toolsPop"><i></i><i></i></button>
     <div class="tools-pop" id="toolsPop"><div class="tree">
         <div><h4>Inhabit</h4><a href="proposal/moyseion-day.html">A Day at Moyseion</a><a href="draft.html">Water Sanctuary</a><a href="proposal/moyseion-day.html#akratisma">Akratisma</a><a href="proposal/moyseion-day.html#symposium">Symposium</a><a href="proposal/moyseion-houses.html">Houses</a></div>
@@ -1443,7 +1444,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
         <div><h4>More</h4><a href="proposal/moyseion-press.html">Press</a><a href="draft.html">About</a><a href="draft.html">Contact</a><a href="draft.html">Privacy</a></div>
       </div>
       <div class="menu-langs"><button type="button" class="lang-opt" data-lang="en" aria-pressed="true">EN</button><span class="rule" aria-hidden="true"></span><button type="button" class="lang-opt" data-lang="it" aria-pressed="false">IT</button></div>
-      <button type="button" id="soundToggle" aria-pressed="false" title="Ambient sound"><span data-i18n="nav.sound">Sound</span></button><button type="button" class="thm" id="themeBtn">Light</button></div></div>
+      <button type="button" id="soundToggle" aria-pressed="false" title="Ambient sound"><span data-i18n="nav.sound">Sound</span></button></div></div>
   <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="menuPanel"><i></i><i></i><i></i></button>
   <div class="menu-panel" id="menuPanel">
     <div class="sheet-cols"><div><h4>Menu</h4><a href="draft.html">Explore</a><a href="proposal/moyseion-houses.html">Houses</a><a href="draft.html">Journal</a><a href="draft.html">About</a></div><div><h4>Inhabit</h4><a href="proposal/moyseion-day.html">A Day at Moyseion</a><a href="draft.html">Water Sanctuary</a><a href="proposal/moyseion-day.html#akratisma">Akratisma</a><a href="proposal/moyseion-day.html#symposium">Symposium</a><a href="proposal/moyseion-press.html">Press</a></div></div>
@@ -1608,7 +1609,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
   <!-- THE CODA. The sigil opened the page and was pushed off the top; this is
        the same geometry, standing at the top of the page's last section. -->
   <div class="coda" id="coda" aria-hidden="true">
-    <div class="coda-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" class="rings-svg" preserveAspectRatio="xMidYMid meet"><g class="coda-ring ring-x0" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring0"/></g><g class="coda-ring ring-x1" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring1"/></g><g class="coda-ring ring-x2" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring2"/></g><g class="coda-ring ring-x3" style="transform-box:view-box;transform-origin:500px 500px;"><use href="#mk-ring3"/></g><g><use href="#mk-logo"/></g></svg></div>
+    <div class="coda-mark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" class="rings-svg" preserveAspectRatio="xMidYMid meet"><g class="coda-ring ring-x0" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring0"/></g><g class="coda-ring ring-x1" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring1"/></g><g class="coda-ring ring-x2" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring2"/></g><g class="coda-ring ring-x3" style="transform-box:view-box;transform-origin:50% 50%;"><use href="#mk-ring3"/></g><g><use href="#mk-logo"/></g></svg></div>
     <p class="coda-word">MOY&Sigma;EION</p>
   </div>
   <div class="visit-actions">
@@ -1616,20 +1617,11 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
     <a href="proposal/moyseion-houses.html" data-i18n="visit.cta2">See the houses</a>
   </div>
   <div class="book-block" id="bookBlock"><p class="book-kicker">Your stay begins here.</p><a class="btn fill book-cta" id="bookCta" href="draft.html">Plan your stay</a></div>
-  <details class="logi" id="logistics">
-    <summary><span>Practical information</span><i aria-hidden="true"></i></summary>
-    <div class="logi-grid">
-      <div><h4>Address</h4><p>Via San Biagio 27<br>75100 Matera (MT)</p><p>Matera Centrale station, 15 min<br>Bari Airport, 65 km<br>Brindisi Airport, 110 km</p></div>
-      <div><h4>Transfer</h4><p>Complimentary shuttle, 08:00 &ndash; 20:00.<br>Reserve 24 hours in advance.</p><p><a href="#">Contact us on WhatsApp</a></p></div>
-      <div><h4>Parking</h4><p><b>Garage Sassi</b><br>Via D&rsquo;Addozio &middot; 800 m<br>10 min by shuttle</p><p><b>Parcheggio La Martella</b><br>Via Lucana 184 &middot; 1.5 km<br>15 min by shuttle</p></div>
-      <div><h4>Your stay</h4><p>Check-in by 22:00<br>Check-out by 11:00<br>Luggage deposit available<br>Guests 16 and over<br>No pets</p></div>
-    </div>
-  </details>
 
 <footer class="site-foot v3foot"><div class="foot">
-  <nav aria-label="Footer"><a href="draft.html" data-i18n="foot.contact">Contact</a><a href="#">FAQ</a><a href="proposal/moyseion-press.html">Press</a><a href="draft.html" data-i18n="foot.privacy">Privacy</a><a href="#">Terms</a><a href="#">Careers</a></nav>
-  <div class="social"><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".8" fill="currentColor"/></svg></a><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.3C16.7 2.3 15.8 2 14.7 2 12.4 2 10.8 3.4 10.8 6v2.5H8.2V12h2.6v10H14V12h2.6l.4-3.5z"/></svg></a></div>
-  <a class="news" href="#"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="11" width="36" height="26" rx="2"/><path d="M6 14l18 14 18-14"/></svg> Newsletter</a>
+  <nav aria-label="Footer"><a href="draft.html" data-i18n="foot.contact">Contact</a><a href="draft.html">FAQ</a><a href="proposal/moyseion-press.html">Press</a><a href="draft.html" data-i18n="foot.privacy">Privacy</a><a href="draft.html">Terms</a><a href="draft.html">Careers</a></nav>
+  <div class="social"><a href="draft.html" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".8" fill="currentColor"/></svg></a><a href="draft.html" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.3C16.7 2.3 15.8 2 14.7 2 12.4 2 10.8 3.4 10.8 6v2.5H8.2V12h2.6v10H14V12h2.6l.4-3.5z"/></svg></a></div>
+  <a class="news" href="draft.html"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="11" width="36" height="26" rx="2"/><path d="M6 14l18 14 18-14"/></svg> Newsletter</a>
   <p class="foot-note" data-i18n="foot.note">For more on the research and archaeology: <a href="https://fondazione-moyseion-isama.com" target="_blank" rel="noopener">fondazione-moyseion-isama.com</a></p>
 </div></footer>
 </section>
@@ -1835,7 +1827,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
   var back = document.createElement('button');
   back.type = 'button'; back.setAttribute('aria-label', 'Back to the mirror page');
   back.textContent = 'Back to both views';
-  back.style.cssText = 'display:none;position:fixed;left:14px;bottom:14px;z-index:9999;font:600 11px/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:#d6322b;border:0;border-radius:999px;padding:9px 14px;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.45)';
+  back.style.cssText = 'display:none;position:fixed;left:0.875rem;bottom:0.875rem;z-index:9999;font:600 0.6875rem/1 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:#d6322b;border:0;border-radius:62.4375rem;padding:0.5625rem 0.875rem;cursor:pointer;box-shadow:0 0.125rem 0.625rem rgba(0,0,0,.45)';
   back.addEventListener('click', function(){ window.parent.postMessage({ type: 'moy-exit-full' }, '*'); });
   document.body.appendChild(back);
   window.addEventListener('message', function(e){
@@ -1901,6 +1893,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 
 
 <div class="grain" aria-hidden="true"></div>
+<div class="halo" id="halo" aria-hidden="true"></div>
 
 <noscript>
   <style>
@@ -1938,7 +1931,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const REDUCED = root.classList.contains('reduced');
 const LIGHT = root.getAttribute('data-theme') === 'light';
-{ const tb = document.getElementById('themeBtn'); if (tb){ tb.textContent = LIGHT ? 'Dark' : 'Light'; tb.addEventListener('click', () => window.__moySetTheme(LIGHT ? 'dark' : 'light')); } }
+{ const tb = document.getElementById('themeBtn'); if (tb){ tb.textContent = LIGHT ? 'Dark' : 'Light'; tb.setAttribute('aria-label', LIGHT ? 'Switch to dark mode' : 'Switch to light mode'); tb.addEventListener('click', () => window.__moySetTheme(LIGHT ? 'dark' : 'light')); } }
 root.classList.remove('no-motion');
 
 // ================= MOTION CONSTANTS — TWO, NOT FIVE =================
@@ -2075,7 +2068,7 @@ function wordmarkXAt(sy){
 // measured bottom edge lets the sections reserve exactly that much and no more.
 function publishWordmarkZone(){
   const H = wordmarkEl.offsetHeight || VH * 0.3;
-  root.style.setProperty('--wm-zone', '84px');   // the header bar carries the name; sections reserve its height
+  root.style.setProperty('--wm-zone', '5.25rem');   // the header bar carries the name; sections reserve its height
 }
 
 // ================= SMOOTH SCROLL =================
@@ -4147,5 +4140,20 @@ window.addEventListener('load', function(){
   (mq.addEventListener ? mq.addEventListener('change', place) : mq.addListener(place)); place();
 })();
 </script>
+<script>
+/* cursor halo: the pointer position is written to the layer once per frame, never from the event handler itself */
+(function(){
+  var halo = document.getElementById('halo'), root = document.documentElement;
+  if (!halo || !window.matchMedia || !matchMedia('(hover:hover) and (pointer:fine)').matches || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  var x = 0, y = 0, queued = false, on = false;
+  function paint(){ queued = false; halo.style.setProperty('--hx', x + 'px'); halo.style.setProperty('--hy', y + 'px'); }
+  function move(e){ if (e.pointerType && e.pointerType !== 'mouse') return; x = e.clientX; y = e.clientY; if (!queued){ queued = true; requestAnimationFrame(paint); } }
+  function attach(){ if (on || root.getAttribute('data-theme') === 'light') return; on = true; window.addEventListener('pointermove', move, { passive:true }); }
+  function detach(){ if (!on) return; on = false; window.removeEventListener('pointermove', move); }
+  document.addEventListener('visibilitychange', function(){ if (document.hidden) detach(); else attach(); });
+  attach();
+})();
+</script>
+<script src="logi.js"></script>
 </body>
 </html>

@@ -287,10 +287,16 @@ section{position:relative}
 .sigil{display:block;color:var(--gold-body)}
 .sigil.mini{width:44px;height:44px;flex:0 0 auto}
 .sigil.big{width:clamp(130px,16vw,230px);height:auto;aspect-ratio:1}
-.sg{transform-box:view-box;transform-origin:500px 500px;animation:spin 90s linear infinite}
-.sg1,.sg3{animation-direction:reverse;animation-duration:120s}
-@keyframes spin{to{transform:rotate(360deg)}}
-.brand .sg{animation-duration:160s}
+/* THE SIGIL, ONE RULE SET FOR EVERY INSTANCE. The four ring bands turn as a mechanism; the statue/logo at the centre never does.
+   The animation sits on the <use> inside each band, never on the band or on #rings: GSAP owns those transforms (the hero's
+   scroll-scrubbed turn), and a child's own rotation simply adds to the parent's. */
+use[href^="#mk-ring"]{transform-box:view-box;transform-origin:50% 50%;animation:sigSpin linear infinite}
+use[href="#mk-ring0"]{animation-duration:240s}
+use[href="#mk-ring1"]{animation-duration:160s;animation-direction:reverse}
+use[href="#mk-ring2"]{animation-duration:110s}
+use[href="#mk-ring3"]{animation-duration:70s;animation-direction:reverse}
+@keyframes sigSpin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){use[href^="#mk-ring"]{animation:none}}
 .hero-sigil{margin-bottom:.4rem}
 .hero-film .hero-art{width:100%;left:0}
 .hero-film .hero-art::before{background:linear-gradient(90deg,var(--navy) 0%,rgba(1,4,22,.78) 32%,rgba(1,4,22,.25) 70%,rgba(1,4,22,.45) 100%),linear-gradient(0deg,var(--navy) 0%,rgba(1,4,22,0) 28%),linear-gradient(180deg,rgba(1,4,22,.6),rgba(1,4,22,0) 22%)}
