@@ -1298,32 +1298,6 @@ html[data-theme="light"] .reels-quote figcaption{color:#8b5a2b}
 html[data-theme="light"] .reels-quote figcaption::before{background:#8b5a2b}
 .tools-pop .tree a.sub{font-size:.74rem;padding-left:1rem;opacity:.85}
 
-/* ---- the three films: three tall arches on a diagonal, the middle one the largest, each with a second arch drawn behind it, a
-   large outlined numeral on its edge and its title beneath. Above 520px; below, the horizontal strip stays. ---- */
-@media (min-width:521px){
-  html body .reels{display:grid;grid-template-columns:repeat(3,auto);justify-content:center;align-items:center;gap:clamp(2rem,7vw,8rem);
-    padding:clamp(6rem,16vh,11rem) var(--pad3);margin:0;overflow:visible;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-    background:radial-gradient(ellipse 55% 55% at 50% 50%,rgba(131,109,48,.13),transparent 72%)}
-  html body .reel{flex:none;margin:0!important;display:flex;flex-direction:column;align-items:center;--rh:54vh}
-  html body .reel:nth-child(1){transform:translateY(-8vh)}
-  html body .reel:nth-child(2){--rh:70vh;transform:translateY(1vh)}
-  html body .reel:nth-child(3){transform:translateY(12vh)}
-  html body .reel::before{content:"";position:absolute;left:-.9rem;right:-.9rem;top:-.9rem;height:calc(var(--rh) + .9rem);border:1px solid rgba(131,109,48,.45);border-bottom:0;border-radius:99rem 99rem 0 0;pointer-events:none}
-  html body .reel::after{content:counter(reel,upper-roman);position:absolute;left:-2.2rem;top:calc(var(--rh) - 5.4rem);z-index:3;font-size:clamp(3.4rem,7vw,7.4rem);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(241,220,164,.6);pointer-events:none}
-  html body .reel-frame{width:auto;height:var(--rh);aspect-ratio:9/16;border-radius:99rem 99rem 0 0;border-color:rgba(241,220,164,.5);transition:border-color .6s}
-  html body .reel:hover .reel-frame{border-color:var(--gold-bright)}
-  html body .reel video{transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
-  html body .reel:hover video{transform:scale(1.06)}
-  html body .reel-title{position:static;opacity:1;transform:none;padding-top:1.5rem;text-align:center;font-size:.7rem;letter-spacing:.42em}
-  html body .reel-title::before{content:none}
-  html[data-theme="light"] body .reel::after{-webkit-text-stroke-color:rgba(139,90,43,.7)}
-  html[data-theme="light"] body .reel::before{border-color:rgba(139,90,43,.45)}
-  html[data-theme="light"] body .reels{background:radial-gradient(ellipse 55% 55% at 50% 50%,rgba(139,90,43,.1),transparent 72%)}
-}
-@media (min-width:521px) and (max-width:1000px){
-  html body .reel{--rh:40vh}html body .reel:nth-child(2){--rh:54vh}
-  html body .reels{gap:clamp(1.6rem,5vw,3rem)}
-}
 </style>
 <style id="v3-cue">
 /* ---- scroll cue: first screen only, bottom centre, never taller than 10vh ---- */
