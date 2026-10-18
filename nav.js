@@ -4,7 +4,7 @@
 (function(){
   if (document.getElementById('mnav')) return;
   var here = window.__NAV_BASE != null ? window.__NAV_BASE : (document.currentScript && document.currentScript.src ? new URL('./', document.currentScript.src).href : '');
-  var P = { home: here + 'Moyseion-v3-blend.html', day: here + 'proposal/moyseion-day.html', houses: here + 'proposal/moyseion-houses.html', press: here + 'proposal/moyseion-press.html', neo: here + 'proposal/moyseion-neolithic.html', eno: here + 'proposal/moyseion-enotrian.html', mag: here + 'proposal/moyseion-magnagraecia.html', draft: here + 'draft.html' };
+  var P = { home: here + 'Moyseion-v3-blend.html', day: here + 'proposal/moyseion-day.html', houses: here + 'proposal/moyseion-houses.html', press: here + 'proposal/moyseion-press.html', journal: here + 'proposal/moyseion-journal.html', neo: here + 'proposal/moyseion-neolithic.html', eno: here + 'proposal/moyseion-enotrian.html', mag: here + 'proposal/moyseion-magnagraecia.html', draft: here + 'draft.html' };
   var css = ''
   + 'header.nav,.sheet#sheet,nav[aria-label="Primary"]:not(.mnav){display:none!important}'
   + '.mnav{--g-deep:#836d30;--g-body:#c2a567;--g-bright:#f1dca4;--g-line:rgba(131,109,48,.45);--g-soft:rgba(131,109,48,.28);--g-bg:#010416;--pad:clamp(1.1rem,4.6vw,4.2rem);'
@@ -68,18 +68,18 @@
   var hasMark = !!document.getElementById('mk-logo'), light = document.documentElement.getAttribute('data-theme') === 'light';
   var sigil = hasMark ? '<svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#mk-ring0"/><use href="#mk-ring1"/><use href="#mk-ring2"/><use href="#mk-ring3"/><use href="#mk-logo"/></svg>' : '';
   var cols = '<div class="mn-col"><h4>Inhabit</h4><a href="' + P.day + '">A Day at Moyseion</a><a href="' + P.draft + '">Water Sanctuary</a><a href="' + P.day + '#akratisma">Akratisma</a><a href="' + P.day + '#symposium">Symposium</a><a href="' + P.houses + '">Houses</a><a class="sub" href="' + P.neo + '">Neolithic</a><a class="sub" href="' + P.eno + '">Enotrian</a><a class="sub" href="' + P.mag + '">Magna Graecia</a></div>'
-    + '<div class="mn-col"><h4>Explore</h4><a href="' + P.draft + '">The Idea</a><a href="' + P.draft + '">Archaeological Research</a><a href="' + P.draft + '">Journal</a><a href="https://fondazione-moyseion-isama.com" target="_blank" rel="noopener">Fondazione ISAMA</a></div>'
+    + '<div class="mn-col"><h4>Explore</h4><a href="' + P.draft + '">The Idea</a><a href="' + P.draft + '">Archaeological Research</a><a href="' + P.journal + '">Journal</a><a href="https://fondazione-moyseion-isama.com" target="_blank" rel="noopener">Fondazione ISAMA</a></div>'
     + '<div class="mn-col"><h4>More</h4><a href="' + P.press + '">Press</a><a href="' + P.draft + '">About</a><a href="' + P.draft + '">Contact</a><a href="' + P.draft + '">Privacy</a></div>'
     + '<div class="mn-col"><h4>Settings</h4><div class="mn-lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><span class="rule" aria-hidden="true"></span><button type="button" data-lang="it" aria-pressed="false">IT</button></div></div>';
   var nav = document.createElement('nav'); nav.className = 'mnav'; nav.id = 'mnav'; nav.setAttribute('aria-label', 'Primary');
   nav.innerHTML = '<a class="mn-brand" href="' + P.home + '#top" aria-label="MOΥΣEION">' + sigil + '<span><b>MOΥΣEION</b><small>Matera</small></span></a>'
-    + '<ul class="mn-menu"><li><a href="' + P.draft + '">Explore</a></li><li><a href="' + P.houses + '">Houses</a></li><li><a href="' + P.draft + '">Journal</a></li><li><a href="' + P.draft + '">About</a></li></ul>'
+    + '<ul class="mn-menu"><li><a href="' + P.draft + '">Explore</a></li><li><a href="' + P.houses + '">Houses</a></li><li><a href="' + P.journal + '">Journal</a></li><li><a href="' + P.draft + '">About</a></li></ul>'
     + '<div class="mn-cta"><a class="mn-btn" href="' + P.draft + '">Plan your stay</a></div>'
     + '<button type="button" class="mn-theme" id="mnTheme" aria-label="' + (light ? 'Switch to dark mode' : 'Switch to light mode') + '">' + (light ? 'Dark' : 'Light') + '</button>'
     + '<div class="mn-wrap"><button class="mn-plus" type="button" aria-label="More: all pages, language, sound" aria-expanded="false" aria-controls="mnPop"><i></i><i></i></button>'
     + '<div class="mn-pop" id="mnPop">' + cols + '<div class="mn-foot" aria-hidden="true"><span>Matera &middot; Basilicata</span><span>Research &amp; Hospitality</span><span>Revive</span></div></div></div>'
     + '<button type="button" class="mn-burger" aria-label="Menu" aria-expanded="false" aria-controls="mnSheet"><i></i><i></i><i></i></button>'
-    + '<div class="mn-sheet" id="mnSheet"><div><h4>Menu</h4><a href="' + P.draft + '">Explore</a><a href="' + P.houses + '">Houses</a><a href="' + P.draft + '">Journal</a><a href="' + P.draft + '">About</a></div>'
+    + '<div class="mn-sheet" id="mnSheet"><div><h4>Menu</h4><a href="' + P.draft + '">Explore</a><a href="' + P.houses + '">Houses</a><a href="' + P.journal + '">Journal</a><a href="' + P.draft + '">About</a></div>'
     + '<div><h4>Inhabit</h4><a href="' + P.day + '">A Day at Moyseion</a><a href="' + P.day + '#akratisma">Akratisma</a><a href="' + P.day + '#symposium">Symposium</a><a href="' + P.press + '">Press</a></div></div>';
   document.body.insertBefore(nav, document.body.firstChild);
 

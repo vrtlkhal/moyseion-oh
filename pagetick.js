@@ -4,6 +4,7 @@
   var MAP = {
     'moyseion-day.html':    ['Inhabit Moyseion', 'A Day at Moyseion'],
     'moyseion-houses.html': ['Inhabit Moyseion', 'Houses'],
+    'moyseion-journal.html': ['Explore', 'Journal'],
     'moyseion-neolithic.html': ['Houses', 'Neolithic'],
     'moyseion-enotrian.html': ['Houses', 'Enotrian'],
     'moyseion-magnagraecia.html': ['Houses', 'Magna Graecia'],

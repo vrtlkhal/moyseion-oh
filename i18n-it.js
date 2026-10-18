@@ -314,5 +314,9 @@ window.__MOY_IT = {
 "Moyseion›Houses›Enotrian": "<a href=\"../Moyseion-v3-blend.html\">Moyseion</a><span>&rsaquo;</span><a href=\"moyseion-houses.html\">Le case</a><span>&rsaquo;</span>Enotrio",
 "Moyseion›Houses›Neolithic": "<a href=\"../Moyseion-v3-blend.html\">Moyseion</a><span>&rsaquo;</span><a href=\"moyseion-houses.html\">Le case</a><span>&rsaquo;</span>Neolitico",
 "Moyseion›Houses›Magna Graecia": "<a href=\"../Moyseion-v3-blend.html\">Moyseion</a><span>&rsaquo;</span><a href=\"moyseion-houses.html\">Le case</a><span>&rsaquo;</span>Magna Grecia",
-"You are here": "Siete qui"
+"You are here": "Siete qui",
+"Archive": "Archivio",
+"Entries will appear here.": "Le voci compariranno qui.",
+"Archaeologia Poetica: reflections, essays and notes.": "Archaeologia Poetica: riflessioni, saggi e appunti.",
+"Moyseion›Journal": "<a href=\"../Moyseion-v3-blend.html\">Moyseion</a><span>&rsaquo;</span>Diario"
 };
