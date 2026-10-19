@@ -962,14 +962,14 @@ nav.chrome .menu-panel{display:none}
 
 /* ---- STRATA: the page is a dig, read top to bottom ---- */
 .strata{position:relative;z-index:20;padding:8vh var(--pad3) 10vh}
-.strata h2{font-weight:400;font-size:clamp(1.4rem,2.4vw,2.2rem);letter-spacing:.34em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:5vh;display:flex;align-items:center;gap:1.4rem}
+.strata h2{font-weight:400;font-size:clamp(1rem,1.5vw,1.4rem);letter-spacing:.34em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:2.4vh;display:flex;align-items:center;gap:1.4rem}
 .strata h2::after{content:'';flex:1;height:1px;background:rgba(131,109,48,.45)}
-.layer{display:grid;grid-template-columns:7rem 1fr auto;gap:clamp(1rem,3vw,3rem);align-items:baseline;padding:clamp(1.2rem,2.6vw,2.2rem) 0;border-top:1px solid rgba(131,109,48,.35);transition:background .5s,padding .5s}
+.layer{display:grid;grid-template-columns:6rem 1fr auto;gap:clamp(1rem,2.4vw,2.4rem);align-items:baseline;padding:clamp(.7rem,1.5vw,1.2rem) 0;border-top:1px solid rgba(131,109,48,.35);transition:background .5s,padding .5s}
 .layer:last-child{border-bottom:1px solid rgba(131,109,48,.35)}
 .layer:hover{background:linear-gradient(90deg,rgba(241,220,164,.06),transparent 70%);padding-left:1rem}
 .layer i{font-style:normal;font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-deep)}
-.layer b{font-weight:400;font-size:clamp(1.5rem,3.4vw,3.4rem);line-height:1;color:var(--gold-bright);letter-spacing:.01em}
-.layer span{font-size:clamp(.78rem,.95vw,.95rem);letter-spacing:.1em;color:var(--gold-body);text-align:right;max-width:20rem}
+.layer b{font-weight:400;font-size:clamp(1.15rem,2.1vw,2.1rem);line-height:1;color:var(--gold-bright);letter-spacing:.01em}
+.layer span{font-size:clamp(.7rem,.85vw,.85rem);letter-spacing:.1em;color:var(--gold-body);text-align:right;max-width:20rem}
 @media (max-width:700px){.layer{grid-template-columns:1fr;gap:.4rem}.layer span{text-align:left}}
 .house{position:relative;z-index:20;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(.9rem,1.6vw,1.6rem);margin:0 var(--pad3) 10vh}
 .hcard{position:relative;display:flex;flex-direction:column;gap:1rem;padding:clamp(1.1rem,1.8vw,1.7rem);border:.07rem solid var(--line-soft);border-radius:.9rem;overflow:hidden;color:inherit;text-decoration:none;
@@ -1286,7 +1286,7 @@ html body .manifesto.m-text p{font-size:clamp(1.05rem,1.8vw,2rem);line-height:1.
 html body .manifesto.m-text .section-imgs{display:none}
 
 .rail-cta{display:flex;justify-content:center;margin-top:clamp(1.6rem,4vh,3rem)}
-.strata{min-height:calc(var(--vh,1vh)*100);display:flex;flex-direction:column;justify-content:center;box-sizing:border-box}
+.strata{min-height:calc(var(--vh,1vh)*56);display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;padding-top:4vh;padding-bottom:4vh}
 
 /* the press line that opens the reels */
 .reels-quote{position:relative;z-index:20;margin:0 auto;padding:clamp(2.4rem,7vh,5rem) var(--pad3) 0;text-align:center}
@@ -3686,7 +3686,7 @@ function buildSections(){
     const layers = [...strata.querySelectorAll('.layer')], head = strata.querySelector('h2');
     gsap.set(layers, { opacity: 0.12, y: '1.4rem' });
     gsap.set(head, { opacity: 0.12 });
-    const dig = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { trigger: strata, start: 'top top', end: () => '+=' + Math.round(VH * 1.6),
+    const dig = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { trigger: strata, start: 'top 22%', end: () => '+=' + Math.round(VH * 0.9),
       pin: true, pinSpacing: true, scrub: SCRUB_SYSTEM, id: 'pin-strata', invalidateOnRefresh: true } });
     dig.to(head, { opacity: 1, duration: 0.5 }, 0);
     layers.forEach((l, i) => dig.to(l, { opacity: 1, y: 0, duration: 1 }, 0.35 + i * 1.05));
