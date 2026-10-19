@@ -19,12 +19,12 @@
   function build(){
     seq = 0; var rect = box.getBoundingClientRect(); W = Math.max(1, rect.width); H = Math.max(1, rect.height); dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr); canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
-    var rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16, T = rem * 1.7;
+    var rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16, T = rem * parseFloat(box.getAttribute('data-tile') || 1.7), quiet = box.hasAttribute('data-quiet');
     var cols = Math.max(6, Math.round(W / T)), rows = Math.max(4, Math.round(H / T)), cw = W / cols, ch = H / rows;
     var narrow = window.matchMedia('(max-width:60rem)').matches;
     // lattice of corners, jittered inside, straight on the border
     var V = []; for (var j = 0; j <= rows; j++){ V[j] = []; for (var i = 0; i <= cols; i++){
-      var x = i * cw, y = j * ch; if (i > 0 && i < cols) x += (r() - .5) * cw * .55; if (j > 0 && j < rows) y += (r() - .5) * ch * .55; V[j][i] = [x, y]; } }
+      var x = i * cw, y = j * ch; if (i > 0 && i < cols) x += (r() - .5) * cw * (quiet ? .42 : .55); if (j > 0 && j < rows) y += (r() - .5) * ch * (quiet ? .42 : .55); V[j][i] = [x, y]; } }
     // seven regions: the nearest seed gives a tile its photograph
     var seeds = []; for (var s = 0; s < imgs.length; s++) seeds.push([ (narrow ? 0 : .30) * W + (s + .5) / imgs.length * (narrow ? 1 : .70) * W, (.2 + .6 * r()) * H ]);
     tiles = [];
@@ -36,8 +36,8 @@
       if (graphic && !isNavy){ var dd = Math.hypot(cx - .74 * W, cy - .5 * H) / H; if (jj < 1 || jj >= rows - 1) rg = ((ii + jj) % 2) ? '#836d30' : (light ? '#4a3a1c' : '#050b22');
         else if (dd < .5) rg = MEDAL[Math.min(MEDAL.length - 1, Math.floor(dd / .085))];
         else rg = (r() < .1) ? '#836d30' : NAVY[Math.floor(r() * NAVY.length)]; }
-      var g = .085, pts = p.map(function(v){ return [cx + (v[0] - cx) * (1 - g), cy + (v[1] - cy) * (1 - g)]; });
-      tiles.push({ pts: pts, cx: cx, cy: cy, k: k, tone: isNavy ? NAVY[Math.floor(r() * NAVY.length)] : rg, g: !!rg, shade: .9 + r() * .18,
+      var g = quiet ? .05 : .085, pts = p.map(function(v){ return [cx + (v[0] - cx) * (1 - g), cy + (v[1] - cy) * (1 - g)]; });
+      tiles.push({ pts: pts, cx: cx, cy: cy, k: k, tone: isNavy ? (quiet ? NAVY[0] : NAVY[Math.floor(r() * NAVY.length)]) : rg, g: !!rg, shade: quiet ? .96 + r() * .08 : .9 + r() * .18,
         depth: (r() - .5) * 2, ox: (r() - .5) * cw * 5, oy: (r() - .5) * ch * 5, rot: (r() - .5) * .9, delay: (cx / W) * .55 + r() * .25, bb: bbox(pts) });
     }
   }
