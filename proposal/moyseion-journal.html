@@ -312,6 +312,19 @@ html[data-theme="light"] .jr-card a:hover,html[data-theme="light"] .jr-card a:fo
 html[data-theme="light"] .era-hero h1{color:#fbf6ee}
 html[data-theme="light"] .era-hero .crumbs,html[data-theme="light"] .era-hero .crumbs a{color:#e9dfcf}
 @media (prefers-reduced-motion:reduce){.era-hero::before{animation:none}}
+
+/* THE HEAD, CRISP: no wash, no fade. The title stands on the plain page on the left; a sharp, full-colour photograph fills the right of the head, edge to edge */
+.era-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);column-gap:0;align-items:end;min-height:58vh;padding:0;isolation:auto;overflow:hidden}
+.era-hero::after{display:none}
+.era-hero::before{content:"";position:static;z-index:0;grid-column:2;grid-row:1 / span 6;align-self:stretch;min-height:100%;background:url("img/danza12.jpg") center/cover no-repeat;animation:none}
+.era-hero > *{grid-column:1;position:relative;z-index:1}
+.era-hero .crumbs{margin:0 0 1.4rem;padding:calc(4rem + clamp(2.4rem,8vh,5rem)) 0 0 var(--pad);color:var(--gold-deep)}
+.era-hero .crumbs a{color:var(--gold-deep)}
+.era-hero h1{padding-left:var(--pad);margin:0 0 1.2rem;font-size:clamp(3.6rem,8.4vw,9rem);line-height:.92;letter-spacing:-.02em;color:var(--gold-bright)}
+.era-hero .lede{padding:0 2rem clamp(2rem,6vh,3.6rem) var(--pad);color:var(--gold-body);max-width:34em}
+html[data-theme="light"] .era-hero h1{color:var(--gold-bright)}
+html[data-theme="light"] .era-hero .crumbs,html[data-theme="light"] .era-hero .crumbs a{color:var(--gold-deep)}
+@media (max-width:60rem){.era-hero{grid-template-columns:1fr}.era-hero::before{grid-column:1;grid-row:1;min-height:34vh;margin-top:4rem}.era-hero > *{grid-row:auto}.era-hero .crumbs{padding-top:1.6rem}}
 </style>
 </head>
 <body>
