@@ -233,6 +233,26 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(131,109,48,
 .ar-band .go{position:relative;font-size:1.6rem;transition:transform .5s}
 .ar-band:hover .go,.ar-band:focus-visible .go{transform:translateX(.6rem)}
 html[data-theme="light"] .ar-band{color:#fbf6ee;background:linear-gradient(90deg,rgba(20,14,8,.86),rgba(20,14,8,.55) 50%,rgba(20,14,8,.86)),url("img/danza13.jpg") center/cover no-repeat}
+
+/* ALIVE: the cards rise into place one after another, each photograph opens like a curtain, the first one breathes slowly, and a card lifts to meet the pointer.
+   ALIGNED: every block of words is flush left, ragged right, on the page's own left margin; titles balance their lines and standfirsts avoid a last-line orphan. */
+.jr-card,.jr-card a,.jr-card h3,.jr-card .standfirst,.jr-card time,.jr-card .tags,.ar-hero figcaption,.era-hero,.era-hero *{text-align:left}
+.jr-card h3,.ar-hero h3{text-wrap:balance;hyphens:manual}
+.jr-card .standfirst,.ar-hero .standfirst,.era-hero .lede{text-wrap:pretty}
+.jr-card .tags{justify-content:flex-start}
+.jr-card a{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.jr-card a:hover,.jr-card a:focus-visible{transform:translateY(-.4rem)}
+.jr-lead .jr-card img{animation:jrBreath 26s ease-in-out infinite alternate}
+@keyframes jrBreath{from{transform:scale(1)}to{transform:scale(1.09)}}
+html.jr-js .jr-card{opacity:0;transform:translateY(2.4rem)}
+html.jr-js .jr-card.in{opacity:1;transform:none;transition:opacity .9s ease,transform 1s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i,0) * 70ms)}
+html.jr-js .jr-card img{clip-path:inset(0 0 100% 0);transition:clip-path 1.3s cubic-bezier(.2,.7,.2,1) .15s,transform 1.6s cubic-bezier(.2,.7,.2,1)}
+html.jr-js .jr-card.in img{clip-path:inset(0)}
+.jr-card.pop{animation:jrPop .5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes jrPop{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.jr-filters button{transition:background .35s,color .35s,transform .35s}
+.jr-filters button:hover{transform:translateY(-.15rem)}
+@media (prefers-reduced-motion:reduce){.jr-lead .jr-card img{animation:none}html.jr-js .jr-card,html.jr-js .jr-card img{opacity:1;transform:none;clip-path:none;transition:none}.jr-card a{transition:none}.jr-card.pop{animation:none}}
 </style>
 </head>
 <body>
@@ -268,24 +288,24 @@ html[data-theme="light"] .ar-band{color:#fbf6ee;background:linear-gradient(90deg
   </div>
 </div>
 <section class="jr-lead" aria-label="Latest">
-<article class="jr-card jr-t1" data-category="research"><a href="draft.html"><img src="img/ws17.jpg" alt="" loading="lazy"><h3>Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2026-10-24">24 October 2026</time></a></article>
+<article class="jr-card jr-t1" data-category="research"><a href="draft.html"><img src="img/ws17.jpg" alt="" loading="lazy"><h3 lang="it">Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2026-10-24">24 October 2026</time></a></article>
 </section>
 <section class="jr-masonry" aria-label="Journal">
-<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/xenia15.jpg" alt="" loading="lazy"><h3>Abitare la soglia</h3><p class="standfirst">Against the threshold as a limit to be crossed — an older idea of dwelling within it.</p><ul class="tags"><li class="t-research">Research</li><li class="t-rituals">Rituals</li></ul><time datetime="2026-10-31">31 October 2026</time></a></article>
-<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/matera.jpg" alt="" loading="lazy"><h3>John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità</h3><p class="standfirst">An academic and experiential retreat in the Sassi on myth, ritual and human formation in the ancient world.</p><ul class="tags"><li class="t-research">Research</li><li class="t-rituals">Rituals</li></ul><time datetime="2026-11-12">12–16 November 2026</time></a></article>
+<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/xenia15.jpg" alt="" loading="lazy"><h3 lang="it">Abitare la soglia</h3><p class="standfirst">Against the threshold as a limit to be crossed — an older idea of dwelling within it.</p><ul class="tags"><li class="t-research">Research</li><li class="t-rituals">Rituals</li></ul><time datetime="2026-10-31">31 October 2026</time></a></article>
+<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/matera.jpg" alt="" loading="lazy"><h3 lang="it">John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità</h3><p class="standfirst">An academic and experiential retreat in the Sassi on myth, ritual and human formation in the ancient world.</p><ul class="tags"><li class="t-research">Research</li><li class="t-rituals">Rituals</li></ul><time datetime="2026-11-12">12–16 November 2026</time></a></article>
 <article class="jr-card jr-t4" data-category="research"><a href="draft.html"><h3>Moyseion Research Retreat - Ancient Greek Harp</h3><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2026-11-20">20–29 November 2026</time></a></article>
 <article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/musica1.jpg" alt="" loading="lazy"><h3>Discover the Ancient Greek Harp</h3><p class="standfirst">Hands-on music-making for the ancient Greek harp, led by Bill Taylor and Nancy Thym.</p><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2026-11-23">23–26 November 2026</time></a></article>
-<article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/neo13.jpg" alt="" loading="lazy"><h3>L'inconscio abita ancora il mito?</h3><p class="standfirst">The conflict of Aeschylus' Eumenides ends in transformation, the Erinyes welcomed into the city.</p><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2026-12-19">19 December 2026</time></a></article>
+<article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/neo13.jpg" alt="" loading="lazy"><h3 lang="it">L'inconscio abita ancora il mito?</h3><p class="standfirst">The conflict of Aeschylus' Eumenides ends in transformation, the Erinyes welcomed into the city.</p><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2026-12-19">19 December 2026</time></a></article>
 <article class="jr-card jr-t4" data-category="research"><a href="draft.html"><h3>Moyseion Research Retreat - Ancient Greek Dance and Song</h3><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2027-01-14">14–17 January 2027</time></a></article>
 <article class="jr-card jr-t3" data-category="research rituals"><a href="draft.html"><img src="img/danza12.jpg" alt="" loading="lazy"><h3>Discover Ancient Greek Dance and Song</h3><p class="standfirst">Singing, dancing and composing in ancient Greek metres, with Stef Conner, Pino Basile, Stefan Hagel, Ian Rutherford, Nico Karadimas and Barnaby Brown.</p><ul class="tags"><li class="t-research">Research</li><li class="t-rituals">Rituals</li></ul><time datetime="2027-01-18">18–21 January 2027</time></a></article>
-<article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/eno9.jpg" alt="" loading="lazy"><h3>Alcesti di Euripide - ciò che resta indicibile</h3><p class="standfirst">Death, myth and the language of the living, through Euripides' Alcestis and Ines Testoni's Essere eterni.</p><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2027-01-30">30 January 2027</time></a></article>
+<article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/eno9.jpg" alt="" loading="lazy"><h3 lang="it">Alcesti di Euripide - ciò che resta indicibile</h3><p class="standfirst">Death, myth and the language of the living, through Euripides' Alcestis and Ines Testoni's Essere eterni.</p><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2027-01-30">30 January 2027</time></a></article>
 <article class="jr-card jr-t4" data-category="research"><a href="draft.html"><h3>Moyseion Research Retreat - Lyre</h3><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2027-02-18">18–21 February 2027</time></a></article>
 <article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/musica4.jpg" alt="" loading="lazy"><h3>Discover the Lyre</h3><p class="standfirst">Building, playing and singing with the lyre, with Nikos Xanthoulis, Stef Conner and Marco Sciascia.</p><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2027-02-22">22–25 February 2027</time></a></article>
-<article class="jr-card jr-t3" data-category="research rituals"><a href="draft.html"><img src="img/ws13.jpg" alt="" loading="lazy"><h3>Alle sorgenti della cura: arte, ritualità e pratiche terapeutiche nel mondo antico</h3><p class="standfirst">A teaching retreat in Matera, part of the University of Padova's Master in Creative Arts Therapies.</p><ul class="tags"><li class="t-research">Research</li><li class="t-rituals">Rituals</li></ul><time datetime="2027-03-11">11–14 March 2027</time></a></article>
+<article class="jr-card jr-t3" data-category="research rituals"><a href="draft.html"><img src="img/ws13.jpg" alt="" loading="lazy"><h3 lang="it">Alle sorgenti della cura: arte, ritualità e pratiche terapeutiche nel mondo antico</h3><p class="standfirst">A teaching retreat in Matera, part of the University of Padova's Master in Creative Arts Therapies.</p><ul class="tags"><li class="t-research">Research</li><li class="t-rituals">Rituals</li></ul><time datetime="2027-03-11">11–14 March 2027</time></a></article>
 <article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/danza10.jpg" alt="" loading="lazy"><h3>Discover the Aulos</h3><p class="standfirst">Playing the aulos and making reeds, with Lukas De Clerck, Stefan Hagel, Marco Sciascia, Melinda Maxwell and Barnaby Brown.</p><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2027-03-15">15–18 March 2027</time></a></article>
 <article class="jr-card jr-t4" data-category="research"><a href="draft.html"><h3>Moyseion Research Retreat - Aulos</h3><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2027-03-19">19–23 March 2027</time></a></article>
-<article class="jr-card jr-t4" data-category="research events"><a href="draft.html"><h3>Le Baccanti di Euripide e il Museo Incarnato</h3><ul class="tags"><li class="t-research">Research</li><li class="t-events">Events</li></ul><time datetime="2026-05-30">30 May 2026</time></a></article>
-<article class="jr-card jr-t4" data-category="research events"><a href="draft.html"><h3>I Persiani di Eschilo e le stelle del Mediterraneo</h3><ul class="tags"><li class="t-research">Research</li><li class="t-events">Events</li></ul><time datetime="2026-03-28">28 March 2026</time></a></article>
+<article class="jr-card jr-t4" data-category="research events"><a href="draft.html"><h3 lang="it">Le Baccanti di Euripide e il Museo Incarnato</h3><ul class="tags"><li class="t-research">Research</li><li class="t-events">Events</li></ul><time datetime="2026-05-30">30 May 2026</time></a></article>
+<article class="jr-card jr-t4" data-category="research events"><a href="draft.html"><h3 lang="it">I Persiani di Eschilo e le stelle del Mediterraneo</h3><ul class="tags"><li class="t-research">Research</li><li class="t-events">Events</li></ul><time datetime="2026-03-28">28 March 2026</time></a></article>
 </section>
 <a class="ar-band" href="moyseion-archive.html"><b>Archive</b><span class="go">&rarr;</span></a>
 </main>
@@ -311,6 +331,20 @@ html[data-theme="light"] .ar-band{color:#fbf6ee;background:linear-gradient(90deg
   }
   btns.forEach(function(b){ b.addEventListener('click', function(){ tag = b.getAttribute('data-tag'); btns.forEach(function(o){ o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); }); run(); }); });
   q.addEventListener('input', run);
+})();
+</script>
+<script>
+/* the reveal: cards come in as they reach the screen, in the order of the page; a filter makes the cards that remain pop back in */
+(function(){
+  var root = document.documentElement;
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  var cards = [].slice.call(document.querySelectorAll('.jr-card'));
+  cards.forEach(function(c, i){ c.style.setProperty('--i', String(i % 3)); });
+  root.classList.add('jr-js');
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  cards.forEach(function(c){ io.observe(c); });
+  document.addEventListener('input', pop); document.addEventListener('click', function(e){ if (e.target.closest && e.target.closest('.jr-filters')) pop(); });
+  function pop(){ requestAnimationFrame(function(){ cards.forEach(function(c){ if (!c.hidden){ c.classList.add('in'); c.classList.remove('pop'); void c.offsetWidth; c.classList.add('pop'); } }); }); }
 })();
 </script>
 <script src="../i18n-it.js"></script>

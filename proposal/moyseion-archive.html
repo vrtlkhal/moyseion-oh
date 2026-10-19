@@ -218,6 +218,26 @@ html[data-theme="light"] .jr-filters button[aria-pressed="true"]{background:#9c3
 .jr-card .tags li.t-events,.ar-hero .tags li.t-events{background:transparent;box-shadow:inset 0 0 0 .07rem rgba(241,220,164,.55)}
 html[data-theme="light"] .jr-card .tags li,html[data-theme="light"] .ar-hero .tags li{background:rgba(131,109,48,.18);color:#7d3217}
 html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(131,109,48,.3)}
+
+/* ALIVE: the cards rise into place one after another, each photograph opens like a curtain, the first one breathes slowly, and a card lifts to meet the pointer.
+   ALIGNED: every block of words is flush left, ragged right, on the page's own left margin; titles balance their lines and standfirsts avoid a last-line orphan. */
+.jr-card,.jr-card a,.jr-card h3,.jr-card .standfirst,.jr-card time,.jr-card .tags,.ar-hero figcaption,.era-hero,.era-hero *{text-align:left}
+.jr-card h3,.ar-hero h3{text-wrap:balance;hyphens:manual}
+.jr-card .standfirst,.ar-hero .standfirst,.era-hero .lede{text-wrap:pretty}
+.jr-card .tags{justify-content:flex-start}
+.jr-card a{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.jr-card a:hover,.jr-card a:focus-visible{transform:translateY(-.4rem)}
+.jr-lead .jr-card img{animation:jrBreath 26s ease-in-out infinite alternate}
+@keyframes jrBreath{from{transform:scale(1)}to{transform:scale(1.09)}}
+html.jr-js .jr-card{opacity:0;transform:translateY(2.4rem)}
+html.jr-js .jr-card.in{opacity:1;transform:none;transition:opacity .9s ease,transform 1s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i,0) * 70ms)}
+html.jr-js .jr-card img{clip-path:inset(0 0 100% 0);transition:clip-path 1.3s cubic-bezier(.2,.7,.2,1) .15s,transform 1.6s cubic-bezier(.2,.7,.2,1)}
+html.jr-js .jr-card.in img{clip-path:inset(0)}
+.jr-card.pop{animation:jrPop .5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes jrPop{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.jr-filters button{transition:background .35s,color .35s,transform .35s}
+.jr-filters button:hover{transform:translateY(-.15rem)}
+@media (prefers-reduced-motion:reduce){.jr-lead .jr-card img{animation:none}html.jr-js .jr-card,html.jr-js .jr-card img{opacity:1;transform:none;clip-path:none;transition:none}.jr-card a{transition:none}.jr-card.pop{animation:none}}
 </style>
 </head>
 <body>
@@ -246,19 +266,19 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(131,109,48,
 <figure class="ar-hero">
   <img class="lead" src="img/ws17.jpg" alt="" loading="lazy">
   <img src="img/danza13.jpg" alt="" loading="lazy"><img src="img/andron.jpg" alt="" loading="lazy">
-  <figcaption><h3>Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li class="t-research">Research</li></ul></figcaption>
+  <figcaption><h3 lang="it">Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li class="t-research">Research</li></ul></figcaption>
 </figure>
 <section class="jr-masonry jr-archive" aria-label="Archive">
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover the Classical Aulos - 5th Moyseion Music-Making Course</h3><time datetime="2026-03-16">16–20 March 2026</time></a></article>
-<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Le SUPPLICI di Eschilo - Mito e migrazione nel Mediterraneo antico e presente</h3><time datetime="2026-02-28">28 February 2026</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3 lang="it">Le SUPPLICI di Eschilo - Mito e migrazione nel Mediterraneo antico e presente</h3><time datetime="2026-02-28">28 February 2026</time></a></article>
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover the Ancient Greek Harp - 4th Moyseion Music-Making Course</h3><time datetime="2026-02-16">16–20 February 2026</time></a></article>
-<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>L'AIACE di Sofocle - il Silenzio e l'Ascolto: archetipi del tragico nel vocìo contemporaneo</h3><time datetime="2026-01-31">31 January 2026</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3 lang="it">L'AIACE di Sofocle - il Silenzio e l'Ascolto: archetipi del tragico nel vocìo contemporaneo</h3><time datetime="2026-01-31">31 January 2026</time></a></article>
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover Choral Dances - 3rd Moyseion Music-Making Course</h3><time datetime="2026-01-19">19–23 January 2026</time></a></article>
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover Ancient Rythm &amp; Bass - 2nd Moyseion Music-Making Course</h3><time datetime="2025-12-08">8–12 December 2025</time></a></article>
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover the Lyre - 1st Moyseion Music-Making Course</h3><time datetime="2025-11-03">3–7 November 2025</time></a></article>
-<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>IPPOLITO di Euripide Corpo, vergogna, giustizia: percorsi antichi e riflessi contemporanei</h3><time datetime="2025-10-25">25 October 2025</time></a></article>
-<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>La sindrome di Medea. Da Euripide ai giorni nostri</h3><time datetime="2025-06-07">7 June 2025</time></a></article>
-<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Il Teatro Comico della Magna Grecia ed il suo spazio nel contemporaneo</h3><time datetime="2025-04-05">5 April 2025</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3 lang="it">IPPOLITO di Euripide Corpo, vergogna, giustizia: percorsi antichi e riflessi contemporanei</h3><time datetime="2025-10-25">25 October 2025</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3 lang="it">La sindrome di Medea. Da Euripide ai giorni nostri</h3><time datetime="2025-06-07">7 June 2025</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3 lang="it">Il Teatro Comico della Magna Grecia ed il suo spazio nel contemporaneo</h3><time datetime="2025-04-05">5 April 2025</time></a></article>
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>CUISINE IN MAGNA GRAECIA: archaeology or culinary heritage?</h3><time datetime="2025-02-14">14 February 2025</time></a></article>
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Foundations for the AULOS REVIVAL</h3><time datetime="2025-02-04">4 & 7 February 2025</time></a></article>
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Mousikè téchne: between reenactment and museum. Experience to understand</h3><time datetime="2025-01-30">30–31 January 2025</time></a></article>
@@ -287,6 +307,20 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(131,109,48,
   }
   btns.forEach(function(b){ b.addEventListener('click', function(){ tag = b.getAttribute('data-tag'); btns.forEach(function(o){ o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); }); run(); }); });
   q.addEventListener('input', run);
+})();
+</script>
+<script>
+/* the reveal: cards come in as they reach the screen, in the order of the page; a filter makes the cards that remain pop back in */
+(function(){
+  var root = document.documentElement;
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  var cards = [].slice.call(document.querySelectorAll('.jr-card'));
+  cards.forEach(function(c, i){ c.style.setProperty('--i', String(i % 3)); });
+  root.classList.add('jr-js');
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  cards.forEach(function(c){ io.observe(c); });
+  document.addEventListener('input', pop); document.addEventListener('click', function(e){ if (e.target.closest && e.target.closest('.jr-filters')) pop(); });
+  function pop(){ requestAnimationFrame(function(){ cards.forEach(function(c){ if (!c.hidden){ c.classList.add('in'); c.classList.remove('pop'); void c.offsetWidth; c.classList.add('pop'); } }); }); }
 })();
 </script>
 <script src="../i18n-it.js"></script>
