@@ -325,6 +325,31 @@ html[data-theme="light"] .era-hero .crumbs,html[data-theme="light"] .era-hero .c
 html[data-theme="light"] .era-hero h1{color:var(--gold-bright)}
 html[data-theme="light"] .era-hero .crumbs,html[data-theme="light"] .era-hero .crumbs a{color:var(--gold-deep)}
 @media (max-width:60rem){.era-hero{grid-template-columns:1fr}.era-hero::before{grid-column:1;grid-row:1;min-height:34vh;margin-top:4rem}.era-hero > *{grid-row:auto}.era-hero .crumbs{padding-top:1.6rem}}
+
+/* THE HEAD: A FIND TRAY. The journal is fragments of knowledge put back together, so its head is six pieces of photograph, cut like shards and laid
+   in their places with a hair of dark between them. They settle into place once on load, and drift a few millimetres against each other
+   with the pointer. Crisp and full colour; the title stands plainly on the page beside them. */
+.era-hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:clamp(1.5rem,4vw,5rem);align-items:center;min-height:min(78vh,58rem);padding:calc(4rem + 4vh) var(--pad) 5vh;overflow:visible;isolation:auto}
+.era-hero::before,.era-hero::after{display:none}
+.era-hero > *:not(.shards){grid-column:1;position:relative;z-index:1}
+.era-hero .crumbs,.era-hero h1,.era-hero .lede{padding:0}
+.era-hero .crumbs{margin:0 0 1.6rem;color:var(--gold-deep)}
+.era-hero h1{margin:0 0 1.4rem;font-size:clamp(4.4rem,11.5vw,12rem);line-height:.88;letter-spacing:-.03em;color:var(--gold-bright)}
+.era-hero .lede{max-width:24em;color:var(--gold-body)}
+.shards{grid-column:2;grid-row:1 / span 6;position:relative;justify-self:end;width:100%;aspect-ratio:1/1.04;max-height:72vh;--mx:0;--my:0}
+.shards i{position:absolute;inset:0;background:var(--img) center/cover no-repeat;clip-path:polygon(var(--p));
+  transform:translate(var(--gx),var(--gy));translate:calc(var(--mx) * var(--dx)) calc(var(--my) * var(--dy));
+  transition:translate .6s cubic-bezier(.2,.7,.2,1);animation:shardIn 1.3s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--n) * 110ms)}
+@keyframes shardIn{from{opacity:0;transform:translate(calc(var(--gx) * 40),calc(var(--gy) * 40)) rotate(var(--r)) scale(1.04)}to{opacity:1;transform:translate(var(--gx),var(--gy))}}
+.shards i:nth-child(1){--n:0;--p:0% 0%,48% 0%,36% 30%,0% 46%;--gx:-.28rem;--gy:-.28rem;--dx:-.9rem;--dy:-.6rem;--r:-4deg;--img:var(--s1)}
+.shards i:nth-child(2){--n:1;--p:48% 0%,100% 0%,100% 38%,64% 40%,36% 30%;--gx:.28rem;--gy:-.28rem;--dx:.7rem;--dy:-.9rem;--r:5deg;--img:var(--s2)}
+.shards i:nth-child(3){--n:2;--p:0% 46%,36% 30%,64% 40%,52% 60%,24% 62%;--gx:-.1rem;--gy:0rem;--dx:-.4rem;--dy:.3rem;--r:-3deg;--img:var(--s3)}
+.shards i:nth-child(4){--n:3;--p:64% 40%,100% 38%,100% 70%,80% 62%,52% 60%;--gx:.3rem;--gy:.1rem;--dx:1rem;--dy:.5rem;--r:6deg;--img:var(--s4)}
+.shards i:nth-child(5){--n:4;--p:0% 46%,24% 62%,40% 100%,0% 100%;--gx:-.3rem;--gy:.3rem;--dx:-1rem;--dy:.9rem;--r:-6deg;--img:var(--s5)}
+.shards i:nth-child(6){--n:5;--p:24% 62%,52% 60%,80% 62%,100% 70%,100% 100%,40% 100%;--gx:.2rem;--gy:.3rem;--dx:.6rem;--dy:1rem;--r:3deg;--img:var(--s6)}
+@media (max-width:60rem){.era-hero{grid-template-columns:1fr;min-height:0;padding-top:calc(4rem + 2vh)}.shards{grid-column:1;grid-row:1;max-height:44vh;aspect-ratio:1/.72;margin-bottom:2rem}.era-hero > *:not(.shards){grid-row:auto}}
+@media (prefers-reduced-motion:reduce){.shards i{animation:none;transition:none;translate:none}}
+.shards{--s1:url("img/danza12.jpg");--s2:url("img/xenia15.jpg");--s3:url("img/ws17.jpg");--s4:url("img/eno9.jpg");--s5:url("img/musica1.jpg");--s6:url("img/andron.jpg");}
 </style>
 </head>
 <body>
@@ -349,6 +374,7 @@ html[data-theme="light"] .era-hero .crumbs,html[data-theme="light"] .era-hero .c
   <p class="crumbs"><a href="../Moyseion-v3-blend.html">Moyseion</a><span>&rsaquo;</span>Journal</p>
   <h1>Journal</h1>
   <p class="lede">Archaeologia Poetica: reflections, essays and notes.</p>
+<div class="shards" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
 </header>
 <span id="journal"></span><div class="jr-bar" role="search">
   <label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the journal" autocomplete="off"></label>
@@ -412,6 +438,17 @@ html[data-theme="light"] .era-hero .crumbs,html[data-theme="light"] .era-hero .c
   cards.forEach(function(c){ io.observe(c); });
   document.addEventListener('input', pop); document.addEventListener('click', function(e){ if (e.target.closest && e.target.closest('.jr-filters')) pop(); });
   function pop(){ requestAnimationFrame(function(){ cards.forEach(function(c){ if (!c.hidden){ c.classList.add('in'); c.classList.remove('pop'); void c.offsetWidth; c.classList.add('pop'); } }); }); }
+})();
+</script>
+<script>
+/* the shards drift against each other with the pointer (fine pointers only) */
+(function(){
+  var hero = document.querySelector('.era-hero'), sh = hero && hero.querySelector('.shards');
+  if (!sh || !window.matchMedia('(hover:hover) and (pointer:fine)').matches || window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  var x = 0, y = 0, q = false;
+  hero.addEventListener('pointermove', function(e){ var r = hero.getBoundingClientRect(); x = (e.clientX - r.left) / r.width * 2 - 1; y = (e.clientY - r.top) / r.height * 2 - 1;
+    if (!q){ q = true; requestAnimationFrame(function(){ q = false; sh.style.setProperty('--mx', x.toFixed(3)); sh.style.setProperty('--my', y.toFixed(3)); }); } });
+  hero.addEventListener('pointerleave', function(){ sh.style.setProperty('--mx', 0); sh.style.setProperty('--my', 0); });
 })();
 </script>
 <script src="../i18n-it.js"></script>
