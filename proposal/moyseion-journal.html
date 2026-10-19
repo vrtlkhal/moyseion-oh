@@ -106,6 +106,25 @@ footer.site-foot{margin-top:clamp(3rem,9vh,6rem);border-top:.07rem solid var(--l
 .ar-hero .tags{list-style:none;display:flex;gap:.4rem}.ar-hero .tags li{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;padding:.25rem .55rem;border:.07rem solid var(--line);color:var(--gold-deep)}
 @media (max-width:60rem){.jr-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.jr-card,.jr-t2,.jr-card:nth-child(n){grid-column:span 1}.jr-t1,.jr-card:nth-child(1){grid-column:span 2}.jr-t1 a{grid-template-columns:1fr}.jr-t1 img{grid-row:auto}}
 @media (max-width:36rem){.jr-grid{grid-template-columns:1fr}.jr-card,.jr-t1,.jr-t2,.jr-card:nth-child(n){grid-column:span 1}.ar-hero{grid-template-columns:1fr}}
+
+/* THE JOURNAL AS A MASONRY. The first entry is half the page's width; the next two share the other half, in the golden proportion
+   (1.618 : 1), their combined height the height of the first. Everything after falls into three columns of unequal heights. */
+.jr-lead{display:grid;grid-template-columns:calc(50vw - var(--pad)) minmax(0,1fr);gap:clamp(1rem,2vw,2rem);padding:0 var(--pad);margin:0 0 clamp(1rem,2vw,2rem)}
+.jr-lead > .jr-card{grid-column:auto}
+.jr-lead > .jr-card a{display:flex;flex-direction:column;grid-template-columns:none}
+.jr-lead > .jr-card img{width:100%;aspect-ratio:4/5;height:auto;grid-row:auto}
+.jr-lead > .jr-card h3{font-size:clamp(1.8rem,3.2vw,3.2rem)}
+.jr-side{display:grid;grid-template-rows:1.618fr 1fr;gap:clamp(1rem,2vw,2rem);min-height:0}
+.jr-side .jr-card{grid-column:auto;min-height:0}
+.jr-side .jr-card a{display:flex;flex-direction:column;height:100%}
+.jr-side .jr-card img{flex:1 1 0;min-height:0;height:100%;width:100%;aspect-ratio:auto}
+.jr-masonry{column-count:3;column-gap:clamp(1rem,2vw,2rem);padding:0 var(--pad);max-width:none}
+.jr-masonry .jr-card{break-inside:avoid;grid-column:auto;margin:0 0 clamp(1rem,2vw,2rem);display:block}
+.jr-masonry .jr-card:nth-child(n){grid-column:auto}
+.jr-masonry .jr-card img{aspect-ratio:auto;height:auto}
+.jr-masonry .jr-card:nth-child(3n+1) img{aspect-ratio:4/5}.jr-masonry .jr-card:nth-child(3n+2) img{aspect-ratio:1/1}.jr-masonry .jr-card:nth-child(3n) img{aspect-ratio:3/2}
+@media (max-width:60rem){.jr-lead{grid-template-columns:1fr}.jr-side{grid-template-rows:none;grid-template-columns:1fr 1fr}.jr-side .jr-card img{aspect-ratio:4/3;flex:none}.jr-masonry{column-count:2}}
+@media (max-width:36rem){.jr-side{grid-template-columns:1fr}.jr-masonry{column-count:1}}
 </style>
 </head>
 <body>
@@ -133,10 +152,14 @@ footer.site-foot{margin-top:clamp(3rem,9vh,6rem);border-top:.07rem solid var(--l
   <p class="lede">Archaeologia Poetica: reflections, essays and notes.</p>
 </header>
 <h2 class="gal-head" id="journal">Journal</h2>
-<section class="jr-grid" aria-label="Journal">
+<section class="jr-lead" aria-label="Latest">
 <article class="jr-card jr-t1" data-category="research"><a href="draft.html"><img src="img/ws17.jpg" alt="" loading="lazy"><h3>Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li>Research</li></ul><time datetime="2026-10-24">24 October 2026</time></a></article>
+<div class="jr-side">
 <article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/xenia15.jpg" alt="" loading="lazy"><h3>Abitare la soglia</h3><p class="standfirst">Against the threshold as a limit to be crossed — an older idea of dwelling within it.</p><ul class="tags"><li>Research</li><li>Rituals</li></ul><time datetime="2026-10-31">31 October 2026</time></a></article>
 <article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/matera.jpg" alt="" loading="lazy"><h3>John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità</h3><p class="standfirst">An academic and experiential retreat in the Sassi on myth, ritual and human formation in the ancient world.</p><ul class="tags"><li>Research</li><li>Rituals</li></ul><time datetime="2026-11-12">12–16 November 2026</time></a></article>
+</div>
+</section>
+<section class="jr-masonry" aria-label="Journal">
 <article class="jr-card jr-t4" data-category="research"><a href="draft.html"><h3>Moyseion Research Retreat - Ancient Greek Harp</h3><ul class="tags"><li>Research</li></ul><time datetime="2026-11-20">20–29 November 2026</time></a></article>
 <article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/musica1.jpg" alt="" loading="lazy"><h3>Discover the Ancient Greek Harp</h3><p class="standfirst">Hands-on music-making for the ancient Greek harp, led by Bill Taylor and Nancy Thym.</p><ul class="tags"><li>Research</li></ul><time datetime="2026-11-23">23–26 November 2026</time></a></article>
 <article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/neo13.jpg" alt="" loading="lazy"><h3>L'inconscio abita ancora il mito?</h3><p class="standfirst">The conflict of Aeschylus' Eumenides ends in transformation, the Erinyes welcomed into the city.</p><ul class="tags"><li>Research</li></ul><time datetime="2026-12-19">19 December 2026</time></a></article>
@@ -157,7 +180,7 @@ footer.site-foot{margin-top:clamp(3rem,9vh,6rem);border-top:.07rem solid var(--l
   <img src="img/danza13.jpg" alt="" loading="lazy"><img src="img/andron.jpg" alt="" loading="lazy">
   <figcaption><h3>Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li>Research</li></ul></figcaption>
 </figure>
-<section class="jr-grid jr-archive" aria-label="Archive">
+<section class="jr-masonry jr-archive" aria-label="Archive">
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover the Classical Aulos - 5th Moyseion Music-Making Course</h3><time datetime="2026-03-16">16–20 March 2026</time></a></article>
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Le SUPPLICI di Eschilo - Mito e migrazione nel Mediterraneo antico e presente</h3><time datetime="2026-02-28">28 February 2026</time></a></article>
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover the Ancient Greek Harp - 4th Moyseion Music-Making Course</h3><time datetime="2026-02-16">16–20 February 2026</time></a></article>
