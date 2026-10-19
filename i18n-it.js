@@ -361,5 +361,16 @@ window.__MOY_IT = {
 "30–31 January 2025": "30–31 gennaio 2025",
 "Past events": "Eventi passati",
 "Moyseion›Journal›Archive": "<a href=\"../Moyseion-v3-blend.html\">Moyseion</a><span>&rsaquo;</span><a href=\"moyseion-journal.html\">Diario</a><span>&rsaquo;</span>Archivio",
-"← Journal": "← Diario"
+"← Journal": "← Diario",
+"Search": "Cerca",
+"Search the journal": "Cerca nel diario",
+"Search the archive": "Cerca nell’archivio",
+"All": "Tutti",
+"Tags": "Tag",
+"Research 16": "Ricerca <i>16</i>",
+"Rituals 4": "Rituali <i>4</i>",
+"Events 2": "Eventi <i>2</i>",
+"16 entries": "16 voci",
+"13 entries": "13 voci",
+"13 earlier events · 2025 – 2026": "13 eventi passati · 2025 – 2026"
 };
