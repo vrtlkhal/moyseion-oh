@@ -358,5 +358,8 @@ window.__MOY_IT = {
 "5 April 2025": "5 aprile 2025",
 "14 February 2025": "14 febbraio 2025",
 "4 & 7 February 2025": "4 e 7 febbraio 2025",
-"30–31 January 2025": "30–31 gennaio 2025"
+"30–31 January 2025": "30–31 gennaio 2025",
+"Past events": "Eventi passati",
+"Moyseion›Journal›Archive": "<a href=\"../Moyseion-v3-blend.html\">Moyseion</a><span>&rsaquo;</span><a href=\"moyseion-journal.html\">Diario</a><span>&rsaquo;</span>Archivio",
+"← Journal": "← Diario"
 };
