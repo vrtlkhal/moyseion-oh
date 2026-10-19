@@ -334,6 +334,31 @@ html[data-theme="light"] .era-hero .crumbs,html[data-theme="light"] .era-hero .c
 .era-hero .crumbs{grid-row:2}.era-hero h1{grid-row:3}.era-hero .lede{grid-row:4}
 .shards{grid-row:1 / -1}
 @media (max-width:60rem){.era-hero{grid-template-rows:none}.era-hero .crumbs,.era-hero h1,.era-hero .lede{grid-row:auto}.shards{grid-row:1}}
+
+/* THE HEAD AS A BANNER: the same shards, laid across the full width of the page in a low band, the title standing on a shard of its own at the left */
+html body .era-hero{position:relative;display:block;min-height:clamp(19rem,46vh,30rem);margin:4rem 0 0;padding:0;overflow:hidden;grid-template-columns:none;grid-template-rows:none;isolation:isolate}
+html body .era-hero .crumbs,html body .era-hero h1,html body .era-hero .lede{grid-column:auto;grid-row:auto;position:relative;z-index:2;width:min(30vw,26rem);margin-left:var(--pad)}
+html body .era-hero .crumbs{margin-top:clamp(2rem,6vh,3.4rem);margin-bottom:1rem}
+html body .era-hero h1{font-size:clamp(3.2rem,7.6vw,8rem);line-height:.9;margin-bottom:1rem;width:auto;max-width:34vw;padding:0}
+html body .era-hero .lede{font-size:clamp(.85rem,1vw,1rem);line-height:1.5;margin-bottom:clamp(2rem,6vh,3.4rem);max-width:min(24vw,22rem);padding:0}
+html body .shards{position:absolute;inset:0;z-index:0;width:auto;max-height:none;aspect-ratio:auto;justify-self:auto;grid-column:auto;grid-row:auto}
+html body .shards i.tt{--n:0;--p:0% 0%,36% 0%,30% 100%,0% 100%;--gx:0rem;--gy:0rem;--dx:0rem;--dy:0rem;--r:0deg;background:#060b24}
+html[data-theme="light"] body .shards i.tt{background:#efe7da}
+html body .shards i:nth-child(2){--n:1;--p:36% 0%,58% 0%,66% 28%,46% 34%,34% 34%;--gx:-.25rem;--gy:-.25rem;--dx:-.8rem;--dy:-.5rem;--r:-4deg;--img:var(--s1)}
+html body .shards i:nth-child(3){--n:2;--p:58% 0%,80% 0%,88% 40%,66% 28%;--gx:.25rem;--gy:-.25rem;--dx:.6rem;--dy:-.8rem;--r:5deg;--img:var(--s2)}
+html body .shards i:nth-child(4){--n:3;--p:80% 0%,100% 0%,100% 70%,82% 70%,88% 40%;--gx:.3rem;--gy:-.1rem;--dx:.9rem;--dy:-.3rem;--r:6deg;--img:var(--s3)}
+html body .shards i:nth-child(5){--n:4;--p:34% 34%,46% 34%,40% 64%,52% 100%,30% 100%,32% 64%;--gx:-.3rem;--gy:.1rem;--dx:-.7rem;--dy:.5rem;--r:-5deg;--img:var(--s4)}
+html body .shards i:nth-child(6){--n:5;--p:46% 34%,66% 28%,60% 62%,40% 64%;--gx:0rem;--gy:0rem;--dx:-.3rem;--dy:.2rem;--r:-3deg;--img:var(--s5)}
+html body .shards i:nth-child(7){--n:6;--p:66% 28%,88% 40%,82% 70%,60% 62%;--gx:.2rem;--gy:.1rem;--dx:.5rem;--dy:.3rem;--r:3deg;--img:var(--s6)}
+html body .shards i:nth-child(8){--n:7;--p:40% 64%,60% 62%,82% 70%,100% 70%,100% 100%,52% 100%;--gx:.25rem;--gy:.3rem;--dx:.5rem;--dy:.8rem;--r:4deg;--img:var(--s7)}
+@media (max-width:60rem){
+  html body .era-hero{min-height:0;padding-bottom:1.6rem}
+  html body .shards{position:relative;inset:auto;height:30vh;margin-bottom:1.4rem}
+  html body .shards i.tt{display:none}
+  html body .era-hero .crumbs,html body .era-hero h1,html body .era-hero .lede{width:auto;max-width:none;margin-right:var(--pad)}
+  html body .era-hero h1{font-size:clamp(3.4rem,16vw,6rem)}
+}
+.shards{--s7:url("img/xenia17.jpg")}
 </style>
 </head>
 <body>
@@ -357,7 +382,7 @@ html[data-theme="light"] .era-hero .crumbs,html[data-theme="light"] .era-hero .c
 <header class="era-hero">
   <p class="crumbs"><a href="../Moyseion-v3-blend.html">Moyseion</a><span>&rsaquo;</span><a href="moyseion-journal.html">Journal</a><span>&rsaquo;</span>Archive</p>
   <h1>Archive</h1>
-<div class="shards" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="shards" aria-hidden="true"><i class="tt"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
 </header>
 <div class="jr-bar" role="search"><label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the archive" autocomplete="off"></label>
   <div class="jr-filters" role="group" aria-label="Tags"><button type="button" data-tag="all" aria-pressed="true">All</button><button type="button" data-tag="theatre" aria-pressed="false">Theatre</button><button type="button" data-tag="music" aria-pressed="false">Music</button></div></div>
