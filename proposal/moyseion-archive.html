@@ -238,6 +238,22 @@ html.jr-js .jr-card.in img{clip-path:inset(0)}
 .jr-filters button{transition:background .35s,color .35s,transform .35s}
 .jr-filters button:hover{transform:translateY(-.15rem)}
 @media (prefers-reduced-motion:reduce){.jr-lead .jr-card img{animation:none}html.jr-js .jr-card,html.jr-js .jr-card img{opacity:1;transform:none;clip-path:none;transition:none}.jr-card a{transition:none}.jr-card.pop{animation:none}}
+
+/* smaller items, the same page width: four columns instead of three, type and padding a fifth smaller, the first entry a quarter shorter */
+.jr-masonry{column-count:4}
+.jr-card a{padding:clamp(.8rem,1.3vw,1.3rem);gap:.45rem}
+.jr-card h3{font-size:clamp(.95rem,1.3vw,1.3rem)}
+.jr-card .standfirst{font-size:.76rem;line-height:1.5}
+.jr-card .tags li{font-size:.52rem;padding:.26rem .62rem}
+.jr-card time{font-size:.54rem}
+.jr-card a:not(:has(img)) h3{font-size:clamp(1rem,1.45vw,1.45rem)}
+.jr-card a:not(:has(img)){min-height:clamp(7rem,12vw,11rem)}
+.jr-lead > .jr-card a{height:clamp(13rem,23vw,24rem)}
+.jr-lead > .jr-card h3{font-size:clamp(1.3rem,2.3vw,2.3rem)}
+.jr-lead > .jr-card .standfirst{font-size:.82rem}
+@media (max-width:75rem){.jr-masonry{column-count:3}}
+@media (max-width:60rem){.jr-masonry{column-count:2}}
+@media (max-width:36rem){.jr-masonry{column-count:1}.jr-lead > .jr-card a{height:clamp(14rem,56vw,20rem)}}
 </style>
 </head>
 <body>
