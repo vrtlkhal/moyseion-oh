@@ -14,7 +14,7 @@
   function build(){
     seq = 0; var rect = box.getBoundingClientRect(); W = Math.max(1, rect.width); H = Math.max(1, rect.height); dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr); canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
-    var rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16, T = rem * 2.1;
+    var rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16, T = rem * 1.7;
     var cols = Math.max(6, Math.round(W / T)), rows = Math.max(4, Math.round(H / T)), cw = W / cols, ch = H / rows;
     var narrow = window.matchMedia('(max-width:60rem)').matches;
     // lattice of corners, jittered inside, straight on the border
@@ -27,7 +27,7 @@
       var p = [V[jj][ii], V[jj][ii + 1], V[jj + 1][ii + 1], V[jj + 1][ii]], cx = (p[0][0] + p[1][0] + p[2][0] + p[3][0]) / 4, cy = (p[0][1] + p[1][1] + p[2][1] + p[3][1]) / 4;
       var edge = (.36 - .06 * (cy / H)) * W, isNavy = !narrow && cx < edge, k = -1, bd = 1e12;
       if (!isNavy){ for (var q = 0; q < seeds.length; q++){ var dx = (cx - seeds[q][0]) * .7, dy = cy - seeds[q][1], d = dx * dx + dy * dy; if (d < bd){ bd = d; k = q; } } }
-      var g = .13, pts = p.map(function(v){ return [cx + (v[0] - cx) * (1 - g), cy + (v[1] - cy) * (1 - g)]; });
+      var g = .085, pts = p.map(function(v){ return [cx + (v[0] - cx) * (1 - g), cy + (v[1] - cy) * (1 - g)]; });
       tiles.push({ pts: pts, cx: cx, cy: cy, k: k, tone: isNavy ? NAVY[Math.floor(r() * NAVY.length)] : null, shade: .9 + r() * .18,
         depth: (r() - .5) * 2, ox: (r() - .5) * cw * 5, oy: (r() - .5) * ch * 5, rot: (r() - .5) * .9, delay: (cx / W) * .55 + r() * .25, bb: bbox(pts) });
     }
