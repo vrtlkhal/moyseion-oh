@@ -382,6 +382,15 @@ html body .strips i:nth-child(4){--k:3;margin-top:.8rem}html body .strips i:nth-
 
 html body .era-hero > .strips{grid-column:2;grid-row:1 / -1;align-self:stretch}
 @media (max-width:60rem){html body .era-hero > .strips{grid-column:1;grid-row:1}}
+
+/* SLIMMER: the banner is a band, not a screen */
+html body .era-hero{min-height:clamp(10.5rem,24vh,15rem);margin-top:4rem;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+html body .era-hero h1{font-size:clamp(2.6rem,5.2vw,5.4rem);margin:0 0 .6rem}
+html body .era-hero .crumbs{margin-bottom:.6rem}
+html body .era-hero .lede{font-size:clamp(.8rem,.9vw,.92rem);line-height:1.45}
+html body .strips{padding:clamp(.9rem,2vh,1.4rem) 0;gap:clamp(.3rem,.5vw,.6rem)}
+html body .strips i:nth-child(1){margin-top:.7rem}html body .strips i:nth-child(3){margin-top:1.1rem}html body .strips i:nth-child(4){margin-top:.4rem}html body .strips i:nth-child(5){margin-top:.9rem}
+@media (max-width:60rem){html body .strips{height:18vh}html body .era-hero h1{font-size:clamp(2.6rem,12vw,4rem)}}
 </style>
 </head>
 <body>
