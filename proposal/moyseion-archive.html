@@ -255,13 +255,6 @@ html.jr-js .jr-card.in img{clip-path:inset(0)}
 @media (max-width:60rem){.jr-masonry{column-count:2}}
 @media (max-width:36rem){.jr-masonry{column-count:1}.jr-lead > .jr-card a{height:clamp(14rem,56vw,20rem)}}
 
-/* a thin outline, nothing more: one hairline frame set just inside each card, that clears a little on hover */
-.jr-card a::after{content:"";position:absolute;inset:.6rem;z-index:3;pointer-events:none;border:.07rem solid rgba(241,220,164,.38);transition:inset .6s cubic-bezier(.2,.7,.2,1),border-color .6s}
-.jr-card a:hover::after,.jr-card a:focus-visible::after{inset:.45rem;border-color:rgba(241,220,164,.85)}
-.jr-card a:hover,.jr-card a:focus-visible{box-shadow:none}
-html[data-theme="light"] .jr-card a:not(:has(img))::after{border-color:rgba(131,109,48,.5)}
-html[data-theme="light"] .jr-card a:not(:has(img)):hover::after{border-color:#836d30}
-html[data-theme="light"] .jr-card a:hover{box-shadow:none}
 </style>
 </head>
 <body>
