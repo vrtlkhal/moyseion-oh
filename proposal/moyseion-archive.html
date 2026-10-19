@@ -279,6 +279,18 @@ html[data-theme="light"] .jr-card a:hover,html[data-theme="light"] .jr-card a:fo
 
 .jr-card img{filter:brightness(.82) saturate(.95)}
 .jr-card a:hover img,.jr-card a:focus-visible img{filter:brightness(.95) saturate(1)}
+
+/* THE HEAD OF THE PAGE: a full-width photograph under a deep wash, the title set very large at its foot */
+.era-hero{position:relative;isolation:isolate;max-width:none;margin:0;min-height:50vh;padding:calc(4rem + clamp(3rem,10vh,7rem)) var(--pad) clamp(2rem,6vh,4rem);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.era-hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url("img/andron.jpg") center 40%/cover no-repeat;animation:jrHeroBreath 30s ease-in-out infinite alternate}
+.era-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(1,4,22,.97) 0%,rgba(1,4,22,.68) 40%,rgba(1,4,22,.78) 100%)}
+@keyframes jrHeroBreath{from{transform:scale(1)}to{transform:scale(1.08)}}
+.era-hero h1{font-size:clamp(3.8rem,11vw,11rem);line-height:.92;letter-spacing:-.02em;margin:.3rem 0 1.2rem;color:#f1dca4}
+.era-hero .crumbs,.era-hero .crumbs a{color:#c2a567}
+.era-hero .lede{color:#e9dfcf;max-width:34em}
+html[data-theme="light"] .era-hero h1{color:#fbf6ee}
+html[data-theme="light"] .era-hero .crumbs,html[data-theme="light"] .era-hero .crumbs a{color:#e9dfcf}
+@media (prefers-reduced-motion:reduce){.era-hero::before{animation:none}}
 </style>
 </head>
 <body>
