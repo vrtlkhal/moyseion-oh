@@ -350,6 +350,11 @@ html[data-theme="light"] .era-hero .crumbs,html[data-theme="light"] .era-hero .c
 @media (max-width:60rem){.era-hero{grid-template-columns:1fr;min-height:0;padding-top:calc(4rem + 2vh)}.shards{grid-column:1;grid-row:1;max-height:44vh;aspect-ratio:1/.72;margin-bottom:2rem}.era-hero > *:not(.shards){grid-row:auto}}
 @media (prefers-reduced-motion:reduce){.shards i{animation:none;transition:none;translate:none}}
 .shards{--s1:url("img/danza12.jpg");--s2:url("img/xenia15.jpg");--s3:url("img/ws17.jpg");--s4:url("img/eno9.jpg");--s5:url("img/musica1.jpg");--s6:url("img/andron.jpg");}
+
+.era-hero{grid-template-rows:1fr auto auto auto 1fr}
+.era-hero .crumbs{grid-row:2}.era-hero h1{grid-row:3}.era-hero .lede{grid-row:4}
+.shards{grid-row:1 / -1}
+@media (max-width:60rem){.era-hero{grid-template-rows:none}.era-hero .crumbs,.era-hero h1,.era-hero .lede{grid-row:auto}.shards{grid-row:1}}
 </style>
 </head>
 <body>
