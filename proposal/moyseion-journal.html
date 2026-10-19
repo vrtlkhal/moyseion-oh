@@ -276,6 +276,12 @@ html.jr-js .jr-card.in img{clip-path:inset(0)}
 .jr-lead > .jr-card + .jr-card h3{font-size:clamp(1.05rem,1.7vw,1.7rem)}
 @media (max-width:60rem){.jr-lead{grid-template-columns:1fr}}
 
+
+/* one thin gold line drawn outside each card, with a small gap between it and the photograph, like a passe-partout */
+.jr-card a{outline:.07rem solid rgba(241,220,164,.4);outline-offset:.55rem;transition:transform .6s cubic-bezier(.2,.7,.2,1),outline-color .6s,outline-offset .6s cubic-bezier(.2,.7,.2,1)}
+.jr-card a:hover,.jr-card a:focus-visible{outline-color:rgba(241,220,164,.85);outline-offset:.75rem}
+html[data-theme="light"] .jr-card a{outline-color:rgba(131,109,48,.5)}
+html[data-theme="light"] .jr-card a:hover,html[data-theme="light"] .jr-card a:focus-visible{outline-color:#836d30}
 </style>
 </head>
 <body>
