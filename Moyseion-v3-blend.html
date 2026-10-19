@@ -1298,6 +1298,20 @@ html[data-theme="light"] .reels-quote figcaption{color:#8b5a2b}
 html[data-theme="light"] .reels-quote figcaption::before{background:#8b5a2b}
 .tools-pop .tree a.sub{font-size:.74rem;padding-left:1rem;opacity:.85}
 
+
+/* the invitation to a day at Moyseion: one full-width band, 15vh, after the story has been told */
+.day-band{position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:2rem;width:100vw;height:15vh;min-height:5.5rem;padding:0 var(--pad3);margin:8vh 0;overflow:hidden;color:var(--gold-bright);text-decoration:none;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:linear-gradient(90deg,rgba(1,4,22,.94),rgba(1,4,22,.62) 50%,rgba(1,4,22,.94)),url("proposal/img/ws17.jpg") center/cover no-repeat;transition:background-size 1.4s cubic-bezier(.2,.7,.2,1)}
+.day-band::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(241,220,164,.0),rgba(241,220,164,.08),rgba(241,220,164,.0));transform:translateX(-100%);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.day-band:hover::before,.day-band:focus-visible::before{transform:none}
+.day-band .kick{position:relative;font-size:.66rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-body);flex:0 0 auto}
+.day-band b{position:relative;font-weight:400;font-size:clamp(1.5rem,3.4vw,3.4rem);line-height:1;letter-spacing:.01em;text-align:center;flex:1 1 auto}
+.day-band .go{position:relative;font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;flex:0 0 auto;transition:transform .5s}
+.day-band:hover .go,.day-band:focus-visible .go{transform:translateX(.5rem)}
+@media (max-width:700px){.day-band .kick{display:none}.day-band b{text-align:left;font-size:clamp(1.2rem,6vw,1.8rem)}.day-band .go{font-size:.62rem;letter-spacing:.2em}}
+html[data-theme="light"] .day-band{color:#fbf6ee;background:linear-gradient(90deg,rgba(20,14,8,.86),rgba(20,14,8,.55) 50%,rgba(20,14,8,.86)),url("proposal/img/ws17.jpg") center/cover no-repeat}
+html[data-theme="light"] .day-band .kick{color:#e9dfcf}
 </style>
 <style id="v3-cue">
 /* ---- scroll cue: first screen only, bottom centre, never taller than 10vh ---- */
@@ -1605,6 +1619,8 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 
 <!-- EXPLORE RAIL: horizontal navigation, just before the closing section -->
 <div class="v3-tick rev" aria-hidden="true" data-tick="-1" data-logi-after><small>Rituals · Waters · Words</small><div><span>Xenia</span><span>Symposium</span><span>Akratisma</span><span>Demeter</span><span>Xenia</span><span>Symposium</span><span>Akratisma</span><span>Demeter</span></div></div>
+
+<a class="day-band" href="proposal/moyseion-day.html"><span class="kick">Inhabit</span><b>A day at Moyseion</b><span class="go">Discover &rarr;</span></a>
 
 <section class="dual" id="dual" aria-label="Museum and residence">
   <div class="dual-head"><p>One address</p><h2>Antiquity, inhabited.<em>Research &nbsp;·&nbsp; Hospitality</em></h2></div>
