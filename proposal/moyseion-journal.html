@@ -380,6 +380,10 @@ html body .shards i:nth-child(8){--n:7;--p:40% 64%,60% 62%,82% 70%,100% 70%,100%
   html body .era-hero h1{font-size:clamp(3.4rem,16vw,6rem)}
 }
 .shards{--s7:url("img/neo13.jpg")}
+
+html body .shards canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+html body .shards{background:#020512}
+html[data-theme="light"] body .shards{background:#f6f1e9}
 </style>
 </head>
 <body>
@@ -404,7 +408,7 @@ html body .shards i:nth-child(8){--n:7;--p:40% 64%,60% 62%,82% 70%,100% 70%,100%
   <p class="crumbs"><a href="../Moyseion-v3-blend.html">Moyseion</a><span>&rsaquo;</span>Journal</p>
   <h1>Journal</h1>
   <p class="lede">Archaeologia Poetica: reflections, essays and notes.</p>
-<div class="shards" aria-hidden="true"><i class="tt"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="shards" aria-hidden="true" data-imgs="img/danza12.jpg,img/xenia15.jpg,img/ws17.jpg,img/eno9.jpg,img/musica1.jpg,img/andron.jpg,img/neo13.jpg"><canvas></canvas></div>
 </header>
 <span id="journal"></span><div class="jr-bar" role="search">
   <label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the journal" autocomplete="off"></label>
@@ -470,17 +474,7 @@ html body .shards i:nth-child(8){--n:7;--p:40% 64%,60% 62%,82% 70%,100% 70%,100%
   function pop(){ requestAnimationFrame(function(){ cards.forEach(function(c){ if (!c.hidden){ c.classList.add('in'); c.classList.remove('pop'); void c.offsetWidth; c.classList.add('pop'); } }); }); }
 })();
 </script>
-<script>
-/* the shards drift against each other with the pointer (fine pointers only) */
-(function(){
-  var hero = document.querySelector('.era-hero'), sh = hero && hero.querySelector('.shards');
-  if (!sh || !window.matchMedia('(hover:hover) and (pointer:fine)').matches || window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
-  var x = 0, y = 0, q = false;
-  hero.addEventListener('pointermove', function(e){ var r = hero.getBoundingClientRect(); x = (e.clientX - r.left) / r.width * 2 - 1; y = (e.clientY - r.top) / r.height * 2 - 1;
-    if (!q){ q = true; requestAnimationFrame(function(){ q = false; sh.style.setProperty('--mx', x.toFixed(3)); sh.style.setProperty('--my', y.toFixed(3)); }); } });
-  hero.addEventListener('pointerleave', function(){ sh.style.setProperty('--mx', 0); sh.style.setProperty('--my', 0); });
-})();
-</script>
+<script src="../mosaic.js"></script>
 <script src="../i18n-it.js"></script>
 <script src="../i18n.js"></script>
 <script src="../nav.js"></script>
