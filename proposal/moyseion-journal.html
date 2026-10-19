@@ -289,6 +289,14 @@ html[data-theme="light"] .jr-card a:hover,html[data-theme="light"] .jr-card a:fo
 .jr-lead > .jr-card{transition:margin .6s cubic-bezier(.2,.7,.2,1)}
 .jr-lead > .jr-card:hover,.jr-lead > .jr-card:focus-within{margin-top:.2rem;margin-bottom:.2rem}
 @media (prefers-reduced-motion:reduce){.jr-masonry .jr-card,.jr-lead > .jr-card{transition:none}}
+
+/* breathing room: the framed cards sit well apart, so no outline comes near its neighbour; the words keep a darker ground, whatever the photograph */
+.jr-masonry{column-gap:clamp(1.8rem,3.2vw,3.2rem)}
+.jr-masonry .jr-card{margin-bottom:clamp(1.8rem,3.2vw,3.2rem)}
+.jr-masonry .jr-card:hover,.jr-masonry .jr-card:focus-within{margin-top:.2rem;margin-bottom:calc(clamp(1.8rem,3.2vw,3.2rem) + .2rem)}
+.jr-lead{gap:clamp(1.8rem,3.2vw,3.2rem);margin-bottom:clamp(1.8rem,3.2vw,3.2rem)}
+.jr-card a:has(img)::before{background:linear-gradient(0deg,rgba(1,4,22,.97) 0%,rgba(1,4,22,.9) 36%,rgba(1,4,22,.55) 64%,rgba(1,4,22,.06) 100%)}
+.jr-card h3,.jr-card .standfirst,.jr-card time{text-shadow:0 .05rem .8rem rgba(1,4,22,.9)}
 </style>
 </head>
 <body>
