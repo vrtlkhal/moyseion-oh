@@ -2,12 +2,17 @@
    of the band (the nearest of seven seeds), so every region shows its photograph in pieces; at the left, the tiles are deep navy in a few shades, forming the ground
    the title stands on. The tiles settle into place from a little disorder on load, and drift against each other, by depth, with the pointer. */
 (function(){
-  var box = document.querySelector('.shards[data-imgs]'); if (!box) return;
+  var box = document.querySelector('.shards[data-imgs],.shards[data-mode]'); if (!box) return;
+  var graphic = box.getAttribute('data-mode') === 'graphic';
   var canvas = box.querySelector('canvas'); if (!canvas || !canvas.getContext) return;
-  var ctx = canvas.getContext('2d'), urls = box.getAttribute('data-imgs').split(','), imgs = [], loaded = 0;
+  var ctx = canvas.getContext('2d'), urls = (box.getAttribute('data-imgs') || '').split(',').filter(Boolean), imgs = [], loaded = 0;
   var light = document.documentElement.getAttribute('data-theme') === 'light';
   var reduce = window.matchMedia('(prefers-reduced-motion:reduce)').matches || /[?&]still\b/.test(location.search), fine = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
   var NAVY = light ? ['#efe7da', '#eadfce', '#f1eadf', '#e8dcc9', '#ede3d3'] : ['#050b22', '#071028', '#060d25', '#091330', '#04091d'];
+  // the graphic mode: no photographs. Concentric rings of tesserae, as in the sigil, in the page's own golds, a terracotta, a cream and navy, framed by a chequered frieze
+  var RING = light ? ['#9c3f1c','#c2a567','#4a3a1c','#e9dfcf','#836d30','#b5532a','#f1dca4','#4a3a1c'] : ['#e9dfcf','#b5532a','#c2a567','#0b1230','#f1dca4','#836d30','#9c3f1c','#050b22'];
+  // a roundel: a medallion of concentric rings on a quiet field, as in a floor mosaic, the rings drawn from the sigil's own colours
+  var MEDAL = light ? ['#9c3f1c','#e9dfcf','#836d30','#4a3a1c','#c2a567','#b5532a'] : ['#e9dfcf','#b5532a','#c2a567','#0b1230','#f1dca4','#836d30'];
   var tiles = [], W = 0, H = 0, dpr = 1, regions = [], start = 0, px = 0, py = 0, raf = 0;
   function rnd(a){ a = (a + 0x6D2B79F5) | 0; var t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }
   var seq = 0; function r(){ return rnd(++seq * 7919); }
@@ -27,8 +32,12 @@
       var p = [V[jj][ii], V[jj][ii + 1], V[jj + 1][ii + 1], V[jj + 1][ii]], cx = (p[0][0] + p[1][0] + p[2][0] + p[3][0]) / 4, cy = (p[0][1] + p[1][1] + p[2][1] + p[3][1]) / 4;
       var edge = (.36 - .06 * (cy / H)) * W, isNavy = !narrow && cx < edge, k = -1, bd = 1e12;
       if (!isNavy){ for (var q = 0; q < seeds.length; q++){ var dx = (cx - seeds[q][0]) * .7, dy = cy - seeds[q][1], d = dx * dx + dy * dy; if (d < bd){ bd = d; k = q; } } }
+      var rg = null;
+      if (graphic && !isNavy){ var dd = Math.hypot(cx - .74 * W, cy - .5 * H) / H; if (jj < 1 || jj >= rows - 1) rg = ((ii + jj) % 2) ? '#836d30' : (light ? '#4a3a1c' : '#050b22');
+        else if (dd < .5) rg = MEDAL[Math.min(MEDAL.length - 1, Math.floor(dd / .085))];
+        else rg = (r() < .1) ? '#836d30' : NAVY[Math.floor(r() * NAVY.length)]; }
       var g = .085, pts = p.map(function(v){ return [cx + (v[0] - cx) * (1 - g), cy + (v[1] - cy) * (1 - g)]; });
-      tiles.push({ pts: pts, cx: cx, cy: cy, k: k, tone: isNavy ? NAVY[Math.floor(r() * NAVY.length)] : null, shade: .9 + r() * .18,
+      tiles.push({ pts: pts, cx: cx, cy: cy, k: k, tone: isNavy ? NAVY[Math.floor(r() * NAVY.length)] : rg, g: !!rg, shade: .9 + r() * .18,
         depth: (r() - .5) * 2, ox: (r() - .5) * cw * 5, oy: (r() - .5) * ch * 5, rot: (r() - .5) * .9, delay: (cx / W) * .55 + r() * .25, bb: bbox(pts) });
     }
   }
@@ -47,7 +56,7 @@
       ctx.save(); ctx.globalAlpha = e;
       ctx.translate(tl.cx + tl.ox * inv + mx, tl.cy + tl.oy * inv + my); ctx.rotate(tl.rot * inv); ctx.translate(-tl.cx, -tl.cy);
       ctx.beginPath(); ctx.moveTo(tl.pts[0][0], tl.pts[0][1]); for (var i = 1; i < 4; i++) ctx.lineTo(tl.pts[i][0], tl.pts[i][1]); ctx.closePath();
-      if (tl.tone){ ctx.fillStyle = tl.tone; ctx.fill(); }
+      if (tl.tone){ ctx.fillStyle = tl.tone; ctx.fill(); if (tl.g){ ctx.fillStyle = tl.shade < 1 ? 'rgba(1,4,22,' + ((1 - tl.shade) * 1.1).toFixed(3) + ')' : 'rgba(255,244,214,' + ((tl.shade - 1) * .6).toFixed(3) + ')'; ctx.fill(); } }
       else { ctx.clip(); var b = tl.bb, src = regions[tl.k]; if (src) ctx.drawImage(src, b[0] * dpr, b[1] * dpr, b[2] * dpr, b[3] * dpr, b[0], b[1], b[2], b[3]);
         ctx.fillStyle = tl.shade < 1 ? 'rgba(1,4,22,' + ((1 - tl.shade) * 1.2).toFixed(3) + ')' : 'rgba(255,244,214,' + ((tl.shade - 1) * .5).toFixed(3) + ')'; ctx.fill(); }
       ctx.restore();
@@ -57,7 +66,7 @@
   var moving = false, still = 0;
   function kick(){ if (!raf) raf = requestAnimationFrame(loop); }
   function init(){ build(); regions = imgs.map(cover); start = performance.now(); raf = 0; kick(); }
-  urls.forEach(function(u, i){ var im = new Image(); im.onload = im.onerror = function(){ if (++loaded === urls.length){ init(); } }; im.src = u.trim(); imgs[i] = im; });
+  if (graphic || !urls.length) init(); else urls.forEach(function(u, i){ var im = new Image(); im.onload = im.onerror = function(){ if (++loaded === urls.length){ init(); } }; im.src = u.trim(); imgs[i] = im; });
   var hero = box.closest('.era-hero') || box;
   if (fine && !reduce){
     hero.addEventListener('pointermove', function(e){ var b = hero.getBoundingClientRect(); px = (e.clientX - b.left) / b.width * 2 - 1; py = (e.clientY - b.top) / b.height * 2 - 1; moving = true; clearTimeout(still); still = setTimeout(function(){ moving = false; }, 400); kick(); });
