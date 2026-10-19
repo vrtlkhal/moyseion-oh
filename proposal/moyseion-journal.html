@@ -20,50 +20,50 @@ a:hover{color:var(--gold-body)}
 .crumbs{font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:2rem}
 .crumbs a{color:var(--gold-deep)}.crumbs a:hover{color:var(--gold-bright)}.crumbs span{margin:0 .8rem}
 .layer{display:flex;align-items:center;gap:1rem;font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:1.4rem}
-.layer::after{content:"";width:3rem;height:1px;background:var(--line)}
+.layer::after{content:"";width:3rem;height:.07rem;background:var(--line)}
 .era-hero h1{font-weight:400;font-size:clamp(2.4rem,6vw,6rem);line-height:1;letter-spacing:-.01em;color:var(--gold-bright);margin-bottom:1.2rem}
 .when{font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-body);margin-bottom:2rem}
 .lede{max-width:40em;font-size:clamp(1.1rem,1.6vw,1.6rem);line-height:1.5;color:var(--gold-body)}
 .lede em{display:block;margin-top:1.2rem;font-style:normal;color:var(--gold-bright)}
 .rows{max-width:96rem;margin:0 auto;padding:0 var(--pad)}
-.row{display:grid;grid-template-columns:3.2rem minmax(0,1fr) auto;align-items:baseline;gap:1rem;padding:1.2rem .4rem;border-top:1px solid var(--line-soft)}
-.row:last-child{border-bottom:1px solid var(--line-soft)}
+.row{display:grid;grid-template-columns:3.2rem minmax(0,1fr) auto;align-items:baseline;gap:1rem;padding:1.2rem .4rem;border-top:.07rem solid var(--line-soft)}
+.row:last-child{border-bottom:.07rem solid var(--line-soft)}
 .row i{font-style:normal;font-size:.9rem;letter-spacing:.1em;color:var(--gold-deep)}
 .row b{font-weight:400;font-size:clamp(1.2rem,1.7vw,1.65rem);color:var(--gold-bright);letter-spacing:.04em}
 .row span{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase}
 .gal-head{max-width:96rem;margin:clamp(3rem,9vh,6rem) auto 1.6rem;padding:0 var(--pad);display:flex;align-items:center;gap:1.4rem;font-size:.78rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-bright)}
-.gal-head::after{content:"";flex:1;height:1px;background:var(--line)}
+.gal-head::after{content:"";flex:1;height:.07rem;background:var(--line)}
 /* the masonry: columns of unequal frames, each photograph at its own proportion, hairline-framed, numbered */
 .masonry{max-width:96rem;margin:0 auto;padding:0 var(--pad);column-count:3;column-gap:clamp(.8rem,1.4vw,1.4rem);counter-reset:ph}
-.ph{position:relative;display:block;width:100%;margin:0 0 clamp(.8rem,1.4vw,1.4rem);break-inside:avoid;overflow:hidden;border:1px solid var(--line);background:#050a1f;cursor:zoom-in;padding:0;font:inherit;color:inherit}
+.ph{position:relative;display:block;width:100%;margin:0 0 clamp(.8rem,1.4vw,1.4rem);break-inside:avoid;overflow:hidden;border:.07rem solid var(--line);background:#050a1f;cursor:zoom-in;padding:0;font:inherit;color:inherit}
 .ph img{display:block;width:100%;height:auto;transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter .6s}
 .ph:hover img,.ph:focus-visible img{transform:scale(1.05)}
-.ph::before{counter-increment:ph;content:counter(ph,decimal-leading-zero);position:absolute;left:0;top:0;z-index:2;padding:.45rem .75rem;background:var(--navy);color:var(--gold-bright);font-size:.7rem;letter-spacing:.3em;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ph::before{counter-increment:ph;content:counter(ph,decimal-leading-zero);position:absolute;left:0;top:0;z-index:2;padding:.45rem .75rem;background:var(--navy);color:var(--gold-bright);font-size:.7rem;letter-spacing:.3em;border-right:.07rem solid var(--line);border-bottom:.07rem solid var(--line)}
 @media (max-width:960px){.masonry{column-count:2}}
 @media (max-width:560px){.masonry{column-count:1}.row{grid-template-columns:2.4rem minmax(0,1fr)}.row span{grid-column:2}}
-.eras-nav{max-width:96rem;margin:clamp(3rem,9vh,6rem) auto 0;padding:0 var(--pad);display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.eras-nav{max-width:96rem;margin:clamp(3rem,9vh,6rem) auto 0;padding:0 var(--pad);display:grid;grid-template-columns:1fr 1fr;border-top:.07rem solid var(--line);border-bottom:.07rem solid var(--line)}
 .eras-nav a{display:flex;flex-direction:column;gap:.5rem;padding:clamp(1.4rem,3vw,2.4rem) 0;color:var(--gold-bright)}
 .eras-nav a small{font-size:.6rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-deep)}
 .eras-nav a b{font-weight:400;font-size:clamp(1.4rem,2.6vw,2.6rem)}
 .eras-nav a span{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-body)}
-.eras-nav a:last-child{text-align:right;border-left:1px solid var(--line-soft);padding-left:1.4rem}
+.eras-nav a:last-child{text-align:right;border-left:.07rem solid var(--line-soft);padding-left:1.4rem}
 .eras-nav a:only-child{grid-column:1 / -1}
 .eras-nav a:hover b{color:var(--gold-body)}
 .lb{position:fixed;inset:0;z-index:9000;display:none;align-items:center;justify-content:center;background:rgba(1,4,22,.96);padding:4vh 4vw;cursor:zoom-out}
-.lb.on{display:flex}.lb img{max-width:100%;max-height:92vh;border:1px solid var(--line)}
+.lb.on{display:flex}.lb img{max-width:100%;max-height:92vh;border:.07rem solid var(--line)}
 html[data-theme="light"] .lb{background:rgba(244,239,232,.97)}
-footer.site-foot{margin-top:clamp(3rem,9vh,6rem);border-top:1px solid var(--line);padding:1rem var(--pad) .9rem}
+footer.site-foot{margin-top:clamp(3rem,9vh,6rem);border-top:.07rem solid var(--line);padding:1rem var(--pad) .9rem}
 .foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem 1.6rem;max-width:96rem;margin:0 auto}
 .foot .brand{font-weight:700;font-size:.95rem;letter-spacing:.14em;color:var(--gold-bright)}
 .foot nav{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem;justify-content:center;flex:1 1 auto}
 .foot nav a{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-body)}
 .foot .social{display:flex;gap:.9rem}.foot .social a{width:1.1rem;height:1.1rem;display:block}.foot .social svg{width:100%;height:100%}
-.foot .foot-note{flex:1 0 100%;text-align:center;font-size:.7rem;letter-spacing:.06em;padding-top:.6rem;border-top:1px solid var(--line-soft);margin-top:.2rem}
+.foot .foot-note{flex:1 0 100%;text-align:center;font-size:.7rem;letter-spacing:.06em;padding-top:.6rem;border-top:.07rem solid var(--line-soft);margin-top:.2rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 .notes{max-width:96rem;margin:clamp(2.4rem,7vh,4.4rem) auto 0;padding:0 var(--pad)}
 .notes p{max-width:46em;font-size:clamp(1rem,1.25vw,1.2rem);line-height:1.65;color:var(--gold-body)}
-.notes dl{margin:1.6rem 0;border-top:1px solid var(--line-soft)}
-.notes dl div{display:grid;grid-template-columns:3.2rem 12rem minmax(0,1fr);gap:1rem;padding:1.1rem .4rem;border-bottom:1px solid var(--line-soft)}
+.notes dl{margin:1.6rem 0;border-top:.07rem solid var(--line-soft)}
+.notes dl div{display:grid;grid-template-columns:3.2rem 12rem minmax(0,1fr);gap:1rem;padding:1.1rem .4rem;border-bottom:.07rem solid var(--line-soft)}
 .notes dt{font-size:.9rem;letter-spacing:.1em;color:var(--gold-deep)}.notes dt+dd{margin:0}
 .notes dd:nth-of-type(1){color:var(--gold-bright);font-size:1.1rem}
 .notes dd{font-size:.98rem;line-height:1.6}
@@ -72,15 +72,40 @@ footer.site-foot{margin-top:clamp(3rem,9vh,6rem);border-top:1px solid var(--line
 
 .archive{max-width:96rem;margin:0 auto;padding:0 var(--pad)}
 .archive .year{display:flex;align-items:center;gap:1.4rem;margin:2.4rem 0 .6rem;font-size:.78rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-bright)}
-.archive .year::after{content:"";flex:1;height:1px;background:var(--line)}
-.entry{display:grid;grid-template-columns:7rem minmax(0,1fr) auto;gap:clamp(1rem,3vw,3rem);align-items:baseline;padding:1.4rem .4rem;border-top:1px solid var(--line-soft);color:inherit}
-.entry:last-child{border-bottom:1px solid var(--line-soft)}
+.archive .year::after{content:"";flex:1;height:.07rem;background:var(--line)}
+.entry{display:grid;grid-template-columns:7rem minmax(0,1fr) auto;gap:clamp(1rem,3vw,3rem);align-items:baseline;padding:1.4rem .4rem;border-top:.07rem solid var(--line-soft);color:inherit}
+.entry:last-child{border-bottom:.07rem solid var(--line-soft)}
 .entry time{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep)}
 .entry b{font-weight:400;font-size:clamp(1.3rem,2.4vw,2.4rem);line-height:1.1;color:var(--gold-bright)}
 .entry span{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase}
 .entry:hover b{color:var(--gold-body)}
-.empty{max-width:96rem;margin:0 auto;padding:2.4rem var(--pad);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep)}
+.empty{max-width:96rem;margin:0 auto;padding:2.4rem var(--pad);border-top:.07rem solid var(--line-soft);border-bottom:.07rem solid var(--line-soft);font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep)}
 @media (max-width:700px){.entry{grid-template-columns:1fr}}
+
+.jr-grid{max-width:96rem;margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(1rem,2vw,2rem);grid-auto-flow:dense}
+.jr-card{grid-column:span 2;border-top:.07rem solid var(--line);min-width:0}
+.jr-card a{display:flex;flex-direction:column;gap:.9rem;height:100%;padding:1.1rem 0 1.4rem;color:inherit;transition:border-color .4s}
+.jr-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border:.07rem solid var(--line-soft);transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.jr-card a:hover h3,.jr-card a:focus-visible h3{color:var(--gold-bright)}
+.jr-card h3{font-weight:400;font-size:clamp(1.15rem,1.6vw,1.6rem);line-height:1.2;color:var(--gold-body);transition:color .3s}
+.jr-card .standfirst{font-size:.92rem;line-height:1.6;color:var(--gold-body)}
+.jr-card .tags{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;margin-top:auto}
+.jr-card .tags li{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;padding:.25rem .55rem;border:.07rem solid var(--line);color:var(--gold-deep)}
+.jr-card time{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep)}
+.jr-t1{grid-column:span 6}.jr-t1 a{display:grid;grid-template-columns:7fr 5fr;gap:clamp(1.4rem,3vw,3.4rem);align-items:end}.jr-t1 img{grid-row:1 / 5;aspect-ratio:16/9}.jr-t1 h3{font-size:clamp(1.8rem,3.4vw,3.4rem)}
+.jr-t2{grid-column:span 3}.jr-t2 img{aspect-ratio:3/2}
+.jr-t4 h3{color:var(--gold-bright)}
+.jr-card:nth-child(13),.jr-card:nth-child(14),.jr-card:nth-child(15),.jr-card:nth-child(16){grid-column:span 3}
+.jr-archive .jr-card{grid-column:span 2}.jr-archive .jr-card a{padding-bottom:1.1rem}
+.ar-hero{max-width:96rem;margin:0 auto 2.4rem;padding:0 var(--pad);display:grid;grid-template-columns:1fr 1fr;gap:clamp(.8rem,1.4vw,1.4rem)}
+.ar-hero img{display:block;width:100%;object-fit:cover;border:.07rem solid var(--line-soft);aspect-ratio:4/3}
+.ar-hero .lead{grid-column:1 / -1;aspect-ratio:16/7}
+.ar-hero figcaption{grid-column:1 / -1;padding-top:.6rem;display:flex;flex-direction:column;gap:.9rem}
+.ar-hero h3{font-weight:400;font-size:clamp(1.6rem,3vw,3rem);line-height:1.1;color:var(--gold-bright)}
+.ar-hero .standfirst{max-width:44em;font-size:1rem;line-height:1.6;color:var(--gold-body)}
+.ar-hero .tags{list-style:none;display:flex;gap:.4rem}.ar-hero .tags li{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;padding:.25rem .55rem;border:.07rem solid var(--line);color:var(--gold-deep)}
+@media (max-width:60rem){.jr-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.jr-card,.jr-t2,.jr-card:nth-child(n){grid-column:span 1}.jr-t1,.jr-card:nth-child(1){grid-column:span 2}.jr-t1 a{grid-template-columns:1fr}.jr-t1 img{grid-row:auto}}
+@media (max-width:36rem){.jr-grid{grid-template-columns:1fr}.jr-card,.jr-t1,.jr-t2,.jr-card:nth-child(n){grid-column:span 1}.ar-hero{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -107,22 +132,47 @@ footer.site-foot{margin-top:clamp(3rem,9vh,6rem);border-top:1px solid var(--line
   <h1>Journal</h1>
   <p class="lede">Archaeologia Poetica: reflections, essays and notes.</p>
 </header>
-<section class="archive" id="archive" aria-label="Archive"></section>
+<h2 class="gal-head" id="journal">Journal</h2>
+<section class="jr-grid" aria-label="Journal">
+<article class="jr-card jr-t1" data-category="research"><a href="draft.html"><img src="img/ws17.jpg" alt="" loading="lazy"><h3>Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li>Research</li></ul><time datetime="2026-10-24">24 October 2026</time></a></article>
+<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/xenia15.jpg" alt="" loading="lazy"><h3>Abitare la soglia</h3><p class="standfirst">Against the threshold as a limit to be crossed — an older idea of dwelling within it.</p><ul class="tags"><li>Research</li><li>Rituals</li></ul><time datetime="2026-10-31">31 October 2026</time></a></article>
+<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/matera.jpg" alt="" loading="lazy"><h3>John Cabot Retreat — Mito e Umanità nel Mondo Antico</h3><p class="standfirst">An academic and experiential retreat in the Sassi on myth, ritual and human formation in the ancient world.</p><ul class="tags"><li>Research</li><li>Rituals</li></ul><time datetime="2026-11-12">12 November 2026</time></a></article>
+<article class="jr-card jr-t4" data-category="research"><a href="draft.html"><h3>Moyseion Research Retreat — Ancient Greek Harp</h3><ul class="tags"><li>Research</li></ul><time datetime="2026-11-20">20 November 2026</time></a></article>
+<article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/musica1.jpg" alt="" loading="lazy"><h3>Discover the Ancient Greek Harp</h3><p class="standfirst">Hands-on music-making for the ancient Greek harp, led by Bill Taylor and Nancy Thym.</p><ul class="tags"><li>Research</li></ul><time datetime="2026-11-23">23 November 2026</time></a></article>
+<article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/neo13.jpg" alt="" loading="lazy"><h3>L'inconscio abita ancora il mito?</h3><p class="standfirst">The conflict of Aeschylus' Eumenides ends in transformation, the Erinyes welcomed into the city.</p><ul class="tags"><li>Research</li></ul><time datetime="2026-12-19">19 December 2026</time></a></article>
+<article class="jr-card jr-t4" data-category="research"><a href="draft.html"><h3>Moyseion Research Retreat — Ancient Greek Dance and Song</h3><ul class="tags"><li>Research</li></ul><time datetime="2027-01-14">14 January 2027</time></a></article>
+<article class="jr-card jr-t3" data-category="research rituals"><a href="draft.html"><img src="img/danza12.jpg" alt="" loading="lazy"><h3>Discover Ancient Greek Dance and Song</h3><p class="standfirst">Singing, dancing and composing in ancient Greek metres, with Stef Conner, Pino Basile, Stefan Hagel, Ian Rutherford, Nico Karadimas and Barnaby Brown.</p><ul class="tags"><li>Research</li><li>Rituals</li></ul><time datetime="2027-01-18">18 January 2027</time></a></article>
+<article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/eno9.jpg" alt="" loading="lazy"><h3>Alcesti di Euripide — ciò che resta indicibile</h3><p class="standfirst">Death, myth and the language of the living, through Euripides' Alcestis and Ines Testoni's Essere eterni.</p><ul class="tags"><li>Research</li></ul><time datetime="2027-01-30">30 January 2027</time></a></article>
+<article class="jr-card jr-t4" data-category="research"><a href="draft.html"><h3>Moyseion Research Retreat — Lyre</h3><ul class="tags"><li>Research</li></ul><time datetime="2027-02-18">18 February 2027</time></a></article>
+<article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/musica4.jpg" alt="" loading="lazy"><h3>Discover the Lyre</h3><p class="standfirst">Building, playing and singing with the lyre, with Nikos Xanthoulis, Stef Conner and Marco Sciascia.</p><ul class="tags"><li>Research</li></ul><time datetime="2027-02-22">22 February 2027</time></a></article>
+<article class="jr-card jr-t3" data-category="research rituals"><a href="draft.html"><img src="img/ws13.jpg" alt="" loading="lazy"><h3>Alle sorgenti della cura</h3><p class="standfirst">A teaching retreat in Matera, part of the University of Padova's Master in Creative Arts Therapies.</p><ul class="tags"><li>Research</li><li>Rituals</li></ul><time datetime="2027-03-11">11 March 2027</time></a></article>
+<article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/danza10.jpg" alt="" loading="lazy"><h3>Discover the Aulos</h3><p class="standfirst">Playing the aulos and making reeds, with Lukas De Clerck, Stefan Hagel, Marco Sciascia, Melinda Maxwell and Barnaby Brown.</p><ul class="tags"><li>Research</li></ul><time datetime="2027-03-15">15 March 2027</time></a></article>
+<article class="jr-card jr-t4" data-category="research"><a href="draft.html"><h3>Moyseion Research Retreat — Aulos</h3><ul class="tags"><li>Research</li></ul><time datetime="2027-03-19">19 March 2027</time></a></article>
+<article class="jr-card jr-t4" data-category="research events"><a href="draft.html"><h3>Le Baccanti di Euripide e il Museo Incarnato</h3><ul class="tags"><li>Research</li><li>Events</li></ul><time datetime="2026-05-30">30 May 2026</time></a></article>
+<article class="jr-card jr-t4" data-category="research events"><a href="draft.html"><h3>I Persiani di Eschilo e le stelle del Mediterraneo</h3><ul class="tags"><li>Research</li><li>Events</li></ul><time datetime="2026-03-28">28 March 2026</time></a></article>
+</section>
+<h2 class="gal-head" id="archive">Archive</h2>
+<figure class="ar-hero">
+  <img class="lead" src="img/ws17.jpg" alt="" loading="lazy">
+  <img src="img/danza13.jpg" alt="" loading="lazy"><img src="img/andron.jpg" alt="" loading="lazy">
+  <figcaption><h3>Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li>Research</li></ul></figcaption>
+</figure>
+<section class="jr-grid jr-archive" aria-label="Archive">
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover the Classical Aulos — 5th Music-Making Course</h3><time datetime="2026-03-16">16 March 2026</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Le Supplici di Eschilo — Mito e migrazione nel Mediterraneo</h3><time datetime="2026-02-28">28 February 2026</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover the Ancient Greek Harp — 4th Music-Making Course</h3><time datetime="2026-02-16">16 February 2026</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>L'Aiace di Sofocle — il Silenzio e l'Ascolto</h3><time datetime="2026-01-31">31 January 2026</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover Choral Dances — 3rd Music-Making Course</h3><time datetime="2026-01-19">19 January 2026</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover Ancient Rhythm &amp; Bass — 2nd Music-Making Course</h3><time datetime="2025-12-08">8 December 2025</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover the Lyre — 1st Music-Making Course</h3><time datetime="2025-11-03">3 November 2025</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Ippolito di Euripide — Corpo, vergogna, giustizia</h3><time datetime="2025-10-25">25 October 2025</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>La sindrome di Medea — Da Euripide ai giorni nostri</h3><time datetime="2025-06-07">7 June 2025</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Il Teatro Comico della Magna Grecia</h3><time datetime="2025-04-05">5 April 2025</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Cuisine in Magna Graecia — archaeology or culinary heritage?</h3><time datetime="2025-02-14">14 February 2025</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Foundations for the Aulos Revival</h3><time datetime="2025-02-04">4 February 2025</time></a></article>
+<article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Mousikè téchne — between reenactment and museum</h3><time datetime="2025-01-30">30 January 2025</time></a></article>
+</section>
 </main>
-<script>
-/* THE ARCHIVE. Add entries here, newest first: { date: '2026-03-14', title: '...', kind: 'Essay', href: '...' }. Nothing is listed until there is something to list. */
-(function(){
-  var ENTRIES = window.__JOURNAL || [];
-  var box = document.getElementById('archive');
-  if (!ENTRIES.length){ box.innerHTML = '<p class="empty">Entries will appear here.</p>'; return; }
-  var years = {}; ENTRIES.forEach(function(e){ var y = String(e.date).slice(0, 4); (years[y] = years[y] || []).push(e); });
-  box.innerHTML = Object.keys(years).sort().reverse().map(function(y){
-    return '<h2 class="year">' + y + '</h2>' + years[y].map(function(e){
-      return '<a class="entry" href="' + (e.href || '../draft.html') + '"><time>' + e.date + '</time><b>' + e.title + '</b><span>' + (e.kind || '') + '</span></a>';
-    }).join('');
-  }).join('');
-})();
-</script>
 <footer class="site-foot"><div class="foot">
   <a class="brand" href="../Moyseion-v3-blend.html" aria-label="MOΥΣEION">MOΥΣEION</a>
   <nav aria-label="Footer"><a href="../draft.html">Contact</a><a href="../draft.html">FAQ</a><a href="moyseion-press.html">Press</a><a href="../draft.html">Privacy</a><a href="../draft.html">Terms</a><a href="../draft.html">Careers</a></nav>
