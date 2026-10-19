@@ -190,7 +190,7 @@ html[data-theme="light"] .ar-band{color:#fbf6ee}html[data-theme="light"] .ar-ban
 @media (max-width:36rem){.jr-lead > .jr-card a{height:clamp(18rem,70vw,26rem)}}
 
 /* the quiet link to the archive */
-.ar-link{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:clamp(1rem,3vw,3rem);margin:clamp(2.4rem,7vh,4.4rem) var(--pad) 0;padding:clamp(1.4rem,3vw,2.4rem) clamp(1.2rem,2.4vw,2.4rem);background:rgba(131,109,48,.08);color:var(--gold-bright);transition:background .5s}
+.ar-link{display:grid;grid-template-columns:1fr auto;align-items:center;gap:clamp(1rem,3vw,3rem);margin:clamp(2.4rem,7vh,4.4rem) var(--pad) 0;padding:clamp(1.4rem,3vw,2.4rem) clamp(1.2rem,2.4vw,2.4rem);background:rgba(131,109,48,.08);color:var(--gold-bright);transition:background .5s}
 .ar-link b{font-weight:400;font-size:clamp(1.8rem,3.6vw,3.6rem);line-height:1}
 .ar-link span{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-body)}
 .ar-link i{font-style:normal;font-size:1.6rem;transition:transform .5s}
@@ -253,11 +253,10 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(139,90,43,.
   <label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the journal" autocomplete="off"></label>
   <div class="jr-filters" role="group" aria-label="Tags">
     <button type="button" data-tag="all" aria-pressed="true">All</button>
-    <button type="button" data-tag="research" aria-pressed="false">Research <i>16</i></button>
-    <button type="button" data-tag="rituals" aria-pressed="false">Rituals <i>4</i></button>
-    <button type="button" data-tag="events" aria-pressed="false">Events <i>2</i></button>
+    <button type="button" data-tag="research" aria-pressed="false">Research</button>
+    <button type="button" data-tag="rituals" aria-pressed="false">Rituals</button>
+    <button type="button" data-tag="events" aria-pressed="false">Events</button>
   </div>
-  <span class="jr-count" id="jrCount" aria-live="polite">16 entries</span>
 </div>
 <section class="jr-lead" aria-label="Latest">
 <article class="jr-card jr-t1" data-category="research"><a href="draft.html"><img src="img/ws17.jpg" alt="" loading="lazy"><h3>Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li class="t-research">Research</li></ul><time datetime="2026-10-24">24 October 2026</time></a></article>
@@ -279,7 +278,7 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(139,90,43,.
 <article class="jr-card jr-t4" data-category="research events"><a href="draft.html"><h3>Le Baccanti di Euripide e il Museo Incarnato</h3><ul class="tags"><li class="t-research">Research</li><li class="t-events">Events</li></ul><time datetime="2026-05-30">30 May 2026</time></a></article>
 <article class="jr-card jr-t4" data-category="research events"><a href="draft.html"><h3>I Persiani di Eschilo e le stelle del Mediterraneo</h3><ul class="tags"><li class="t-research">Research</li><li class="t-events">Events</li></ul><time datetime="2026-03-28">28 March 2026</time></a></article>
 </section>
-<a class="ar-link" href="moyseion-archive.html"><b>Archive</b><span>13 earlier events &middot; 2025 &ndash; 2026</span><i>&rarr;</i></a>
+<a class="ar-link" href="moyseion-archive.html"><b>Archive</b><i>&rarr;</i></a>
 </main>
 <footer class="site-foot"><div class="foot">
   <a class="brand" href="../Moyseion-v3-blend.html" aria-label="MOΥΣEION">MOΥΣEION</a>
@@ -290,7 +289,7 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(139,90,43,.
 <script>
 /* search and tags: a card stays when it carries the chosen tag and its title or standfirst holds the words typed */
 (function(){
-  var cards = [].slice.call(document.querySelectorAll('.jr-card')), q = document.getElementById('jrQ'), count = document.getElementById('jrCount');
+  var cards = [].slice.call(document.querySelectorAll('.jr-card')), q = document.getElementById('jrQ');
   var btns = [].slice.call(document.querySelectorAll('.jr-filters button')), tag = 'all';
   function norm(t){ return (t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
   function run(){
@@ -300,7 +299,6 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(139,90,43,.
       c.hidden = !ok; if (ok) n++;
     });
     var lead = document.querySelector('.jr-lead'); if (lead) lead.hidden = !lead.querySelector('.jr-card:not([hidden])');
-    count.textContent = n + (n === 1 ? ' entry' : ' entries');
   }
   btns.forEach(function(b){ b.addEventListener('click', function(){ tag = b.getAttribute('data-tag'); btns.forEach(function(o){ o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); }); run(); }); });
   q.addEventListener('input', run);

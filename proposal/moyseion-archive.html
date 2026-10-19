@@ -242,7 +242,7 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(139,90,43,.
   <p class="crumbs"><a href="../Moyseion-v3-blend.html">Moyseion</a><span>&rsaquo;</span><a href="moyseion-journal.html">Journal</a><span>&rsaquo;</span>Archive</p>
   <h1>Archive</h1>
 </header>
-<div class="jr-bar" role="search"><label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the archive" autocomplete="off"></label><span class="jr-count" id="jrCount" aria-live="polite">13 entries</span></div>
+<div class="jr-bar" role="search"><label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the archive" autocomplete="off"></label></div>
 <figure class="ar-hero">
   <img class="lead" src="img/ws17.jpg" alt="" loading="lazy">
   <img src="img/danza13.jpg" alt="" loading="lazy"><img src="img/andron.jpg" alt="" loading="lazy">
@@ -274,7 +274,7 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(139,90,43,.
 <script>
 /* search and tags: a card stays when it carries the chosen tag and its title or standfirst holds the words typed */
 (function(){
-  var cards = [].slice.call(document.querySelectorAll('.jr-card')), q = document.getElementById('jrQ'), count = document.getElementById('jrCount');
+  var cards = [].slice.call(document.querySelectorAll('.jr-card')), q = document.getElementById('jrQ');
   var btns = [], tag = 'all';
   function norm(t){ return (t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
   function run(){
@@ -284,7 +284,6 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(139,90,43,.
       c.hidden = !ok; if (ok) n++;
     });
     var lead = document.querySelector('.jr-lead'); if (lead) lead.hidden = !lead.querySelector('.jr-card:not([hidden])');
-    count.textContent = n + (n === 1 ? ' entry' : ' entries');
   }
   btns.forEach(function(b){ b.addEventListener('click', function(){ tag = b.getAttribute('data-tag'); btns.forEach(function(o){ o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); }); run(); }); });
   q.addEventListener('input', run);
