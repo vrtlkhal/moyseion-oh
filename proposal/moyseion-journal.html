@@ -179,6 +179,15 @@ html[data-theme="light"] .jr-card a:not(:has(img)){background:rgba(139,90,43,.08
 .ar-band:hover .go{transform:translateX(.5rem)}
 @media (max-width:700px){.ar-band .kick{display:none}}
 html[data-theme="light"] .ar-band{color:#fbf6ee}html[data-theme="light"] .ar-band .kick{color:#e9dfcf}
+
+/* the first entry: the full width of the page, at the height of the cards below it */
+.jr-lead{display:block;padding:0 var(--pad);margin:0 0 clamp(1rem,2vw,2rem);grid-template-columns:none}
+.jr-lead > .jr-card{width:100%}
+.jr-lead > .jr-card a{aspect-ratio:auto;height:clamp(17rem,30vw,30rem);justify-content:flex-end}
+.jr-lead > .jr-card h3{font-size:clamp(1.6rem,3vw,3rem);max-width:22em}
+.jr-lead > .jr-card .standfirst{max-width:40em}
+.jr-lead > .jr-card img{object-position:center 35%}
+@media (max-width:36rem){.jr-lead > .jr-card a{height:clamp(18rem,70vw,26rem)}}
 </style>
 </head>
 <body>
@@ -206,12 +215,10 @@ html[data-theme="light"] .ar-band{color:#fbf6ee}html[data-theme="light"] .ar-ban
 </header>
 <span id="journal"></span><section class="jr-lead" aria-label="Latest">
 <article class="jr-card jr-t1" data-category="research"><a href="draft.html"><img src="img/ws17.jpg" alt="" loading="lazy"><h3>Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li>Research</li></ul><time datetime="2026-10-24">24 October 2026</time></a></article>
-<div class="jr-side">
-<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/xenia15.jpg" alt="" loading="lazy"><h3>Abitare la soglia</h3><p class="standfirst">Against the threshold as a limit to be crossed — an older idea of dwelling within it.</p><ul class="tags"><li>Research</li><li>Rituals</li></ul><time datetime="2026-10-31">31 October 2026</time></a></article>
-<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/matera.jpg" alt="" loading="lazy"><h3>John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità</h3><p class="standfirst">An academic and experiential retreat in the Sassi on myth, ritual and human formation in the ancient world.</p><ul class="tags"><li>Research</li><li>Rituals</li></ul><time datetime="2026-11-12">12–16 November 2026</time></a></article>
-</div>
 </section>
 <section class="jr-masonry" aria-label="Journal">
+<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/xenia15.jpg" alt="" loading="lazy"><h3>Abitare la soglia</h3><p class="standfirst">Against the threshold as a limit to be crossed — an older idea of dwelling within it.</p><ul class="tags"><li>Research</li><li>Rituals</li></ul><time datetime="2026-10-31">31 October 2026</time></a></article>
+<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/matera.jpg" alt="" loading="lazy"><h3>John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità</h3><p class="standfirst">An academic and experiential retreat in the Sassi on myth, ritual and human formation in the ancient world.</p><ul class="tags"><li>Research</li><li>Rituals</li></ul><time datetime="2026-11-12">12–16 November 2026</time></a></article>
 <article class="jr-card jr-t4" data-category="research"><a href="draft.html"><h3>Moyseion Research Retreat - Ancient Greek Harp</h3><ul class="tags"><li>Research</li></ul><time datetime="2026-11-20">20–29 November 2026</time></a></article>
 <article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/musica1.jpg" alt="" loading="lazy"><h3>Discover the Ancient Greek Harp</h3><p class="standfirst">Hands-on music-making for the ancient Greek harp, led by Bill Taylor and Nancy Thym.</p><ul class="tags"><li>Research</li></ul><time datetime="2026-11-23">23–26 November 2026</time></a></article>
 <article class="jr-card jr-t3" data-category="research"><a href="draft.html"><img src="img/neo13.jpg" alt="" loading="lazy"><h3>L'inconscio abita ancora il mito?</h3><p class="standfirst">The conflict of Aeschylus' Eumenides ends in transformation, the Erinyes welcomed into the city.</p><ul class="tags"><li>Research</li></ul><time datetime="2026-12-19">19 December 2026</time></a></article>
