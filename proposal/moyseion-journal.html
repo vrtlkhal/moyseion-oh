@@ -224,6 +224,17 @@ html[data-theme="light"] .jr-filters button[aria-pressed="true"]{background:#8b5
 .jr-card .tags li.t-events,.ar-hero .tags li.t-events{background:transparent;box-shadow:inset 0 0 0 .07rem rgba(241,220,164,.55)}
 html[data-theme="light"] .jr-card .tags li,html[data-theme="light"] .ar-hero .tags li{background:rgba(139,90,43,.18);color:#1b1713}
 html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(139,90,43,.3)}
+
+/* the way into the archive, built like the band that invites to a day at Moyseion on the homepage: full width, 15vh, a darkened photograph, gold hairlines */
+.ar-band{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:2rem;width:100vw;height:15vh;min-height:5.5rem;margin:clamp(3rem,9vh,6rem) 0 0;padding:0 var(--pad);overflow:hidden;color:var(--gold-bright);text-decoration:none;
+  border-top:.07rem solid var(--line);border-bottom:.07rem solid var(--line);
+  background:linear-gradient(90deg,rgba(1,4,22,.94),rgba(1,4,22,.62) 50%,rgba(1,4,22,.94)),url("img/danza13.jpg") center/cover no-repeat}
+.ar-band::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(241,220,164,0),rgba(241,220,164,.08),rgba(241,220,164,0));transform:translateX(-100%);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.ar-band:hover::before,.ar-band:focus-visible::before{transform:none}
+.ar-band b{position:relative;font-weight:400;font-size:clamp(1.5rem,3.4vw,3.4rem);line-height:1;letter-spacing:.01em}
+.ar-band .go{position:relative;font-size:1.6rem;transition:transform .5s}
+.ar-band:hover .go,.ar-band:focus-visible .go{transform:translateX(.6rem)}
+html[data-theme="light"] .ar-band{color:#fbf6ee;background:linear-gradient(90deg,rgba(20,14,8,.86),rgba(20,14,8,.55) 50%,rgba(20,14,8,.86)),url("img/danza13.jpg") center/cover no-repeat}
 </style>
 </head>
 <body>
@@ -278,7 +289,7 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(139,90,43,.
 <article class="jr-card jr-t4" data-category="research events"><a href="draft.html"><h3>Le Baccanti di Euripide e il Museo Incarnato</h3><ul class="tags"><li class="t-research">Research</li><li class="t-events">Events</li></ul><time datetime="2026-05-30">30 May 2026</time></a></article>
 <article class="jr-card jr-t4" data-category="research events"><a href="draft.html"><h3>I Persiani di Eschilo e le stelle del Mediterraneo</h3><ul class="tags"><li class="t-research">Research</li><li class="t-events">Events</li></ul><time datetime="2026-03-28">28 March 2026</time></a></article>
 </section>
-<a class="ar-link" href="moyseion-archive.html"><b>Archive</b><i>&rarr;</i></a>
+<a class="ar-band" href="moyseion-archive.html"><b>Archive</b><span class="go">&rarr;</span></a>
 </main>
 <footer class="site-foot"><div class="foot">
   <a class="brand" href="../Moyseion-v3-blend.html" aria-label="MOΥΣEION">MOΥΣEION</a>
