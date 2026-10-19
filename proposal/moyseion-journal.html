@@ -269,6 +269,12 @@ html.jr-js .jr-card.in img{clip-path:inset(0)}
 @media (max-width:75rem){.jr-masonry{column-count:3}}
 @media (max-width:60rem){.jr-masonry{column-count:2}}
 @media (max-width:36rem){.jr-masonry{column-count:1}.jr-lead > .jr-card a{height:clamp(14rem,56vw,20rem)}}
+
+/* the first row: two entries, the second two thirds the size of the first (3 : 2, a half as much again), one height */
+.jr-lead{display:grid;grid-template-columns:3fr 2fr;gap:clamp(1rem,2vw,2rem)}
+.jr-lead > .jr-card a{height:clamp(13rem,23vw,24rem)}
+.jr-lead > .jr-card + .jr-card h3{font-size:clamp(1.05rem,1.7vw,1.7rem)}
+@media (max-width:60rem){.jr-lead{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -300,9 +306,9 @@ html.jr-js .jr-card.in img{clip-path:inset(0)}
 </div>
 <section class="jr-lead" aria-label="Latest">
 <article class="jr-card jr-t1" data-category="research myth"><a href="draft.html"><img src="img/ws17.jpg" alt="" loading="lazy"><h3 lang="it">Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li class="t-research">Research</li><li class="t-myth">Myth</li></ul><time datetime="2026-10-24">24 October 2026</time></a></article>
+<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/xenia15.jpg" alt="" loading="lazy"><h3 lang="it">Abitare la soglia</h3><p class="standfirst">Against the threshold as a limit to be crossed — an older idea of dwelling within it.</p><ul class="tags"><li class="t-research">Research</li><li class="t-rituals">Rituals</li></ul><time datetime="2026-10-31">31 October 2026</time></a></article>
 </section>
 <section class="jr-masonry" aria-label="Journal">
-<article class="jr-card jr-t2" data-category="research rituals"><a href="draft.html"><img src="img/xenia15.jpg" alt="" loading="lazy"><h3 lang="it">Abitare la soglia</h3><p class="standfirst">Against the threshold as a limit to be crossed — an older idea of dwelling within it.</p><ul class="tags"><li class="t-research">Research</li><li class="t-rituals">Rituals</li></ul><time datetime="2026-10-31">31 October 2026</time></a></article>
 <article class="jr-card jr-t2" data-category="research rituals myth retreat"><a href="draft.html"><img src="img/matera.jpg" alt="" loading="lazy"><h3 lang="it">John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità</h3><p class="standfirst">An academic and experiential retreat in the Sassi on myth, ritual and human formation in the ancient world.</p><ul class="tags"><li class="t-research">Research</li><li class="t-rituals">Rituals</li><li class="t-myth">Myth</li><li class="t-retreat">Retreat</li></ul><time datetime="2026-11-12">12–16 November 2026</time></a></article>
 <article class="jr-card jr-t4" data-category="research music retreat"><a href="draft.html"><h3>Moyseion Research Retreat - Ancient Greek Harp</h3><ul class="tags"><li class="t-research">Research</li><li class="t-music">Music</li><li class="t-retreat">Retreat</li></ul><time datetime="2026-11-20">20–29 November 2026</time></a></article>
 <article class="jr-card jr-t3" data-category="research music"><a href="draft.html"><img src="img/musica1.jpg" alt="" loading="lazy"><h3>Discover the Ancient Greek Harp</h3><p class="standfirst">Hands-on music-making for the ancient Greek harp, led by Bill Taylor and Nancy Thym.</p><ul class="tags"><li class="t-research">Research</li><li class="t-music">Music</li></ul><time datetime="2026-11-23">23–26 November 2026</time></a></article>
