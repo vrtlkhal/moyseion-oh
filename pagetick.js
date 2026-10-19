@@ -21,11 +21,11 @@
   + '.page-tick{position:relative;z-index:20;overflow:hidden;height:10vh;min-height:4.5rem;display:flex;align-items:center;margin:6vh 0 0;border-top:1px solid rgba(131,109,48,.35);border-bottom:1px solid rgba(131,109,48,.35)}'
   + '.page-tick small{display:none}'
   + '.page-tick div{display:flex;align-items:center;gap:5vw;white-space:nowrap;width:max-content;animation:pageTick 120s linear infinite}'
-  + '.page-tick span{font-family:var(--font,"GFS Neohellenic","Gill Sans",serif);font-weight:400;font-size:clamp(1.3rem,4.2vh,2.6rem);line-height:1;letter-spacing:.34em;text-transform:uppercase;color:transparent;-webkit-text-stroke:1px rgba(241,220,164,.4)}'
+  + '.page-tick span{font-family:var(--font,"GFS Neohellenic","Gill Sans",serif);font-weight:400;font-size:clamp(1.3rem,4.2vh,2.6rem);line-height:1;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-body,#c2a567);opacity:.8;-webkit-text-stroke:0}'
   + '.page-tick span:nth-child(even)::before{content:"\\2022";margin-right:5vw;color:rgba(131,109,48,.7);-webkit-text-stroke:0}'
   + '@keyframes pageTick{to{transform:translateX(-50%)}}'
   + '@media (prefers-reduced-motion:reduce){.page-tick div{animation:none}}'
-  + 'html[data-theme="light"] .page-tick span{-webkit-text-stroke-color:rgba(139,90,43,.55)}';
+  + 'html[data-theme="light"] .page-tick span{color:#3a3128}';
   var st = document.createElement('style'); st.id = 'page-tick-css'; st.textContent = css; document.head.appendChild(st);
   var unit = '', i; for (i = 0; i < 3; i++) unit += '<span>' + path[0] + '</span><span>' + path[1] + '</span>';
   var el = document.createElement('div'); el.className = 'page-tick'; el.id = 'pageTick'; el.setAttribute('role', 'note');

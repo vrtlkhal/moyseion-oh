@@ -173,8 +173,6 @@ html[data-theme="light"] .jr-card a:not(:has(img)){background:rgba(139,90,43,.08
 .ar-band::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(241,220,164,.1),transparent);transform:translateX(-100%);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
 .ar-band:hover::before,.ar-band:focus-visible::before{transform:none}
 .ar-band .kick{position:relative;font-size:.66rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-body)}
-.ar-band b{position:relative;font-weight:400;font-size:clamp(2.4rem,7vw,7rem);line-height:1;letter-spacing:-.01em;color:transparent;-webkit-text-stroke:.07rem rgba(241,220,164,.75);transition:color .6s,letter-spacing .8s}
-.ar-band:hover b,.ar-band:focus-visible b{color:var(--gold-bright);letter-spacing:.02em}
 .ar-band .go{position:relative;font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;transition:transform .5s}
 .ar-band:hover .go{transform:translateX(.5rem)}
 @media (max-width:700px){.ar-band .kick{display:none}}
@@ -231,7 +229,7 @@ html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(139,90,43,.
   background:linear-gradient(90deg,rgba(1,4,22,.94),rgba(1,4,22,.62) 50%,rgba(1,4,22,.94)),url("img/danza13.jpg") center/cover no-repeat}
 .ar-band::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(241,220,164,0),rgba(241,220,164,.08),rgba(241,220,164,0));transform:translateX(-100%);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
 .ar-band:hover::before,.ar-band:focus-visible::before{transform:none}
-.ar-band b{position:relative;font-weight:400;font-size:clamp(1.5rem,3.4vw,3.4rem);line-height:1;letter-spacing:.01em}
+.ar-band b{position:relative;font-weight:400;font-size:clamp(1.5rem,3.4vw,3.4rem);line-height:1;letter-spacing:.01em;color:var(--gold-bright);-webkit-text-stroke:0}
 .ar-band .go{position:relative;font-size:1.6rem;transition:transform .5s}
 .ar-band:hover .go,.ar-band:focus-visible .go{transform:translateX(.6rem)}
 html[data-theme="light"] .ar-band{color:#fbf6ee;background:linear-gradient(90deg,rgba(20,14,8,.86),rgba(20,14,8,.55) 50%,rgba(20,14,8,.86)),url("img/danza13.jpg") center/cover no-repeat}
