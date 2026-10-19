@@ -254,6 +254,19 @@ html.jr-js .jr-card.in img{clip-path:inset(0)}
 @media (max-width:75rem){.jr-masonry{column-count:3}}
 @media (max-width:60rem){.jr-masonry{column-count:2}}
 @media (max-width:36rem){.jr-masonry{column-count:1}.jr-lead > .jr-card a{height:clamp(14rem,56vw,20rem)}}
+
+/* a little ornament: four hairline corners inside each card, as on the page's own frame; they draw in a touch on hover */
+.jr-card a::after{--c:rgba(241,220,164,.55);content:"";position:absolute;inset:.7rem;z-index:3;pointer-events:none;opacity:.8;transition:inset .6s cubic-bezier(.2,.7,.2,1),opacity .6s,--c .6s;
+  background:linear-gradient(var(--c),var(--c)) left top/1rem .07rem no-repeat,linear-gradient(var(--c),var(--c)) left top/.07rem 1rem no-repeat,
+    linear-gradient(var(--c),var(--c)) right top/1rem .07rem no-repeat,linear-gradient(var(--c),var(--c)) right top/.07rem 1rem no-repeat,
+    linear-gradient(var(--c),var(--c)) left bottom/1rem .07rem no-repeat,linear-gradient(var(--c),var(--c)) left bottom/.07rem 1rem no-repeat,
+    linear-gradient(var(--c),var(--c)) right bottom/1rem .07rem no-repeat,linear-gradient(var(--c),var(--c)) right bottom/.07rem 1rem no-repeat}
+.jr-card a:hover::after,.jr-card a:focus-visible::after{inset:.45rem;opacity:1;--c:rgba(241,220,164,.95)}
+.jr-card a:hover,.jr-card a:focus-visible{box-shadow:0 0 1.8rem rgba(241,220,164,.12)}
+html[data-theme="light"] .jr-card a:not(:has(img))::after{--c:rgba(131,109,48,.7)}
+html[data-theme="light"] .jr-card a:not(:has(img)):hover::after{--c:#836d30}
+html[data-theme="light"] .jr-card a:hover{box-shadow:0 0 1.8rem rgba(131,109,48,.18)}
+@property --c{syntax:"<color>";inherits:false;initial-value:rgba(241,220,164,.55)}
 </style>
 </head>
 <body>
