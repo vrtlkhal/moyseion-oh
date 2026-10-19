@@ -220,7 +220,7 @@
       });
       if (!words.length) return;
       var long = words.length > 14;
-      gsap.fromTo(words, { color: LIGHTMODE ? '#a08c70' : '#836d30' }, { color: LIGHTMODE ? '#1b1713' : '#f1dca4', ease:'none', stagger: long ? .5 : .25,
+      gsap.fromTo(words, { color: LIGHTMODE ? '#a08c70' : '#836d30' }, { color: LIGHTMODE ? '#7d3217' : '#f1dca4', ease:'none', stagger: long ? .5 : .25,
         scrollTrigger:{ trigger:el, start:'top 92%', end: long ? 'bottom 46%' : 'top 56%', scrub:.3 } });
     });
   }

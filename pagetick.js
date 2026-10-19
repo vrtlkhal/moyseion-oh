@@ -25,7 +25,7 @@
   + '.page-tick span:nth-child(even)::before{content:"\\2022";margin-right:5vw;color:rgba(131,109,48,.7);-webkit-text-stroke:0}'
   + '@keyframes pageTick{to{transform:translateX(-50%)}}'
   + '@media (prefers-reduced-motion:reduce){.page-tick div{animation:none}}'
-  + 'html[data-theme="light"] .page-tick span{color:#3a3128}';
+  + 'html[data-theme="light"] .page-tick span{color:#4a3a1c}';
   var st = document.createElement('style'); st.id = 'page-tick-css'; st.textContent = css; document.head.appendChild(st);
   var unit = '', i; for (i = 0; i < 3; i++) unit += '<span>' + path[0] + '</span><span>' + path[1] + '</span>';
   var el = document.createElement('div'); el.className = 'page-tick'; el.id = 'pageTick'; el.setAttribute('role', 'note');

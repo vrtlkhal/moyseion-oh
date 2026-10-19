@@ -44,11 +44,11 @@
   + '@media (max-width:900px){.logi-grid{grid-template-columns:1fr 1fr}.logi-col:nth-child(2){border-right:1px solid rgba(131,109,48,.28)}.logi-col:nth-child(n+3){border-top:1px solid rgba(131,109,48,.28)}}'
   + '@media (max-width:560px){.logi-grid{grid-template-columns:1fr}.logi-col{border-right:1px solid rgba(131,109,48,.28);border-top:1px solid rgba(131,109,48,.28)}.logi-quick{display:none}}'
   + '@media (prefers-reduced-motion:reduce){.logi-grid{animation:none}}'
-  + 'html[data-theme="light"] .logi{background:#f4efe8;border-top-color:rgba(139,90,43,.4)}'
-  + 'html[data-theme="light"] .logi summary,html[data-theme="light"] .logi-head h4,html[data-theme="light"] .logi-col b,html[data-theme="light"] .logi-col a,html[data-theme="light"] .logi-times strong,html[data-theme="light"] .logi-quick b,html[data-theme="light"] .logi-park span:last-child{color:#1b1713}'
-  + 'html[data-theme="light"] .logi-col p,html[data-theme="light"] .logi-head svg,html[data-theme="light"] .logi-chips span,html[data-theme="light"] .logi-park,html[data-theme="light"] .logi-quick{color:#3a3128}'
-  + 'html[data-theme="light"] .logi-times small{color:#8b5a2b}'
-  + 'html[data-theme="light"] .logi,html[data-theme="light"] .logi-col,html[data-theme="light"] .logi-body,html[data-theme="light"] .logi-chips span,html[data-theme="light"] .logi-times div,html[data-theme="light"] .logi-park{border-color:rgba(139,90,43,.3)}';
+  + 'html[data-theme="light"] .logi{background:#f6f1e9;border-top-color:rgba(131,109,48,.4)}'
+  + 'html[data-theme="light"] .logi summary,html[data-theme="light"] .logi-head h4,html[data-theme="light"] .logi-col b,html[data-theme="light"] .logi-col a,html[data-theme="light"] .logi-times strong,html[data-theme="light"] .logi-quick b,html[data-theme="light"] .logi-park span:last-child{color:#7d3217}'
+  + 'html[data-theme="light"] .logi-col p,html[data-theme="light"] .logi-head svg,html[data-theme="light"] .logi-chips span,html[data-theme="light"] .logi-park,html[data-theme="light"] .logi-quick{color:#4a3a1c}'
+  + 'html[data-theme="light"] .logi-times small{color:#9c3f1c}'
+  + 'html[data-theme="light"] .logi,html[data-theme="light"] .logi-col,html[data-theme="light"] .logi-body,html[data-theme="light"] .logi-chips span,html[data-theme="light"] .logi-times div,html[data-theme="light"] .logi-park{border-color:rgba(131,109,48,.3)}';
   var st = document.createElement('style'); st.id = 'logi-css'; st.textContent = css; document.head.appendChild(st);
   var ic = function(d){ return '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + '</svg>'; };
   var PIN = ic('<path d="M24 42S10 29 10 19a14 14 0 0 1 28 0c0 10-14 23-14 23z"/><circle cx="24" cy="19" r="5"/>');

@@ -31,9 +31,9 @@
   + '.rev-cta a{display:inline-flex;align-items:center;justify-content:center;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;padding:.9rem 2rem;border:1px solid var(--gold-body,#c2a567);color:var(--gold-bright,#f1dca4);text-decoration:none;transition:background .3s,color .3s,border-color .3s}'
   + '.rev-cta a:hover,.rev-cta a:focus-visible{background:var(--gold-body,#c2a567);border-color:var(--gold-body,#c2a567);color:var(--navy,#010416)}'
   + '.mnav.cta-away .mn-cta{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .5s ease,visibility 0s linear .5s}'
-  + 'html[data-theme="light"] .rev-cta p{color:#8b5a2b}html[data-theme="light"] .rev-cta a{color:#6b3f17;border-color:#8b5a2b}html[data-theme="light"] .rev-cta a:hover{background:#8b5a2b;color:#fff}'
-  + 'html[data-theme="light"] .rev-band{background:#f4efe8}'
-  + 'html[data-theme="light"] .rev-card p{color:#1b1713}html[data-theme="light"] .rev-card,html[data-theme="light"] .rev-label{color:#8b5a2b}html[data-theme="light"] .rev-card{border-left-color:rgba(139,90,43,.55)}';
+  + 'html[data-theme="light"] .rev-cta p{color:#9c3f1c}html[data-theme="light"] .rev-cta a{color:#8f3a1a;border-color:#9c3f1c}html[data-theme="light"] .rev-cta a:hover{background:#9c3f1c;color:#fff}'
+  + 'html[data-theme="light"] .rev-band{background:#f6f1e9}'
+  + 'html[data-theme="light"] .rev-card p{color:#7d3217}html[data-theme="light"] .rev-card,html[data-theme="light"] .rev-label{color:#9c3f1c}html[data-theme="light"] .rev-card{border-left-color:rgba(131,109,48,.55)}';
   var st = document.createElement('style'); st.id = 'rev-css'; st.textContent = css; document.head.appendChild(st);
   function esc(t){ return String(t).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
   var cards = list.map(function(r){
