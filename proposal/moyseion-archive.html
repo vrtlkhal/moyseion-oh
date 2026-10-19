@@ -363,6 +363,25 @@ html body .shards i:nth-child(8){--n:7;--p:40% 64%,60% 62%,82% 70%,100% 70%,100%
 html body .shards canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
 html body .shards{background:#020512}
 html[data-theme="light"] body .shards{background:#f6f1e9}
+
+/* THE HEAD, QUIET: the title on the plain page, and five tall slices of photograph standing side by side like columns of a gallery, a little different in height.
+   They answer the hover by opening, one at a time. Nothing else. */
+html body .era-hero{position:relative;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);grid-template-rows:1fr auto auto auto 1fr;column-gap:clamp(2rem,5vw,6rem);align-items:center;min-height:clamp(19rem,46vh,29rem);margin:4rem 0 0;padding:0 var(--pad);overflow:visible;isolation:auto}
+html body .era-hero .crumbs,html body .era-hero h1,html body .era-hero .lede{grid-column:1;position:relative;z-index:1;width:auto;max-width:none;margin-left:0;margin-right:0;padding:0}
+html body .era-hero .crumbs{grid-row:2;margin-bottom:1.2rem}
+html body .era-hero h1{grid-row:3;font-size:clamp(3.6rem,9vw,9.5rem);line-height:.9;letter-spacing:-.02em;margin:0 0 1.2rem}
+html body .era-hero .lede{grid-row:4;font-size:clamp(.9rem,1.05vw,1.05rem);line-height:1.55;max-width:26em;margin-bottom:0}
+html body .strips{grid-column:2;grid-row:1 / -1;align-self:stretch;display:flex;gap:clamp(.4rem,.7vw,.8rem);padding:clamp(1.6rem,4vh,2.6rem) 0}
+html body .strips i{flex:1 1 0;min-width:0;background:var(--img) center/cover no-repeat;transition:flex .9s cubic-bezier(.2,.7,.2,1);animation:stripIn 1.1s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--k) * 90ms)}
+html body .strips i:hover{flex:3.2}
+html body .strips i:nth-child(1){--k:0;margin-top:1.6rem}html body .strips i:nth-child(2){--k:1;margin-top:0}html body .strips i:nth-child(3){--k:2;margin-top:2.4rem}
+html body .strips i:nth-child(4){--k:3;margin-top:.8rem}html body .strips i:nth-child(5){--k:4;margin-top:2rem}
+@keyframes stripIn{from{opacity:0;transform:translateY(1.6rem)}to{opacity:1;transform:none}}
+@media (max-width:60rem){html body .era-hero{grid-template-columns:1fr;grid-template-rows:none;min-height:0;padding-bottom:1.6rem}html body .strips{grid-column:1;grid-row:1;height:30vh;padding:1.2rem 0}html body .era-hero .crumbs,html body .era-hero h1,html body .era-hero .lede{grid-row:auto}html body .era-hero h1{font-size:clamp(3.4rem,16vw,6rem)}}
+@media (prefers-reduced-motion:reduce){html body .strips i{animation:none;transition:none}}
+
+html body .era-hero > .strips{grid-column:2;grid-row:1 / -1;align-self:stretch}
+@media (max-width:60rem){html body .era-hero > .strips{grid-column:1;grid-row:1}}
 </style>
 </head>
 <body>
@@ -386,7 +405,7 @@ html[data-theme="light"] body .shards{background:#f6f1e9}
 <header class="era-hero">
   <p class="crumbs"><a href="../Moyseion-v3-blend.html">Moyseion</a><span>&rsaquo;</span><a href="moyseion-journal.html">Journal</a><span>&rsaquo;</span>Archive</p>
   <h1>Archive</h1>
-<div class="shards" aria-hidden="true" data-imgs="img/andron.jpg,img/neo13.jpg,img/ws13.jpg,img/danza10.jpg,img/musica4.jpg,img/matera.jpg,img/xenia17.jpg" data-tile="7" data-quiet><canvas></canvas></div>
+<div class="strips" aria-hidden="true"><i style="--img:url('img/andron.jpg')"></i><i style="--img:url('img/neo13.jpg')"></i><i style="--img:url('img/ws13.jpg')"></i><i style="--img:url('img/danza10.jpg')"></i><i style="--img:url('img/musica4.jpg')"></i></div>
 </header>
 <div class="jr-bar" role="search"><label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the archive" autocomplete="off"></label>
   <div class="jr-filters" role="group" aria-label="Tags"><button type="button" data-tag="all" aria-pressed="true">All</button><button type="button" data-tag="theatre" aria-pressed="false">Theatre</button><button type="button" data-tag="music" aria-pressed="false">Music</button></div></div>
@@ -450,7 +469,6 @@ html[data-theme="light"] body .shards{background:#f6f1e9}
   function pop(){ requestAnimationFrame(function(){ cards.forEach(function(c){ if (!c.hidden){ c.classList.add('in'); c.classList.remove('pop'); void c.offsetWidth; c.classList.add('pop'); } }); }); }
 })();
 </script>
-<script src="../mosaic.js"></script>
 <script src="../i18n-it.js"></script>
 <script src="../i18n.js"></script>
 <script src="../nav.js"></script>
