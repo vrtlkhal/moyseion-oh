@@ -412,6 +412,18 @@ html body .era-hero .lede{font-size:clamp(.8rem,.9vw,.92rem);line-height:1.45}
 html body .strips{padding:clamp(.9rem,2vh,1.4rem) 0;gap:clamp(.3rem,.5vw,.6rem)}
 html body .strips i:nth-child(1){margin-top:.7rem}html body .strips i:nth-child(3){margin-top:1.1rem}html body .strips i:nth-child(4){margin-top:.4rem}html body .strips i:nth-child(5){margin-top:.9rem}
 @media (max-width:60rem){html body .strips{height:18vh}html body .era-hero h1{font-size:clamp(2.6rem,12vw,4rem)}}
+
+/* the five slices are the five latest entries: the photograph of each, and a link to it; the title and date appear as a slice opens */
+html body .strips a{flex:1 1 0;min-width:0;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;gap:.25rem;padding:.8rem;background:var(--img) center/cover no-repeat;color:#fbf6ee;text-decoration:none;transition:flex .9s cubic-bezier(.2,.7,.2,1);animation:stripIn 1.1s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--k) * 90ms)}
+html body .strips a::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(1,4,22,.92) 0%,rgba(1,4,22,.55) 45%,rgba(1,4,22,0) 100%);opacity:0;transition:opacity .6s}
+html body .strips a:hover,html body .strips a:focus-visible{flex:3.4}
+html body .strips a:hover::after,html body .strips a:focus-visible::after{opacity:1}
+html body .strips a b,html body .strips a time{position:relative;z-index:1;opacity:0;transition:opacity .5s .25s;text-shadow:0 .05rem .6rem rgba(1,4,22,.9)}
+html body .strips a b{font-weight:400;font-size:clamp(.78rem,.95vw,.98rem);line-height:1.25;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+html body .strips a time{font-size:.52rem;letter-spacing:.26em;text-transform:uppercase;color:#e9dfcf}
+html body .strips a:hover b,html body .strips a:hover time,html body .strips a:focus-visible b,html body .strips a:focus-visible time{opacity:1}
+html body .strips a:nth-child(1){--k:0;margin-top:.7rem}html body .strips a:nth-child(2){--k:1;margin-top:0}html body .strips a:nth-child(3){--k:2;margin-top:1.1rem}html body .strips a:nth-child(4){--k:3;margin-top:.4rem}html body .strips a:nth-child(5){--k:4;margin-top:.9rem}
+@media (prefers-reduced-motion:reduce){html body .strips a{animation:none;transition:none}}
 </style>
 </head>
 <body>
@@ -436,7 +448,7 @@ html body .strips i:nth-child(1){margin-top:.7rem}html body .strips i:nth-child(
   <p class="crumbs"><a href="../Moyseion-v3-blend.html">Moyseion</a><span>&rsaquo;</span>Journal</p>
   <h1>Journal</h1>
   <p class="lede">Archaeologia Poetica: reflections, essays and notes.</p>
-<div class="strips" aria-hidden="true"><i style="--img:url('img/danza12.jpg')"></i><i style="--img:url('img/xenia15.jpg')"></i><i style="--img:url('img/ws17.jpg')"></i><i style="--img:url('img/eno9.jpg')"></i><i style="--img:url('img/musica1.jpg')"></i></div>
+<div class="strips"><a href="draft.html" style="--img:url('img/ws17.jpg')" aria-label="Dal mito di Prometeo all&#x27;intelligenza artificiale"><b lang="it">Dal mito di Prometeo all'intelligenza artificiale</b><time datetime="2026-10-24">24 October 2026</time></a><a href="draft.html" style="--img:url('img/xenia15.jpg')" aria-label="Abitare la soglia"><b lang="it">Abitare la soglia</b><time datetime="2026-10-31">31 October 2026</time></a><a href="draft.html" style="--img:url('img/matera.jpg')" aria-label="John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità"><b lang="it">John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità</b><time datetime="2026-11-12">12–16 November 2026</time></a><a href="draft.html" style="--img:url('img/musica1.jpg')" aria-label="Discover the Ancient Greek Harp"><b>Discover the Ancient Greek Harp</b><time datetime="2026-11-23">23–26 November 2026</time></a><a href="draft.html" style="--img:url('img/neo13.jpg')" aria-label="L&#x27;inconscio abita ancora il mito?"><b lang="it">L'inconscio abita ancora il mito?</b><time datetime="2026-12-19">19 December 2026</time></a></div>
 </header>
 <span id="journal"></span><div class="jr-bar" role="search">
   <label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the journal" autocomplete="off"></label>
