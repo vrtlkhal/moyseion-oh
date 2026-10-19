@@ -372,5 +372,9 @@ window.__MOY_IT = {
 "Events 2": "Eventi <i>2</i>",
 "16 entries": "16 voci",
 "13 entries": "13 voci",
-"13 earlier events · 2025 – 2026": "13 eventi passati · 2025 – 2026"
+"13 earlier events · 2025 – 2026": "13 eventi passati · 2025 – 2026",
+"Theatre": "Teatro",
+"Myth": "Mito",
+"Retreat": "Ritiro",
+"Cuisine": "Cucina"
 };
