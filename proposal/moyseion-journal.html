@@ -424,6 +424,24 @@ html body .strips a time{font-size:.52rem;letter-spacing:.26em;text-transform:up
 html body .strips a:hover b,html body .strips a:hover time,html body .strips a:focus-visible b,html body .strips a:focus-visible time{opacity:1}
 html body .strips a:nth-child(1){--k:0;margin-top:.7rem}html body .strips a:nth-child(2){--k:1;margin-top:0}html body .strips a:nth-child(3){--k:2;margin-top:1.1rem}html body .strips a:nth-child(4){--k:3;margin-top:.4rem}html body .strips a:nth-child(5){--k:4;margin-top:.9rem}
 @media (prefers-reduced-motion:reduce){html body .strips a{animation:none;transition:none}}
+
+/* THE BANNER AS ONE FIELD: two rows of photographs, laid brick-wise so the seams do not line up, running the whole width of the page and behind the title.
+   They are the photographs of the articles, nothing more: not links, no words. The tiles under the title are held darker, tile by tile, so the title reads. */
+html body .era-hero{display:block;position:relative;min-height:clamp(11rem,26vh,16rem);margin:4rem 0 0;padding:0;overflow:hidden;isolation:isolate;grid-template-columns:none;grid-template-rows:none}
+html body .era-hero > .strips{position:absolute;inset:0;z-index:0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:1fr 1fr;gap:.2rem;padding:0;margin:0;grid-column:auto;grid-row:auto}
+html body .strips i{grid-column:span var(--c);background:var(--img) center/cover no-repeat;animation:tileIn 1s ease both;animation-delay:calc(var(--n,0) * 70ms);flex:none;margin:0}
+html body .strips i.dim{filter:brightness(.3) saturate(.65)}
+html body .strips i:nth-child(1){--n:0}html body .strips i:nth-child(2){--n:1}html body .strips i:nth-child(3){--n:2}html body .strips i:nth-child(4){--n:3}html body .strips i:nth-child(5){--n:4}
+html body .strips i:nth-child(6){--n:2}html body .strips i:nth-child(7){--n:3}html body .strips i:nth-child(8){--n:4}html body .strips i:nth-child(9){--n:5}html body .strips i:nth-child(10){--n:6}
+@keyframes tileIn{from{opacity:0}to{opacity:1}}
+html body .era-hero .crumbs,html body .era-hero h1,html body .era-hero .lede{position:relative;z-index:2;display:block;grid-column:auto;grid-row:auto;width:auto;max-width:34vw;margin-left:var(--pad);padding:0}
+html body .era-hero .crumbs{padding-top:clamp(1.8rem,5vh,2.8rem);margin-bottom:.5rem;color:#c2a567}
+html body .era-hero .crumbs a{color:#c2a567}
+html body .era-hero h1{margin-top:0;margin-bottom:.5rem;font-size:clamp(2.6rem,5.2vw,5.4rem);color:#f1dca4}
+html body .era-hero .lede{margin-bottom:clamp(1.4rem,4vh,2.2rem);color:#e9dfcf;font-size:clamp(.8rem,.9vw,.92rem);max-width:26vw}
+html[data-theme="light"] body .era-hero h1{color:#f1dca4}
+@media (max-width:60rem){html body .era-hero{min-height:15rem}html body .era-hero .crumbs,html body .era-hero h1,html body .era-hero .lede{max-width:none;margin-right:var(--pad)}html body .strips i{filter:brightness(.32) saturate(.65)}}
+@media (prefers-reduced-motion:reduce){html body .strips i{animation:none}}
 </style>
 </head>
 <body>
@@ -448,7 +466,7 @@ html body .strips a:nth-child(1){--k:0;margin-top:.7rem}html body .strips a:nth-
   <p class="crumbs"><a href="../Moyseion-v3-blend.html">Moyseion</a><span>&rsaquo;</span>Journal</p>
   <h1>Journal</h1>
   <p class="lede">Archaeologia Poetica: reflections, essays and notes.</p>
-<div class="strips"><a href="draft.html" style="--img:url('img/ws17.jpg')" aria-label="Dal mito di Prometeo all&#x27;intelligenza artificiale"><b lang="it">Dal mito di Prometeo all'intelligenza artificiale</b><time datetime="2026-10-24">24 October 2026</time></a><a href="draft.html" style="--img:url('img/xenia15.jpg')" aria-label="Abitare la soglia"><b lang="it">Abitare la soglia</b><time datetime="2026-10-31">31 October 2026</time></a><a href="draft.html" style="--img:url('img/matera.jpg')" aria-label="John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità"><b lang="it">John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità</b><time datetime="2026-11-12">12–16 November 2026</time></a><a href="draft.html" style="--img:url('img/musica1.jpg')" aria-label="Discover the Ancient Greek Harp"><b>Discover the Ancient Greek Harp</b><time datetime="2026-11-23">23–26 November 2026</time></a><a href="draft.html" style="--img:url('img/neo13.jpg')" aria-label="L&#x27;inconscio abita ancora il mito?"><b lang="it">L'inconscio abita ancora il mito?</b><time datetime="2026-12-19">19 December 2026</time></a></div>
+<div class="strips" aria-hidden="true"><i class="dim" style="--img:url('img/ws17.jpg');--c:2"></i><i class="dim" style="--img:url('img/xenia15.jpg');--c:3"></i><i style="--img:url('img/matera.jpg');--c:2"></i><i style="--img:url('img/musica1.jpg');--c:3"></i><i style="--img:url('img/neo13.jpg');--c:2"></i><i class="dim" style="--img:url('img/danza12.jpg');--c:3"></i><i class="dim" style="--img:url('img/eno9.jpg');--c:2"></i><i style="--img:url('img/musica4.jpg');--c:3"></i><i style="--img:url('img/ws13.jpg');--c:2"></i><i style="--img:url('img/danza10.jpg');--c:2"></i></div>
 </header>
 <span id="journal"></span><div class="jr-bar" role="search">
   <label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the journal" autocomplete="off"></label>
