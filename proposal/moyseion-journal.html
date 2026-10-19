@@ -282,6 +282,13 @@ html.jr-js .jr-card.in img{clip-path:inset(0)}
 .jr-card a:hover,.jr-card a:focus-visible{outline-color:rgba(241,220,164,.85);outline-offset:.75rem}
 html[data-theme="light"] .jr-card a{outline-color:rgba(131,109,48,.5)}
 html[data-theme="light"] .jr-card a:hover,html[data-theme="light"] .jr-card a:focus-visible{outline-color:#836d30}
+
+/* when a card's outline opens, the room it needs is made: the items below slide down by the same amount instead of being overlapped */
+.jr-masonry .jr-card{transition:margin .6s cubic-bezier(.2,.7,.2,1);margin-top:0}
+.jr-masonry .jr-card:hover,.jr-masonry .jr-card:focus-within{margin-top:.2rem;margin-bottom:calc(clamp(1rem,2vw,2rem) + .2rem)}
+.jr-lead > .jr-card{transition:margin .6s cubic-bezier(.2,.7,.2,1)}
+.jr-lead > .jr-card:hover,.jr-lead > .jr-card:focus-within{margin-top:.2rem;margin-bottom:.2rem}
+@media (prefers-reduced-motion:reduce){.jr-masonry .jr-card,.jr-lead > .jr-card{transition:none}}
 </style>
 </head>
 <body>
