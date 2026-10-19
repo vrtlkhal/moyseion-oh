@@ -209,6 +209,15 @@ html[data-theme="light"] .ar-link{background:rgba(139,90,43,.08)}
 html[data-theme="light"] .jr-bar{background:rgba(244,239,232,.92)}
 html[data-theme="light"] .jr-search input{background:rgba(139,90,43,.12);color:#1b1713}
 html[data-theme="light"] .jr-filters button[aria-pressed="true"]{background:#8b5a2b;color:#fff}
+
+/* tags as rounded boxes, one tint per kind, so they read apart from each other and from the title */
+.jr-card .tags,.ar-hero .tags{gap:.4rem;flex-wrap:wrap}
+.jr-card .tags li,.ar-hero .tags li{border:0;padding:.32rem .8rem;border-radius:99rem;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;background:rgba(241,220,164,.16);color:var(--gold-bright);-webkit-backdrop-filter:blur(.5rem);backdrop-filter:blur(.5rem)}
+.jr-card .tags li + li::before,.ar-hero .tags li + li::before{content:none;margin:0}
+.jr-card .tags li.t-rituals,.ar-hero .tags li.t-rituals{background:rgba(194,138,69,.3);color:#f4d9a8}
+.jr-card .tags li.t-events,.ar-hero .tags li.t-events{background:transparent;box-shadow:inset 0 0 0 .07rem rgba(241,220,164,.55)}
+html[data-theme="light"] .jr-card .tags li,html[data-theme="light"] .ar-hero .tags li{background:rgba(139,90,43,.18);color:#1b1713}
+html[data-theme="light"] .jr-card .tags li.t-rituals{background:rgba(139,90,43,.3)}
 </style>
 </head>
 <body>
@@ -237,7 +246,7 @@ html[data-theme="light"] .jr-filters button[aria-pressed="true"]{background:#8b5
 <figure class="ar-hero">
   <img class="lead" src="img/ws17.jpg" alt="" loading="lazy">
   <img src="img/danza13.jpg" alt="" loading="lazy"><img src="img/andron.jpg" alt="" loading="lazy">
-  <figcaption><h3>Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li>Research</li></ul></figcaption>
+  <figcaption><h3>Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li class="t-research">Research</li></ul></figcaption>
 </figure>
 <section class="jr-masonry jr-archive" aria-label="Archive">
 <article class="jr-card jr-t4" data-category=""><a href="draft.html"><h3>Discover the Classical Aulos - 5th Moyseion Music-Making Course</h3><time datetime="2026-03-16">16–20 March 2026</time></a></article>
