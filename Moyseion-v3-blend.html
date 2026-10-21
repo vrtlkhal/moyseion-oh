@@ -465,9 +465,10 @@ html.no-3d .logo-center { visibility:visible; }
 .statue-wrap canvas { width:100%; height:100%; display:block; }
 
 /* ============ PER-SECTION IMAGE PANEL ============ */
+:root{--tile:clamp(10rem,36vh,19rem)}   /* the rail's tile; the main capsule is sized from it */
 .section-imgs {
   position:relative; flex:0 0 auto;
-  width:min(34vw, calc(var(--vh) * 74 * 110 / 167)); aspect-ratio:110/167; height:auto;
+  width:min(34vw, calc(var(--tile) * 1.382), calc(var(--vh) * 80 * 110 / 167)); aspect-ratio:110/167; height:auto;   /* a fixed lead over the rail at every height */
   border-radius:50% / 20%; overflow:hidden;     /* EXACT capsule per the supplied SVG */
   outline:0.09vw solid rgba(241,220,164,0.55); outline-offset:-0.09vw;
   z-index:22;
@@ -500,7 +501,7 @@ html.no-3d .logo-center { visibility:visible; }
 /* ============ WATER SANCTUARY — full-bleed band between SANCTUARY and RITUALS ============ */
 .water-band {
   position:relative; z-index:20;   /* lift above the fixed navy/particles/rings/statue layers */
-  width:100vw; height:61.8vh;     /* golden: 100 / 61.8 / 38.2 / 23.6 / 14.6 / 9vh */
+  width:100vw; height:61.8vh; min-height:20rem;     /* golden: 100 / 61.8 / 38.2 / 23.6 / 14.6 / 9vh; floor for short screens */
   margin:9vh 0;                   /* the spacing .manifesto + .manifesto would have given it */
   overflow:hidden;
 }
@@ -876,7 +877,6 @@ nav.chrome .menu-panel{display:none}
 .section-imgs{border-radius:50% / 20%}
 
 /* water band: inset and framed */
-.water-band{width:auto;margin:9vh var(--pad3);border-radius:0.875rem;border:1px solid var(--line-soft)}
 
 /* reels: V2 captions already match; frame them the same way */
 .reel-frame{border-color:var(--line)}
@@ -993,7 +993,6 @@ html[data-theme="light"] .hcard h3{color:#7d3217}html[data-theme="light"] .hcard
 html[data-theme="light"] .hcard small,html[data-theme="light"] .hcard .more,html[data-theme="light"] .hcard .ico{color:#9c3f1c}
 
 /* ---- SERVICE: the four-star side, said quietly ---- */
-@media (max-width:820px){.house{grid-template-columns:1fr 1fr}.house div:nth-child(2){border-right:0}.house div:nth-child(-n+2){border-bottom:1px solid rgba(131,109,48,.35)}}
 
 /* footer: ONE line, flush with the absolute bottom of the page */
 .visit{padding-bottom:0!important}
@@ -1070,7 +1069,7 @@ main{counter-reset:sec}
 @media (max-width:520px){.reel:nth-child(n){transform:none}}
 
 /* ---- the mosaic: clean tiles, photographs in full colour, every title on a solid plate ---- */
-.rail-track.mosaic{gap:clamp(.6rem,1vw,1rem);background:none;padding:.4rem var(--pad3) 1rem;border:0;margin:0;width:auto;--row:clamp(10rem,36vh,19rem)}
+.rail-track.mosaic{gap:clamp(.6rem,1vw,1rem);background:none;padding:.4rem var(--pad3) 1rem;border:0;margin:0;width:auto;--row:var(--tile)}
 .rail-track .rail-card.tile:nth-child(n){border-radius:0!important;border:1px solid rgba(131,109,48,.55);background:#050a1f;transform:none;scroll-snap-align:start}
 .rail-track .rail-card.tile:nth-child(n):hover{transform:none;box-shadow:none;border-color:var(--gold-bright)}
 .rail-card.tile img{filter:none!important;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
@@ -1287,7 +1286,7 @@ html body .textpair > .manifesto.m-text{position:relative;z-index:1}
 @media (min-width:48.01rem){html body .textpair .manifesto.m-text .manifesto-inner{max-width:min(54rem,calc(100% - 2 * clamp(6.5rem,13vw,13rem)))}}
 @media (max-width:48rem){.tp-img{display:none}}
 html[data-theme="light"] .tp-img{border-color:rgba(131,109,48,.3)}
-.textpair{position:relative;z-index:20;height:calc(var(--vh,1vh)*61.8);overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(1rem,3vh,2.4rem);
+.textpair{position:relative;z-index:20;height:auto;min-height:calc(var(--vh,1vh)*61.8);overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(1rem,3vh,2.4rem);
   padding:2vh 5%;box-sizing:border-box}   /* 61.8vh (golden), held so it sits centred on the screen */
 html body .textpair > .manifesto.m-text{min-height:0;height:auto;flex:0 0 auto;padding:0;margin:0;justify-content:center;text-align:center;contain:none}
 html body .manifesto.m-text .manifesto-inner{flex:0 1 100%;max-width:54rem;margin-inline:auto;padding:0!important;border:0!important;background:none;text-align:center;align-items:center}
