@@ -136,7 +136,7 @@ window.__MOY_IT = {
 "II · Hospitality": "II · Ospitalità",
 "Hospitality": "Ospitalità",
 "A house of your own, entrusted to you on arrival": "Una casa tutta per sé, affidata all’arrivo",
-"The Water Sanctuary, Akratisma and the Symposium": "Il Santuario delle Acque, l’Akratisma e il Simposio",
+"Akratisma, the Water Sanctuary and the Symposium": "L’Akratisma, il Santuario delle Acque e il Simposio",
 "Discreet service, with arrivals until 22:00": "Servizio discreto, con arrivi fino alle 22:00",
 "Explore MOYΣEION": "Esplora il MOYΣEION",
 "Previous": "Precedente",
