@@ -500,8 +500,8 @@ html.no-3d .logo-center { visibility:visible; }
 /* ============ WATER SANCTUARY — full-bleed band between SANCTUARY and RITUALS ============ */
 .water-band {
   position:relative; z-index:20;   /* lift above the fixed navy/particles/rings/statue layers */
-  width:100vw; height:75vh;
-  margin:10vh 0;                   /* the spacing .manifesto + .manifesto would have given it */
+  width:100vw; height:61.8vh;     /* golden: 100 / 61.8 / 38.2 / 23.6 / 14.6 / 9vh */
+  margin:9vh 0;                   /* the spacing .manifesto + .manifesto would have given it */
   overflow:hidden;
 }
 /* Oversized on purpose: 25% taller than its frame so the scroll-driven yPercent
@@ -841,7 +841,7 @@ nav.chrome .menu-panel{display:none}
 }
 
 /* the "+" after the title: language and sound unfold from it */
-.tools-wrap{position:relative;flex:0 0 auto;margin-left:-.6rem}
+.tools-wrap{position:relative;flex:0 0 auto}
 .plus{width:1.875rem;height:1.875rem;border:1px solid var(--line);border-radius:50%;position:relative;color:var(--gold-bright);background:none;cursor:pointer;transition:border-color .3s,background .3s,transform .4s}
 .plus i{position:absolute;left:50%;top:50%;width:0.6875rem;height:1px;background:currentColor;transform:translate(-50%,-50%)}
 .plus i:nth-child(2){transform:translate(-50%,-50%) rotate(90deg)}
@@ -876,7 +876,7 @@ nav.chrome .menu-panel{display:none}
 .section-imgs{border-radius:50% / 20%}
 
 /* water band: inset and framed */
-.water-band{width:auto;margin:10vh var(--pad3);border-radius:0.875rem;border:1px solid var(--line-soft)}
+.water-band{width:auto;margin:9vh var(--pad3);border-radius:0.875rem;border:1px solid var(--line-soft)}
 
 /* reels: V2 captions already match; frame them the same way */
 .reel-frame{border-color:var(--line)}
@@ -943,7 +943,7 @@ nav.chrome .menu-panel{display:none}
 .d-half{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(1.4rem,3vw,3rem);isolation:isolate}
 .d-half>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .d-half::after{content:'';position:absolute;inset:0;z-index:-1}
-.d-dig{border-right:1px solid rgba(131,109,48,.55);background:#02030d;cursor:none}
+.d-dig{border-left:1px solid rgba(131,109,48,.55);background:#02030d;cursor:none}
 .d-dig>img{filter:sepia(.7) contrast(1.15) brightness(.9);-webkit-mask-image:radial-gradient(circle var(--r,0) at var(--mx,50%) var(--my,50%),#000 0%,rgba(0,0,0,.85) 55%,transparent 100%);mask-image:radial-gradient(circle var(--r,0) at var(--mx,50%) var(--my,50%),#000 0%,rgba(0,0,0,.85) 55%,transparent 100%)}
 .d-dig::after{background:linear-gradient(0deg,rgba(2,3,13,.95),rgba(2,3,13,.2) 55%)}
 .d-res>img{filter:saturate(1.05) brightness(.82)}
@@ -958,13 +958,15 @@ nav.chrome .menu-panel{display:none}
 .d-seal{position:absolute;left:50%;top:50%;z-index:6;transform:translate(-50%,-50%);width:clamp(5rem,9vw,8rem);aspect-ratio:1;border-radius:50%;background:var(--navy);border:1px solid var(--gold-body);display:grid;place-items:center;pointer-events:none}
 .d-seal .sigil{width:78%;height:78%}
 .dual-foot{display:flex;justify-content:space-between;gap:2rem;margin:0 var(--pad3);padding:1.2rem 0;font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep)}
-@media (max-width:820px){.dual-grid{grid-template-columns:1fr;min-height:0}.d-half{min-height:72vh}.d-dig{border-right:0;border-bottom:1px solid rgba(131,109,48,.55);cursor:auto}.d-seal{top:72vh;width:4.6rem}.d-hint{display:none}.d-dig>img{-webkit-mask-image:none;mask-image:none}}
+@media (max-width:820px){.dual-grid{grid-template-columns:1fr;min-height:0}.d-half{min-height:61.8vh}.d-dig{border-left:0;border-top:1px solid rgba(131,109,48,.55);cursor:auto}.d-seal{top:61.8vh;width:4.6rem}.d-hint{display:none}.d-dig>img{-webkit-mask-image:none;mask-image:none}}
 
 /* ---- STRATA: the page is a dig, read top to bottom ---- */
 .strata{position:relative;z-index:20;padding:8vh var(--pad3) 10vh}
 .strata h2{font-weight:400;font-size:clamp(1rem,1.5vw,1.4rem);letter-spacing:.34em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:2.4vh;display:flex;align-items:center;gap:1.4rem}
 .strata h2::after{content:'';flex:1;height:1px;background:rgba(131,109,48,.45)}
 .layer{display:grid;grid-template-columns:6rem 1fr auto;gap:clamp(1rem,2.4vw,2.4rem);align-items:baseline;padding:clamp(.7rem,1.5vw,1.2rem) 0;border-top:1px solid rgba(131,109,48,.35);transition:background .5s,padding .5s}
+a.layer{color:inherit;text-decoration:none;cursor:pointer}
+.layer:focus-visible{outline:1px solid var(--gold-body);outline-offset:.2rem}
 .layer:last-child{border-bottom:1px solid rgba(131,109,48,.35)}
 .layer:hover{background:linear-gradient(90deg,rgba(241,220,164,.06),transparent 70%);padding-left:1rem}
 .layer i{font-style:normal;font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-deep)}
@@ -1057,7 +1059,7 @@ main{counter-reset:sec}
 .v3-tick small{position:absolute;left:var(--pad3);top:1.1rem;font-size:.62rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-body);z-index:2}
 
 /* ---- water band: bleeds edge to edge, with the sanctuary written across it ---- */
-.water-band{width:100vw;margin:10vh 0;border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0}   /* the same gold hairlines that frame the marquees */
+.water-band{width:100vw;margin:9vh 0;border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0}   /* the same gold hairlines that frame the marquees */
 
 /* ---- reels: arches, tilted, numbered ---- */
 .reel-frame{border-radius:0;border-color:rgba(241,220,164,.4)}
@@ -1258,7 +1260,7 @@ html[data-theme="light"] .tools-pop .tree h4,html[data-theme="light"] .tools-pop
 @media (max-width:820px){.menu-panel .tools-pop .tree,.menu-panel .tools-pop .pop-foot,.menu-panel .tools-pop .tools-col h4{display:none}.menu-panel .tools-pop .tools-col{display:contents}}
 
 /* the theme switch is a top-level control of the bar, beside the + , and never hides with the rest of the nav */
-nav.chrome .theme-btn{font-family:var(--font);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-body);background:none;border:0;cursor:pointer;padding:.5rem .2rem;white-space:nowrap;flex:0 0 auto}
+nav.chrome .theme-btn{font-family:var(--font);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-body);background:none;border:0;cursor:pointer;padding:.5rem .2rem;white-space:nowrap;flex:0 0 auto}
 nav.chrome .theme-btn:hover,nav.chrome .theme-btn:focus-visible{color:var(--gold-bright)}
 html[data-theme="light"] nav.chrome .theme-btn{color:#4a3a1c}
 html[data-theme="light"] nav.chrome .theme-btn:hover{color:#9c3f1c}
@@ -1277,16 +1279,23 @@ html:not(.nav-on) nav.chrome > #themeBtn{opacity:1;visibility:visible;pointer-ev
    booking script writes an inline opacity). Independent of html.nav-on: both conditions work on their own. */
 html.visit-on nav.chrome .v3-cta .book-cta{opacity:0!important;visibility:hidden;pointer-events:none!important;transition:opacity .5s ease,visibility 0s linear .5s}
 
-/* 05 and 06: text only, ONE 100vh frame between them, centred. No photographs, no circles. */
-.textpair{position:relative;z-index:20;height:calc(var(--vh,1vh)*70);overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(1rem,3vh,2.4rem);
-  padding:2vh 5%;box-sizing:border-box}   /* 70vh, held at 15% from the top so it sits centred on the screen */
+/* 05 and 06: ONE frame between them, centred; four photographs open at the sides as the frame is scrolled through (two for each text) */
+.tp-img{position:absolute;z-index:0;margin:0;width:clamp(5rem,10vw,10rem);aspect-ratio:3/4;overflow:hidden;border-radius:50% / 20%;border:1px solid rgba(131,109,48,.45);pointer-events:none}
+.tp-img img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.12)}
+.tp-a{left:4%;top:5%}.tp-b{right:4%;top:13%}.tp-c{left:7%;bottom:12%}.tp-d{right:7%;bottom:4%}
+html body .textpair > .manifesto.m-text{position:relative;z-index:1}
+@media (min-width:48.01rem){html body .textpair .manifesto.m-text .manifesto-inner{max-width:min(54rem,calc(100% - 2 * clamp(6.5rem,13vw,13rem)))}}
+@media (max-width:48rem){.tp-img{display:none}}
+html[data-theme="light"] .tp-img{border-color:rgba(131,109,48,.3)}
+.textpair{position:relative;z-index:20;height:calc(var(--vh,1vh)*61.8);overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:clamp(1rem,3vh,2.4rem);
+  padding:2vh 5%;box-sizing:border-box}   /* 61.8vh (golden), held so it sits centred on the screen */
 html body .textpair > .manifesto.m-text{min-height:0;height:auto;flex:0 0 auto;padding:0;margin:0;justify-content:center;text-align:center;contain:none}
 html body .manifesto.m-text .manifesto-inner{flex:0 1 100%;max-width:54rem;margin-inline:auto;padding:0!important;border:0!important;background:none;text-align:center;align-items:center}
 html body .manifesto.m-text p{font-size:clamp(1.05rem,1.8vw,2rem);line-height:1.55;max-width:36em;margin-inline:auto}   /* the one size every other section's text has */
 html body .manifesto.m-text .section-imgs{display:none}
 
 .rail-cta{display:flex;justify-content:center;margin-top:clamp(1.6rem,4vh,3rem)}
-.strata{min-height:calc(var(--vh,1vh)*56);display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;padding-top:4vh;padding-bottom:4vh}
+.strata{min-height:calc(var(--vh,1vh)*61.8);display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;padding-top:4vh;padding-bottom:4vh}
 
 /* the press line that opens the reels */
 .reels-quote{position:relative;z-index:20;margin:0 auto;padding:clamp(2.4rem,7vh,5rem) var(--pad3) 0;text-align:center}
@@ -1300,7 +1309,7 @@ html[data-theme="light"] .reels-quote figcaption::before{background:#9c3f1c}
 
 
 /* the invitation to a day at Moyseion: one full-width band, 15vh, after the story has been told */
-.day-band{position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:2rem;width:100vw;height:15vh;min-height:5.5rem;padding:0 var(--pad3);margin:8vh 0;overflow:hidden;color:var(--gold-bright);text-decoration:none;
+.day-band{position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:2rem;width:100vw;height:14.6vh;min-height:5.5rem;padding:0 var(--pad3);margin:9vh 0;overflow:hidden;color:var(--gold-bright);text-decoration:none;
   border-top:1px solid var(--line);border-bottom:1px solid var(--line);
   background:linear-gradient(90deg,rgba(1,4,22,.94),rgba(1,4,22,.62) 50%,rgba(1,4,22,.94)),url("proposal/img/ws17.jpg") center/cover no-repeat;transition:background-size 1.4s cubic-bezier(.2,.7,.2,1)}
 .day-band::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(241,220,164,.0),rgba(241,220,164,.08),rgba(241,220,164,.0));transform:translateX(-100%);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
@@ -1426,6 +1435,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
   .close-btn i{ transition:none }
 }
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.moyseion.com/#org", "name": "Moyseion", "url": "https://www.moyseion.com", "address": {"@type": "PostalAddress", "addressLocality": "Matera", "addressRegion": "Basilicata", "addressCountry": "IT"}, "sameAs": ["https://www.instagram.com/moyseionmatera", "https://fondazione-moyseion-isama.com"]}</script>
 </head>
 <body>
 
@@ -1487,26 +1497,27 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 <nav class="chrome" id="chrome" aria-label="Primary">
   <a class="v3-brand" href="#top" aria-label="MOΥΣEION"><svg class="sigil mini" viewBox="0 0 1000 1000" aria-hidden="true"><g class="sg sg0"><use href="#mk-ring0"/></g><g class="sg sg1"><use href="#mk-ring1"/></g><g class="sg sg2"><use href="#mk-ring2"/></g><g class="sg sg3"><use href="#mk-ring3"/></g><g><use href="#mk-logo"/></g></svg><span><b>MOΥΣEION</b><small>Matera</small></span></a>
   <ul class="v3-menu">
-    <li><a href="draft.html">Explore</a></li>
+    <li><a href="proposal/moyseion-explore.html">Explore</a></li>
     <li><a href="proposal/moyseion-houses.html">Houses</a></li>
+    <li><a href="proposal/moyseion-journal.html?tag=events">Events</a></li>
     <li><a href="proposal/moyseion-journal.html">Journal</a></li>
     <li><a href="draft.html">About</a></li>
   </ul>
-  <div class="v3-cta"><a class="btn fill book-cta" href="draft.html">Plan your stay</a></div>
-  <button type="button" class="theme-btn" id="themeBtn" aria-label="Switch to light mode">Light</button>
   <div class="tools-wrap"><button class="plus" type="button" aria-label="More: all pages, language, sound" aria-expanded="false" aria-controls="toolsPop"><i></i><i></i></button>
     <div class="tools-pop" id="toolsPop"><div class="tree">
-        <div><h4>Inhabit</h4><a href="proposal/moyseion-day.html">A Day at Moyseion</a><a href="draft.html">Water Sanctuary</a><a href="proposal/moyseion-day.html#akratisma">Akratisma</a><a href="proposal/moyseion-day.html#symposium">Symposium</a><a href="proposal/moyseion-houses.html">Houses</a><a class="sub" href="proposal/moyseion-neolithic.html">Neolithic</a><a class="sub" href="proposal/moyseion-enotrian.html">Enotrian</a><a class="sub" href="proposal/moyseion-magnagraecia.html">Magna Graecia</a></div>
-        <div><h4>Explore</h4><a href="draft.html">The Idea</a><a href="draft.html">Archaeological Research</a><a href="proposal/moyseion-journal.html">Journal</a><a href="https://fondazione-moyseion-isama.com" target="_blank" rel="noopener">Fondazione ISAMA</a></div>
+        <div><h4>Inhabit</h4><a href="proposal/moyseion-day.html">A Day at Moyseion</a><a href="proposal/moyseion-day.html#water">Water Sanctuary</a><a href="proposal/moyseion-day.html#akratisma">Akratisma</a><a href="proposal/moyseion-day.html#symposium">Symposium</a><a href="proposal/moyseion-houses.html">Houses</a><a class="sub" href="proposal/moyseion-neolithic.html">Neolithic</a><a class="sub" href="proposal/moyseion-enotrian.html">Enotrian</a><a class="sub" href="proposal/moyseion-magnagraecia.html">Magna Graecia</a></div>
+        <div><h4>Explore</h4><a href="draft.html">The Idea</a><a href="proposal/moyseion-explore.html#research">Archaeological Research</a><a href="proposal/moyseion-journal.html">Journal</a><a href="proposal/moyseion-journal.html?tag=theatre">Theatre</a><a href="https://fondazione-moyseion-isama.com" target="_blank" rel="noopener">Fondazione ISAMA</a></div>
         <div><h4>More</h4><a href="proposal/moyseion-press.html">Press</a><a href="draft.html">About</a><a href="draft.html">Contact</a><a href="draft.html">Privacy</a></div>
       </div>
       <div class="tools-col"><h4>Settings</h4><div class="menu-langs"><button type="button" class="lang-opt" data-lang="en" aria-pressed="true">EN</button><span class="rule" aria-hidden="true"></span><button type="button" class="lang-opt" data-lang="it" aria-pressed="false">IT</button></div>
       <button type="button" id="soundToggle" aria-pressed="false" title="Ambient sound"><span data-i18n="nav.sound">Sound</span></button></div>
       <div class="pop-foot" aria-hidden="true"><span>Matera &middot; Basilicata</span><span>Research &amp; Hospitality</span><span>Revive</span></div>
     </div></div>
+  <div class="v3-cta"><a class="btn fill book-cta" href="draft.html">Plan your stay</a></div>
+  <button type="button" class="theme-btn" id="themeBtn" aria-label="Switch to light mode">Light</button>
   <button type="button" class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="menuPanel"><i></i><i></i><i></i></button>
   <div class="menu-panel" id="menuPanel">
-    <div class="sheet-cols"><div><h4>Menu</h4><a href="draft.html">Explore</a><a href="proposal/moyseion-houses.html">Houses</a><a href="proposal/moyseion-journal.html">Journal</a><a class="sub" href="proposal/moyseion-archive.html">Archive</a><a href="draft.html">About</a></div><div><h4>Inhabit</h4><a href="proposal/moyseion-day.html">A Day at Moyseion</a><a href="draft.html">Water Sanctuary</a><a href="proposal/moyseion-day.html#akratisma">Akratisma</a><a href="proposal/moyseion-day.html#symposium">Symposium</a><a href="proposal/moyseion-press.html">Press</a></div></div>
+    <div class="sheet-cols"><div><h4>Menu</h4><a href="proposal/moyseion-explore.html">Explore</a><a href="proposal/moyseion-houses.html">Houses</a><a href="proposal/moyseion-journal.html?tag=events">Events</a><a href="proposal/moyseion-journal.html">Journal</a><a class="sub" href="proposal/moyseion-archive.html">Archive</a><a href="draft.html">About</a></div><div><h4>Inhabit</h4><a href="proposal/moyseion-day.html">A Day at Moyseion</a><a href="proposal/moyseion-day.html#water">Water Sanctuary</a><a href="proposal/moyseion-day.html#akratisma">Akratisma</a><a href="proposal/moyseion-day.html#symposium">Symposium</a><a href="proposal/moyseion-press.html">Press</a></div></div>
   </div>
 </nav>
 
@@ -1526,10 +1537,10 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 <section class="manifesto side-left" id="manifesto-essence" data-name="01 &middot; ESSENCE">
   <div class="manifesto-inner"><div class="v3-eyebrow"><i>01</i> Essence</div>
     <p data-i18n="s1">The <strong>MOY&Sigma;EION</strong> is a place where you can stay to relive, in an immersive and
-    multisensory way, life experiences belonging to the world of <strong>Magna Graecia</strong>
+    multisensory way, life experiences belonging to the world of <a href="proposal/moyseion-magnagraecia.html"><strong>Magna Graecia</strong></a>
     (from the 7th to the 4th century BC), and of those peoples who inhabited the territory of
-    Matera before the Greek colonists (4th millennium &ndash; 7th century BC).</p>
-    <a class="more-link" href="draft.html" data-i18n="more.essence">Explore</a>
+    Matera <a href="proposal/moyseion-enotrian.html">before the Greek colonists</a> (4th millennium &ndash; 7th century BC).</p>
+    <a class="more-link" href="proposal/moyseion-explore.html" data-i18n="more.essence">Explore</a>
   </div>
 </section>
 
@@ -1537,8 +1548,8 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 <section class="manifesto side-right" id="manifesto-structure" data-name="02 &middot; STRUCTURE">
   <div class="manifesto-inner"><div class="v3-eyebrow"><i>02</i> Structure</div>
     <p data-i18n="s2">The structure occupies about a thousand square meters inside the Sassi of Matera, where
-    three <a href="proposal/moyseion-houses.html">Neolithic</a> houses, five <a href="proposal/moyseion-houses.html">Enotrian</a> houses and
-    eight <a href="proposal/moyseion-houses.html">Magna Graecia</a> houses have been reconstructed, alongside areas
+    three <a href="proposal/moyseion-neolithic.html">Neolithic</a> houses, five <a href="proposal/moyseion-enotrian.html">Enotrian</a> houses and
+    eight <a href="proposal/moyseion-magnagraecia.html">Magna Graecia</a> houses have been reconstructed, alongside areas
     designed for communal living.</p>
     <a class="more-link" href="proposal/moyseion-houses.html" data-i18n="more.structure">Explore</a>
   </div>
@@ -1551,12 +1562,12 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
      js/motion.js for why it is one section and not six. -->
 <section class="manifesto side-left" id="manifesto-sanctuary" data-name="03 &middot; SANCTUARY" data-traverse>
   <div class="manifesto-inner"><div class="v3-eyebrow"><i>03</i> Sanctuary</div>
-    <p data-i18n="s3">One finds the recreation of a <a href="https://www.moyseion.com/water-sanctuary">Water
+    <p data-i18n="s3">One finds the recreation of a <a href="proposal/moyseion-day.html#water">Water
     Sanctuary</a> devoted to the goddess <strong>Demeter</strong>. Furniture and artifacts have,
     as far as possible, all been reproduced philologically with techniques from experimental
     archaeology. The bathrooms, the water and air conditioning system, the mattresses and all
     devices required by health and safety regulations are not part of the set-up.</p>
-    <a class="more-link" href="draft.html" data-i18n="more.sanctuary">Explore</a>
+    <a class="more-link" href="proposal/moyseion-day.html#water" data-i18n="more.sanctuary">Explore</a>
   </div>
 </section>
 
@@ -1568,9 +1579,9 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 <section class="manifesto side-right" id="manifesto-rituals" data-name="04 &middot; RITUALS">
   <div class="manifesto-inner"><div class="v3-eyebrow"><i>04</i> Rituals</div>
     <p data-i18n="s4">The stay also includes, for those who want it, participation in a series of rituals
-    accompanied by music and dance performances: the ritual of <a href="draft.html">Xenia</a>
-    (welcoming the guest), the <a href="draft.html">Water Sanctuary ritual</a>,
-    the ritual of the <a href="draft.html">Symposium</a> and the ritual of the Morning Meal.
+    accompanied by music and dance performances: the ritual of <a href="proposal/moyseion-day.html#xenia">Xenia</a>
+    (welcoming the guest), the <a href="proposal/moyseion-day.html#water">Water Sanctuary ritual</a>,
+    the ritual of the <a href="proposal/moyseion-day.html#symposium">Symposium</a> and the ritual of the <a href="proposal/moyseion-day.html#akratisma">Morning Meal</a>.
     During the rituals guests are required to wear appropriate costumes.</p>
     <a class="more-link" href="proposal/moyseion-day.html" data-i18n="more.rituals">Explore</a>
   </div>
@@ -1581,8 +1592,8 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 <section class="manifesto side-left m-text" id="manifesto-senses" data-name="05 &middot; SENSES">
   <div class="manifesto-inner">
     <p data-i18n="s5">Lights, sounds, dances, perfumes, fabrics, foods, jewels, cosmetics and body care
-    products are all philological reproductions of products that existed in the Magna
-    Graecia era.</p>
+    products are all philological reproductions of products that existed in the <a href="proposal/moyseion-magnagraecia.html">Magna
+    Graecia</a> era.</p>
   </div>
 </section>
 
@@ -1597,6 +1608,10 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
     knowledge appear inadequate to the new perception of the human condition.</p>
   </div>
 </section>
+<figure class="tp-img tp-a" aria-hidden="true"><img data-img="musica2" alt=""></figure>
+<figure class="tp-img tp-b" aria-hidden="true"><img data-img="xenia2" alt=""></figure>
+<figure class="tp-img tp-c" aria-hidden="true"><img data-img="andron" alt=""></figure>
+<figure class="tp-img tp-d" aria-hidden="true"><img data-img="danza2" alt=""></figure>
 </div>
 
 <!-- SOCIAL REELS: three 9:16 phone frames, played only while on screen -->
@@ -1620,17 +1635,17 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 <!-- EXPLORE RAIL: horizontal navigation, just before the closing section -->
 <div class="v3-tick rev" aria-hidden="true" data-tick="-1" data-logi-after><small>Rituals · Waters · Words</small><div><span>Xenia</span><span>Symposium</span><span>Akratisma</span><span>Demeter</span><span>Xenia</span><span>Symposium</span><span>Akratisma</span><span>Demeter</span></div></div>
 
-<a class="day-band" href="proposal/moyseion-day.html"><span class="kick">Inhabit</span><b>A day at Moyseion</b><span class="go">Discover &rarr;</span></a>
+<a class="day-band" href="proposal/moyseion-day.html"><span class="kick">Inhabit</span><b>A Day at Moyseion</b><span class="go">Discover &rarr;</span></a>
 
 <section class="dual" id="dual" aria-label="Museum and residence">
   <div class="dual-head"><p>One address</p><h2>Antiquity, inhabited.<em>Research &nbsp;·&nbsp; Hospitality</em></h2></div>
   <div class="dual-grid">
-    <div class="d-half d-dig" id="dig"><img data-img="neolithic2" alt="" draggable="false"><span class="d-tag">I &nbsp;·&nbsp; Research</span><span class="d-hint">Draw the lamp across the stone</span>
-      <h3>Research</h3><ul><li>Excavation and experimental archaeology</li><li>Sixteen reconstructed houses, from the Neolithic to Magna Graecia</li><li>Fondazione Moyseion &ndash; ISAMA ETS</li></ul>
-      <a class="btn" href="draft.html">Enter the research</a></div>
-    <div class="d-half d-res"><img data-img="xenia2" alt="" draggable="false"><span class="d-tag">II &nbsp;·&nbsp; Hospitality</span>
+    <div class="d-half d-res"><img data-img="xenia2" alt="" draggable="false"><span class="d-tag">I &nbsp;·&nbsp; Hospitality</span>
       <h3>Hospitality</h3><ul><li>A house of your own, entrusted to you on arrival</li><li>The Water Sanctuary, Akratisma and the Symposium</li><li>Discreet service, with arrivals until 22:00</li></ul>
       <a class="btn fill" href="draft.html">Plan your stay</a></div>
+    <div class="d-half d-dig" id="dig"><img data-img="neolithic2" alt="" draggable="false"><span class="d-tag">II &nbsp;·&nbsp; Research</span><span class="d-hint">Draw the lamp across the stone</span>
+      <h3>Research</h3><ul><li>Excavation and experimental archaeology</li><li>Sixteen reconstructed houses, from the Neolithic to Magna Graecia</li><li>Fondazione Moyseion &ndash; ISAMA ETS</li></ul>
+      <a class="btn" href="proposal/moyseion-explore.html#research">Enter the research</a></div>
     <div class="d-seal" aria-hidden="true">SIGIL</div>
   </div>
   <div class="dual-foot"><span>Matera &middot; Basilicata</span><span>Research &amp; Hospitality</span><span>Revive</span></div>
@@ -1643,23 +1658,24 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
   <div class="rail-track mosaic" id="railTrack">
     <a class="rail-card tile " href="draft.html"><img data-img="neolithic1" alt="" draggable="false"><div class="tl"><b data-i18n="rail.2.t">Research</b><span data-i18n="rail.2.d">Excavations, studies and discoveries in Matera and beyond.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
     <a class="rail-card tile " href="proposal/moyseion-journal.html"><img data-img="musica1" alt="" draggable="false"><div class="tl"><b data-i18n="rail.3.t">Journal</b><span data-i18n="rail.3.d">Archaeologia Poetica: reflections, essays and notes.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
-    <a class="rail-card tile big" href="draft.html"><img data-img="andron" alt="" draggable="false"><div class="tl"><b data-i18n="rail.1.t">Explore Moyseion</b><span data-i18n="rail.1.d">The idea, the research, the cultural life.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
-    <a class="rail-card tile " href="draft.html"><img data-img="neolithic2" alt="" draggable="false"><div class="tl"><b data-i18n="rail.5.t">The Houses</b><span data-i18n="rail.5.d">Not a room, but a home.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
-    <a class="rail-card tile " href="draft.html"><img data-img="enotrian1" alt="" draggable="false"><div class="tl"><b data-i18n="rail.6.t">Water Sanctuary</b><span data-i18n="rail.6.d">Silence, purification, listening.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
+    <a class="rail-card tile big" href="proposal/moyseion-explore.html"><img data-img="andron" alt="" draggable="false"><div class="tl"><b data-i18n="rail.1.t">Explore Moyseion</b><span data-i18n="rail.1.d">The idea, the research, the cultural life.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
+    <a class="rail-card tile " href="proposal/moyseion-houses.html"><img data-img="neolithic2" alt="" draggable="false"><div class="tl"><b data-i18n="rail.5.t">The Houses</b><span data-i18n="rail.5.d">Not a room, but a home.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
+    <a class="rail-card tile " href="proposal/moyseion-day.html#water"><img data-img="enotrian1" alt="" draggable="false"><div class="tl"><b data-i18n="rail.6.t">Water Sanctuary</b><span data-i18n="rail.6.d">Silence, purification, listening.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
     <a class="rail-card tile " href="proposal/moyseion-day.html#akratisma"><img data-img="cheese" alt="" draggable="false"><div class="tl"><b data-i18n="rail.7.t">Akratisma</b><span data-i18n="rail.7.d">The first meal, as archaeological research.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
     <a class="rail-card tile " href="proposal/moyseion-press.html"><img data-img="greekmedia" alt="" draggable="false"><div class="tl"><b data-i18n="rail.9.t">Press</b><span data-i18n="rail.9.d">Selected coverage and the press kit.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
-    <a class="rail-card tile big" href="proposal/moyseion-day.html"><img data-img="xenia1" alt="" draggable="false"><div class="tl"><b data-i18n="rail.4.t">A day at Moyseion</b><span data-i18n="rail.4.d">Five rituals, from arrival to return.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
+    <a class="rail-card tile big" href="proposal/moyseion-day.html"><img data-img="xenia1" alt="" draggable="false"><div class="tl"><b data-i18n="rail.4.t">A Day at Moyseion</b><span data-i18n="rail.4.d">Five rituals, from arrival to return.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
     <a class="rail-card tile " href="draft.html"><img data-img="danza1" alt="" draggable="false"><div class="tl"><b data-i18n="rail.8.t">Plan your stay</b><span data-i18n="rail.8.d">Getting here, parking, comfort.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
     <a class="rail-card tile " href="https://fondazione-moyseion-isama.com" target="_blank" rel="noopener"><img data-img="enotrian2" alt="" draggable="false"><div class="tl"><b data-i18n="rail.10.t">The Foundation</b><span data-i18n="rail.10.d">Research and archaeology, online.</span><i data-i18n="rail.go">Discover &rarr;</i></div></a>
   </div>
   <div class="rail-bar" id="railBar" aria-hidden="true"></div>
-  <div class="rail-cta"><a class="btn" href="proposal/moyseion-day.html">A day at Moyseion</a></div>
+  <div class="rail-cta"><a class="btn" href="proposal/moyseion-day.html">A Day at Moyseion</a></div>
 </section>
 <section class="strata" id="strata" aria-label="Strata">
   <h2>Stratigraphy</h2>
-  <div class="layer"><i>Layer III</i><b>Magna Graecia</b><span>7th &ndash; 4th century BCE</span></div>
-  <div class="layer"><i>Layer II</i><b>Enotrian</b><span>Before the Greek colonists</span></div>
-  <div class="layer"><i>Layer I</i><b>Neolithic</b><span>From the 4th millennium BCE</span></div>
+  <a class="layer" href="proposal/moyseion-houses.html"><i>Surface</i><b>Moyseion</b><span>Matera, today</span></a>
+  <a class="layer" href="proposal/moyseion-magnagraecia.html"><i>Layer III</i><b>Magna Graecia</b><span>7th &ndash; 4th century BCE</span></a>
+  <a class="layer" href="proposal/moyseion-enotrian.html"><i>Layer II</i><b>Enotrian</b><span>Before the Greek colonists</span></a>
+  <a class="layer" href="proposal/moyseion-neolithic.html"><i>Layer I</i><b>Neolithic</b><span>From the 4th millennium BCE</span></a>
 </section>
 <section class="house" aria-label="The house">
   <a class="hcard" href="proposal/moyseion-day.html"><svg class="ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 22 24 8l16 14v18H8z"/><path d="M19 40V26h10v14"/></svg><small>Arrival</small><h3>Xenia</h3><div class="ph"><img src="proposal/img/xenia15.jpg" alt="" loading="lazy" draggable="false"></div><p>The guest is received at the threshold.</p><span class="more">Discover <i>&rarr;</i></span></a>
@@ -3691,8 +3707,18 @@ function buildSections(){
   if (tpair){
     const tps = [...tpair.querySelectorAll('p')];
     const holdLen = () => VH;   // 05 and 06 together take exactly one viewport of scroll: one 100vh frame, both texts lit inside it
-    ScrollTrigger.create({ trigger: tpair, start: 'top 15%', end: () => '+=' + holdLen(), pin: true, pinSpacing: true,
-      scrub: SCRUB_SYSTEM, id: 'pin-textpair', invalidateOnRefresh: true });
+    const tpi = [...tpair.querySelectorAll('.tp-img')];
+    tpi.forEach(f => { const im = f.querySelector('img'); const u = window.__IMG && window.__IMG[im.dataset.img]; if (u) im.src = u; });
+    // the photographs open from the bottom edge, one after another, the two of 05 while it is read, then the two of 06
+    gsap.set(tpi, { clipPath: 'inset(100% 0% 0% 0%)', y: '2.5rem' });
+    gsap.set(tpi.map(f => f.querySelector('img')), { scale: 1.25 });
+    const tpl = gsap.timeline({ defaults: { ease: 'power2.out' }, scrollTrigger: { trigger: tpair, start: 'top 15%', end: () => '+=' + holdLen(), pin: true, pinSpacing: true,
+      scrub: SCRUB_SYSTEM, id: 'pin-textpair', invalidateOnRefresh: true } });
+    tpi.forEach((f, i) => {
+      const at = (i < 2 ? 0 : 1.1) + (i % 2) * 0.3;
+      tpl.to(f, { clipPath: 'inset(0% 0% 0% 0%)', y: 0, duration: 0.9 }, at).to(f.querySelector('img'), { scale: 1.08, duration: 1.2 }, at);
+    });
+    tpl.to({}, { duration: 0.3 });
   }
   // STRATA: the section is part of the descent, not a list to scroll past. It is held for a screen and a half and the
   // layers come in one by one, the latest first and the oldest last, as if the page were being dug down through.
@@ -3805,7 +3831,7 @@ function buildOrbJourney(){
     a0.ost.on = true;                                               // the simulation behind the mirror never sleeps
     const y = window.scrollY, tIn = a0.tFor ? 0 : 0;
     const P = pairs.map(p => ({ ps: p.__st.start, pe: p.__st.start + p.__G.L, h1: p.__G.h1, h2: p.__G.h2, L: p.__G.L }));
-    let x, yy, q, prog;
+    let x, yy, q, prog, dip = 0, op = 1;
     const first = P[0], last = P[P.length - 1], n = secs.length;
     if (y < first.ps){ const l = live(0); x = l.x; yy = l.y; q = 0; prog = 0; }
     else if (y >= last.pe){ const l = live(n - 1); x = l.x; yy = l.y; q = n - 1; prog = 1; }
@@ -3813,11 +3839,16 @@ function buildOrbJourney(){
       let k = 0; while (k < P.length - 1 && y >= P[k].pe) k++;
       const p = P[k], i0 = 2 * k;
       if (y >= p.ps){                                               // inside pair k: the swap from its upper text to its lower
-        const s = smootherstep(clamp01((y - p.ps - p.h1 * p.L) / Math.max(1, (p.h2 - p.h1) * p.L)));
+        // the set stays put while a text is read and moves in the middle 70% of the swap only, in one decisive glide
+        const s = smootherstep(clamp01(((y - p.ps - p.h1 * p.L) / Math.max(1, (p.h2 - p.h1) * p.L) - 0.15) / 0.7));
         x = lerp(W[i0].x, W[i0 + 1].x, s); yy = lerp(W[i0].y, W[i0 + 1].y, s); q = i0 + s;
-      } else {                                                      // between pairs: from the end of the one to the start of the next
-        const prev = P[k - 1], g = smootherstep(clamp01((y - prev.pe) / Math.max(1, p.ps - prev.pe)));
-        x = lerp(W[i0 - 1].x, W[i0].x, g); yy = lerp(W[i0 - 1].y, W[i0].y, g); q = i0 - 1 + g;
+        dip = Math.sin(Math.PI * s);
+      } else {                                                      // between pairs: the set leaves WITH the first text and arrives WITH the next,
+        // riding the page like the words do (no drift over the content in between); it is unseen at the hand-over
+        const prev = P[k - 1], gap = Math.max(1, p.ps - prev.pe), g = (y - prev.pe) / gap;
+        if (g < 0.5){ x = W[i0 - 1].x; yy = W[i0 - 1].y - (y - prev.pe); q = i0 - 1; }
+        else { x = W[i0].x; yy = W[i0].y + (p.ps - y); q = i0; }
+        op = smootherstep(clamp01(Math.abs(g - 0.5) / 0.18));
       }
       prog = (y - first.ps) / Math.max(1, last.pe - first.ps);
     }
@@ -3827,6 +3858,8 @@ function buildOrbJourney(){
     // pose mirrored from the first anchor, whose simulation is the one that never sleeps
     const w = V.offsetWidth * (parseFloat(V.style.scale) || 1), h = V.offsetHeight * (parseFloat(V.style.scale) || 1);
     V.style.transform = 'translate3d(' + (x - V.offsetWidth / 2).toFixed(2) + 'px,' + (yy - V.offsetHeight / 2).toFixed(2) + 'px,0)';
+    const sc0 = (W[0].sc || 1) * (1 - 0.07 * dip);                  // a slight breath inward while in flight, so the move reads as one gesture
+    V.style.scale = sc0.toFixed(4); V.style.opacity = op.toFixed(3);
     for (let i = 0; i < vSlides.length; i++){
       const s = aSlides[i], d = vSlides[i]; if (!s) continue;
       if (d.style.transform !== s.style.transform) d.style.transform = s.style.transform;
@@ -3835,7 +3868,7 @@ function buildOrbJourney(){
       if (d.style.display !== s.style.display) d.style.display = s.style.display;
     }
     // photographs: each text's set is shown while the orbs are with it, and handed on late in the journey, as they land
-    const base = Math.min(n - 1, Math.floor(q)), fr = q - base, fade = base >= n - 1 ? 0 : smootherstep(clamp01((fr - 0.55) / 0.45));
+    const base = Math.min(n - 1, Math.floor(q)), fr = q - base, fade = base >= n - 1 ? 0 : smootherstep(clamp01((fr - 0.3) / 0.4));
     const key = base + ':' + fade.toFixed(3);
     if (key !== lastKey){
       lastKey = key;
@@ -3905,11 +3938,11 @@ const LOCALES = {
     'nav.visit':  'Soggiorna',
     'nav.menu': 'Menu',
     'nav.sound':  'Suono',
-    's1': 'Il <strong>MOY&Sigma;EION</strong> è un luogo dove si può soggiornare per rivivere, in modo immersivo e multisensoriale, esperienze di vita appartenenti al mondo della <strong>Magna Grecia</strong> (dal VII al IV secolo a.C.) e dei popoli che abitarono il territorio di Matera prima dei coloni greci (IV millennio – VII secolo a.C.).',
-    's2': 'La struttura occupa circa mille metri quadri all’interno dei Sassi di Matera, dove sono state ricostruite tre case <a href="proposal/moyseion-houses.html">neolitiche</a>, cinque case <a href="proposal/moyseion-houses.html">enotrie</a> e otto case della <a href="proposal/moyseion-houses.html">Magna Grecia</a>, accanto ad aree destinate alla vita comune.',
-    's3': 'Vi si trova la ricostruzione di un <a href="https://www.moyseion.com/water-sanctuary">Santuario delle Acque</a> dedicato alla dea <strong>Demetra</strong>. Arredi e manufatti sono stati, per quanto possibile, riprodotti filologicamente con tecniche di archeologia sperimentale. I bagni, l’impianto idrico e di climatizzazione, i materassi e tutti i dispositivi richiesti dalle norme igienico-sanitarie non fanno parte dell’allestimento.',
-    's4': 'Il soggiorno comprende inoltre, per chi lo desidera, la partecipazione a una serie di rituali accompagnati da musiche e danze: il rituale della <a href="draft.html">Xenia</a> (l’accoglienza dell’ospite), il <a href="draft.html">rituale del Santuario delle Acque</a>, il rituale del <a href="draft.html">Simposio</a> e il rituale del Pasto del Mattino. Durante i rituali agli ospiti è richiesto di indossare costumi appropriati.',
-    's5': 'Luci, suoni, danze, profumi, tessuti, cibi, gioielli, cosmetici e prodotti per la cura del corpo sono tutti riproduzioni filologiche di prodotti esistiti in epoca magnogreca.',
+    's1': 'Il <strong>MOY&Sigma;EION</strong> è un luogo dove si può soggiornare per rivivere, in modo immersivo e multisensoriale, esperienze di vita appartenenti al mondo della <a href="proposal/moyseion-magnagraecia.html"><strong>Magna Grecia</strong></a> (dal VII al IV secolo a.C.) e dei popoli che abitarono il territorio di Matera <a href="proposal/moyseion-enotrian.html">prima dei coloni greci</a> (IV millennio – VII secolo a.C.).',
+    's2': 'La struttura occupa circa mille metri quadri all’interno dei Sassi di Matera, dove sono state ricostruite tre case <a href="proposal/moyseion-neolithic.html">neolitiche</a>, cinque case <a href="proposal/moyseion-enotrian.html">enotrie</a> e otto case della <a href="proposal/moyseion-magnagraecia.html">Magna Grecia</a>, accanto ad aree destinate alla vita comune.',
+    's3': 'Vi si trova la ricostruzione di un <a href="proposal/moyseion-day.html#water">Santuario delle Acque</a> dedicato alla dea <strong>Demetra</strong>. Arredi e manufatti sono stati, per quanto possibile, riprodotti filologicamente con tecniche di archeologia sperimentale. I bagni, l’impianto idrico e di climatizzazione, i materassi e tutti i dispositivi richiesti dalle norme igienico-sanitarie non fanno parte dell’allestimento.',
+    's4': 'Il soggiorno comprende inoltre, per chi lo desidera, la partecipazione a una serie di rituali accompagnati da musiche e danze: il rituale della <a href="proposal/moyseion-day.html#xenia">Xenia</a> (l’accoglienza dell’ospite), il <a href="proposal/moyseion-day.html#water">rituale del Santuario delle Acque</a>, il rituale del <a href="proposal/moyseion-day.html#symposium">Simposio</a> e il rituale del <a href="proposal/moyseion-day.html#akratisma">Pasto del Mattino</a>. Durante i rituali agli ospiti è richiesto di indossare costumi appropriati.',
+    's5': 'Luci, suoni, danze, profumi, tessuti, cibi, gioielli, cosmetici e prodotti per la cura del corpo sono tutti riproduzioni filologiche di prodotti esistiti in <a href="proposal/moyseion-magnagraecia.html">epoca magnogreca</a>.',
     's6': 'Ma soprattutto il MOY&Sigma;EION è un luogo dello spirito, dove si può tentare di riaccendere quelle scintille del passato che ci sono state trasmesse, ma che oggi giacciono biologicamente sopite dentro di noi. Un luogo dove acquisire esperienze culturali tramandate da altre civiltà e da altre epoche, la cui originaria dimensione affettiva può essere in parte recuperata; dove scoprire <strong>mostri sublimi</strong>, la cui profondità rende la nostra conoscenza razionale inadeguata alla nuova percezione della condizione umana.',
     's7': 'Vivi il MOY&Sigma;EION e forse diventerai una persona un po’ diversa; nel peggiore dei casi, avrai deciso di restare la stessa.',
     'visit.h':    'I soggiorni si concordano, per piccoli gruppi.',

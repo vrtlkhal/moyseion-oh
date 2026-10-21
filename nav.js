@@ -4,8 +4,11 @@
 (function(){
   if (document.getElementById('mnav')) return;
   var here = window.__NAV_BASE != null ? window.__NAV_BASE : (document.currentScript && document.currentScript.src ? new URL('./', document.currentScript.src).href : '');
-  var P = { home: here + 'Moyseion-v3-blend.html', day: here + 'proposal/moyseion-day.html', houses: here + 'proposal/moyseion-houses.html', press: here + 'proposal/moyseion-press.html', journal: here + 'proposal/moyseion-journal.html', archive: here + 'proposal/moyseion-archive.html', neo: here + 'proposal/moyseion-neolithic.html', eno: here + 'proposal/moyseion-enotrian.html', mag: here + 'proposal/moyseion-magnagraecia.html', draft: here + 'draft.html' };
+  var P = { home: here + 'Moyseion-v3-blend.html', day: here + 'proposal/moyseion-day.html', houses: here + 'proposal/moyseion-houses.html', press: here + 'proposal/moyseion-press.html', journal: here + 'proposal/moyseion-journal.html', archive: here + 'proposal/moyseion-archive.html', neo: here + 'proposal/moyseion-neolithic.html', eno: here + 'proposal/moyseion-enotrian.html', mag: here + 'proposal/moyseion-magnagraecia.html', draft: here + 'draft.html', explore: here + 'proposal/moyseion-explore.html' };
   var css = ''
+  + '.mn-brand svg use[href^="#mk-ring"]{transform-box:view-box;transform-origin:50% 50%;animation:mnSpin linear infinite}'
+  + '.mn-brand svg use[href="#mk-ring0"]{animation-duration:240s}.mn-brand svg use[href="#mk-ring1"]{animation-duration:160s;animation-direction:reverse}.mn-brand svg use[href="#mk-ring2"]{animation-duration:110s}.mn-brand svg use[href="#mk-ring3"]{animation-duration:70s;animation-direction:reverse}'
+  + '@keyframes mnSpin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.mn-brand svg use{animation:none}}'
   + 'header.nav,.sheet#sheet,nav[aria-label="Primary"]:not(.mnav){display:none!important}'
   + '.mnav{--g-deep:#836d30;--g-body:#c2a567;--g-bright:#f1dca4;--g-line:rgba(131,109,48,.45);--g-soft:rgba(131,109,48,.28);--g-bg:#010416;--pad:clamp(1.1rem,4.6vw,4.2rem);'
   + 'position:fixed;top:0;left:0;right:0;z-index:60;height:4rem;display:flex;align-items:center;gap:2rem;padding:0 var(--pad);box-sizing:border-box;font-family:var(--font,"GFS Neohellenic","Gill Sans",serif);'
@@ -21,7 +24,7 @@
   + '.mn-menu a:hover,.mn-menu a:focus-visible,.mn-menu a[aria-current]{color:var(--g-bright)}'
   + '.mn-btn{display:inline-flex;align-items:center;justify-content:center;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;padding:.8rem 1.5rem;border:1px solid var(--g-body);color:var(--g-bright);background:none;line-height:1;text-decoration:none;white-space:nowrap;transition:background .3s,color .3s,border-color .3s}'
   + '.mn-btn:hover,.mn-btn:focus-visible{background:var(--g-body);border-color:var(--g-body);color:var(--g-bg)}'
-  + '.mn-theme{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--g-body);background:none;border:0;cursor:pointer;padding:.5rem .2rem;white-space:nowrap}'
+  + '.mn-theme{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--g-body);background:none;border:0;cursor:pointer;padding:.5rem .2rem;white-space:nowrap}'
   + '.mn-theme:hover,.mn-theme:focus-visible{color:var(--g-bright)}'
   + '.mn-wrap{flex:0 0 auto}'
   + '.mn-plus{width:1.875rem;height:1.875rem;border:1px solid var(--g-line);border-radius:50%;position:relative;color:var(--g-bright);background:none;cursor:pointer;transition:border-color .3s,background .3s,transform .4s}'
@@ -67,19 +70,19 @@
 
   var hasMark = !!document.getElementById('mk-logo'), light = document.documentElement.getAttribute('data-theme') === 'light';
   var sigil = hasMark ? '<svg viewBox="0 0 1000 1000" aria-hidden="true"><use href="#mk-ring0"/><use href="#mk-ring1"/><use href="#mk-ring2"/><use href="#mk-ring3"/><use href="#mk-logo"/></svg>' : '';
-  var cols = '<div class="mn-col"><h4>Inhabit</h4><a href="' + P.day + '">A Day at Moyseion</a><a href="' + P.draft + '">Water Sanctuary</a><a href="' + P.day + '#akratisma">Akratisma</a><a href="' + P.day + '#symposium">Symposium</a><a href="' + P.houses + '">Houses</a><a class="sub" href="' + P.neo + '">Neolithic</a><a class="sub" href="' + P.eno + '">Enotrian</a><a class="sub" href="' + P.mag + '">Magna Graecia</a></div>'
-    + '<div class="mn-col"><h4>Explore</h4><a href="' + P.draft + '">The Idea</a><a href="' + P.draft + '">Archaeological Research</a><a href="' + P.journal + '">Journal</a><a class="sub" href="' + P.archive + '">Archive</a><a href="https://fondazione-moyseion-isama.com" target="_blank" rel="noopener">Fondazione ISAMA</a></div>'
+  var cols = '<div class="mn-col"><h4>Inhabit</h4><a href="' + P.day + '">A Day at Moyseion</a><a href="' + P.day + '#water">Water Sanctuary</a><a href="' + P.day + '#akratisma">Akratisma</a><a href="' + P.day + '#symposium">Symposium</a><a href="' + P.houses + '">Houses</a><a class="sub" href="' + P.neo + '">Neolithic</a><a class="sub" href="' + P.eno + '">Enotrian</a><a class="sub" href="' + P.mag + '">Magna Graecia</a></div>'
+    + '<div class="mn-col"><h4>Explore</h4><a href="' + P.draft + '">The Idea</a><a href="' + P.explore + '#research">Archaeological Research</a><a href="' + P.journal + '">Journal</a><a class="sub" href="' + P.archive + '">Archive</a><a class="sub" href="' + P.journal + '?tag=theatre">Theatre</a><a href="https://fondazione-moyseion-isama.com" target="_blank" rel="noopener">Fondazione ISAMA</a></div>'
     + '<div class="mn-col"><h4>More</h4><a href="' + P.press + '">Press</a><a href="' + P.draft + '">About</a><a href="' + P.draft + '">Contact</a><a href="' + P.draft + '">Privacy</a></div>'
     + '<div class="mn-col"><h4>Settings</h4><div class="mn-lang"><button type="button" data-lang="en" aria-pressed="true">EN</button><span class="rule" aria-hidden="true"></span><button type="button" data-lang="it" aria-pressed="false">IT</button></div></div>';
   var nav = document.createElement('nav'); nav.className = 'mnav'; nav.id = 'mnav'; nav.setAttribute('aria-label', 'Primary');
   nav.innerHTML = '<a class="mn-brand" href="' + P.home + '#top" aria-label="MOΥΣEION">' + sigil + '<span><b>MOΥΣEION</b><small>Matera</small></span></a>'
-    + '<ul class="mn-menu"><li><a href="' + P.draft + '">Explore</a></li><li><a href="' + P.houses + '">Houses</a></li><li><a href="' + P.journal + '">Journal</a></li><li><a href="' + P.draft + '">About</a></li></ul>'
-    + '<div class="mn-cta"><a class="mn-btn" href="' + P.draft + '">Plan your stay</a></div>'
-    + '<button type="button" class="mn-theme" id="mnTheme" aria-label="' + (light ? 'Switch to dark mode' : 'Switch to light mode') + '">' + (light ? 'Dark' : 'Light') + '</button>'
+    + '<ul class="mn-menu"><li><a href="' + P.explore + '">Explore</a></li><li><a href="' + P.houses + '">Houses</a></li><li><a href="' + P.journal + '?tag=events">Events</a></li><li><a href="' + P.journal + '">Journal</a></li><li><a href="' + P.draft + '">About</a></li></ul>'
     + '<div class="mn-wrap"><button class="mn-plus" type="button" aria-label="More: all pages, language, sound" aria-expanded="false" aria-controls="mnPop"><i></i><i></i></button>'
     + '<div class="mn-pop" id="mnPop">' + cols + '<div class="mn-foot" aria-hidden="true"><span>Matera &middot; Basilicata</span><span>Research &amp; Hospitality</span><span>Revive</span></div></div></div>'
+    + '<div class="mn-cta"><a class="mn-btn" href="' + P.draft + '">Plan your stay</a></div>'
+    + '<button type="button" class="mn-theme" id="mnTheme" aria-label="' + (light ? 'Switch to dark mode' : 'Switch to light mode') + '">' + (light ? 'Dark' : 'Light') + '</button>'
     + '<button type="button" class="mn-burger" aria-label="Menu" aria-expanded="false" aria-controls="mnSheet"><i></i><i></i><i></i></button>'
-    + '<div class="mn-sheet" id="mnSheet"><div><h4>Menu</h4><a href="' + P.draft + '">Explore</a><a href="' + P.houses + '">Houses</a><a href="' + P.journal + '">Journal</a><a href="' + P.draft + '">About</a></div>'
+    + '<div class="mn-sheet" id="mnSheet"><div><h4>Menu</h4><a href="' + P.explore + '">Explore</a><a href="' + P.houses + '">Houses</a><a href="' + P.journal + '?tag=events">Events</a><a href="' + P.journal + '">Journal</a><a href="' + P.draft + '">About</a></div>'
     + '<div><h4>Inhabit</h4><a href="' + P.day + '">A Day at Moyseion</a><a href="' + P.day + '#akratisma">Akratisma</a><a href="' + P.day + '#symposium">Symposium</a><a href="' + P.press + '">Press</a></div></div>';
   document.body.insertBefore(nav, document.body.firstChild);
 

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MOΥΣEION · Archive</title>
-<meta name="description" content="Archaeologia Poetica: reflections, essays and notes.">
+<meta name="description" content="The Moyseion archive: past courses, conferences and tragedy evenings in Matera, searchable by research, theatre and music.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400&display=swap">
 <script>(function(){try{var q=/[?&]theme=(light|dark)/.exec(location.search);if(q)localStorage.setItem("moy-theme",q[1]);if(localStorage.getItem("moy-theme")==="light")document.documentElement.setAttribute("data-theme","light");}catch(e){}})();</script>
 <style>
@@ -392,7 +392,33 @@ html body .strips{padding:clamp(.9rem,2vh,1.4rem) 0;gap:clamp(.3rem,.5vw,.6rem)}
 html body .strips i:nth-child(1){margin-top:.7rem}html body .strips i:nth-child(3){margin-top:1.1rem}html body .strips i:nth-child(4){margin-top:.4rem}html body .strips i:nth-child(5){margin-top:.9rem}
 @media (max-width:60rem){html body .strips{height:18vh}html body .era-hero h1{font-size:clamp(2.6rem,12vw,4rem)}}
 html body .era-hero{grid-template-columns:1fr;min-height:clamp(9rem,20vh,13rem)}
+
+/* archive as a list: one row per entry, title left, categories and date right */
+html body .jr-archive{column-count:1;max-width:72rem;margin:0 auto;padding:0 var(--pad);border-top:.07rem solid var(--line-soft)}
+html body .jr-archive .jr-card{margin:0;break-inside:auto;border-bottom:.07rem solid var(--line-soft)}
+html body .jr-archive .jr-card a{display:grid;grid-template-columns:minmax(0,1fr) auto 11rem;align-items:baseline;gap:1.2rem;padding:1.2rem .4rem;outline:0;transition:background .3s,padding .3s}
+html body .jr-archive .jr-card a:hover{background:rgba(193,160,90,.08);padding-left:1rem}
+html body .jr-archive .jr-card h3{margin:0;font-size:clamp(1.05rem,1.6vw,1.4rem);line-height:1.25;font-weight:400}
+html body .jr-archive .jr-card .tags{margin:0;display:flex;gap:.4rem;flex-wrap:wrap;justify-content:flex-end}
+html body .jr-archive .jr-card time{text-align:right;font-size:.8rem;letter-spacing:.06em;white-space:nowrap}
+@media (max-width:44rem){html body .jr-archive .jr-card a{grid-template-columns:1fr;gap:.5rem}html body .jr-archive .jr-card .tags,html body .jr-archive .jr-card time{justify-content:flex-start;text-align:left}}
+
+/* hover: the row grows a little and shows a photograph of its subject behind the text */
+html body .jr-archive .jr-card a{position:relative;isolation:isolate;transform-origin:center}
+html body .jr-archive .jr-card a::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(2,6,24,.92),rgba(2,6,24,.55)),var(--bg) center/cover;opacity:0;transition:opacity .35s}
+html body .jr-archive .jr-card a:hover,html body .jr-archive .jr-card a:focus-visible{transform:scale(1.025);z-index:2;background:none;padding-left:1.4rem;padding-right:1.4rem}
+html body .jr-archive .jr-card a:hover::before,html body .jr-archive .jr-card a:focus-visible::before{opacity:1}
+html body .jr-archive .jr-card a{transition:transform .35s,padding .35s}
+html body .jr-archive .jr-card a:not(:has(img)){min-height:0 !important;background:none;justify-content:flex-start;overflow:visible;height:auto}
+html body .jr-archive .jr-card a:not(:has(img)):hover{background:none}
+
+/* list flush left with the title and the search bar */
+html body .jr-archive{max-width:none;margin:0 var(--pad);padding:0;width:auto}
+html body .jr-archive .jr-card{width:100%;max-width:none;margin:0}
+html body .jr-archive .jr-card a{padding-left:0;padding-right:0}
+html body .jr-archive .jr-card a:hover,html body .jr-archive .jr-card a:focus-visible{padding-left:1rem;padding-right:1rem;transform-origin:left center}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.moyseion.com/#org", "name": "Moyseion", "url": "https://www.moyseion.com", "address": {"@type": "PostalAddress", "addressLocality": "Matera", "addressRegion": "Basilicata", "addressCountry": "IT"}, "sameAs": ["https://www.instagram.com/moyseionmatera", "https://fondazione-moyseion-isama.com"]}</script>
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute">
@@ -417,26 +443,23 @@ html body .era-hero{grid-template-columns:1fr;min-height:clamp(9rem,20vh,13rem)}
   <h1>Archive</h1>
 </header>
 <div class="jr-bar" role="search"><label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the archive" autocomplete="off"></label>
-  <div class="jr-filters" role="group" aria-label="Tags"><button type="button" data-tag="all" aria-pressed="true">All</button><button type="button" data-tag="theatre" aria-pressed="false">Theatre</button><button type="button" data-tag="music" aria-pressed="false">Music</button></div></div>
-<figure class="ar-hero">
-  <img class="lead" src="img/ws17.jpg" alt="" loading="lazy">
-  <img src="img/danza13.jpg" alt="" loading="lazy"><img src="img/andron.jpg" alt="" loading="lazy">
-  <figcaption><h3 lang="it">Dal mito di Prometeo all'intelligenza artificiale</h3><p class="standfirst">The Prometheus myth as a turning point in Western technology, when humans gain fire and the power to transform the world.</p><ul class="tags"><li class="t-research">Research</li><li class="t-myth">Myth</li></ul></figcaption>
-</figure>
+  <div class="jr-filters" role="group" aria-label="Tags"><button type="button" data-tag="all" aria-pressed="true">All</button><button type="button" data-tag="research" aria-pressed="false">Research</button><button type="button" data-tag="theatre" aria-pressed="false">Theatre</button><button type="button" data-tag="music" aria-pressed="false">Music</button></div></div>
+
 <section class="jr-masonry jr-archive" aria-label="Archive">
-<article class="jr-card jr-t4" data-category="music"><a href="draft.html"><h3>Discover the Classical Aulos - 5th Moyseion Music-Making Course</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2026-03-16">16–20 March 2026</time></a></article>
-<article class="jr-card jr-t4" data-category="theatre myth"><a href="draft.html"><h3 lang="it">Le SUPPLICI di Eschilo - Mito e migrazione nel Mediterraneo antico e presente</h3><ul class="tags"><li class="t-theatre">Theatre</li><li class="t-myth">Myth</li></ul><time datetime="2026-02-28">28 February 2026</time></a></article>
-<article class="jr-card jr-t4" data-category="music"><a href="draft.html"><h3>Discover the Ancient Greek Harp - 4th Moyseion Music-Making Course</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2026-02-16">16–20 February 2026</time></a></article>
-<article class="jr-card jr-t4" data-category="theatre"><a href="draft.html"><h3 lang="it">L'AIACE di Sofocle - il Silenzio e l'Ascolto: archetipi del tragico nel vocìo contemporaneo</h3><ul class="tags"><li class="t-theatre">Theatre</li></ul><time datetime="2026-01-31">31 January 2026</time></a></article>
-<article class="jr-card jr-t4" data-category="music"><a href="draft.html"><h3>Discover Choral Dances - 3rd Moyseion Music-Making Course</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2026-01-19">19–23 January 2026</time></a></article>
-<article class="jr-card jr-t4" data-category="music"><a href="draft.html"><h3>Discover Ancient Rythm &amp; Bass - 2nd Moyseion Music-Making Course</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2025-12-08">8–12 December 2025</time></a></article>
-<article class="jr-card jr-t4" data-category="music"><a href="draft.html"><h3>Discover the Lyre - 1st Moyseion Music-Making Course</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2025-11-03">3–7 November 2025</time></a></article>
-<article class="jr-card jr-t4" data-category="theatre"><a href="draft.html"><h3 lang="it">IPPOLITO di Euripide Corpo, vergogna, giustizia: percorsi antichi e riflessi contemporanei</h3><ul class="tags"><li class="t-theatre">Theatre</li></ul><time datetime="2025-10-25">25 October 2025</time></a></article>
-<article class="jr-card jr-t4" data-category="theatre"><a href="draft.html"><h3 lang="it">La sindrome di Medea. Da Euripide ai giorni nostri</h3><ul class="tags"><li class="t-theatre">Theatre</li></ul><time datetime="2025-06-07">7 June 2025</time></a></article>
-<article class="jr-card jr-t4" data-category="theatre"><a href="draft.html"><h3 lang="it">Il Teatro Comico della Magna Grecia ed il suo spazio nel contemporaneo</h3><ul class="tags"><li class="t-theatre">Theatre</li></ul><time datetime="2025-04-05">5 April 2025</time></a></article>
-<article class="jr-card jr-t4" data-category="cuisine"><a href="draft.html"><h3>CUISINE IN MAGNA GRAECIA: archaeology or culinary heritage?</h3><ul class="tags"><li class="t-cuisine">Cuisine</li></ul><time datetime="2025-02-14">14 February 2025</time></a></article>
-<article class="jr-card jr-t4" data-category="music"><a href="draft.html"><h3>Foundations for the AULOS REVIVAL</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2025-02-04">4 & 7 February 2025</time></a></article>
-<article class="jr-card jr-t4" data-category="music"><a href="draft.html"><h3>Mousikè téchne: between reenactment and museum. Experience to understand</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2025-01-30">30–31 January 2025</time></a></article>
+<article class="jr-card jr-t4" data-category="research myth"><a href="../draft.html" style="--bg:url(img/ws17.jpg)"><h3 lang="it">Dal mito di Prometeo all'intelligenza artificiale</h3><ul class="tags"><li class="t-research">Research</li><li class="t-myth">Myth</li></ul></a></article>
+<article class="jr-card jr-t4" data-category="music"><a href="../draft.html" style="--bg:url(img/musica1.jpg)"><h3>Discover the Classical Aulos - 5th Moyseion Music-Making Course</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2026-03-16">16–20 March 2026</time></a></article>
+<article class="jr-card jr-t4" data-category="theatre myth"><a href="../draft.html" style="--bg:url(img/danza12.jpg)"><h3 lang="it">Le SUPPLICI di Eschilo - Mito e migrazione nel Mediterraneo antico e presente</h3><ul class="tags"><li class="t-theatre">Theatre</li><li class="t-myth">Myth</li></ul><time datetime="2026-02-28">28 February 2026</time></a></article>
+<article class="jr-card jr-t4" data-category="music"><a href="../draft.html" style="--bg:url(img/musica1.jpg)"><h3>Discover the Ancient Greek Harp - 4th Moyseion Music-Making Course</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2026-02-16">16–20 February 2026</time></a></article>
+<article class="jr-card jr-t4" data-category="theatre"><a href="../draft.html" style="--bg:url(img/danza12.jpg)"><h3 lang="it">L'AIACE di Sofocle - il Silenzio e l'Ascolto: archetipi del tragico nel vocìo contemporaneo</h3><ul class="tags"><li class="t-theatre">Theatre</li></ul><time datetime="2026-01-31">31 January 2026</time></a></article>
+<article class="jr-card jr-t4" data-category="music"><a href="../draft.html" style="--bg:url(img/musica1.jpg)"><h3>Discover Choral Dances - 3rd Moyseion Music-Making Course</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2026-01-19">19–23 January 2026</time></a></article>
+<article class="jr-card jr-t4" data-category="music"><a href="../draft.html" style="--bg:url(img/musica1.jpg)"><h3>Discover Ancient Rythm &amp; Bass - 2nd Moyseion Music-Making Course</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2025-12-08">8–12 December 2025</time></a></article>
+<article class="jr-card jr-t4" data-category="music"><a href="../draft.html" style="--bg:url(img/musica1.jpg)"><h3>Discover the Lyre - 1st Moyseion Music-Making Course</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2025-11-03">3–7 November 2025</time></a></article>
+<article class="jr-card jr-t4" data-category="theatre"><a href="../draft.html" style="--bg:url(img/danza12.jpg)"><h3 lang="it">IPPOLITO di Euripide Corpo, vergogna, giustizia: percorsi antichi e riflessi contemporanei</h3><ul class="tags"><li class="t-theatre">Theatre</li></ul><time datetime="2025-10-25">25 October 2025</time></a></article>
+<article class="jr-card jr-t4" data-category="theatre"><a href="../draft.html" style="--bg:url(img/danza12.jpg)"><h3 lang="it">La sindrome di Medea. Da Euripide ai giorni nostri</h3><ul class="tags"><li class="t-theatre">Theatre</li></ul><time datetime="2025-06-07">7 June 2025</time></a></article>
+<article class="jr-card jr-t4" data-category="theatre"><a href="../draft.html" style="--bg:url(img/danza12.jpg)"><h3 lang="it">Il Teatro Comico della Magna Grecia ed il suo spazio nel contemporaneo</h3><ul class="tags"><li class="t-theatre">Theatre</li></ul><time datetime="2025-04-05">5 April 2025</time></a></article>
+<article class="jr-card jr-t4" data-category="cuisine"><a href="../draft.html" style="--bg:url(img/xenia15.jpg)"><h3>CUISINE IN MAGNA GRAECIA: archaeology or culinary heritage?</h3><ul class="tags"><li class="t-cuisine">Cuisine</li></ul><time datetime="2025-02-14">14 February 2025</time></a></article>
+<article class="jr-card jr-t4" data-category="music"><a href="../draft.html" style="--bg:url(img/musica1.jpg)"><h3>Foundations for the AULOS REVIVAL</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2025-02-04">4 & 7 February 2025</time></a></article>
+<article class="jr-card jr-t4" data-category="music"><a href="../draft.html" style="--bg:url(img/musica1.jpg)"><h3>Mousikè téchne: between reenactment and museum. Experience to understand</h3><ul class="tags"><li class="t-music">Music</li></ul><time datetime="2025-01-30">30–31 January 2025</time></a></article>
 </section>
 <a class="ar-back" href="moyseion-journal.html">&larr; Journal</a>
 </main></main>
@@ -462,6 +485,8 @@ html body .era-hero{grid-template-columns:1fr;min-height:clamp(9rem,20vh,13rem)}
   }
   btns.forEach(function(b){ b.addEventListener('click', function(){ tag = b.getAttribute('data-tag'); btns.forEach(function(o){ o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); }); run(); }); });
   q.addEventListener('input', run);
+  var pre = (new URLSearchParams(location.search).get('tag') || '').toLowerCase();   // arriving from Events or Theatre in the menu: open with that tag chosen
+  btns.forEach(function(b){ if (pre && b.getAttribute('data-tag') === pre) b.click(); });
 })();
 </script>
 <script>
