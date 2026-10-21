@@ -1,4 +1,4 @@
-/* REVIEWS BAND: 100vw x 30vh, a slow drift of guest reviews, towards the foot of the page; it can be stepped back and
+/* REVIEWS BAND: 100vw x 38.2vh, a slow drift of guest reviews, towards the foot of the page; it can be stepped back and
    forth with the two arrows, or dragged / swiped, and it rests while the pointer or the keyboard is on it.
    Fill it by setting window.__REVIEWS before this script, e.g. [{text:'...', author:'Name', rating:5}, ...].
    Until real reviews are supplied it shows clearly marked placeholders: it never invents a review. */
@@ -11,10 +11,10 @@
     { text: 'Review to be supplied.', author: 'Placeholder', rating: 0 }
   ];
   var css = ''
-  + '.rev-band{position:relative;z-index:20;width:100vw;height:30vh;min-height:13rem;overflow:hidden;display:flex;align-items:center;margin:6vh 0 0;border-top:1px solid rgba(131,109,48,.45);border-bottom:1px solid rgba(131,109,48,.45);background:var(--navy,#010416);font-family:var(--font,"GFS Neohellenic","Gill Sans",serif)}'
+  + '.rev-band{position:relative;z-index:20;width:100vw;height:38.2vh;min-height:13rem;overflow:hidden;display:flex;align-items:center;margin:9vh 0 0;border-top:1px solid rgba(131,109,48,.45);border-bottom:1px solid rgba(131,109,48,.45);background:var(--navy,#010416);font-family:var(--font,"GFS Neohellenic","Gill Sans",serif)}'
   + '.rev-label{position:absolute;left:clamp(1.1rem,4.6vw,4.2rem);top:1rem;z-index:2;font-size:.62rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-body,#c2a567)}'
   + '.rev-track{display:flex;gap:1.6rem;width:max-content;padding:2.4rem 0 0;will-change:transform;cursor:grab;touch-action:pan-y}.rev-track.is-drag{cursor:grabbing}.rev-track.is-drag .rev-card{pointer-events:none}'
-  + '.rev-card{position:relative;flex:0 0 auto;width:clamp(16rem,24vw,22rem);height:calc(30vh - 5rem);min-height:8.5rem;overflow:hidden;padding:1.1rem 1.6rem 1rem 2.6rem;border-left:1px solid rgba(131,109,48,.55);display:flex;flex-direction:column;justify-content:space-between;color:var(--gold-body,#c2a567);outline:none;transition:width .6s cubic-bezier(.2,.7,.2,1),background .5s}'
+  + '.rev-card{position:relative;flex:0 0 auto;width:clamp(16rem,24vw,22rem);height:calc(38.2vh - 5rem);min-height:8.5rem;overflow:hidden;padding:1.1rem 1.6rem 1rem 2.6rem;border-left:1px solid rgba(131,109,48,.55);display:flex;flex-direction:column;justify-content:space-between;color:var(--gold-body,#c2a567);outline:none;transition:width .6s cubic-bezier(.2,.7,.2,1),background .5s}'
   + '.rev-card::before{content:"\\201C";position:absolute;left:.7rem;top:.1rem;font-size:3.2rem;line-height:1;color:var(--gold-deep,#836d30)}'
   + '.rev-card p{margin:0;font-size:.95rem;line-height:1.55;color:var(--gold-bright,#f1dca4);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}'
   + '.rev-card .rev-meta{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.7rem;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase}'

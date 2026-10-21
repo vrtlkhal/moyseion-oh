@@ -21,7 +21,7 @@
   + '.logi summary .plus::before,.logi summary .plus::after{content:"";position:absolute;left:50%;top:50%;width:100%;height:1px;background:currentColor;transform:translate(-50%,-50%);transition:transform .4s}'
   + '.logi summary .plus::after{transform:translate(-50%,-50%) rotate(90deg)}'
   + '.logi[open] summary .plus::after{transform:translate(-50%,-50%) rotate(0deg)}'
-  + '.logi-body{max-height:30vh;overflow-y:auto;overscroll-behavior:contain;border-top:1px solid rgba(131,109,48,.28)}'
+  + '.logi-body{max-height:38.2vh;overflow-y:auto;overscroll-behavior:contain;border-top:1px solid rgba(131,109,48,.28)}'
   + '.logi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:72rem;margin-inline:auto;animation:logiIn .5s ease}'
   + '.logi-col{padding:1.2rem clamp(1rem,2vw,1.8rem) 1.4rem;border-left:1px solid rgba(131,109,48,.28);min-width:0}'
   + '.logi-col:last-child{border-right:1px solid rgba(131,109,48,.28)}'

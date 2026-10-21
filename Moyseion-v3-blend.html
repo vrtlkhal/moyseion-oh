@@ -1051,11 +1051,11 @@ main{counter-reset:sec}
 .section-imgs:hover{box-shadow:0 0 .9rem rgba(241,220,164,.4),0 0 3rem rgba(241,220,164,.18),inset 0 0 0 1px rgba(1,4,22,.55)!important}
 
 /* ---- tickers: giant outlined words that travel with the scroll ---- */
-.v3-tick{position:relative;z-index:20;overflow:hidden;padding:clamp(3rem,9vh,7rem) 0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);margin:6vh 0;background:linear-gradient(90deg,rgba(1,4,22,.9),rgba(1,4,22,.55),rgba(1,4,22,.9))}
+.v3-tick{position:relative;z-index:20;overflow:hidden;display:flex;align-items:center;height:14.6vh;min-height:5rem;padding:0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);margin:9vh 0;background:linear-gradient(90deg,rgba(1,4,22,.9),rgba(1,4,22,.55),rgba(1,4,22,.9))}
 .v3-tick div{display:flex;gap:4vw;white-space:nowrap;width:max-content;will-change:transform}
-.v3-tick span{font-family:var(--font);font-weight:700;font-size:clamp(3.5rem,9vw,9rem);line-height:.9;letter-spacing:-.02em;text-transform:uppercase;color:transparent;-webkit-text-stroke:1px rgba(241,220,164,.6)}
+.v3-tick span{font-family:var(--font);font-weight:700;font-size:clamp(2rem,7.2vh,4.6rem);line-height:.9;letter-spacing:-.02em;text-transform:uppercase;color:transparent;-webkit-text-stroke:1px rgba(241,220,164,.6)}
 .v3-tick span:nth-child(even){color:var(--gold-bright);-webkit-text-stroke:0;font-weight:400}
-.v3-tick.rev{border-top:0}
+.v3-tick.rev{border-top:1px solid var(--line-soft)}
 .v3-tick small{position:absolute;left:var(--pad3);top:1.1rem;font-size:.62rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-body);z-index:2}
 
 /* ---- water band: bleeds edge to edge, with the sanctuary written across it ---- */
@@ -1615,7 +1615,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 </div>
 
 <!-- SOCIAL REELS: three 9:16 phone frames, played only while on screen -->
-<div class="v3-tick" aria-hidden="true" data-tick="1"><small>Matera · 7th c. BCE</small><div><span>Magna Graecia</span><span>Neolithic</span><span>Enotrian</span><span>Sassi</span><span>Magna Graecia</span><span>Neolithic</span><span>Enotrian</span><span>Sassi</span></div></div>
+<div class="v3-tick" aria-hidden="true" data-tick="1"><div><span>Magna Graecia</span><span>Neolithic</span><span>Enotrian</span><span>Sassi</span><span>Magna Graecia</span><span>Neolithic</span><span>Enotrian</span><span>Sassi</span></div></div>
 <div class="v3-label"><span>From inside</span></div>
 <figure class="reels-quote"><blockquote lang="it">&ldquo;Non si visita, ma si vive&rdquo;</blockquote><figcaption>Vanity Fair Italia</figcaption></figure>
 <section class="reels" aria-label="From our social channels">
@@ -1633,7 +1633,7 @@ html[data-theme="light"] .scroll-cue span{color:#fff4d6}
 </section>
 
 <!-- EXPLORE RAIL: horizontal navigation, just before the closing section -->
-<div class="v3-tick rev" aria-hidden="true" data-tick="-1" data-logi-after><small>Rituals · Waters · Words</small><div><span>Xenia</span><span>Symposium</span><span>Akratisma</span><span>Demeter</span><span>Xenia</span><span>Symposium</span><span>Akratisma</span><span>Demeter</span></div></div>
+<div class="v3-tick rev" aria-hidden="true" data-tick="-1" data-logi-after><div><span>Xenia</span><span>Akràtisma</span><span>Symposium</span><span>Demeter</span><span>Andrón</span><span>Klinai</span><span>Hypogea</span><span>Pyramis</span><span>Melitoutta</span><span>Calcarenite</span><span>Xenia</span><span>Akràtisma</span><span>Symposium</span><span>Demeter</span><span>Andrón</span><span>Klinai</span><span>Hypogea</span><span>Pyramis</span><span>Melitoutta</span><span>Calcarenite</span></div></div>
 
 <a class="day-band" href="proposal/moyseion-day.html"><span class="kick">Inhabit</span><b>A Day at Moyseion</b><span class="go">Discover &rarr;</span></a>
 
