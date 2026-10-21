@@ -6,6 +6,13 @@
   var here = window.__NAV_BASE != null ? window.__NAV_BASE : (document.currentScript && document.currentScript.src ? new URL('./', document.currentScript.src).href : '');
   var P = { home: here + 'Moyseion-v3-blend.html', day: here + 'proposal/moyseion-day.html', houses: here + 'proposal/moyseion-houses.html', press: here + 'proposal/moyseion-press.html', journal: here + 'proposal/moyseion-journal.html', archive: here + 'proposal/moyseion-archive.html', neo: here + 'proposal/moyseion-neolithic.html', eno: here + 'proposal/moyseion-enotrian.html', mag: here + 'proposal/moyseion-magnagraecia.html', draft: here + 'draft.html', explore: here + 'proposal/moyseion-explore.html' };
   var css = ''
+  // SITE SYSTEM: one size for each repeated element on every inner page (title, eyebrow, breadcrumb, section heading,
+  // dateline). Golden steps; the :not(#_) lifts these above each page's own older rules.
+  + 'html body:not(#_) h1{font-weight:400;font-size:clamp(3.4rem,6.6vw,6.6rem);line-height:.92;letter-spacing:-.02em}'
+  + 'html body:not(#_) .crumbs,html body:not(#_) .crumbs a,html body:not(#_) .eyebrow,html body:not(#_) .era-hero .layer{font-size:.66rem;letter-spacing:.42em;text-transform:uppercase;font-weight:400}'
+  + 'html body:not(#_) .gal-head,html body:not(#_) .section-label,html body:not(#_) .ex-head h2{font-size:clamp(1rem,1.5vw,1.4rem);letter-spacing:.34em;text-transform:uppercase;font-weight:400}'
+  + 'html body:not(#_) .era-hero .when,html body:not(#_) .era-hero .lede.tracked,html body:not(#_) .ex-hero .lede{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase}'
+  + '@media (max-width:40rem){html body:not(#_) h1{font-size:clamp(2.8rem,13vw,4.4rem)}}'
   + '.mn-back{position:absolute;z-index:40;top:calc(4rem + 1.1rem);left:var(--pad,clamp(1.1rem,4.6vw,4.2rem));display:inline-flex;align-items:center;gap:.7rem;font-family:var(--font,"GFS Neohellenic","Gill Sans",serif);font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:#c2a567;text-decoration:none;transition:color .3s}'
   + '.mn-back span{display:grid;place-items:center;width:1.9rem;height:1.9rem;border:1px solid rgba(131,109,48,.55);border-radius:50%;font-size:.8rem;letter-spacing:0;transition:border-color .3s,transform .4s}'
   + '.mn-back:hover,.mn-back:focus-visible{color:#f1dca4}.mn-back:hover span,.mn-back:focus-visible span{border-color:#f1dca4;transform:translateX(-.2rem)}'

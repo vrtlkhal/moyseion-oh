@@ -417,6 +417,14 @@ html body .jr-archive{max-width:none;margin:0 var(--pad);padding:0;width:auto}
 html body .jr-archive .jr-card{width:100%;max-width:none;margin:0}
 html body .jr-archive .jr-card a{padding-left:0;padding-right:0}
 html body .jr-archive .jr-card a:hover,html body .jr-archive .jr-card a:focus-visible{padding-left:1rem;padding-right:1rem;transform-origin:left center}
+
+/* hero: the same band as Journal and Explore, 38.2vh, a photograph behind the title */
+html body .era-hero{position:relative;isolation:isolate;overflow:hidden;max-width:none;margin:4rem 0 0;align-items:flex-start;text-align:left;min-height:clamp(14rem,38.2vh,22rem);display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--pad) clamp(1rem,3vh,1.8rem)}
+html body .era-hero::before{content:"";display:block;position:absolute;inset:0;z-index:-2;animation:none;background:url("img/danza13.jpg") center 40%/cover no-repeat}
+html body .era-hero::after{content:"";display:block;position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(1,4,22,.88) 0%,rgba(1,4,22,.66) 32%,rgba(1,4,22,.18) 68%,rgba(1,4,22,.08) 100%),linear-gradient(0deg,rgba(1,4,22,.55),rgba(1,4,22,0) 55%)}
+html body .era-hero .crumbs{margin-bottom:.2rem;color:#c2a567}html body .era-hero .crumbs a{color:#c2a567}
+html body .era-hero h1{color:#f1dca4;margin:0}
+html body .jr-bar{margin-top:clamp(1.6rem,4vh,2.6rem)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.moyseion.com/#org", "name": "Moyseion", "url": "https://www.moyseion.com", "address": {"@type": "PostalAddress", "addressLocality": "Matera", "addressRegion": "Basilicata", "addressCountry": "IT"}, "sameAs": ["https://www.instagram.com/moyseionmatera", "https://fondazione-moyseion-isama.com"]}</script>
 </head>
