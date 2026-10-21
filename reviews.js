@@ -11,7 +11,7 @@
     { text: 'Review to be supplied.', author: 'Placeholder', rating: 0 }
   ];
   var css = ''
-  + '.rev-band{position:relative;z-index:20;width:100vw;height:38.2vh;min-height:13rem;overflow:hidden;display:flex;align-items:center;margin:9vh 0 0;border-top:1px solid rgba(131,109,48,.45);border-bottom:1px solid rgba(131,109,48,.45);background:var(--navy,#010416);font-family:var(--font,"GFS Neohellenic","Gill Sans",serif)}'
+  + '.rev-band{position:relative;z-index:20;width:100vw;height:38.2vh;min-height:13rem;overflow:hidden;display:flex;align-items:center;margin:0;border-top:1px solid rgba(131,109,48,.45);border-bottom:1px solid rgba(131,109,48,.45);background:var(--navy,#010416);font-family:var(--font,"GFS Neohellenic","Gill Sans",serif)}'
   + '.rev-label{position:absolute;left:clamp(1.1rem,4.6vw,4.2rem);top:1rem;z-index:2;font-size:.62rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold-body,#c2a567)}'
   + '.rev-track{display:flex;gap:1.6rem;width:max-content;padding:2.4rem 0 0;will-change:transform;cursor:grab;touch-action:pan-y}.rev-track.is-drag{cursor:grabbing}.rev-track.is-drag .rev-card{pointer-events:none}'
   + '.rev-card{position:relative;flex:0 0 auto;width:clamp(16rem,24vw,22rem);height:calc(38.2vh - 5rem);min-height:8.5rem;overflow:hidden;padding:1.1rem 1.6rem 1rem 2.6rem;border-left:1px solid rgba(131,109,48,.55);display:flex;flex-direction:column;justify-content:space-between;color:var(--gold-body,#c2a567);outline:none;transition:width .6s cubic-bezier(.2,.7,.2,1),background .5s}'
@@ -26,7 +26,7 @@
   + '.rev-nav button:hover,.rev-nav button:focus-visible{border-color:var(--gold-bright,#f1dca4);color:var(--gold-bright,#f1dca4)}'
   + '.rev-nav button[data-d="-1"]:hover{transform:translateX(-.15rem)}.rev-nav button[data-d="1"]:hover{transform:translateX(.15rem)}'
   + 'html[data-theme="light"] .rev-nav button{color:#9c3f1c}'
-  + '.rev-cta{position:relative;z-index:20;display:flex;flex-direction:column;align-items:center;gap:1.2rem;padding:clamp(2rem,6vh,4rem) 1rem;text-align:center;font-family:var(--font,"GFS Neohellenic","Gill Sans",serif)}'
+  + '.rev-cta{position:relative;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2vh;height:23.6vh;min-height:12rem;box-sizing:border-box;padding:0 1rem;text-align:center;font-family:var(--font,"GFS Neohellenic","Gill Sans",serif)}'
   + '.rev-cta p{margin:0;font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-body,#c2a567)}'
   + '.rev-cta h3{margin:0;font-weight:400;font-size:clamp(1.4rem,2.4vw,2.4rem);line-height:1.15;color:var(--gold-bright,#f1dca4);max-width:22em;text-wrap:balance}'
   + '.rev-cta em{max-width:40em;font-size:clamp(.92rem,1.1vw,1.08rem);line-height:1.55;color:var(--gold-body,#c2a567)}'

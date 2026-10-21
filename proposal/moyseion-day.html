@@ -17,7 +17,7 @@ window.addEventListener("message",function(e){var d=e.data;if(d&&d.type==="moy-t
 <style id="day-flow">
 /* THE DAY AS ONE CONTINUOUS LINE, NOT A STACK OF CARDS. A single hairline runs down the page; each moment hangs from it, the photograph on one side and the words on
    the other, switching sides as the day goes on. No frames, no panels: only the line, the photographs, a large outlined number and the text. */
-.day{position:relative;display:block;gap:0;padding:clamp(2rem,6vh,4rem) 0}
+.day{position:relative;display:block;gap:0;padding:clamp(2rem,5.6vh,4rem) 0}
 .day::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--line) 5%,var(--line) 95%,transparent)}
 .step{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(2.4rem,8vw,9rem);align-items:center;min-height:0;border:0!important;border-radius:0;overflow:visible;background:none!important;margin:0 0 clamp(6rem,17vh,12rem)}
 .step:last-child{margin-bottom:0}
@@ -28,7 +28,7 @@ window.addEventListener("message",function(e){var d=e.data;if(d&&d.type==="moy-t
 .step .po{grid-column:2;grid-row:1;align-self:end;position:relative;z-index:2;padding:0;margin-top:2.2rem;background:none!important;display:block;font-size:clamp(1rem,1.5vw,1.5rem);line-height:1.6;font-style:italic;border-left:1px solid var(--gold-deep);padding-left:1.4rem;max-width:26em}
 .step .po::after{display:none}
 .step .po b{font-weight:400;font-style:normal}
-.step .tx{padding-bottom:clamp(8rem,22vh,13rem)}
+.step .tx{padding-bottom:clamp(5rem,14.6vh,9rem)}
 .step .n{display:block;font-size:clamp(5rem,12vw,12rem);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(241,220,164,.5);margin:0 0 .6rem -.4rem;letter-spacing:-.02em}
 .step .tx small{font-size:.7rem;letter-spacing:.4em}
 .step .tx h3{font-size:clamp(2rem,4.2vw,4.4rem);line-height:1.02;letter-spacing:-.01em;margin-bottom:.8rem}
@@ -48,7 +48,7 @@ html[data-theme="light"] .day::before{background:linear-gradient(to bottom,trans
 html[data-theme="light"] .step .po{color:#4a3a1c}
 @media (max-width:820px){
   .day::before{left:.7rem}
-  .step{grid-template-columns:1fr;padding-left:2.2rem;margin-bottom:clamp(4rem,10vh,6rem)}
+  .step{grid-template-columns:1fr;padding-left:2.2rem;margin-bottom:clamp(4rem,9vh,6rem)}
   .step::before{left:.7rem;top:1rem;margin:0 0 0 -.4rem}
   .step .pic,.step:nth-child(even) .pic{grid-column:1;grid-row:1;aspect-ratio:4/3;max-height:46vh;outline-offset:.5rem}
   .step .tx,.step:nth-child(even) .tx{grid-column:1;grid-row:2;padding:1.6rem 0 0;text-align:left}
