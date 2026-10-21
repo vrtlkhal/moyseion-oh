@@ -2,6 +2,8 @@
    While no choice has been made the page cannot be scrolled (wheel, touch, keys and scrollbar are all held). */
 (function(){
   if (document.getElementById('mck')) return;
+  // demo: the banner is shown on the homepage only
+  if (!(/(Moyseion-v3-blend\.html|moyseion-review\.html|\/)$/i.test(location.pathname) || document.querySelector('nav.chrome'))) return;
   var here = document.currentScript && document.currentScript.src;
   var policy = window.__COOKIE_POLICY || (here ? new URL('draft.html', here).href : 'draft.html');
   var KEY = 'moyseion-cookie-consent', LOADS = 'moyseion-cookie-loads', VERSION = 1, DEMO_EVERY = 3;

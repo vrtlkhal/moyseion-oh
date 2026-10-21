@@ -74,6 +74,15 @@ footer.site-foot{margin-top:clamp(3rem,9vh,6rem);border-top:.07rem solid var(--l
 .ex-list a:hover{color:var(--gold-body)}
 .ex-list b{font-weight:400;font-size:clamp(1.05rem,1.6vw,1.4rem)}
 .ex-list time{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-body);white-space:nowrap}
+
+/* hero: a photograph behind the title, as on the other main pages; a veil darkest at the lower left where the title sits */
+.ex-hero{position:relative;isolation:isolate;overflow:hidden;margin-top:4rem;min-height:clamp(14rem,38.2vh,22rem);display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--pad) clamp(1rem,3vh,1.8rem)}
+.ex-hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url("img/matera.jpg") center 55%/cover no-repeat}
+.ex-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(1,4,22,.88) 0%,rgba(1,4,22,.66) 32%,rgba(1,4,22,.18) 68%,rgba(1,4,22,.08) 100%),linear-gradient(0deg,rgba(1,4,22,.55),rgba(1,4,22,0) 55%)}
+.ex-hero .crumbs{margin-bottom:.2rem;font-size:.66rem;letter-spacing:.42em;color:#c2a567}
+.ex-hero .crumbs a{color:#c2a567}
+.ex-hero h1{color:#f1dca4;margin-bottom:.9rem}
+.ex-hero .lede{color:#e9dfcf}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.moyseion.com/#org", "name": "Moyseion", "url": "https://www.moyseion.com", "address": {"@type": "PostalAddress", "addressLocality": "Matera", "addressRegion": "Basilicata", "addressCountry": "IT"}, "sameAs": ["https://www.instagram.com/moyseionmatera", "https://fondazione-moyseion-isama.com"]}</script>
 </head>
@@ -155,9 +164,9 @@ footer.site-foot{margin-top:clamp(3rem,9vh,6rem);border-top:.07rem solid var(--l
 <section class="ex-sec" id="journal" aria-labelledby="ex-journal">
   <div class="ex-head"><h2 id="ex-journal">Journal</h2><a href="moyseion-journal.html">Journal &rarr;</a></div>
   <ul class="ex-list">
-    <li><a href="moyseion-journal.html"><b lang="it">Dal mito di Prometeo all'intelligenza artificiale</b><time datetime="2026-10-24">24 October 2026</time></a></li>
-    <li><a href="moyseion-journal.html"><b lang="it">Abitare la soglia</b><time datetime="2026-10-31">31 October 2026</time></a></li>
-    <li><a href="moyseion-journal.html"><b lang="it">John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità</b><time datetime="2026-11-12">12–16 November 2026</time></a></li>
+    <li><a href="../draft.html"><b lang="it">Dal mito di Prometeo all'intelligenza artificiale</b><time datetime="2026-10-24">24 October 2026</time></a></li>
+    <li><a href="../draft.html"><b lang="it">Abitare la soglia</b><time datetime="2026-10-31">31 October 2026</time></a></li>
+    <li><a href="../draft.html"><b lang="it">John Cabot Retreat - Mito e Umanità nel Mondo Antico – Consapevolezza e Sacralità</b><time datetime="2026-11-12">12–16 November 2026</time></a></li>
   </ul>
 </section>
 </main>
