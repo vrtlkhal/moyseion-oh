@@ -3760,9 +3760,24 @@ function buildPairPins(){
       G.sc = Math.min(1, 0.9 * band / Math.max(oa.h0, ob.h0), 0.34 * VW / Math.max(oa.stage.offsetWidth, ob.stage.offsetWidth, 1));
       oa.stage.style.scale = ob.stage.style.scale = G.sc.toFixed(4);
     };
+    // FOCUS: the text being read is set larger and fully lit, the other smaller and dimmed; across the swap they trade
+    // places, in step with the orbs' glide. Transform only (no reflow): the words keep wrapping around their own anchor.
+    const pa = A.querySelector('.manifesto-inner p'), pb = B.querySelector('.manifesto-inner p');
+    const ea = [...A.querySelectorAll('.v3-eyebrow, .more-link')], eb = [...B.querySelectorAll('.v3-eyebrow, .more-link')];
+    [[pa, A], [pb, B]].forEach(([p, sec]) => { if (p){ p.style.transformOrigin = sec.classList.contains('side-right') ? '100% 50%' : '0% 50%'; p.style.willChange = 'transform, opacity'; } });
+    const BIG = 1.06, SMALL = 0.86, DIM = 0.38;   // the lift stays inside the gap the words keep around the orbs
+    const focus = (p, extra, k) => {                            // k: 1 = being read, 0 = waiting
+      if (!p) return;
+      const sc = SMALL + (BIG - SMALL) * k, op = DIM + (1 - DIM) * k;
+      p.style.transform = 'scale(' + sc.toFixed(4) + ')'; p.style.opacity = op.toFixed(3);
+      extra.forEach(e => { e.style.opacity = (0.25 + 0.75 * k).toFixed(3); });
+    };
     const update = u => {
       oa.cm.c = ob.cm.c = 0;
       oa.ost.reflowOn = ob.ost.reflowOn = true;                 // both texts are live: each wraps around its own anchor
+      if (REDUCED) return;
+      const k = smootherstep(clamp01(((u - G.h1) / Math.max(1e-4, G.h2 - G.h1) - 0.1) / 0.8));
+      focus(pa, ea, 1 - k); focus(pb, eb, k);
     };
     measure();
     const st = ScrollTrigger.create({
