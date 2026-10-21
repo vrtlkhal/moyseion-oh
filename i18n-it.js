@@ -5,6 +5,7 @@ window.__MOY_IT = {
 "Explore": "Esplora",
 "Houses": "Le case",
 "Journal": "Diario",
+"Back": "Indietro",
 "The Symposium is held in the andrón, around wine, food, word and music. It is conducted as a rite rather than a performance, among equals.": "Il Simposio si tiene nell’andrón, intorno a vino, cibo, parola e musica. È condotto come un rito e non come uno spettacolo, tra pari.",
 "The ritual takes place in the recreated Water Sanctuary devoted to the goddess Demeter. It is ordered in three waters and three actions: purification, immersion, return.": "Il rituale si svolge nella ricostruzione del Santuario delle Acque dedicato alla dea Demetra. È ordinato in tre acque e tre azioni: purificazione, immersione, ritorno.",
 "The Akràtisma is the first meal of the day, taken at dawn. Bread, olives, fruit and honey are served in thanks to the earth.": "L’Akràtisma è il primo pasto del giorno, consumato all’alba. Pane, olive, frutta e miele vengono serviti in ringraziamento alla terra.",

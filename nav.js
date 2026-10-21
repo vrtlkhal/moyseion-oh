@@ -6,6 +6,10 @@
   var here = window.__NAV_BASE != null ? window.__NAV_BASE : (document.currentScript && document.currentScript.src ? new URL('./', document.currentScript.src).href : '');
   var P = { home: here + 'Moyseion-v3-blend.html', day: here + 'proposal/moyseion-day.html', houses: here + 'proposal/moyseion-houses.html', press: here + 'proposal/moyseion-press.html', journal: here + 'proposal/moyseion-journal.html', archive: here + 'proposal/moyseion-archive.html', neo: here + 'proposal/moyseion-neolithic.html', eno: here + 'proposal/moyseion-enotrian.html', mag: here + 'proposal/moyseion-magnagraecia.html', draft: here + 'draft.html', explore: here + 'proposal/moyseion-explore.html' };
   var css = ''
+  + '.mn-back{position:absolute;z-index:40;top:calc(4rem + 1.1rem);left:var(--pad,clamp(1.1rem,4.6vw,4.2rem));display:inline-flex;align-items:center;gap:.7rem;font-family:var(--font,"GFS Neohellenic","Gill Sans",serif);font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:#c2a567;text-decoration:none;transition:color .3s}'
+  + '.mn-back span{display:grid;place-items:center;width:1.9rem;height:1.9rem;border:1px solid rgba(131,109,48,.55);border-radius:50%;font-size:.8rem;letter-spacing:0;transition:border-color .3s,transform .4s}'
+  + '.mn-back:hover,.mn-back:focus-visible{color:#f1dca4}.mn-back:hover span,.mn-back:focus-visible span{border-color:#f1dca4;transform:translateX(-.2rem)}'
+  + 'html[data-theme="light"] .mn-back{color:#4a3a1c}html[data-theme="light"] .mn-back:hover{color:#7d3217}'
   + '.mn-brand svg use[href^="#mk-ring"]{transform-box:view-box;transform-origin:50% 50%;animation:mnSpin linear infinite}'
   + '.mn-brand svg use[href="#mk-ring0"]{animation-duration:240s}.mn-brand svg use[href="#mk-ring1"]{animation-duration:160s;animation-direction:reverse}.mn-brand svg use[href="#mk-ring2"]{animation-duration:110s}.mn-brand svg use[href="#mk-ring3"]{animation-duration:70s;animation-direction:reverse}'
   + '@keyframes mnSpin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.mn-brand svg use{animation:none}}'
@@ -85,6 +89,15 @@
     + '<div class="mn-sheet" id="mnSheet"><div><h4>Menu</h4><a href="' + P.explore + '">Explore</a><a href="' + P.houses + '">Houses</a><a href="' + P.journal + '?tag=events">Events</a><a href="' + P.journal + '">Journal</a><a href="' + P.draft + '">About</a></div>'
     + '<div><h4>Inhabit</h4><a href="' + P.day + '">A Day at Moyseion</a><a href="' + P.day + '#akratisma">Akratisma</a><a href="' + P.day + '#symposium">Symposium</a><a href="' + P.press + '">Press</a></div></div>';
   document.body.insertBefore(nav, document.body.firstChild);
+  // BACK: a quiet way to the previous page, top left under the bar, on every page but the homepage (which has no nav.js).
+  // It goes back in history when the reader came from this site, otherwise to the homepage.
+  var back = document.createElement('a'); back.className = 'mn-back'; back.href = P.home;
+  back.innerHTML = '<span aria-hidden="true">&larr;</span>Back';
+  back.addEventListener('click', function(e){
+    var same = document.referrer && document.referrer.indexOf(location.origin) === 0;
+    if (same && history.length > 1){ e.preventDefault(); history.back(); }
+  });
+  document.body.insertBefore(back, nav.nextSibling);
 
   var wrap = nav.querySelector('.mn-wrap'), plus = nav.querySelector('.mn-plus'), burger = nav.querySelector('.mn-burger');
   function setO(o){ wrap.classList.toggle('open', o); plus.setAttribute('aria-expanded', o ? 'true' : 'false'); }
