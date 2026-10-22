@@ -11,7 +11,7 @@
   + '.pg-band::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--img) var(--pos,center 45%)/cover no-repeat}'
   + '.pg-band::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(1,4,22,.88) 0%,rgba(1,4,22,.66) 32%,rgba(1,4,22,.18) 68%,rgba(1,4,22,.08) 100%),linear-gradient(0deg,rgba(1,4,22,.55),rgba(1,4,22,0) 55%)}'
   + '.pg-kick{margin:0 0 .2rem;font-size:.66rem;letter-spacing:.42em;text-transform:uppercase;color:#c2a567}.pg-kick a{color:#c2a567;text-decoration:none}.pg-kick a:hover{color:#f1dca4}'
-  + '.pg-band h1,html body .era-hero h1{color:#f1dca4;margin:0 0 .9rem}'
+  + '.pg-band h1{color:#f1dca4;margin:0 0 .9rem}html body .era-hero h1{color:#f1dca4}'
   + '.pg-date{margin:0;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;line-height:1.6;color:#e9dfcf}'
   // SECTION HEADINGS: tracked capitals and one thin rule after them, on every page
   + 'html body:not(#_) .gal-head,html body:not(#_) .section-label,html body:not(#_) .ex-head h2{display:flex;align-items:center;gap:1.4rem}'
