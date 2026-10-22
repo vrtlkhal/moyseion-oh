@@ -260,7 +260,7 @@ window.__MOY_IT = {
 "Review to be supplied.": "Recensione in arrivo.",
 "Placeholder": "Segnaposto",
 "Plan a stay": "Pianifica un soggiorno",
-"Choose the age you will sleep in.": "Scegli l’epoca in cui dormire.",
+"Choose the era you will sleep in.": "Scegli l’epoca in cui dormire.",
 "Every stay includes the Water Sanctuary of Demeter and, for those who want them, the rituals.": "Ogni soggiorno comprende il Santuario delle Acque di Demetra e, per chi lo desidera, i rituali.",
 "MOΥΣEION · Sassi of Matera": "MOΥΣEION · Sassi di Matera",
 "Visit": "Visita",

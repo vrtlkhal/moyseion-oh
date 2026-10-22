@@ -45,7 +45,7 @@
   var band = document.createElement('section'); band.className = 'rev-band'; band.id = 'reviewsBand'; band.setAttribute('aria-label', 'Reviews');
   band.innerHTML = '<span class="rev-label">Reviews</span><div class="rev-nav"><button type="button" data-d="-1" aria-label="Previous">&larr;</button><button type="button" data-d="1" aria-label="Next">&rarr;</button></div><div class="rev-track">' + cards + cards + cards + cards + '</div>';
   var cta = document.createElement('div'); cta.className = 'rev-cta';
-  cta.innerHTML = '<p>Plan a stay</p><h3>Choose the age you will sleep in.</h3><em>Every stay includes the Water Sanctuary of Demeter and, for those who want them, the rituals.</em><a href="' + (window.__REV_PLAN || ((window.__NAV_BASE || '') + 'draft.html')) + '">Plan your stay</a>';
+  cta.innerHTML = '<p>Plan a stay</p><h3>Choose the era you will sleep in.</h3><em>Every stay includes the Water Sanctuary of Demeter and, for those who want them, the rituals.</em><a href="' + (window.__REV_PLAN || ((window.__NAV_BASE || '') + 'draft.html')) + '">Plan your stay</a>';
   var foot = Array.prototype.slice.call(document.querySelectorAll('footer')).filter(function(x){ return !x.closest('.rev-card'); })[0];
   if (foot && foot.parentNode){ foot.parentNode.insertBefore(band, foot); foot.parentNode.insertBefore(cta, foot); } else { document.body.appendChild(band); document.body.appendChild(cta); }
   // the drift: one offset, written once a frame. Four copies of the cards; the offset wraps by one copy, so it never ends.
