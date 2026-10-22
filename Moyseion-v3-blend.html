@@ -1441,6 +1441,10 @@ html body:not(#_) .btn.fill,html body:not(#_) nav.chrome .v3-cta .btn.fill,html 
 html body:not(#_) .btn:hover,html body:not(#_) .btn:focus-visible,html body:not(#_) .btn.fill:hover,html body:not(#_) .btn.fill:focus-visible,html body:not(#_) nav.chrome .v3-cta .btn.fill:hover,html body:not(#_) .btn.fill.book-cta:hover{background:var(--gold-body)!important;border-color:var(--gold-body)!important;color:var(--navy)!important}
 html[data-theme="light"] body:not(#_) .btn.fill,html[data-theme="light"] body:not(#_) .btn.fill.book-cta,html[data-theme="light"] body:not(#_) nav.chrome .v3-cta .btn.fill{color:#8f3a1a!important;border-color:#9c3f1c!important}
 html[data-theme="light"] body:not(#_) .btn:hover,html[data-theme="light"] body:not(#_) .btn.fill:hover,html[data-theme="light"] body:not(#_) .btn.fill.book-cta:hover{background:#9c3f1c!important;border-color:#9c3f1c!important;color:#fbf6ee!important}
+
+/* when Plan your stay steps aside (the closing section carries its own), it also gives back its width: the other items slide into the space */
+html body nav.chrome .v3-cta{max-width:24rem;transition:max-width .7s cubic-bezier(.2,.7,.2,1),margin .7s cubic-bezier(.2,.7,.2,1)}
+html.visit-on body nav.chrome .v3-cta{max-width:0;margin-left:-2rem;overflow:hidden}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.moyseion.com/#org", "name": "Moyseion", "url": "https://www.moyseion.com", "address": {"@type": "PostalAddress", "addressLocality": "Matera", "addressRegion": "Basilicata", "addressCountry": "IT"}, "sameAs": ["https://www.instagram.com/moyseionmatera", "https://fondazione-moyseion-isama.com"]}</script>
 </head>
