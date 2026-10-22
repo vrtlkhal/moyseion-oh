@@ -94,6 +94,11 @@ footer.site-foot{margin-top:clamp(3rem,9vh,6rem);border-top:.07rem solid var(--l
 .day-band .go{position:relative;font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;flex:0 0 auto;transition:transform .5s}
 .day-band:hover .go,.day-band:focus-visible .go{transform:translateX(.5rem)}
 @media (max-width:43.75rem){.day-band .kick{display:none}.day-band b{text-align:left;font-size:clamp(1.2rem,6vw,1.8rem)}.day-band .go{font-size:.62rem;letter-spacing:.2em}}
+
+/* Explore: headings stand alone (no trailing rule); the band toward A Day at Moyseion a step taller */
+html body:not(#_):not(#__) .ex-head h2::after{content:none}
+html body .day-band{height:23.6vh;min-height:7rem}
+html body .day-band b{font-size:clamp(1.8rem,4.2vw,4.4rem)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.moyseion.com/#org", "name": "Moyseion", "url": "https://www.moyseion.com", "address": {"@type": "PostalAddress", "addressLocality": "Matera", "addressRegion": "Basilicata", "addressCountry": "IT"}, "sameAs": ["https://www.instagram.com/moyseionmatera", "https://fondazione-moyseion-isama.com"]}</script>
 </head>
