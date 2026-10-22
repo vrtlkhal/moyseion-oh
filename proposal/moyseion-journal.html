@@ -490,13 +490,13 @@ html body .era-hero .lede{font-size:.68rem;letter-spacing:.3em;text-transform:up
 </svg>
 <main>
 <header class="era-hero">
-  <p class="crumbs"><a href="../Moyseion-v3-blend.html">Moyseion</a></p>
+  <p class="pg-kick"><a href="../Moyseion-v3-blend.html">Moyseion</a></p>
   <h1>Journal</h1>
-  <p class="lede tracked">Events, conferences, courses</p>
+  <p class="pg-date">Events, conferences, courses</p>
 <div class="strips" aria-hidden="true" data-imgs="img/ws17.jpg,img/matera.jpg,img/musica1.jpg,img/danza12.jpg,img/xenia15.jpg" data-shatter><canvas></canvas></div>
 </header>
 <span id="journal"></span><div class="jr-bar" role="search">
-  <label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the journal" autocomplete="off"></label>
+  <label class="jr-search"><span class="sr">Search</span><input type="search" id="jrQ" placeholder="Search the journal by title, tag or date" autocomplete="off"></label>
   <div class="jr-filters" role="group" aria-label="Tags"><button type="button" data-tag="all" aria-pressed="true">All</button><button type="button" data-tag="research" aria-pressed="false">Research</button><button type="button" data-tag="rituals" aria-pressed="false">Rituals</button><button type="button" data-tag="events" aria-pressed="false">Events</button><button type="button" data-tag="theatre" aria-pressed="false">Theatre</button><button type="button" data-tag="music" aria-pressed="false">Music</button><button type="button" data-tag="myth" aria-pressed="false">Myth</button><button type="button" data-tag="retreat" aria-pressed="false">Retreat</button></div>
 </div>
 <section class="jr-lead" aria-label="Latest">
@@ -532,11 +532,20 @@ html body .era-hero .lede{font-size:.68rem;letter-spacing:.3em;text-transform:up
 (function(){
   var cards = [].slice.call(document.querySelectorAll('.jr-card')), q = document.getElementById('jrQ');
   var btns = [].slice.call(document.querySelectorAll('.jr-filters button')), tag = 'all';
+  // what a card can be found by: its words, and its date in every form a reader might type (2026-03, March, marzo, 2026)
+  var MEN = ['january','february','march','april','may','june','july','august','september','october','november','december'];
+  var MIT = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+  function hay(c){
+    if (c.__hay) return c.__hay;
+    var t = c.textContent, d = c.querySelector('time'), iso = d && d.getAttribute('datetime');
+    if (iso){ var p = iso.split('-'), mo = +p[1] - 1; t += ' ' + iso + ' ' + p[0] + ' ' + (MEN[mo] || '') + ' ' + (MIT[mo] || '') + ' ' + (+p[2] || '') + '/' + (+p[1] || '') + '/' + p[0]; }
+    return (c.__hay = norm(t));
+  }
   function norm(t){ return (t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
   function run(){
     var w = norm(q.value).trim(), n = 0;
     cards.forEach(function(c){
-      var ok = (tag === 'all' || (c.getAttribute('data-category') || '').split(' ').indexOf(tag) > -1) && (!w || norm(c.textContent).indexOf(w) > -1);
+      var ok = (tag === 'all' || (c.getAttribute('data-category') || '').split(' ').indexOf(tag) > -1) && (!w || hay(c).indexOf(w) > -1);
       c.hidden = !ok; if (ok) n++;
     });
     var lead = document.querySelector('.jr-lead'); if (lead) lead.hidden = !lead.querySelector('.jr-card:not([hidden])');

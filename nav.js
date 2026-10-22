@@ -6,6 +6,21 @@
   var here = window.__NAV_BASE != null ? window.__NAV_BASE : (document.currentScript && document.currentScript.src ? new URL('./', document.currentScript.src).href : '');
   var P = { home: here + 'Moyseion-v3-blend.html', day: here + 'proposal/moyseion-day.html', houses: here + 'proposal/moyseion-houses.html', press: here + 'proposal/moyseion-press.html', journal: here + 'proposal/moyseion-journal.html', archive: here + 'proposal/moyseion-archive.html', neo: here + 'proposal/moyseion-neolithic.html', eno: here + 'proposal/moyseion-enotrian.html', mag: here + 'proposal/moyseion-magnagraecia.html', draft: here + 'draft.html', explore: here + 'proposal/moyseion-explore.html' };
   var css = ''
+  // PAGE BAND: every inner page opens the same way, a photograph behind the title, 38.2vh; Moyseion above, a dateline below
+  + '.pg-band{position:relative;isolation:isolate;overflow:hidden;margin:4rem 0 0;min-height:clamp(14rem,38.2vh,22rem);display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;text-align:left;padding:7rem var(--pad,clamp(1.1rem,4.6vw,4.2rem)) clamp(1rem,3vh,1.8rem);box-sizing:border-box}'
+  + '.pg-band::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--img) var(--pos,center 45%)/cover no-repeat}'
+  + '.pg-band::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(1,4,22,.88) 0%,rgba(1,4,22,.66) 32%,rgba(1,4,22,.18) 68%,rgba(1,4,22,.08) 100%),linear-gradient(0deg,rgba(1,4,22,.55),rgba(1,4,22,0) 55%)}'
+  + '.pg-kick{margin:0 0 .2rem;font-size:.66rem;letter-spacing:.42em;text-transform:uppercase;color:#c2a567}.pg-kick a{color:#c2a567;text-decoration:none}.pg-kick a:hover{color:#f1dca4}'
+  + '.pg-band h1,html body .era-hero h1{color:#f1dca4;margin:0 0 .9rem}'
+  + '.pg-date{margin:0;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;line-height:1.6;color:#e9dfcf}'
+  // SECTION HEADINGS: tracked capitals and one thin rule after them, on every page
+  + 'html body:not(#_) .gal-head,html body:not(#_) .section-label,html body:not(#_) .ex-head h2{display:flex;align-items:center;gap:1.4rem}'
+  + 'html body:not(#_) .gal-head::after,html body:not(#_) .section-label::after,html body:not(#_) .ex-head h2::after{content:"";flex:1 1 auto;min-width:3rem;height:1px;background:rgba(131,109,48,.45)}'
+  + 'html body:not(#_) .ex-head h2{flex:1 1 auto}'
+  // PLAN YOUR STAY: outlined, filled with gold on hover
+  + '.mn-btn:hover,.mn-btn:focus-visible{background:#c2a567;border-color:#c2a567;color:#010416}'
+  // WIDE SCREENS: content keeps the same margins as the bar, no centred 96rem column
+  + 'html body:not(#_) .rows,html body:not(#_) .notes,html body:not(#_) .masonry,html body:not(#_) .gal-head,html body:not(#_) .eras-nav,html body:not(#_) .dws,html body:not(#_) .foot{max-width:none}'
   // SITE SYSTEM: one size for each repeated element on every inner page (title, eyebrow, breadcrumb, section heading,
   // dateline). Golden steps; the :not(#_) lifts these above each page's own older rules.
   + 'html body:not(#_) h1{font-weight:400;font-size:clamp(3.4rem,6.6vw,6.6rem);line-height:.92;letter-spacing:-.02em}'
